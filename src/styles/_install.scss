@@ -1,3 +1,13 @@
 .install-bullets-title {
   margin-bottom: 0;
 }
+.install-columns {
+  .hero-list__item .card-content {
+    padding: 1.5rem 0px;
+
+    img {
+      height: 60px;
+      width: auto;
+    }
+  }
+}
