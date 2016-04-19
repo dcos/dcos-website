@@ -1,8 +1,12 @@
 /docs /docs/latest/
 /docs/index.html /docs/latest/
 /docs/latest /docs/latest/
-/docs/support/index.html /community/
-/docs/administration/installing/custom/automated-installer/system-requirements/index.html /docs/latest/administration/installing/custom/system-requirements/
+/docs/overview /docs/latest/overview/
+/docs/administration /docs/latest/administration/
+/docs/usage /docs/latest/usage/
+/docs/development /docs/latest/development/
+/docs/support /docs/latest/support/
+/docs/latest/administration/installing/custom/automated-installer/system-requirements/index.html /docs/latest/administration/installing/custom/system-requirements/
 /administration/installing/index.html /docs/latest/administration/installing/
 /administration/security-and-authentication/index.html /docs/latest/overview/security/
 /usage/cli/install/index.html /docs/latest/usage/cli/install/
@@ -17,5 +21,3 @@
 /administration/opt-out /docs/latest/administration/opt-out/
 /media-kit https://mesosphere.invisionapp.com/boards/U61L5GZM5CYG3/
 /media-kit/index.html https://mesosphere.invisionapp.com/boards/U61L5GZM5CYG3/
-/docs/administration/opt-out /docs/latest/administration/opt-out/
-/docs/usage/cli/install/index.html /docs/latest/usage/cli/install/
