@@ -1,4 +1,6 @@
 @import 'bourbon';
+
+// Components
 @import './webfonts';
 @import './normalize/normalize';
 @import './reset';
@@ -31,3 +33,8 @@
 @import './404';
 @import './get-started';
 @import './overrides';
+@import './input';
+@import './tabs';
+
+// Pages
+@import './pages/aws-templates';

@@ -29,5 +29,7 @@ html
     block head
       title DC/OS
 
-  body
+  - var bodyClass = '';
+  block vars
+  body(class='#{bodyClass}')
     block content

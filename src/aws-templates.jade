@@ -1,0 +1,53 @@
+extends ../layouts/base-whitefooter.jade
+
+block vars
+  - var bodyClass = 'aws-templates'
+
+block head
+  title AWS Templates | DC/OS
+  meta(property='og:locale', content='en_US')
+  meta(property='og:type', content='article')
+  meta(property='og:title', content='Why DC/OS | DC/OS')
+  meta(property='og:image', content='https://dcos.io/assets/images/social-img.png')
+  meta(property='og:description', content='100% open source, co-developed with customers who use its technologies in production, providing the easiest way to run containerized applications at scale.')
+  meta(property='og:url', content='https://dcos.io/')
+  meta(property='og:site_name', content='DC/OS')
+  meta(name='twitter:card', content='summary')
+  meta(name='twitter:site', content='@dcos')
+  meta(name='twitter:title', content='AWS Templates | DC/OS')
+  meta(name='twitter:card', content='summary_large_image')
+  meta(name='twitter:image', content='https://dcos.io/assets/images/social-img.png')
+  meta(name='twitter:description', content='100% open source, co-developed with customers who use its technologies in production, providing the easiest way to run containerized applications at scale.')
+
+block content
+
+  .container.container--dark-background
+    +header
+
+    .container__content
+      h1 AWS Templates
+
+  .container
+    .container__content
+      .card
+        .card-content
+          h2 DC/OS EarlyAccess AWS CloudFormation
+          p For more information on creating DC/OS cluster, see the #[a(href='#') DC/OS AWS documentation].
+          h5(style='align-self: flex-start') Select your AWS Region
+          .input-group.input-group--full-width
+            select
+              option(value='US West') US West
+              option(value='US West') US West
+              option(value='US West') US West
+              option(value='US West') US West
+          br
+          h5(style='align-self: flex-start') Define Stack Configuration
+          .tabs.tabs--full-width
+            .tab.tab--active 1 Master
+            .tab HA: 3 Masters
+          br
+
+          a.cta.cta--button Get started
+
+  .container
+    +footer

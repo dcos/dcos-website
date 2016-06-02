@@ -1,0 +1,17 @@
+.input-group {
+  border: 1px solid $dark-gray;
+  border-radius: 4px;
+}
+
+.input-group--full-width,
+.input-group--full-width input,
+.input-group--full-width select {
+  width: 100%;
+}
+
+.input-group select {
+  background: transparent;
+  border: none;
+  height: 40px;
+  padding: 5px;
+}

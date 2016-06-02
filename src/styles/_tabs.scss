@@ -1,0 +1,33 @@
+.tabs {
+
+}
+
+.tabs--full-width {
+  display: flex;
+  width: 100%;
+}
+
+.tab {
+  width: 100%;
+  padding: 12px 30px;
+  display: inline-block;
+  float: left;
+  background: transparent;
+  color: $heliotrope;
+  border: 1px solid $heliotrope;
+  border-radius: 4px 0;
+  cursor: pointer;
+}
+
+.tab:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+.tab:last-child {
+  border-radius: 0 4px 4px 0;
+}
+
+.tab--active {
+  background: $heliotrope;
+  color: #fff;
+}

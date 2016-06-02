@@ -1,0 +1,7 @@
+.aws-templates {}
+
+@include break($tablet-portrait) {
+  .aws-templates .card {
+    min-width: 500px;
+  }
+}
