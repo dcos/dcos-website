@@ -24,6 +24,7 @@ const writemetadata = require('metalsmith-writemetadata')
 const moment        = require('moment')
 const tags          = require('metalsmith-tags')
 const mlunr         = require('metalsmith-lunr')
+const feed          = require('metalsmith-feed')
 const CONFIG        = require('./env.json')[process.env.NODE_ENV] || require('./env.json')['production']
 
 // --- general build settings --- //
@@ -128,6 +129,11 @@ let allDocs = function() {
 }
 
 Metalsmith(__dirname)
+  .metadata({
+    site: {
+      url: CONFIG.root_url
+    }
+  })
   .use(addTimestampToMarkdownFiles)
   .use(markdown({
     smartypants: true,
@@ -153,6 +159,7 @@ Metalsmith(__dirname)
       reverse: true
     }
   }))
+  .use(feed({ collection: 'posts' }))
   .use(addPropertiesToCollectionItems('posts', post => {
     return Object.assign(post, {
       formattedDate: moment(post.date).format('MMMM DD')

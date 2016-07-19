@@ -33,6 +33,7 @@
     "metalsmith-copy": "^0.2.1",
     "metalsmith-define": "^2.0.1",
     "metalsmith-each": "^0.1.1",
+    "metalsmith-feed": "^0.2.0",
     "metalsmith-jade": "davidvanleeuwen/metalsmith-jade",
     "metalsmith-layouts": "^1.6.4",
     "metalsmith-logger": "0.0.3",
