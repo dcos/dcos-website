@@ -17,9 +17,9 @@ Before you get started, install a couple prerequisite tools.
 -  Install [pip](https://pip.pypa.io/en/stable/installing.html#install-pip) for Python 3
 -  Install jsonschema:
 
-   ```bash
-   $ pip install jsonschema
-   ```
+```bash
+$ pip install jsonschema
+```
 
 ## Getting Started
 Packages are published to the Mesosphere Universe repository on GitHub.
@@ -40,7 +40,9 @@ As you look around the Universe repository you'll notice that the repository (`/
 
 The Universe repository uses pre-commit hooks.  Install the hooks:
 
-    $ bash scripts/install-git-hooks.sh
+```bash
+$ bash scripts/install-git-hooks.sh
+```
 
 Create a new directory for the Bitbucket package in `repo/packages/B/bitbucket/0`.
 
@@ -72,10 +74,8 @@ Let's go ahead and create it in the most basic way.
 }
 ```
 
-The `packagingVersion` field specifies the version of Universe package spec to adhere to.  The two available versions are `2.0` or `3.0`.
-See the [schema](https://github.com/mesosphere/universe/tree/version-3.x/repo/meta/schema) on GitHub for details.  
-
-In this tutorial, we are using Universe version 3.
+The `packagingVersion` field specifies the version of Universe package spec to adhere to.  Use the latest version, `3.0`.  
+See the [schema](https://github.com/mesosphere/universe/blob/version-3.x/repo/meta/schema/v3-resource-schema.json) on GitHub for details on this version spec.  
 
 ## Step Two: resource.json
 
@@ -103,11 +103,11 @@ The image sizes should be 48x48 (small), 96x96 (medium), and 256x256 (large).
 
 ## Step Three: config.json
 
-This file declares the packages configuration properties, such as the amount of CPUs, number of instances, and allotted memory.  In step four, these properties will be injected into the` marathon.json.mustache file`.
+This file declares the packages configuration properties, such as the amount of CPUs, number of instances, allotted memory, and the package name that will appear on DC/OS Universe.  In step four, these properties will be injected into the` marathon.json.mustache file`.
 
 Each property can provide a default value, specify whether it's required, and provide validation (minimum and maximum values).  When installing our Bitbucket package (step five), we will use CLI [flags](https://docs.mesosphere.com/1.7/usage/managing-services/config/) to override some of the values.  They can also be overriden through DC/OS [UI](https://docs.mesosphere.com/1.7/usage/webinterface/#universe).
 
-
+Below is a snippet of `config.json`.  Find the [rest](https://github.com/mesosphere/universe/blob/version-3.x/repo/packages/B/bitbucket/0/config.json) on Github.
 ```javascript
 {
   "$schema": "http://json-schema.org/schema#",
@@ -126,49 +126,14 @@ Each property can provide a default value, specify whether it's required, and pr
           "minimum": 2,
           "type": "number"
         },
-        "host-volume": {
-            "description": "The location of a volume on the host to be used for persisting Bitbucket data. The final location will be derived from this value plus the name set in `name` (e.g. `/mnt/host_volume/bitbucket`). Note that this path must be the same on all DC/OS agents.",
-            "type": "string",
-            "default": "/tmp"
-        },
-        "mem": {
-          "default": 2048.0,
-          "description": "Memory (MB) to allocate to each bitbucket task.",
-          "minimum": 2048.0,
-          "type": "number"
-        },
-        "minimumHealthCapacity": {
-          "default": 0.5,
-          "description": "Minimum health capacity.",
-          "minimum": 0,
-          "type": "number"
-        },
-        "maximumOverCapacity": {
-          "default": 0.2,
-          "description": "Maximum over capacity.",
-          "minimum": 0,
-          "type": "number"
-        },
         "name": {
           "default": "bitbucket",
           "description": "Name for this bitbucket application",
           "type": "string"
         },
-        "role": {
-          "default": "*",
-          "description": "Deploy bitbucket only on nodes with this role.",
-          "type": "string"
-        },
-        "virtual-host": {
-            "description": "The virtual host address to configure for integration with Marathon-lb.",
-            "type": "string"
-        }
-      },
-      "required": ["cpus", "mem", "instances", "name"],
-      "type": "object"
-    }
-  },
-  "type": "object"
+...
+...
+...
 }
 ```
 
@@ -178,14 +143,16 @@ This file is written in the [mustache templating language](https://mustache.gith
 It's written in a higher-level templating language because it references objects and variables that are declared in `config.json` and `resource.json`.
 For example, in your `config.json`, the instances property can be accessed from the `marathon.json.mustache` file.
 
-    ...
-    "id": "/{{bitbucket.name}}",
-    "instances": {{bitbucket.instances}},
-    ...
+```javascript
+...
+"id": "/{{bitbucket.name}}",
+"instances": {{bitbucket.instances}},
+...
+```
 
 When the mustache is compiled, it replaces this special tag with the value of `bitbucket.instances` declared in `config.json`.  Be careful about types!  If the replaced property is a string, make sure to enclose it in double quotes.
 
-Here is the entire `marathon.json.mustache` for your Bitbucket package:
+Here is a snippet of `marathon.json.mustache` for your Bitbucket package.  See Github for the [entire file](https://github.com/mesosphere/universe/blob/version-3.x/repo/packages/B/bitbucket/0/marathon.json.mustache).
 
 ```javascript
 {
@@ -212,28 +179,9 @@ Here is the entire `marathon.json.mustache` for your Bitbucket package:
     }
     ]
   },
-  "healthChecks": [
-    {
-      "protocol": "COMMAND",
-      "command": { "value": "curl --fail ${HOST}:${PORT0}" },
-      "gracePeriodSeconds": 300,
-      "intervalSeconds": 60,
-      "timeoutSeconds": 20,
-      "maxConsecutiveFailures": 3
-    }
-  ],
-  "acceptedResourceRoles": [
-    "{{bitbucket.role}}"
-  ],
-  "labels": {
-    {{#bitbucket.virtual-host}}
-    "HAPROXY_GROUP":"external",
-    "HAPROXY_0_VHOST":"{{bitbucket.virtual-host}}",
-    {{/bitbucket.virtual-host}}
-    "DCOS_SERVICE_NAME": "{{bitbucket.name}}",
-    "DCOS_SERVICE_SCHEME": "http",
-    "DCOS_SERVICE_PORT_INDEX": "0"
-  }
+...
+...
+...
 }
 ```
 
@@ -250,7 +198,9 @@ You must have DC/OS and DC/OS CLI [installed](https://dcos.io/install/).
 #### Install marathon-lb
 Install marathon-lb from the CLI:
 
-    $ dcos package install marathon-lb
+```bash
+$ dcos package install marathon-lb
+```
 
 Alternatively, you can use the DC/OS UI to install marathon-lb onto the cluster.
 
@@ -278,16 +228,26 @@ Refer to the Universe [docs](https://github.com/mesosphere/universe#build-univer
 
 In the previous step, a `marathon.json` was created.  Use the below commands to run a Universe Server on our DC/OS cluster.
 
-    $ dcos marathon app add marathon.json
-    $ dcos package repo add --index=0 dev-universe http://universe.marathon.mesos:8085/repo
+```bash
+$ dcos marathon app add marathon.json
+$ dcos package repo add --index=0 dev-universe http://universe.marathon.mesos:8085/repo
+```
 
 Now the Bitbucket package is available to your DC/OS cluster.  If you ever need to recreate a Universe, delete the old one first with: `$ dcos marathon app remove universe`. 
 
 To install Bitbucket, run the following command.  Make sure to include the options flag, which overrides the `bitbucket.virtual-host` property of `config.json` file:
 
-    $ dcos package install bitbucket --options=options.json
+```bash
+$ dcos package install bitbucket --options=options.json
+```
 
-It will take a few minutes for Bitbucket to deploy on your cluster.  When it's done deploying, you can enter the public agent IP into a web browser.  When you see the Bitbucket welcome screen, it's working!
+It will take a few minutes for Bitbucket to deploy on your cluster.  When it's done deploying, enter the below url into a web browser:
+
+```bash
+<public-agent-ip>/service/bitbucket
+```
+
+When you see the Bitbucket welcome screen, it's working!
 
 
 
