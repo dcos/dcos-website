@@ -241,11 +241,7 @@ To install Bitbucket, run the following command.  Make sure to include the optio
 $ dcos package install bitbucket --options=options.json
 ```
 
-It will take a few minutes for Bitbucket to deploy on your cluster.  When it's done deploying, enter the below url into a web browser:
-
-```bash
-<public-agent-ip>/service/bitbucket
-```
+It will take a few minutes for Bitbucket to deploy on your cluster.  When it's done deploying, enter the public agent IP address into a web browser.
 
 When you see the Bitbucket welcome screen, it's working!
 
