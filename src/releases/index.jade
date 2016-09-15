@@ -1,21 +1,14 @@
 extends ../../layouts/base.jade
-
 block head
   title DC/OS Releases
-
 block content
-
   .container.container--dark-background
     +header
-
     .container__content
       h1 DC/OS Releases
-
   .container.release-channels
     .container__content
-
       h2.heading-margin-bottom Release Channels
-
       .card-container
         .card.card--inactive
           .card-content
@@ -23,7 +16,6 @@ block content
             p.release-version DC/OS 1.8
             p.hero-list__item__copy__paragraph.release-copy Latest stable release. Ready for production use.
             a.cta.cta--button.button--inactive.release-button Coming Soon
-
         .card
           .card-content
             h3 Early Access
@@ -31,16 +23,13 @@ block content
             p.hero-list__item__copy__paragraph.release-copy Upcoming release. Ready for development and testing.
             a.cta.cta--text.release-notes(href='/releases/1.8.3/#1-8-3') Release Notes
             a.cta.cta--button.button--secondary.release-button(href='https://downloads.dcos.io/dcos/EarlyAccess/commit/636f8b72288e82ad3b0065928e0b492af4c7cf66/dcos_generate_config.sh') Download
-
         .card.card
           .card-content
             h3 Master
             p.release-version DC/OS master
             p.hero-list__item__copy__paragraph Bleeding edge automated release. Only tested with automated tests.
             a.cta.cta--button.button--secondary.release-button(href='https://downloads.dcos.io/dcos/testing/master/dcos_generate_config.sh') Download
-
       h2.heading-margin-bottom Older Releases
-
         ul
           li
             a(href="/releases/1.8.2/") 1.8.2
@@ -53,10 +42,8 @@ block content
         ul
           li
             a(href="/releases/1.7-open/") 1.7-open
-
   .container.container--dark-background
     .container__content
-       h2 Install on any virtual or physical machines.
-       a(href='/install').cta.cta--button Install
-
+      h2 Install on any virtual or physical machines.
+      a(href='/install').cta.cta--button Install
     +footer

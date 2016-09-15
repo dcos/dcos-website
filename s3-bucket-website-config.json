@@ -1,14 +1,14 @@
 {
     "IndexDocument": {
         "Suffix": "index.html"
-    }, 
+    },
     "ErrorDocument": {
         "Key": "404/index.html"
     },
     "RoutingRules": [
         {
             "Condition": { "KeyPrefixEquals": "docs/latest/" },
-            "Redirect": { "HostName": "dcos.io", "ReplaceKeyPrefixWith": "docs/1.7/" }
+            "Redirect": { "HostName": "dcos.io", "ReplaceKeyPrefixWith": "docs/1.8/" }
         },
         {
             "Condition": { "KeyPrefixEquals": "documentation/" },
