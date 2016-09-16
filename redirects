@@ -35,3 +35,4 @@
 /docs/1.7/usage/service-discovery/load-balancing-vips/virtual-ip-addresses/index.html /docs/1.7/usage/service-discovery/virtual-ip-addresses/
 /docs/1.8/usage/service-discovery/virtual-ip-addresses/index.html /docs/1.8/usage/service-discovery/load-balancing-vips/virtual-ip-addresses/
 /docs/1.7/usage/jobs/getting-started/index.html /docs/1.8/usage/jobs/getting-started/
++/docs/1.8/administration/sshcluster/index.html /docs/1.8/administration/access-node/sshcluster/
