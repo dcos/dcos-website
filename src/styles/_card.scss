@@ -147,14 +147,6 @@ a.card:hover {
     margin-top: 0;
     color: $dark-gray;
   }
-
-  .release-copy {
-    margin: 1rem 0;
-  }
-
-  .release-notes {
-    margin-bottom: 0;
-  }
 }
 
 @include break($mobile-small-landscape) {
