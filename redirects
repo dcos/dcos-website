@@ -37,3 +37,5 @@
 /docs/1.8/usage/service-discovery/virtual-ip-addresses/index.html /docs/1.8/usage/service-discovery/load-balancing-vips/virtual-ip-addresses/
 /docs/1.7/usage/jobs/getting-started/index.html /docs/1.8/usage/jobs/getting-started/
 /docs/1.8/usage/service-discovery/custom-domain-service-discovery/index.html /docs/1.8/usage/service-discovery/mesos-dns/custom-domain-service-discovery/
+/docs/1.8/usage/tutorials/marathon/index.html /docs/1.7/usage/tutorials/marathon/
+/docs/1.9/usage/tutorials/marathon/index.html /docs/1.7/usage/tutorials/marathon/
