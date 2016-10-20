@@ -139,9 +139,9 @@ html
 
             .docs-tags
               if locals.enterprise
-                span.pill DC/OS Enterprise
+                span.pill Enterprise DC/OS
               if locals.feature_maturity
-                span.pill!= capitalize(locals.feature_maturity)
+                span.pill!= capitalize(locals.feature_maturity) // preview is pink, experimental is blue, default = purple
 
             article!= contents
 
