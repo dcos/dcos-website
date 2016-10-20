@@ -8,7 +8,8 @@
     "start": "NODE_ENV=production gulp serve",
     "build": "NODE_ENV=production gulp build",
     "clean": "rm -r ./build",
-    "eslint": "eslint"
+    "eslint": "eslint",
+    "dev": "gulp serve"
   },
   "repository": {
     "type": "git",

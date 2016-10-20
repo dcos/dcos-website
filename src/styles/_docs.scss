@@ -575,3 +575,37 @@ img.docs-content__footer__share-icon {
   width: calc(100% - 60px) !important;
   flex-shrink: 0;
 }
+
+.docs-menu {
+  margin-bottom: 2rem;
+}
+
+.docs-in-this-post {
+  width: 100%;
+  margin-top: -1px;
+
+
+}
+
+.docs-in-this-post.is-visible::before {
+  content: ' ';
+  display: block;
+  width: 100%;
+  border-top: 1px solid $smoke;
+  padding-top: 2rem;
+  right: -30px;
+  position: relative;
+}
+
+.docs-in-this-post li {
+  margin: 1rem 0;
+}
+
+.docs-in-this-post li a:hover {
+  opacity: 1;
+}
+
+.docs-in-this-post li.active a {
+  color: $heliotrope;
+  opacity: 1;
+}

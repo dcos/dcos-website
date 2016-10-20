@@ -1,4 +1,6 @@
-(function() {
+/* global $, scrollMonitor */
+
+$(document).ready(() => {
 
   // Event handlers
 
@@ -14,6 +16,37 @@
   }
 
   bindEventHandlers()
+
+  // In this post
+
+  function initInThisPost () {
+    const $container = $('.docs-in-this-post')
+
+    $container.stick_in_parent({ recalc_every: 1 })
+
+    $('#docs-content').scrollNav({
+      sections: 'h1',
+      subSections: true,
+      sectionElem: 'section',
+      showHeadline: true,
+      headlineText: 'In This Post',
+      showTopLink: false,
+      topLinkText: 'Top',
+      fixedMargin: 40,
+      scrollOffset: 40,
+      animated: true,
+      speed: 500,
+      insertTarget: $container,
+      insertLocation: 'prependTo',
+      arrowKeys: false,
+      onRender: function () {
+        $container.addClass('is-visible')
+      },
+      onDestroy: null
+    })
+  }
+
+  initInThisPost()
 
   // Search
   const version = 'latest';
@@ -96,4 +129,4 @@
 
   calculateDocsNavHeight();
   $('.docs-nav__item a').on('click', calculateDocsNavHeight);
-})();
+})

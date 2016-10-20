@@ -452,7 +452,7 @@ gulp.task('javascript', () => {
     .pipe(gulp.dest(paths.js.dest))
 })
 
-gulp.task('js-watch', ['javascript'], reload)
+gulp.task('js-watch', ['javascript'])
 
 // TODO: minify in production
 gulp.task('styles', () => {

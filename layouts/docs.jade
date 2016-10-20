@@ -126,7 +126,9 @@ html
                 if (version != docsVersion)
                   option(value="#{version}") DC/OS #{version}
 
-            +renderMenu(locals.navs.header)
+            +renderMenu(locals.navs.header).docs-menu
+
+            nav.docs-in-this-post
 
           // Search results
           .docs-layout__docs-content.docs-layout__docs-results(style='display: none;')
@@ -143,7 +145,7 @@ html
               if locals.feature_maturity == 'experimental'
                 a.pill(class='pill-blue', href='/docs/#{docsVersion}/overview/feature-maturity/#experimental')!= capitalize(locals.feature_maturity)
 
-            article!= contents
+            article#docs-content!= contents
 
             .docs-content__footer
               ul.docs-content__footer__actions
