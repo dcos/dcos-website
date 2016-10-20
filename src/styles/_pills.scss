@@ -1,0 +1,13 @@
+.pill {
+  display: inline-block;
+  color: #fff;
+  background-color: $heliotrope;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.pill:last-child {
+  margin-right: 0;
+}

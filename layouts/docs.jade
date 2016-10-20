@@ -42,6 +42,10 @@ include ../mixins/head.jade
     }
   }
 
+  var capitalize = function (string) {
+    return string.charAt(0).toUpperCase() + string.slice(1)
+  }
+
 mixin icon(child)
   if(child.type === 'dir')
     if(findPath(child.name))
@@ -132,6 +136,13 @@ html
             .docs-search.docs-search--mobile
               input(type='search').docs-search__input
             h1.docs-heading!= locals.post_title
+
+            .docs-tags
+              if locals.enterprise
+                span.pill DC/OS Enterprise
+              if locals.feature_maturity
+                span.pill!= capitalize(locals.feature_maturity)
+
             article!= contents
 
             .docs-content__footer
