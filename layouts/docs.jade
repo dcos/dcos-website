@@ -46,6 +46,12 @@ include ../mixins/head.jade
     return string.charAt(0).toUpperCase() + string.slice(1)
   }
 
+  var getTagClassNames = function (featureMaturity) {
+    if (featureMaturity === 'preview') return 'pill-pink'
+    if (featureMaturity === 'experimental') return 'pill-blue'
+    return ''
+  }
+
 mixin icon(child)
   if(child.type === 'dir')
     if(findPath(child.name))
@@ -141,7 +147,7 @@ html
               if locals.enterprise
                 span.pill Enterprise DC/OS
               if locals.feature_maturity
-                span.pill!= capitalize(locals.feature_maturity) // preview is pink, experimental is blue, default = purple
+                span.pill(class=getTagClassNames(locals.feature_maturity))!= capitalize(locals.feature_maturity)
 
             article!= contents
 
