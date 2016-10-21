@@ -1,4 +1,4 @@
-/* global $, scrollMonitor */
+/* global $ */
 
 $(document).ready(() => {
 
