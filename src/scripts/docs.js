@@ -117,7 +117,7 @@ $(document).ready(() => {
   let calculateDocsNavHeight = function () {
     if (matchMedia('only screen and (max-width: 480px)').matches) return;
     docsNav.css({height: 'auto'});
-    let docsNavHeight = $('#docs-nav > ul').outerHeight();
+    let docsNavHeight = docsNav.outerHeight()
     let docsArticleHeight = docsArticle.outerHeight();
     let newDocsNavHeight;
 
