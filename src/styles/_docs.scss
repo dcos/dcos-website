@@ -36,6 +36,10 @@
   input {
     width: 75%;
   }
+
+  @include break($tablet-portrait) {
+    width: calc(100% - 30px);
+  }
 }
 
 .docs-nav__item__arrow img {
@@ -190,7 +194,6 @@ ul > li > .nav-wrapper > .docs-nav__item__arrow {
   h5 {
     font-size: 0.9rem;
   }
-
 
   h1, h2, h3, p, pre {
     margin: 2rem 0;
@@ -418,17 +421,13 @@ img.docs-content__footer__share-icon {
   width: 100%;
 }
 
-.docs-menu {
-  padding-right: 40px;
-}
-
 .container.container--docs-content .algolia-autocomplete {
   width: 100%;
 }
 
 @include break($tablet-portrait) {
   .docs-search {
-    width: calc(100% - 60px);
+    width: 100%;
   }
 
   .docs-search.docs-search--mobile {
@@ -455,7 +454,6 @@ img.docs-content__footer__share-icon {
 
   .docs-layout__docs-nav {
     display: flex;
-    padding-right: 30px;
     width: 30%;
     height: 100%;
     border-right: 1px solid $smoke;
@@ -572,19 +570,18 @@ img.docs-content__footer__share-icon {
 }
 
 .docs-version-select {
-  width: calc(100% - 60px) !important;
-  flex-shrink: 0;
+  width: calc(100% - 30px) !important;
 }
 
 .docs-menu {
   margin-bottom: 2rem;
+  padding-right: 30px;
 }
 
 .docs-in-this-post {
   width: 100%;
   margin-top: -1px;
-
-
+  padding-right: 30px;
 }
 
 .docs-in-this-post.is-visible::before {
@@ -593,7 +590,6 @@ img.docs-content__footer__share-icon {
   width: 100%;
   border-top: 1px solid $smoke;
   padding-top: 2rem;
-  right: -30px;
   position: relative;
 }
 
