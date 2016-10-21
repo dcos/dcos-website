@@ -22,7 +22,7 @@ $(document).ready(() => {
   function initInThisPost () {
     const $container = $('.docs-in-this-post')
 
-    $container.stick_in_parent({ recalc_every: 1 })
+    $container.stick_in_parent()
 
     $('#docs-content').scrollNav({
       sections: 'h1',
@@ -125,6 +125,7 @@ $(document).ready(() => {
     else newDocsNavHeight = docsNavHeight + 80;
 
     docsNav.css({height: `${newDocsNavHeight}px`});
+    $(document.body).trigger("sticky_kit:recalc")
   }
 
   calculateDocsNavHeight();
