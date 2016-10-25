@@ -1,8 +1,8 @@
 [
   { "title": "Agile Tour London", "image": "/assets/images/events/2016-10-21_AgileTourLondon.jpg", "date": "2016-10-21", "url": "http://2016.agiletourlondon.co.uk/" },
   { "title": "All Things Open", "image": "/assets/images/events/2016-10-26_All-Things_Open.jpg", "date": "2016-10-26", "url": "https://allthingsopen.org/" },
-  { "title": "Future Decoded", "image": "/assets/images/events/2016-11-01_Future-Decoded.jpg", "date": "2016-11-01", "url": "https://futuredecoded.microsoft.com/technical-day/" },
-  { "title": "Q Con San Francisco", "image": "/assets/images/events/2016-11-07_Q-Con.jpg", "date": "2016-11-07", "url": "https://qconsf.com/sf2016/workshop/building-your-first-app-apache-mesos-dcos" },
+  { "title": "Future Decoded", "image": "/assets/images/events/2016-11-01_Future-Decoded.jpg", "date": "2016-11-01", "url": "https://futuredecoded.microsoft.com/" },
+  { "title": "Q Con San Francisco", "image": "/assets/images/events/2016-11-07_Q-Con.jpg", "date": "2016-11-07", "url": "https://qconsf.com/" },
   { "title": "Cloud Native Con", "image": "/assets/images/events/2016-11-08_Cloud-Native-Con.jpg", "date": "2016-11-08", "url": "http://events.linuxfoundation.org/events/cloudnativecon" },
   { "title": "Continuous Lifecycle", "image": "/assets/images/events/2016-11-14_Continuous-Lifecycle.jpg", "date": "2016-11-14", "url": "http://www.continuouslifecycle.de/" },
   { "title": "Big Data Spain", "image": "/assets/images/events/2016-11-17_Big-Data-Spain.jpg", "date": "2016-11-17", "url": "https://www.bigdataspain.org" },
