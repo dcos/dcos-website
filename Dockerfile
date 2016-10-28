@@ -31,11 +31,11 @@ WORKDIR /dcos-website
 ENV CI true
 
 RUN git submodule update --init --recursive \
-  && npm install && npm start \
+  && ci/test.sh \
   && rm -rf /usr/share/nginx/html/* \
   && cp -r build/* /usr/share/nginx/html/ \
-  && ln -sf /usr/share/nginx/html/docs/1.7 /usr/share/nginx/html/docs/latest \
-  && bash ci/generate-nginx-conf.sh > /etc/nginx/conf.d/default.conf \
+  && ln -sf /usr/share/nginx/html/docs/1.8 /usr/share/nginx/html/docs/latest \
+  && ci/generate-nginx-conf.sh > /etc/nginx/conf.d/default.conf \
   && apt-get remove -yf curl git xz-utils \
   && apt-get autoremove -yf \
   && apt-get clean && rm -rf /var/lib/apt/lists/* \
@@ -43,4 +43,4 @@ RUN git submodule update --init --recursive \
 
 EXPOSE 80
 
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["nginx", "-g", "server { listen 80; }; daemon off;"]
