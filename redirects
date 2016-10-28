@@ -43,4 +43,8 @@
 /docs/latest/usage/tutorials/marathon/marathon101/index.html /docs/1.7/usage/tutorials/marathon/marathon101/
 /docs/latest/usage/tutorials/marathon/inline-update/index.html /docs/1.7/usage/tutorials/marathon/
 /docs/latest/usage/tutorials/marathon/stateful-services/index.html /docs/1.7/usage/tutorials/marathon/stateful-services/
+/docs/1.8/usage/tutorials/marathon/index.html /docs/1.7/usage/tutorials/marathon/
+/docs/1.8/usage/tutorials/marathon/marathon101/index.html /docs/1.7/usage/tutorials/marathon/marathon101/
+/docs/1.8/usage/tutorials/marathon/inline-update/index.html /docs/1.7/usage/tutorials/marathon/
+/docs/1.8/usage/tutorials/marathon/stateful-services/index.html /docs/1.7/usage/tutorials/marathon/stateful-services/
 /docs/1.8/usage/service-discovery/haproxy-adminrouter/index.html /docs/1.8/administration/haproxy-adminrouter/
