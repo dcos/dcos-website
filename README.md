@@ -71,6 +71,14 @@ Issues on GitHub will be disabled soon.**
 
 Once changes are accepted and merged to the develop branch, CI will push the updates to <https://dev.dcos.io/>.
 
+## Validate Links
+
+```
+SERVER_CID="$(ci/start.sh)"
+ci/generate-linkchecker-report.sh
+docker rm -f "${SERVER_CID}"
+```
+
 ## Update the Docs
 
 Docs should be updated on `develop` by maintainers to avoid git sha merge conflicts:
