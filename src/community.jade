@@ -59,11 +59,12 @@ block content
   .container.events-container
     .container__content
       .events-carousel
-        .events-carousel-btn.events-carousel-btn--next
-          img(src='/assets/images/icons/chevron-dark-right.svg')
+        if (locals.events.length)
+          .events-carousel-btn.events-carousel-btn--next
+            img(src='/assets/images/icons/chevron-dark-right.svg')
 
-        .events-carousel-btn.events-carousel-btn--prev
-          img(src='/assets/images/icons/chevron-dark-left.svg')
+          .events-carousel-btn.events-carousel-btn--prev
+            img(src='/assets/images/icons/chevron-dark-left.svg')
 
         .card-container
           each event in locals.events
