@@ -7,9 +7,11 @@
 # Site: http://wummel.github.io/linkchecker/
 # Source: https://github.com/wummel/linkchecker
 
-# IMPORTANT: Run site first
+# Example Usage:
 # docker build -t mesosphere/dcos-website .
-# PORT=3000 ci/start.sh
+# SERVER_CID="$(PORT=3000 ci/start.sh)"
+# ci/validate-links.sh
+# docker rm -f "${SERVER_CID}"
 
 set -e
 set -u

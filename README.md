@@ -73,11 +73,26 @@ Once changes are accepted and merged to the develop branch, CI will push the upd
 
 ## Validate Links
 
-```
-SERVER_CID="$(ci/start.sh)"
-ci/generate-linkchecker-report.sh
-docker rm -f "${SERVER_CID}"
-```
+1. Build the docker image with your local changes
+
+    ```
+    docker build -t mesosphere/dcos-website .
+    ```
+1. Start the website server in Docker and remember the container ID
+
+    ```
+    SERVER_CID="$(PORT=3000 ci/start.sh)"
+    ```
+1. Run link validation in Docker
+
+    ```
+    ci/validate-links.sh
+    ```
+1. Stop the website server
+
+    ```
+    docker rm -f "${SERVER_CID}"
+    ```
 
 ## Update the Docs
 
