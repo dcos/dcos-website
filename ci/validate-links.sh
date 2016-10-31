@@ -9,7 +9,7 @@
 
 # IMPORTANT: Run site first
 # docker build -t mesosphere/dcos-website .
-# PORT=3000 ci/run.sh
+# PORT=3000 ci/start.sh
 
 set -e
 set -u
