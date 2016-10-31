@@ -43,4 +43,4 @@ RUN git submodule update --init --recursive \
 
 EXPOSE 80
 
-CMD ["nginx", "-g", "server { listen 80; }; daemon off;"]
+CMD ["nginx", "-g", "daemon off;"]
