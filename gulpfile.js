@@ -82,7 +82,6 @@ const navConfig = {
 }
 
 let createDocsJSON = function (obj) {
-
   var newObj = {
     name: obj.type,
     path: obj.path
@@ -134,31 +133,30 @@ gulp.task('serve', ['build'], () => {
   })
 
   watch(['./src/**/*.jade', './src/*.md', './src/events.json'],
-    batch(function(events, done) { gulp.start("build-site", done) }))
+    batch(function (events, done) { gulp.start('build-site', done) }))
   watch(paths.blog.src,
-    batch(function(events, done) { gulp.start("build-blog", done) }))
+    batch(function (events, done) { gulp.start('build-blog', done) }))
   watch(paths.styles.src,
-    batch(function(events, done) { gulp.start("styles", done) }))
+    batch(function (events, done) { gulp.start('styles', done) }))
   watch(paths.js.src,
-    batch(function(events, done) { gulp.start("js-watch", done) }))
+    batch(function (events, done) { gulp.start('js-watch', done) }))
   watch(paths.assets.src,
-    batch(function(events, done) { gulp.start("copy", done) }))
+    batch(function (events, done) { gulp.start('copy', done) }))
   watch(['./layouts/**/*.*', './mixins/**/*.*', './includes/**/*.*'],
-    batch(function(events, done) {
+    batch(function (events, done) {
       gulp.start(['build-site', 'build-blog'], done)
     }))
 
-  docsVersions.forEach(function(version) {
-    watch(`./dcos-docs/${version}/**/*.md`, batch(function(events, done) {
+  docsVersions.forEach(function (version) {
+    watch(`./dcos-docs/${version}/**/*.md`, batch(function (events, done) {
       gulp.start(`build-docs-${version}`, done)
     }))
   })
 })
 
 gulp.task('test', ['serve'], () => {
-  process.exit(0);
+  process.exit(0)
 })
-
 
 function getDocsBuildTask (version) {
   const name = `build-docs-${version}`
@@ -193,7 +191,7 @@ function getDocsBuildTask (version) {
             pretty: true
           }))
           .use(reloadInMetalsmithPipeline)
-        )
+      )
       .pipe(gulp.dest(path.join(paths.build, 'docs', version)))
   })
 
@@ -291,7 +289,7 @@ gulp.task('build-blog', () => {
           directory: path.join('layouts')
         }))
         .use(reloadInMetalsmithPipeline)
-      )
+  )
     .pipe(gulp.dest(paths.build))
 })
 
@@ -323,7 +321,7 @@ gulp.task('build-site', () => {
           engine: 'jade',
           directory: path.join('layouts')
         })))
-        .use(reloadInMetalsmithPipeline)
+    .use(reloadInMetalsmithPipeline)
     .pipe(gulp.dest(paths.build))
 })
 
@@ -398,11 +396,10 @@ function addPropertiesToCollectionItems (collectionName, callback) {
 function addTimestampToMarkdownFiles (files, metalsmith, callback) {
   Object.keys(files).forEach(key => {
     if (key.split('.').pop() !== 'md') return
-    Object.assign(files[key], { cssTimestamp });
+    Object.assign(files[key], { cssTimestamp })
   })
   callback()
 }
-
 
 const filterPastEvents = eventsArr => {
   const today = moment()
