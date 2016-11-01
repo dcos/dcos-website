@@ -43,7 +43,7 @@ fi
 mkdir -p -m 777 "${REPORT_DIR}"
 
 # delete old reports
-rm "${REPORT_DIR}/linkchecker."*
+rm -f "${REPORT_DIR}/linkchecker."*
 
 eval "${DOCKER_INIT}"
 
