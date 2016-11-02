@@ -29,15 +29,14 @@ EXPOSE 80
 
 COPY  . /dcos-website
 
-RUN cd /dcos-website \
-  && ci/test.sh \
+RUN /dcos-website/ci/test.sh \
   && rm -rf /usr/share/nginx/html/* \
-  && cp -r build/* /usr/share/nginx/html/ \
+  && cp -r /dcos-website/build/* /usr/share/nginx/html/ \
   && ln -sf /usr/share/nginx/html/docs/1.8 /usr/share/nginx/html/docs/latest \
-  && ci/generate-nginx-conf.sh > /etc/nginx/conf.d/default.conf
+  && /dcos-website/ci/generate-nginx-conf.sh > /etc/nginx/conf.d/default.conf
 
 # rm in separate command to work around AUFS bug https://github.com/docker/docker/issues/783
-RUN rm -rf /dcos-website/*
+RUN rm -rf /dcos-website
 
 RUN apt-get remove -yf curl git xz-utils \
   && apt-get autoremove -yf \
