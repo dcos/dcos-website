@@ -48,3 +48,5 @@
 /docs/1.8/usage/tutorials/marathon/inline-update/index.html /docs/1.7/usage/tutorials/marathon/
 /docs/1.8/usage/tutorials/marathon/stateful-services/index.html /docs/1.7/usage/tutorials/marathon/stateful-services/
 /docs/1.8/usage/service-discovery/haproxy-adminrouter/index.html /docs/1.8/administration/haproxy-adminrouter/
+/docs/1.8/administration/user-management/index.html /docs/1.8/administration/id-and-access-mgt/user-management/
+/docs/1.9/administration/user-management/index.html /docs/1.9/administration/id-and-access-mgt/user-management/
