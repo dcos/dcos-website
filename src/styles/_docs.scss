@@ -192,9 +192,12 @@ ul > li > .nav-wrapper > .docs-nav__item__arrow {
   }
 
 
-  h1, h2, h3, p, pre {
-    margin: 2rem 0;
+  h3, p, pre {
+    margin: 1rem 0 0.5rem 0;
   }
+    h1, h2{
+      margin-top: 2rem;
+    }
 
   h4, h5 {
     margin: 1rem 0 0 0;
