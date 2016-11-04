@@ -379,58 +379,66 @@ gulp.task('s3-config', (done) => {
     .then(writeJson(paths.s3.config, {spaces: 4}))
 })
 
-gulp.task('nginx-config', (done) => {
+gulp.task('nginx-config', () => {
   const nginxConf = require('nginx-conf').NginxConfFile
   // create empty file or erase existing file
   fs.closeSync(fs.openSync(paths.nginx.config, 'w'))
   // convert nodeback function to return a Promise
   var createNginxConf = promisify(nginxConf.create)
   // write to existing file
-  return createNginxConf(paths.nginx.config).then((conf) => {
-    conf.nginx._add('server')
+  return createNginxConf(paths.nginx.config)
+    .then((conf) => {
+      conf.nginx._add('server')
 
-    conf.nginx.server._add('listen', '80')
-    conf.nginx.server._add('server_name', 'localhost')
+      conf.nginx.server._add('listen', '80')
+      conf.nginx.server._add('server_name', 'localhost')
 
-    conf.nginx.server._add('location', '/')
-    conf.nginx.server.location._add('root', '/usr/share/nginx/html')
+      conf.nginx.server._add('location', '/')
+      conf.nginx.server.location._add('root', '/usr/share/nginx/html')
 
-    // rewrite is slower than the default index method, but allows for making the directory canonical
-    //conf.nginx.server.location._add('index', 'index.html')
-    conf.nginx.server._add('rewrite', '^(.*)/index\.html$ $1/ redirect')
-    conf.nginx.server._add('rewrite', '^(.*)/$ $1/index.html')
+      // rewrite is slower than the default index method, but allows for making the directory canonical
+      //conf.nginx.server.location._add('index', 'index.html')
+      conf.nginx.server._add('rewrite', '^(.*)/index\.html$ $1/ redirect')
+      conf.nginx.server._add('rewrite', '^(.*)/$ $1/index.html')
 
-    conf.nginx.server._add('error_page', '404 /404/index.html')
-    conf.nginx.server._add('error_page', '500 502 503 504 /50x.html')
+      conf.nginx.server._add('error_page', '404 /404/index.html')
+      conf.nginx.server._add('error_page', '500 502 503 504 /50x.html')
 
-    conf.nginx.server._add('location', '= /50x.html')
-    conf.nginx.server.location.slice(-1)[0]._add('root', '/usr/share/nginx/html')
+      conf.nginx.server._add('location', '= /50x.html')
+      conf.nginx.server.location.slice(-1)[0]._add('root', '/usr/share/nginx/html')
 
-    readFileLines(paths.redirects.prefixes)
-      .then(parseRedirects)
-      .then((redirects) => {
-        var routingRules = []
-        for (let index = 0; index < redirects.length; ++index) {
-          var redirect = redirects[index]
-          // strip leading slash
-          var from = redirect.from.replace(/^\//, '')
-          var to = redirect.to.replace(/^\//, '')
-          // normalize WITH leading slash
-          conf.nginx.server._add('rewrite', '^/'+ from +'(.*) /' + to + '$1 redirect')
-        }
-      })
-
-    // Add a 301 for each redirect
-    return readFileLines(paths.redirects.files)
-      .then(parseRedirects)
-      .then((redirects) => {
-        for (let index = 0; index < redirects.length; ++index) {
-          var redirect = redirects[index]
-          conf.nginx.server._add('location', '= ' + redirect.from)
-          conf.nginx.server.location.slice(-1)[0]._add('return', '301 ' + redirect.to)
-        }
-      })
-  })
+      return conf
+    })
+    .then((conf) => {
+      // Add 301 prefix rewrite rules
+      return readFileLines(paths.redirects.prefixes)
+        .then(parseRedirects)
+        .then((redirects) => {
+          var routingRules = []
+          for (let index = 0; index < redirects.length; ++index) {
+            var redirect = redirects[index]
+            // strip leading slash
+            var from = redirect.from.replace(/^\//, '')
+            var to = redirect.to.replace(/^\//, '')
+            // normalize WITH leading slash
+            conf.nginx.server._add('rewrite', '^/'+ from +'(.*) /' + to + '$1 redirect')
+          }
+          return conf
+        })
+    })
+    .then((conf) => {
+      // Add 301 page redirects
+      return readFileLines(paths.redirects.files)
+        .then(parseRedirects)
+        .then((redirects) => {
+          for (let index = 0; index < redirects.length; ++index) {
+            var redirect = redirects[index]
+            conf.nginx.server._add('location', '= ' + redirect.from)
+            conf.nginx.server.location.slice(-1)[0]._add('return', '301 ' + redirect.to)
+          }
+        })
+        return conf
+    })
 })
 
 gulp.task('javascript', () => {
