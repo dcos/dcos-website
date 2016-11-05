@@ -30,6 +30,15 @@ For all of these releases, we will do our best to alert everyone about changes 2
 - EA: 12/15
 - GA: 1/30
 
+# Revised dates as of 11/05/2016
+
+The plan for pods included a lot of work, and because we’d like to focus on stability and maturity when cutting major releases we’ve decided to roll that work into into the planned 1.10 release, and call the combined release 1.9 instead.
+
+**New estimated dates are as follows**:
+- 1.9 release candidate - 12/15/2016
+- 1.9 general availability - 1/26/2017
+
+
 We would love for anyone interested to get involved in preliminary release testing! If you would like to participate just keep an eye on this mailing list. We’ll be sending out more details about it as our testing dates approach.
 
 Feel free to get in touch with questions! We're on the [users mailing list][list] and [slack][slack] all the time.
