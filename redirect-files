@@ -50,3 +50,7 @@
 /docs/1.8/usage/service-discovery/haproxy-adminrouter/index.html /docs/1.8/administration/haproxy-adminrouter/
 /docs/1.8/administration/user-management/index.html /docs/1.8/administration/id-and-access-mgt/user-management/
 /docs/1.9/administration/user-management/index.html /docs/1.9/administration/id-and-access-mgt/user-management/
+/docs/1.8/usage/service-discovery/marathon-lb/quickstart/index.html /docs/1.8/usage/service-discovery/marathon-lb/marathon-lb-basic-tutorial/
+/docs/1.9/usage/service-discovery/marathon-lb/quickstart/index.html /docs/1.9/usage/service-discovery/marathon-lb/marathon-lb-basic-tutorial/
+/docs/1.8/usage/service-discovery/marathon-lb/usage/index.html  /docs/1.8/usage/service-discovery/marathon-lb/marathon-lb-advanced-tutorial/
+/docs/1.9/usage/service-discovery/marathon-lb/usage/index.html  /docs/1.9/usage/service-discovery/marathon-lb/marathon-lb-advanced-tutorial/
