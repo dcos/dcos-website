@@ -39,6 +39,19 @@ table.releases {
 
 .release-channels .card {
   flex-direction: row;
+
+  a.card{
+    padding: 10px;
+    width: 110px;
+    height: 52px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+
+    img{
+      margin: 0 auto;
+    }
+  }
 }
 
 .release-channels .card .card-content {
@@ -46,7 +59,7 @@ table.releases {
   margin: 1rem;
   flex: 1;
   justify-content: flex-start;
-  padding-bottom: 15rem;
+  padding-bottom: 10rem;
 	align-self: flex-start;
 }
 

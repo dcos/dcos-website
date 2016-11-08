@@ -17,47 +17,41 @@ block content
             p.hero-list__item__copy__paragraph.release-copy Latest stable release. Ready for production use.
             a.cta.cta--text.release-notes(href='/releases/1.8.6/') Release Notes
             p.release-button-group
-              a.cta.cta--button.button--secondary.release-button(href='https://downloads.dcos.io/dcos/stable/dcos_generate_config.sh') Download
-              a.cta.cta--button.button--secondary.release-button(href='https://dcos.io/docs/1.8/administration/installing/cloud/aws/') AWS
-              a.cta.cta--button.button--secondary.release-button(href='https://dcos.io/docs/1.8/administration/installing/cloud/azure/') Azure
+              a.card(href='https://dcos.io/docs/1.8/administration/installing/cloud/aws/')
+                img(src='/assets/images/logos/install-platforms/aws.svg' width="77")
+              a.card(href='https://dcos.io/docs/1.8/administration/installing/cloud/azure/')
+                img(src='/assets/images/logos/install-platforms/azure.svg' width="77")
+              a.cta--text(href='https://downloads.dcos.io/dcos/stable/dcos_generate_config.sh') Direct Download
         .card.card--inactive
           .card-content
             h3 Early Access
             p.release-version DC/OS 1.9
             p.hero-list__item__copy__paragraph.release-copy Upcoming release. Ready for development and testing.
             p.release-button-group
-              a.cta.cta--button.button--inactive.release-button Coming Soon
+              a.cta.cta--button.button--inactive.release-button(style='margin-bottom: 0;') Coming Soon
         .card.card
           .card-content
             h3 Master
             p.release-version DC/OS master
             p.hero-list__item__copy__paragraph Bleeding edge automated release. Only tested with automated tests.
             p.release-button-group
-              a.cta.cta--button.button--secondary.release-button(href='https://downloads.dcos.io/dcos/testing/master/dcos_generate_config.sh') Download
-              a.cta.cta--button.button--secondary.release-button(href='https://downloads.dcos.io/dcos/testing/master/aws.html') AWS
-              a.cta.cta--button.button--secondary.release-button(href='https://downloads.dcos.io/dcos/testing/master/azure.html') Azure
+              a.card(href='https://downloads.dcos.io/dcos/testing/master/aws.html')
+                img(src='/assets/images/logos/install-platforms/aws.svg' width="77")
+              a.card(href='https://downloads.dcos.io/dcos/testing/master/azure.html')
+                img(src='/assets/images/logos/install-platforms/azure.svg' width="77")
+              a.cta--text(href='https://downloads.dcos.io/dcos/testing/master/dcos_generate_config.sh') Direct Download
       h2.heading-margin-bottom Older Releases
-        ul
-          li
-            a(href="/releases/1.8.5/") 1.8.5
-        ul
-          li
-            a(href="/releases/1.8.4/") 1.8.4
-        ul
-          li
-            a(href="/releases/1.8.3/") 1.8.3
-        ul
-          li
-            a(href="/releases/1.8.2/") 1.8.2
-        ul
-          li
-            a(href="/releases/1.8.1/") 1.8.1
-        ul
-          li
-            a(href="/releases/1.8.0/") 1.8.0
-        ul
-          li
-            a(href="/releases/1.7-open/") 1.7-open
+      .container
+        .container__content(style="padding-top: 0;")
+          .container__content--release-notes.docs-layout__docs-content
+            include:markdown 1.8.5/notes.md
+            include:markdown 1.8.4/notes.md
+            include:markdown 1.8.3/notes.md
+            include:markdown 1.8.2/notes.md
+            include:markdown 1.8.1/notes.md
+            include:markdown 1.8.0/notes.md
+            include:markdown 1.7-open/notes.md
+
   .container.container--dark-background
     .container__content
       h2 Install on any virtual or physical machines.

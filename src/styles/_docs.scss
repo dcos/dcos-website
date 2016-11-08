@@ -96,6 +96,28 @@
   margin: 0 0 0 1rem;
 }
 
+.docs-nav__item_folder{
+  position: relative;
+  padding-left: 20px;
+
+  &.docs-nav__item--closed{
+    .docs-nav__item__arrow{
+      background: url(/assets/images/icons/arrow-right-docs.svg) no-repeat 0 5px;
+    }
+  }
+}
+
+.docs-nav__item__arrow{
+  position: absolute;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: url(/assets/images/icons/arrow-down-docs.svg) no-repeat 0 5px;
+  margin: 0;
+}
+
 ul > li > .nav-wrapper > .docs-nav__item__arrow {
   margin: 0;
 }
@@ -119,19 +141,19 @@ ul > li > .nav-wrapper > .docs-nav__item__arrow {
 
   ul {
     ul {
-      margin-left: 30px;
+      margin-left: 0;
 
       .docs-nav__item_file .docs-nav__item__title::before {
         top: 5px;
       }
 
       .docs-nav__item {
-        line-height: 1.5;
+        line-height: 1.4;
         font-size: 0.9rem;
       }
 
       ul {
-        margin-left: 30px;
+        margin-left: 0;
       }
     }
   }
@@ -159,7 +181,7 @@ ul > li > .nav-wrapper > .docs-nav__item__arrow {
 }
 
 .docs-nav__item {
-  margin: 1rem 0;
+  margin: 0.75rem 0;
 }
 
 .docs-layout__docs-content {
@@ -195,8 +217,12 @@ ul > li > .nav-wrapper > .docs-nav__item__arrow {
     font-size: 0.9rem;
   }
 
-  h1, h2, h3, p, pre {
-    margin: 2rem 0;
+  h3, p, pre {
+    margin: 1rem 0 0.5rem 0;
+  }
+
+  h1, h2 {
+    margin-top: 2rem;
   }
 
   h4, h5 {
@@ -386,13 +412,12 @@ img.docs-content__footer__share-icon {
   background-repeat: no-repeat;
   width: 11px;
   height: 7px;
-  transition: all 0.5s;
 }
 
 .open-docs-menu.active .docs-menu-arrow {
   width: 11px;
   height: 7px;
-  transform: rotate(180deg);
+  //transform: rotate(180deg);
 }
 
 .docs-menu-mobile {
