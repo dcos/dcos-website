@@ -1,4 +1,5 @@
 .DS_Store
+dcos-docs/
 build
 npm-debug.log
 node_modules
