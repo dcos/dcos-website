@@ -98,7 +98,7 @@ The following diagram shows a sample scoring screen for a service deployment tha
 It is easy to perform timeline analysis on the metrics based on metric groups and time ranges/load ranges The following picture shows raw data and quantile graphs for a selected metric.
 
 
-<img src="/assets/images/blog/2016-11-10_opsmx_5.png" alt="OpsMx"/
+<img src="/assets/images/blog/2016-11-10_opsmx_5.png" alt="OpsMx"/>
 
 
 ## Conclusion
