@@ -17,8 +17,8 @@ block head
   meta(name='twitter:description', content='Based on the production proven Apache Mesos, combining years of  experience, and best practices of building and running modern applications in production.')
 
 block content
-  .container.container--dark-background.clearfix.px2.sm-pb0(style="display: block;")
-    .mx-auto.max-width-4
+  .container.container--dark-background.clearfix.sm-pb0(style="display: block;")
+    .mx-auto.max-width-4.px2
       +header(style="padding: 0;")
 
 
@@ -26,7 +26,7 @@ block content
     //- Wallop slider
     .Wallop.Wallop--fade.px0(style='min-height: 530px;')
       .Wallop-list.mx-auto.left-align
-        .Wallop-item.flex.flex-wrap.flex-auto.has-bg.md-py5.py2(style='background-image: url(/assets/images/illustrations/fast-data-header.svg); background-size: 1920px 720px; background-position: calc(50% - 10px) calc(50% + 65px); min-height: 530px;')
+        .Wallop-item.flex.flex-wrap.flex-auto.has-bg.md-py5.py2.px2(style='background-image: url(/assets/images/illustrations/fast-data-header.svg); background-size: 1920px 720px; background-position: calc(50% - 10px) calc(50% + 65px); min-height: 530px;')
           .max-width-4.mx-auto.flex.flex-wrap.flex-auto.items-center
             .sm-col-6.col-12.xs-center
               h1.hero-title
@@ -39,7 +39,7 @@ block content
             .sm-col-6.col-12.lg-hide
               +image('/assets/images/fast-data.png')
 
-        .Wallop-item.flex.flex-wrap.flex-auto.md-py5.py2
+        .Wallop-item.flex.flex-wrap.flex-auto.md-py5.py2.px2
           .max-width-4.mx-auto.flex.flex-wrap.flex-auto.items-center
             .sm-col-6.col-12.xs-center
               h1.hero-title
