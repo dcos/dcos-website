@@ -10,7 +10,7 @@ lunr: true
 ---
 
 
-This post describes how the OpsMx analytics platform, which applies machine learning to CI/CD pipelines, could run on DC/OS to automate canary analysis, which would enable improved rolling app updates. If you are interested in seeing this integration move forward, please reach out to ryadav@mesosphere.com or gopinath@opsmx.com. They would love to hear from you!
+This post describes how the OpsMx analytics platform, which applies machine learning to CI/CD pipelines, could run on DC/OS to automate canary analysis, enabling improved rolling app updates. If you are interested in seeing this integration move forward, please reach out to ryadav@mesosphere.com or gopinath@opsmx.com. They would love to hear from you!
 
 
 ## Automated canary analysis for rolling update deployments
@@ -31,13 +31,13 @@ Automated canary analysis scores the health of new deployments on the basis of p
 ## DC/OS rolling updates
 
 
-DC/OS (the datacenter operating system) makes enterprise apps easy to build, run, and scale. Not only does DC/OS elastically run the modern app, it also runs the services that modern apps rely on: containerized micro services and stateful data services. DC/OS enables application teams to easily scale and sustain a continuous integration and delivery model using common tools like Jenkins, as well as artifact repositories and source control tools.
+DC/OS (the datacenter operating system) makes enterprise apps easy to build, run, and scale. Not only does DC/OS elastically run the modern app, it also runs the services that modern apps rely on: containerized microservices and stateful data services. DC/OS enables application teams to easily scale and sustain a continuous integration and delivery model using common tools like Jenkins, as well as artifact repositories and source control tools.
 
 
 ## Canary analysis for rolling updates
 
 
-DC/OS supported rolling updates would use health checks of service instances to determine whether a new instance had launched successfully. Currently developers are responsible for manually checking that their services are functionally correct and ready for deployment. They  do this by testing it in staging or by using an integration test. However, production load can cause unexpected performance changes. Developers should also monitor the performance, resource utilization, and functionality of the new or updated services as they are deployed, because short-term resource utilization trends can indicate issues with long term deployments.  Monitoring these metrics manually is too cumbersome for modern deployments.
+DC/OS-supported rolling updates would use health checks of service instances to determine whether a new instance had launched successfully. Currently, developers are responsible for manually checking that their services are functionally correct and ready for deployment. They  do this by testing it in staging or by using an integration test. However, production load can cause unexpected performance changes. Developers should also monitor the performance, resource utilization, and functionality of the new or updated services as they are deployed because short-term resource utilization trends can indicate issues with long term deployments. Monitoring these metrics manually is too cumbersome for modern deployments.
 
 
 As the number of services and the velocity of delivery increase, the manual approach to testing new releases becomes insufficient. Canary analysis tests new deployments by running a new instance through a small percent of production traffic (1 to 5%) to  check for functionality, performance and reliability.
@@ -47,13 +47,13 @@ Canary analysis generates an aggregated score of the quality of a service. This 
 
 
 - Deciding whether to continue or roll back the latest deployment.
-- Predicting long term resource usage patterns for early warning.
+- Predicting long-term resource usage patterns for early warning.
 - Observing interactions between services.
 - Creating performance scores for diagnostics.
 - Deciding if a capacity change is needed for a new service.
 
 
-Automated canary analysis provides deep insight into resource usage patterns as well as service performance to reduce the risk of downtime, by warning operators before these parameters reach alert conditions. Cluster canary analysis provides insights into the performance of autoscaling groups of services.
+Automated canary analysis provides deep insight into resource usage patterns as well as service performance. This reduces the risk of downtime by warning operators before these parameters reach alert conditions. Cluster canary analysis provides insights into the performance of autoscaling groups of services.
 
 
 Automated canary analysis operates on the data collected from the system and service to analyze resource usage as well as other service context-specific data. The data collected is analyzed for dimension reduction, prioritized for performance impact, and normalized for service load to provide a filtered view of changes in resource usage and performance.
@@ -95,7 +95,7 @@ The following diagram shows a sample scoring screen for a service deployment tha
 <img src="/assets/images/blog/2016-11-10_opsmx_4.png" alt="OpsMx"/>
 
 
-It is easy to perform timeline analysis on the metrics based on metric groups and time ranges/load ranges The following picture shows raw data and quantile graphs for a selected metric.
+It is easy to perform timeline analysis on the metrics based on metric groups and time ranges/load ranges. The following picture shows raw data and quantile graphs for a selected metric.
 
 
 <img src="/assets/images/blog/2016-11-10_opsmx_5.png" alt="OpsMx"/>
@@ -104,4 +104,4 @@ It is easy to perform timeline analysis on the metrics based on metric groups an
 ## Conclusion
 
 
-Continuous delivery and deployments at scale and velocity require new techniques to ensure the quality of production deployments. OpsMx-supported canary analysis provides automated scoring based on deep analysis of the service and cluster to help inform promotion and rollback decisions. Visualization of the results of the canary analysis make it easier to diagnose and reach root cause decisions faster. Developers can feed insights from previous deployments back into OpsMx analysis, further its increasing scoring accuracy.
+Continuous delivery and deployments at scale and velocity require new techniques to ensure the quality of production deployments. OpsMx-supported canary analysis provides automated scoring based on deep analysis of the service and cluster to help inform promotion and rollback decisions. Visualization of the results of the canary analysis makes it easier to diagnose and reach root cause decisions faster. Developers can feed insights from previous deployments back into OpsMx analysis, further its increasing scoring accuracy.
