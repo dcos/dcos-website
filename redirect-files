@@ -54,4 +54,4 @@
 /docs/1.9/administration/user-management/index.html /docs/1.9/administration/id-and-access-mgt/user-management/
 /docs/1.8/usage/service-discovery/marathon-lb/quickstart/index.html /docs/1.8/usage/service-discovery/marathon-lb/marathon-lb-basic-tutorial/
 /docs/1.9/usage/service-discovery/marathon-lb/quickstart/index.html /docs/1.9/usage/service-discovery/marathon-lb/marathon-lb-basic-tutorial/
-/docs/1.8/usage/registry.html https://github.com/dcos/examples/tree/master/1.8/registry
+/docs/1.8/usage/registry/index.html https://github.com/dcos/examples/tree/master/1.8/registry
