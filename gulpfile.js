@@ -120,13 +120,7 @@ const navSettings = {
 
 let nav = navigation(navConfig, navSettings)
 
-//
-// Gulp tasks
-//
-
-gulp.task('build', ['build-site', ...docsVersions.map(getDocsBuildTask), 'build-blog', ...docsVersions.map(getDocsCopyTask), 'copy', 'browserify', 'styles', 'nginx-config', 's3-config'])
-
-gulp.task('serve', ['build'], () => {
+const serveTask = () => {
   return readFileLines(paths.redirects.prefixes)
     .then(parseRedirects)
     .then((redirects) => {
@@ -180,7 +174,21 @@ gulp.task('serve', ['build'], () => {
         }))
       })
     })
-})
+}
+
+//
+// Gulp tasks
+//
+
+const sharedDocsSiteTasks = ['copy', 'browserify', 'styles', 'nginx-config', 's3-config']
+
+gulp.task('build', ['build-site', 'build-docs'])
+gulp.task('build-site', ['build-site-templates', 'build-blog-templates', ...sharedDocsSiteTasks])
+gulp.task('build-docs', [...docsVersions.map(getDocsBuildTask), ...docsVersions.map(getDocsCopyTask), ...sharedDocsSiteTasks])
+
+gulp.task('serve', ['build'], serveTask)
+gulp.task('serve-site', ['build-site'], serveTask)
+gulp.task('serve-docs', ['build-docs'], serveTask)
 
 gulp.task('test', ['serve'], () => {
   process.exit(0)
@@ -237,7 +245,7 @@ function getDocsCopyTask (version) {
   return name
 }
 
-gulp.task('build-blog', () => {
+gulp.task('build-blog-templates', () => {
   return gulp.src(paths.blog.src)
     .pipe($.frontMatter().on('data', file => {
       Object.assign(file, file.frontMatter)
@@ -321,7 +329,7 @@ gulp.task('build-blog', () => {
     .pipe(gulp.dest(paths.build))
 })
 
-gulp.task('build-site', () => {
+gulp.task('build-site-templates', () => {
   return gulp.src(['src/*.jade', 'src/**/*.jade', 'src/*.md'])
     .pipe($.frontMatter().on('data', file => {
       Object.assign(file, file.frontMatter)
@@ -445,7 +453,6 @@ gulp.task('nginx-config', () => {
 })
 
 gulp.task('browserify', () => {
-
   const browserifyThis = (() => {
     let bundler = browserify({
       cache: {}, packageCache: {}, fullPaths: true,
@@ -473,8 +480,6 @@ gulp.task('browserify', () => {
 
     return bundle();
   })();
-
-
 });
 
 gulp.task('js-watch', ['browserify'])
