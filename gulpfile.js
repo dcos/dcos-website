@@ -6,7 +6,6 @@ const jade = require('metalsmith-jade')
 const markdown = require('metalsmith-markdown')
 const layouts = require('metalsmith-layouts')
 const permalinks = require('metalsmith-permalinks')
-const bourbon = require('node-bourbon')
 const path = require('path')
 const autoprefixer = require('autoprefixer')
 const each = require('metalsmith-each')
@@ -496,7 +495,7 @@ gulp.task('styles', () => {
       includePaths: [
         '/node_modules/',
         path.join(__dirname, 'node_modules/support-for/sass')
-      ].concat(bourbon.includePaths)
+      ]
     }).on('error', $.sass.logError))
     .pipe($.postcss(processors))
     .pipe($.if(isProd(), $.cleanCss()))
