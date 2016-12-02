@@ -153,18 +153,18 @@ const serveTask = () => {
       })
 
       watch(['./src/*.jade', './src/**/*.jade', './src/*.md', './src/events.json', './src/scripts/*.js'],
-        batch(function (events, done) { gulp.start('build-site', done) }))
+        batch(function (events, done) { gulp.start('build-site-templates', done) }))
       watch(paths.blog.src,
-        batch(function (events, done) { gulp.start('build-blog', done) }))
+        batch(function (events, done) { gulp.start('build-blog-templates', done) }))
       watch(paths.styles.src,
         batch(function (events, done) { gulp.start('styles', done) }))
       watch(paths.js.src,
-        batch(function (events, done) { gulp.start('js-watch', done) }))
+        batch(function (events, done) { gulp.start('browserify', done) }))
       watch(paths.assets.src,
         batch(function (events, done) { gulp.start('copy', done) }))
       watch(['./layouts/**/*.*', './mixins/**/*.*', './includes/**/*.*'],
         batch(function (events, done) {
-          gulp.start(['build-site', 'build-blog'], done)
+          gulp.start(['build-site-templates', 'build-blog-templates'], done)
         }))
 
       docsVersions.forEach(function (version) {
@@ -330,6 +330,7 @@ gulp.task('build-blog-templates', () => {
 
 gulp.task('build-site-templates', () => {
   return gulp.src(['src/*.jade', 'src/**/*.jade', 'src/*.md'])
+    .pipe($.changed(paths.build, { extension: '.html' }))
     .pipe($.frontMatter().on('data', file => {
       Object.assign(file, file.frontMatter)
       delete file.frontMatter
@@ -480,8 +481,6 @@ gulp.task('browserify', () => {
     return bundle();
   })();
 });
-
-gulp.task('js-watch', ['browserify'])
 
 // TODO: minify in production
 gulp.task('styles', () => {
