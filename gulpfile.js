@@ -65,6 +65,10 @@ const paths = {
   s3: {
     config: './s3-config.json'
   },
+  yaml: {
+  	src: './dcos-docs/**/*.yaml',
+  	dest: './build/docs'
+  },
   redirects: {
     files: './redirect-files',
     prefixes: './redirect-prefixes'
@@ -185,7 +189,7 @@ const sharedDocsSiteTasks = ['copy', 'browserify', 'styles', 'nginx-config', 's3
 
 gulp.task('build', ['build-site', 'build-docs'])
 gulp.task('build-site', ['build-site-templates', 'build-blog-templates', ...sharedDocsSiteTasks])
-gulp.task('build-docs', [...docsVersions.map(getDocsBuildTask), ...docsVersions.map(getDocsCopyTask), ...sharedDocsSiteTasks])
+gulp.task('build-docs', [...docsVersions.map(getDocsBuildTask), ...docsVersions.map(getDocsCopyTask), ...sharedDocsSiteTasks, 'swagger-yaml'])
 
 gulp.task('serve', ['build'], serveTask)
 gulp.task('serve-site', ['build-site'], serveTask)
@@ -246,6 +250,11 @@ function getDocsCopyTask (version) {
 
   return name
 }
+
+gulp.task('swagger-yaml', () => {
+	gulp.src(paths.yaml.src)
+		.pipe(gulp.dest(paths.yaml.dest))
+})
 
 gulp.task('build-blog-templates', () => {
   return gulp.src(paths.blog.src)

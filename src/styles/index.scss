@@ -59,16 +59,14 @@
 @import './wallop/wallop--slide';
 @import './wallop/wallop--vertical-slide';
 
-// Basscss add-ons
-@import '../../node_modules/basscss-sass/scss/responsive-padding';
-@import '../../node_modules/basscss-sass/scss/responsive-margin';
-@import './basscss-addons/responsive-layout';
+// Swagger
+@import './swagger-ui/screen';
 
 .bg-gray {
   background-color: $snow;
 }
 
-.btn {
+.btn, input[type=submit] {
   outline: 0;
   cursor: pointer;
   font-weight: 500;
@@ -76,9 +74,10 @@
   border-radius: .25rem;
   transition: all .1s ease-in-out;
   -webkit-font-smoothing: antialiased;
+  border: 0;
 }
 
-.btn-primary {
+.btn-primary, input[type=submit] {
   background-color: $heliotrope;
   color: #FFF;
 

@@ -99,6 +99,7 @@
     "hammerjs": "^2.0.8",
     "metalsmith-uglify": "^1.2.1",
     "spinkit": "^1.2.5",
+    "swagger-ui-browserify": "^2.2.3-a",
     "wallop": "^2.4.1"
   }
 }

@@ -12,6 +12,7 @@ require('./quotes-carousel.js')
 require('./smooth-scroll.js')
 require('./stackdiagram.js')
 require('./typer.js')
+require('swagger-ui-browserify')
 
 import Wallop from 'wallop';
 import Hammer from 'hammerjs';
@@ -146,3 +147,17 @@ $('#docs-content h2, #docs-content h3, #docs-content h4, #docs-content h5, #docs
   var hashURL = $(this).attr('id')
   $(this).wrapInner('<a href="#' + hashURL + '"></a>')
 });
+
+/****************
+  SwaggerUI
+****************/
+$(document).ready(function() {
+  var yamlFile = $('[data-api]').data('api');
+
+  var swaggerUi = new SwaggerUi({
+    url: yamlFile,
+    dom_id: 'swagger-ui-container'
+  });
+
+  swaggerUi.load();
+})
