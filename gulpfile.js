@@ -39,6 +39,8 @@ const buffer = require('vinyl-buffer')
 //
 
 const docsVersions = ['1.7', '1.8', '1.9']
+const currentDevVersion = '1.9'
+
 const cssTimestamp = new Date().getTime()
 const paths = {
   build: './build',
@@ -205,7 +207,7 @@ function getDocsBuildTask (version) {
       }))
       .pipe(
         gulpsmith()
-          .metadata({ docsVersion: version, docsVersions })
+          .metadata({ docsVersion: version, docsVersions, currentDevVersion })
           .use(addTimestampToMarkdownFiles)
           .use(markdown({
             smartypants: true,
@@ -221,7 +223,7 @@ function getDocsBuildTask (version) {
           }))
           .use(each(updatePaths))
           .use(jade({
-            locals: { cssTimestamp, docsVersions },
+            locals: { cssTimestamp, docsVersions, currentDevVersion },
             useMetadata: true,
             pretty: true
           }))

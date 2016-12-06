@@ -125,7 +125,7 @@ html
             select(name="docs-version").docs-version-select.dropdown#docs-version-select Select version
               each version in docsVersionsReversed
                 //- empty string will add the `selected` attribute, `undefined` will _not_ add the selected attribute
-                option(selected=(version === docsVersion ? "" : undefined), value="#{version}") DC/OS #{version}
+                option(selected=(version === docsVersion ? "" : undefined), value="#{version}") DC/OS #{(version === currentDevVersion ? `${version} Development` : version)}
 
             +renderMenu(locals.navs.header).docs-menu
 

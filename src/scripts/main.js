@@ -16,6 +16,9 @@ require('./typer.js')
 import Wallop from 'wallop';
 import Hammer from 'hammerjs';
 
+const compareVersions = require('compare-versions');
+window.compareVersions = compareVersions;
+
 // Mobile menu
 $('#nav-icon').on('click', function (e) {
   e.preventDefault();
