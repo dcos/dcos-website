@@ -1,33 +1,21 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="42px" height="38px" viewBox="0 0 42 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 3.7 (28169) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 2</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <path d="M34.6955399,10.8494237 C38.8042444,11.2970732 42,14.7306637 42,18.9 C42,23.3735065 38.3209486,27 33.7826087,27 L9.13043478,27 C4.08783489,27 0,22.9705627 0,18 C0,13.6311747 3.15799608,9.98940186 7.34659663,9.17168188 C7.71286626,6.03536305 10.4157326,3.6 13.6956522,3.6 C14.277782,3.6 14.8417345,3.67671442 15.3776726,3.82044663 C17.3874438,1.48338824 20.3875446,0 23.7391304,0 C29.7902503,0 34.6956522,4.8353247 34.6956522,10.8 C34.6956522,10.8164832 34.6956147,10.8329578 34.6955399,10.8494237 Z" id="path-1"></path>
-        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="42" height="27" fill="white">
-            <use xlink:href="#path-1"></use>
-        </mask>
-        <rect id="path-3" x="18" y="21" width="1" height="10" rx="1"></rect>
-        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="1" height="10" fill="white">
-            <use xlink:href="#path-3"></use>
-        </mask>
-        <rect id="path-5" x="23" y="21" width="1" height="10" rx="1"></rect>
-        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="1" height="10" fill="white">
-            <use xlink:href="#path-5"></use>
-        </mask>
-    </defs>
-    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.6">
-        <g id="Install-DCOS" transform="translate(-534.000000, -44.000000)">
-            <g id="Group-2" transform="translate(534.000000, 44.000000)">
-                <use id="Combined-Shape" stroke="#9351E5" mask="url(#mask-2)" stroke-width="4" xlink:href="#path-1"></use>
-                <circle id="Oval-72" fill="#FFFFFF" cx="21" cy="26" r="12"></circle>
-                <path d="M21,36 C26.5228475,36 31,31.5228475 31,26 C31,20.4771525 26.5228475,16 21,16 C15.4771525,16 11,20.4771525 11,26 C11,31.5228475 15.4771525,36 21,36 Z M21,34 C25.418278,34 29,30.418278 29,26 C29,21.581722 25.418278,18 21,18 C16.581722,18 13,21.581722 13,26 C13,30.418278 16.581722,34 21,34 Z" id="Combined-Shape" fill="#9351E5"></path>
-                <rect id="Rectangle-236" fill="#9351E5" x="17" y="27" width="3" height="2" rx="2"></rect>
-                <rect id="Rectangle-236-Copy" fill="#9351E5" x="22" y="24" width="3" height="2" rx="2"></rect>
-                <use id="Rectangle-234" stroke="#9351E5" mask="url(#mask-4)" stroke-width="2" xlink:href="#path-3"></use>
-                <use id="Rectangle-234" stroke="#9351E5" mask="url(#mask-6)" stroke-width="2" xlink:href="#path-5"></use>
-            </g>
-        </g>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="38" viewBox="0 0 42 38" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <rect id="a" width="1" height="10" x="17" y="20" rx=".5"/>
+    <mask id="c" width="1" height="10" x="0" y="0" fill="white">
+      <use xlink:href="#a"/>
+    </mask>
+    <rect id="b" width="1" height="10" x="22" y="20" rx=".5"/>
+    <mask id="d" width="1" height="10" x="0" y="0" fill="white">
+      <use xlink:href="#b"/>
+    </mask>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(1 1)" opacity=".6">
+    <path stroke="#9351E5" stroke-width="2" d="M33.0433713,10.0457627 C36.9564232,10.460253 40,13.6395034 40,17.5 C40,21.6421356 36.4961415,25 32.173913,25 L8.69565217,25 C3.89317609,25 0,21.2690396 0,16.6666667 C0,12.6214591 3.00761368,9.24944801 6.99675543,8.49229866 C7.34558692,5.58829912 9.91974538,3.33333333 13.0434783,3.33333333 C13.5978876,3.33333333 14.1349852,3.40436521 14.6454025,3.53745059 C16.5594703,1.37350763 19.4167091,0 22.6086957,0 C28.371667,0 33.0434783,4.4771525 33.0434783,10 C33.0434783,10.0152622 33.0434426,10.0305165 33.0433713,10.0457627 Z"/>
+    <circle cx="20" cy="25" r="12" fill="#FFFFFF"/>
+    <path fill="#9351E5" d="M20,35 C25.5228475,35 30,30.5228475 30,25 C30,19.4771525 25.5228475,15 20,15 C14.4771525,15 10,19.4771525 10,25 C10,30.5228475 14.4771525,35 20,35 Z M20,33 C24.418278,33 28,29.418278 28,25 C28,20.581722 24.418278,17 20,17 C15.581722,17 12,20.581722 12,25 C12,29.418278 15.581722,33 20,33 Z"/>
+    <rect width="3" height="2" x="16" y="26" fill="#9351E5" rx="1"/>
+    <rect width="3" height="2" x="21" y="23" fill="#9351E5" rx="1"/>
+    <use stroke="#9351E5" stroke-width="2" mask="url(#c)" xlink:href="#a"/>
+    <use stroke="#9351E5" stroke-width="2" mask="url(#d)" xlink:href="#b"/>
+  </g>
 </svg>

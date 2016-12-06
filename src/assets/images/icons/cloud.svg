@@ -1,19 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="42px" height="27px" viewBox="0 0 42 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 3.7 (28169) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 2</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <path d="M33.7826087,27 L9.13043478,27 C4.08783489,27 0,22.9705627 0,18 C0,13.6311747 3.15799608,9.98940186 7.34659663,9.17168188 C7.71286626,6.03536305 10.4157326,3.6 13.6956522,3.6 C14.277782,3.6 14.8417345,3.67671442 15.3776726,3.82044663 C17.3874438,1.48338824 20.3875446,0 23.7391304,0 C29.7902503,0 34.6956522,4.8353247 34.6956522,10.8 C34.6956522,10.8164832 34.6956147,10.8329578 34.6955399,10.8494237 C38.8042444,11.2970732 42,14.7306637 42,18.9 C42,23.3735065 38.3209486,27 33.7826087,27 Z" id="path-1"></path>
-        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="42" height="27" fill="white">
-            <use xlink:href="#path-1"></use>
-        </mask>
-    </defs>
-    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.6">
-        <g id="Install-DCOS" transform="translate(-333.000000, -50.000000)" stroke="#9351E5" stroke-width="4">
-            <g id="Group-2" transform="translate(333.000000, 50.000000)">
-                <use id="Combined-Shape" mask="url(#mask-2)" xlink:href="#path-1"></use>
-            </g>
-        </g>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="27" viewBox="0 0 42 27">
+  <path fill="none" stroke="#9351E5" stroke-width="2" d="M32.173913,25 L8.69565217,25 C3.89317609,25 0,21.2690396 0,16.6666667 C0,12.6214591 3.00761368,9.24944801 6.99675543,8.49229866 C7.34558692,5.58829912 9.91974538,3.33333333 13.0434783,3.33333333 C13.5978876,3.33333333 14.1349852,3.40436521 14.6454025,3.53745059 C16.5594703,1.37350763 19.4167091,0 22.6086957,0 C28.371667,0 33.0434783,4.4771525 33.0434783,10 C33.0434783,10.0152622 33.0434426,10.0305165 33.0433713,10.0457627 C36.9564232,10.460253 40,13.6395034 40,17.5 C40,21.6421356 36.4961415,25 32.173913,25 Z" transform="translate(1 1)" opacity=".6"/>
 </svg>
