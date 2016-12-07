@@ -18,24 +18,25 @@ button.dropdown {
   -webkit-appearance: none;
   border: 0;
   transition: 0.1s;
-  //margin: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0;
   background-color: transparent;
   outline: 0;
 
   > a {
-    color: #FFFFFF;
     margin: 0;
     padding: 0.8rem 0 0.8rem 0.75rem;
     border-radius: 3px;
-    background-color: $heliotrope;
-    background-image: url('/assets/images/icons/arrow-down-docs-unselected-white.svg');
+    background-image: url('/assets/images/icons/arrow-down-docs-unselected.svg');
     background-repeat: no-repeat;
     background-position: right 0.6rem center;
+    background-color: $light-gray;
 
-    &.no-arrow{
+    &.no-arrow {
       background-image: none;
+    }
+
+    &.light-arrow {
+      background-image: url('/assets/images/icons/arrow-down-docs-unselected-white.svg');
     }
   }
 
@@ -44,8 +45,9 @@ button.dropdown {
     visibility: hidden;
     opacity: 0;
     top: 2.6rem;
-    left: 5px; right: 5px;
+    left: 0; right: 0;
     transition: opacity .1s ease-in-out, visibility .1s ease-in-out, top .1s ease-in-out;
+    z-index: 999;
 
     margin-top: 0.5rem;
     background-color: #ffffff;
@@ -64,8 +66,10 @@ button.dropdown {
         display: block;
         margin: 0;
         padding: 0.8rem 0 0.8rem 0.75rem;
+        opacity: 1;
+        font-weight: normal;
 
-        &:hover{
+        &:hover {
           background-color: $snow;
         }
       }

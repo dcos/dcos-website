@@ -122,10 +122,11 @@ html
             .docs-search
               input(type='search').docs-search__input
 
-            select(name="docs-version").docs-version-select.dropdown#docs-version-select Select version
-              each version in docsVersionsReversed
-                //- empty string will add the `selected` attribute, `undefined` will _not_ add the selected attribute
-                option(selected=(version === docsVersion ? "" : undefined), value="#{version}") DC/OS #{(version === currentDevVersion ? `${version} Development` : version)}
+            button.dropdown.z-500.relative.mb2.left-align(style='width: calc(100% - 30px);')
+                a.btn.mb0.block DC/OS #{(docsVersion === currentDevVersion ? `${docsVersion} Development` : docsVersion)}
+                ul
+                  each version in docsVersionsReversed
+                    li: a(href='/docs/#{version}', class=(version === docsVersion ? "text-heliotrope current" : undefined)) DC/OS #{(version === currentDevVersion ? `${version} Development` : version)}
 
             +renderMenu(locals.navs.header).docs-menu
 
