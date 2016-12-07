@@ -170,7 +170,7 @@ const serveTask = () => {
         }))
 
       docsVersions.forEach(function (version) {
-        watch(`./dcos-docs/${version}/**/*.md`, batch(function (events, done) {
+        watch([`./dcos-docs/${version}/**/*.md`], batch(function (events, done) {
           gulp.start(`build-docs-${version}`, done)
         }))
       })
