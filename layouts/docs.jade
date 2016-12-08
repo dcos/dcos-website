@@ -26,6 +26,15 @@ include ../mixins/head.jade
   }
 
   var isValidChild = function  (child) {
+
+    if (child.type === 'file' && (child.file.published == false)) {
+      return false
+    }
+
+    if (child.type === 'dir' && (child.children.every(child => child.type === 'file' && (child.file.published == false)))) {
+      return false
+    }
+
     return (((child.type === 'file' && (child.file.nav_tile !== undefined || child.file.post_title !== undefined)) || (child.type === 'dir' && child.name !== 'img')) && child.name !== 'index.html')
   }
 
