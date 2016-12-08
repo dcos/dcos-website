@@ -1,7 +1,7 @@
 ---
 title: Monitor containers on DC/OS with Operations Management Suite Container Solution
-date: 2016-11-16
-author: Keiko Harada
+date: 2016-12-08
+author: Keiko Harada (Microsoft)
 category: universe
 description: How to monitor containers with the Operations Management Suite Container solution, on DC/OS.
 layout: article.jade
@@ -25,17 +25,11 @@ When you install msoms, a containerized instance of OMS Agent for Linux gets ins
 ## OMS Container Solution features
 
 * Centralize and correlate millions of logs from Docker containers at scale using journald
-
 * See real-time information about Container status, image, image tag, and affinity
-
     * Container Lifecycle view, which shows container creation, start, and finish
-
 * Quickly diagnose "noisy neighbor" containers that can cause problems on container hosts
-
 * Retrieve, visualize, and monitor CPU, memory, storage, and network usage with 10-second real-time performance metrics
-
     * Container Computer and Memory Usage view
-
 * View detailed and secure audit trail of all Docker actions on Container hosts
 
 <img src="/assets/images/blog/2016-12-08-image_3.png" alt="Packages in the DC/OS Universe" />
@@ -53,11 +47,8 @@ You can use your own Azure subscription or try a [free subscription for Microsof
 There are a few different routes to give feedback:
 
 * **UserVoic**: Post ideas for new OMS features to work on. Visit the [OMS UserVoice page](http://feedback.azure.com/forums/267889-azure-operational-insights).
-
 * **OMS Forums**: Good general discussion of OMS. Visit the [OMS Forums](https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=opinsights).
-
 * **Email**: OMScontainers@microsoft.com Tell us whatever is on your mind.
-
 * **Survey**: [Take a survey](https://www.surveymonkey.com/r/6G6RCBG).
 
 Your feedback is important. If you see any features you would like that are not here, please let us know. I invite you to follow me on [Twitter](https://twitter.com/scriptingguys) and the [Microsoft OMS Facebook site](https://www.facebook.com/groups/MicrosoftOMS/). If you want to learn more about Container Solution and OMS, visit the [Hey, Scripting Guy! Blog](http://blogs.technet.com/b/heyscriptingguy/).
