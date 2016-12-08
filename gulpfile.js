@@ -205,6 +205,7 @@ function getDocsBuildTask (version) {
         Object.assign(file, file.frontMatter)
         delete file.frontMatter
       }))
+      .pipe($.ignore(file => (file.published == false)))
       .pipe(
         gulpsmith()
           .metadata({ docsVersion: version, docsVersions, currentDevVersion })
