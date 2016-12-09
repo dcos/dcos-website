@@ -3,14 +3,11 @@
 .swagger-ui-wrap {
 
     line-height: 1;
-    font-family: "Droid Sans", sans-serif;
-    min-width: 760px;
-    max-width: 960px;
+    min-width: 100%;
     margin-left: auto;
     margin-right: auto;
 
     b, strong {
-        font-family: "Droid Sans", sans-serif;
         font-weight: bold;
     }
 
@@ -408,7 +405,7 @@
 
     h2 {
         color: black;
-        font-size: 1.3em;
+        font-size: 1.1em;
         padding: 10px 0 10px 0;
         a {
             color: black;
@@ -575,7 +572,7 @@
                     display: block;
                     clear: none;
                     float: right;
-                    margin: 14px 10px 0 0;
+                    margin: 14px 0 0 0;
                     li {
                         float: left;
                         clear: none;
@@ -701,20 +698,21 @@
                                     overflow: hidden;
                                     padding: 0;
                                     display: block;
-                                    clear: none;
-                                    float: right;
-                                    margin: 6px 10px 0 0;
+                                    clear: both;
+                                    float: none;
+                                    margin: 0 10px 0 0;
                                     li {
                                         float: left;
                                         clear: none;
                                         margin: 0;
-                                        padding: 2px 10px;
+                                        padding: 0 10px 0 0;
                                         font-size: 0.9em;
                                         a {
                                             text-decoration: none;
                                             .markdown p {
                                                 color: inherit;
                                                 padding: 0;
+                                                margin-top: 0;
                                                 line-height: inherit;
                                             }
                                         }

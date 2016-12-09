@@ -3,6 +3,8 @@
 @import 'auth';
 
 .swagger-section {
+  min-width: 100%;
+  display: block;
 
   .access { float: right; }
 
@@ -162,10 +164,16 @@
     outline-color: #cc0000;
     background-color: #f2dede;
   }
+
+  .container {
+    all: unset;
+    display: block;
+  }
+
+  .http_method a.toggleOperation {
+    color: #FFF !important;
+  }
+
 }
-
-
-
-
 
 
