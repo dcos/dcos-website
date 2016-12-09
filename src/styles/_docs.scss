@@ -329,6 +329,12 @@ ul > li > .nav-wrapper > .docs-nav__item__arrow {
   }
 }
 
+#docs-content{
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
+    color: $black;
+  }
+}
+
 .docs-content__footer {
   display: none;
   flex-flow: row nowrap;
