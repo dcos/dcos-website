@@ -10,7 +10,7 @@ lunr: true
 ---
 # Monitor containers on DC/OS with Microsoft's Operations Management Suite Container Solution
 
-Monitoring Docker containers can be challenging because containers can be created or destroyed at any time. The more containers you have, the more challenging monitoring becomes. Microsoft's [Operations Management Suite (OMS) Container Solution](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-containers) helps users view their container inventory, performance, and logs, and to troubleshoot their containers. OMS Container Solution has been so well received that Microsoft is making its monitoring capabilities available for DC/OS clusters (regardless of the provider), as part of the Mesosphere Universe.
+Monitoring Docker containers can be challenging because containers can be created or destroyed at any time. The more containers you have, the more challenging monitoring becomes. Microsoft's [Operations Management Suite (OMS) Container Solution](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-containers) helps users view their container inventory, performance, and logs, and to troubleshoot their containers. OMS Container Solution has been so well-received that Microsoft is making its monitoring capabilities available for DC/OS clusters (regardless of the provider), as part of the Mesosphere Universe.
 
 OMS Container Solution allows users to monitor all their Docker containers through a web interface, providing them with container performance metrics, log analysis, container image inventories, and events.
 
@@ -25,7 +25,7 @@ When you install msoms, a containerized instance of OMS Agent for Linux gets ins
 ## OMS Container Solution features
 
 * Centralize and correlate millions of logs from Docker containers at scale using journald
-* See real-time information about Container status, image, image tag, and affinity
+* See real-time information about container status, image, image tag, and affinity
     * Container Lifecycle view, which shows container creation, start, and finish
 * Quickly diagnose "noisy neighbor" containers that can cause problems on container hosts
 * Retrieve, visualize, and monitor CPU, memory, storage, and network usage with 10-second real-time performance metrics
@@ -46,7 +46,7 @@ You can use your own Azure subscription or try a [free subscription for Microsof
 
 There are a few different routes to give feedback:
 
-* **UserVoic**: Post ideas for new OMS features to work on. Visit the [OMS UserVoice page](http://feedback.azure.com/forums/267889-azure-operational-insights).
+* **UserVoic**: Post ideas for new OMS features to work on. Visit the [OMS UserVoice page](https://feedback.azure.com/forums/267889-azure-operational-insights).
 * **OMS Forums**: Good general discussion of OMS. Visit the [OMS Forums](https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=opinsights).
 * **Email**: OMScontainers@microsoft.com Tell us whatever is on your mind.
 * **Survey**: [Take a survey](https://www.surveymonkey.com/r/6G6RCBG).
