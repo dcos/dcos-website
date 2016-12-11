@@ -44,16 +44,16 @@ The [Universe](https://github.com/mesosphere/universe) is a DC/OS package reposi
 - [First Package](#first-package)
 - [Clone the universe](#clone-the-universe)
 - [Create the folder structure](#create-the-folder-structure)
-  - [Create the marathon.json.mustache and config.json](#create-the-marathon.json.mustache-and-config.json)
-  - [resources.json](#resources.json)
-  - [package.json](#package.json)
+  - [Create the `marathon.json.mustache` and `config.json`](#create-the-marathon.json.mustache-and-config.json)
+  - [`resources.json`](#resourcesjson)
+  - [`package.json`](#packagejson)
 - [Adding Webui](#adding-webui)
 - [Build and deploy a local Universe Server](#build-and-deploy-a-local-universe-server)
   - [Validate and build the Universe](#validate-and-build-the-universe)
   - [Build the Universe server Docker image](#build-the-universe-server-docker-image)
     - [Deploy the universe server on your cluster](#deploy-the-universe-server-on-your-cluster)
     - [Install Neo4j package](#install-neo4j-package)
-    - [Pitfalls with Neo4J UI](#pitfalls-with-neo4J-uI)
+    - [Pitfalls with Neo4j Dashboard](#pitfalls-with-neo4j-dashboard)
 - [So Long, and Thanks for All the Introduction](#so-long-and-thanks-for-all-the-introduction)
 
 # Warning and Prerequisites
@@ -61,17 +61,19 @@ The [Universe](https://github.com/mesosphere/universe) is a DC/OS package reposi
 
 
 In order to get started you should have:
-- A running DC/OS 1.8 cluster.
+- A running DC/OS 1.8+ cluster.
 - [DC/OS CLI](https://dcos.io/docs/1.8/usage/cli/install/) installed and configured.
 - Your [towel](https://en.wikipedia.org/wiki/Technology_in_The_Hitchhiker%27s_Guide_to_the_Galaxy#Towels) close by.
 
 ## First Package
 
-Arthur currently uses a graph database to map out all the places he has visited in the universe. He has deployed a single [Neo4j](https://neo4j.com) container on his interstellar DC/OS cluster (the challenges of such cross-galaxy DC/OS clusters will be discussed in a future blog post) with
+Arthur currently uses a graph database to map out all the places he has visited in the universe. He has deployed a single [Neo4j](https://neo4j.com) container on his interstellar DC/OS cluster with
 
 ```
 dcos marathon app add https://raw.githubusercontent.com/joerg84/developers-guide-to-the-universe/master/neo4j-app.json
 ```
+
+The challenges of such cross-galaxy DC/OS clusters will be discussed in a future blog post.
 
 After seeing this, all his friends want to use the same database. In order to allow them to install Neo4J with a single click, Arthur decides to make it available in the [Universe package repository](https://github.com/joerg84/universe/tree/neo4j-demo/repo/packages/N/neo4j_tutorial/). This repo can also be used if you don’t want to create all the files by yourself and want to jump to the deploy step directly.
 
@@ -93,6 +95,8 @@ Each package has a its own folder (inside the subfolder with the first letter of
 We need a total of four different files in the directory, but let us start by creating the [marathon.json.mustache](https://github.com/joerg84/universe/blob/neo4j-demo/repo/packages/N/neo4j_tutorial/0/marathon.json.mustache) and [config.json](https://github.com/joerg84/universe/blob/neo4j-demo/repo/packages/N/neo4j_tutorial/0/config.json) files.
 
 The two key parts of a Universe package are a templated Marathon app definition in a file called `marathon.json.mustache`, and the parameters used to render this template in a `config.json`. These parameters can be altered by DC/OS users at install time via the UI (using ”Advanced Install”) or CLI.
+
+The purpose of `marathon.json.mustache` is to ultimately create a `marathon.json`. It uses the [Mustache](http://mustache.github.io/) templating language to configure options. These configurations come out of resources used in `resources.json` and options specified in `config.json` file.
 
 Let us have a look at Arthur’s original [app definition](https://raw.githubusercontent.com/joerg84/developers-guide-to-the-universe/master/neo4j-app.json) and identify potential settings which are likely to vary between different instances. The following settings are probably good candidates for parameters:
 
@@ -152,6 +156,7 @@ The corresponding [config.json]() specifies these template parameters in the fol
   }
 }
 ~~~
+
 ### resources.json
 There is one more template parameter in our [marathon.json.mustache](https://github.com/joerg84/universe/blob/neo4j-demo/repo/packages/N/neo4j_tutorial/0/marathon.json.mustache): the Docker image.
 ~~~
@@ -185,6 +190,7 @@ The resource.json also specifies the icons used by the UI (**Note**: It is good 
 ### package.json
 
 Last, but not least there is the [package.json](https://github.com/joerg84/universe/blob/neo4j-demo/repo/packages/N/neo4j_tutorial/0/package.json) file with metadata about the package and additional information for users.
+
 ~~~
 {
   "packagingVersion": "3.0",
@@ -285,7 +291,7 @@ dcos package install neo4j
 For more details on how to use neo4j check the [official neo4j package documentation](https://github.com/dcos/examples/tree/master/1.8/neo4j).
 Note the pitfalls listed below and use neo4j/dcos to login.
 
-### Pitfalls with Neo4J UI
+### Pitfalls with Neo4j Dashboard
 
 Since our local package is just a prototype, your instance of the Neo4J UI has some limitations. The official neo4j universe package does not have these issues.
 
