@@ -300,7 +300,8 @@ Since our local package is just a prototype, your instance of the Neo4J UI has s
 
 `The bolt connection`: Bolt is Neo4J default connection method. You should disable bolt as shown in the screenshot below.
 
-**TODO: ADD NEO4J UI image**
+<img style="margin-left: 87px;" width="500" height="300" src="/assets/images/blog/2016-12-10_universe_neo4j_ui.png" alt="package structure"/>
+
 
 # So Long, and Thanks for All the Introduction
 
