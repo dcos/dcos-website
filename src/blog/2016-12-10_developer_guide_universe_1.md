@@ -18,7 +18,7 @@ The [Universe](https://github.com/mesosphere/universe) is a DC/OS package reposi
   <p>A [single book](https://en.wikipedia.org/wiki/The_Hitchhiker's_Guide_to_the_Galaxy) could never cover all the aspects of the Universe (let alone a single blog post) so we decided to divide the content into a series of posts (watch here for the following parts):</p> <br>
 
   <ul>
-    <li>In this first part, [**_“A Developer’s Guide to the Universe”_**](https://dcos.io/blog/2016/a-developer-s-guide-to-the-universe/index.html) we will develop a simple package that deploys just one container and make it available via a local Universe in our DC/OS cluster.</li>
+    <li>In this first part, [**_“A Developer’s Guide to the Universe”_**](/blog/2016/a-developer-s-guide-to-the-universe/index.html) we will develop a simple package that deploys just one container and make it available via a local Universe in our DC/OS cluster.</li>
 
 
     <li>In the second part, **_“Add Another Thing...”_**, we will explore a more complex multi container service and show how we can utilize DC/OS features for connecting these containers. We will also discuss what it takes to contribute a package to the official Universe.</li>
