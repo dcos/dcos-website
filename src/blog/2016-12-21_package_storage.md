@@ -54,7 +54,7 @@ staged_package_storage_uri: file:///var/lib/dcos/cosmos/staged-packages
 package_storage_uri: file:///var/lib/dcos/cosmos/packages
 ```
 
-These tell the Cosmos package manager to use the local filesystem of the master node to store package data. They can also be configured to use S3 URIs, which would be necessary for clusters with more than one master. (TODO: Show how to configure for S3?)
+These tell the Cosmos package manager to use the local filesystem of the master node to store package data.
 
 You will also need to copy the private SSH key for your cluster's nodes to `genconf/ssh_key` and adjust its permissions:
 
@@ -150,10 +150,10 @@ Let's start by creating a simple package. We need a Marathon app template:
 $ cat <<EOF > marathon.json.mustache
 {
   "id": "helloworld",
-  "cpus": 1.0,
-  "mem": 512,
+  "cpus": {{cpus}},
+  "mem": {{mem}},
   "instances": 1,
-  "cmd": "python3 -m http.server {{port}}",
+  "cmd": "python3 -m http.server $PORT0",
   "container": {
     "type": "DOCKER",
     "docker": {
@@ -173,9 +173,13 @@ $ cat <<EOF > config.json
   "$schema": "http://json-schema.org/schema#",
   "type": "object",
   "properties": {
-    "port": {
-      "type": "integer",
-      "default": 8080
+    "cpus": {
+      "type": "number",
+      "default": 1.0
+    },
+    "mem": {
+      "type": "number",
+      "default": 512
     }
   }
 }
@@ -208,6 +212,10 @@ $ dcos experimental package build package.json
 Created DCOS Universe package: /home/demo/helloworld-0.1.0-7c112a3066949b799ff2be95b2f6929b.dcos
 ```
 
+Note that the hash component of your package file's name will be different.
+
+This operation only captures the three files we just created. Even if a `resource` field had been specified in `package.json`, the resulting package would only _refer_ to external resources via URLs. In a future release of DC/OS, `build` will download all the URLs under `resource` and include their contents in the resulting package file, thus allowing the package to run in clusters without Internet access!
+
 ## Add
 
 Next, we upload the package to our DC/OS cluster:
@@ -224,11 +232,11 @@ $ dcos experimental package add --package-name=cassandra
 The package [cassandra] version [1.0.4-2.2.5] has been added to DC/OS
 ```
 
-Adding a package will eventually ensure that all the resources it needs to run as a service will be available, such as executables, tarballs, or Docker images. However, in this release resources are not included in the package file.
+As mentioned above, in a future DC/OS release, adding a package will ensure that all the resources it needs to run as a service will be available, such as executables, tarballs, or Docker images. However, in this release resources are not included in the package file.
 
 ## Start
 
-Once a package has been added to your cluster, you can deploy it with `experimental service start`. Let's launch both of the packages we added in the last section:
+Once a package has been added to your cluster, you can start it with `experimental service start`. Let's launch both of the packages we added in the last section:
 
 ```
 $ dcos experimental service start helloworld
@@ -239,6 +247,22 @@ The service [cassandra] version [1.0.4-2.2.5] has been started
 
 Running `dcos package list` or looking at the "Services" view in the DC/OS UI will show both of them up and running! To terminate them, the older command `dcos package uninstall <name>` can be used.
 
-# Conclusion
+# Future Plans
 
-DC/OS package storage enabled us to develop and run a custom package in our cluster, without needing to publish it to the Universe repository first. While this is a great productivity boost already, it's just the beginning. Watch for big improvements to package storage in upcoming releases!
+DC/OS package storage enabled us to develop and run a custom package in our cluster, without needing to publish it to the Universe repository first. While this is a great productivity boost already, it's just the beginning. Watch for these improvements related to package storage in upcoming releases:
+
+- Package operations
+    - `dcos experimental package remove`: removes a package from storage
+    - `dcos experimental package list`: lists all packages in storage
+    - `dcos experimental package describe`: displays information about a package in storage or in a remote package repository
+    - `dcos experimental package search`: finds packages in storage or remote repositories that match a query
+    - `dcos experimental package init`: creates an initial set of files for a package definition, to be used as inputs to `dcos experimental package build`
+    - `dcos experimental package migrate`: converts package files from the mesosphere/universe GitHub repository into the format expected by `dcos experimental package build`
+- Service operations
+    - `dcos experimental service remove`: stops a running service
+    - `dcos experimental service list`: lists all running services
+    - `dcos experimental service describe`: displays information about a running service, including the package configuration options given to `dcos experimental service start`
+    - `dcos experimental service render`: performs a dry run of `dcos experimental service start`, displaying the resulting Marathon application definition instead of executing it
+    - `dcos experimental service update`: restart a running service with a new configuration
+- Support for S3 as a storage backend
+    - Necessary for using storage on clusters with more than one master node
