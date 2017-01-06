@@ -1,15 +1,15 @@
 ---
-title: Package Storage in DC/OS
+title: Experimental Package Management in DC/OS 1.9
 date: 2016-12-21
 author: Charles Ruhland, Mesosphere
 category: universe
-description: Package Storage in DC/OS
+description: Experimental Package Management in DC/OS 1.9
 layout: article.jade
 collection: posts
 lunr: true
 ---
 
-In DC/OS 1.9, we're rolling out an experimental feature that allows you to develop and test packages in your own cluster, without needing to publish them to the Mesosphere Universe. This guide walks through how to configure and use this feature on a new DC/OS cluster. Let's get started!
+In DC/OS 1.9, we're rolling out an experimental feature that allows you to develop and test packages in your own cluster, without publishing them to the Mesosphere Universe. This guide walks through how to configure and use this feature on a new DC/OS cluster. Let's get started!
 
 # Enabling DC/OS package storage
 
@@ -18,9 +18,9 @@ In DC/OS 1.9, we're rolling out an experimental feature that allows you to devel
 The package storage feature must be configured as part of DC/OS installation. In this example we will be using a three-node cluster: one bootstrap node for installation, one master node, and one agent node. We'll assume that all of these nodes are running on AWS. On the bootstrap node, in some working directory, do the following:
 
 ```bash
-mkdir genconf
+$ mkdir genconf
 
-cat <<EOF > genconf/config.yaml
+$ cat <<EOF > genconf/config.yaml
 agent_list:
 - <agent IP address>
 bootstrap_url: file:///opt/dcos_install_tmp
@@ -40,7 +40,7 @@ cosmos_config:
   package_storage_uri: file:///var/lib/dcos/cosmos/packages
 EOF
 
-cat <<EOF > genconf/ip-detect
+$ cat <<EOF > genconf/ip-detect
 #!/bin/sh
 # Uses the AWS Metadata Service
 curl -fsSL http://169.254.169.254/latest/meta-data/local-ipv4
@@ -59,13 +59,13 @@ These tell the Cosmos package manager to use the local filesystem of the master 
 You will also need to copy the private SSH key for your cluster's nodes to `genconf/ssh_key` and adjust its permissions:
 
 ```bash
-chmod 0600 genconf/ssh_key
+$ chmod 0600 genconf/ssh_key
 ```
 
 Finally, we need the installation script (TODO: change URL):
 
 ```bash
-curl -O https://downloads.dcos.io/dcos/testing/pull/974/dcos_generate_config.sh
+$ curl -O https://downloads.dcos.io/dcos/testing/pull/974/dcos_generate_config.sh
 ```
 
 ## Installation
@@ -73,17 +73,28 @@ curl -O https://downloads.dcos.io/dcos/testing/pull/974/dcos_generate_config.sh
 We're now ready to install DC/OS with package storage! Run the following commands:
 
 ```bash
-sudo bash dcos_generate_config.sh --validate
-sudo bash dcos_generate_config.sh --genconf
-sudo bash dcos_generate_config.sh --preflight
-sudo bash dcos_generate_config.sh --deploy
+$ sudo bash dcos_generate_config.sh --validate
+$ sudo bash dcos_generate_config.sh --genconf
+$ sudo bash dcos_generate_config.sh --preflight
+$ sudo bash dcos_generate_config.sh --deploy
 ```
 
 At this point you should have a working DC/OS installation. Terminate your SSH connection to the bootstrap node, and let's move on to using the package storage feature!
 
 # Using DC/OS package storage
 
-The DC/OS CLI has been updated with a new subcommand, `dcos experimental`. To ensure you have the latest version, with 1.9 features, point your browser at your master node's public IP and authenticate with your cluster. Once the dashboard appears, click the drop-down menu in the upper left and select "Install CLI", then follow the instructions for your operating system.
+## Obtain a recent CLI
+
+The DC/OS CLI has a new subcommand, `dcos experimental`, as of version 0.4.15. Check that your CLI is at least that version:
+
+```
+$ dcos --version
+dcoscli.version=0.4.15
+```
+
+If it isn't, you can install the latest version of the CLI from the DC/OS GUI. From the DC/OS dashboard, click the drop-down menu in the upper left corner and select "Install CLI", then follow the instructions for your operating system.
+
+## The `experimental` subcommand
 
 If you run the CLI with no command-line arguments, you should see the following:
 
@@ -236,7 +247,7 @@ As mentioned above, in a future DC/OS release, adding a package will ensure that
 
 ## Start
 
-Once a package has been added to your cluster, you can start it with `experimental service start`. Let's launch both of the packages we added in the last section:
+After a package has been added to your cluster, you can start it with `dcos experimental service start`. Let's launch both of the packages we added in the last section:
 
 ```
 $ dcos experimental service start helloworld
@@ -245,7 +256,7 @@ $ dcos experimental service start cassandra
 The service [cassandra] version [1.0.4-2.2.5] has been started
 ```
 
-Running `dcos package list` or looking at the "Services" view in the DC/OS UI will show both of them up and running! To terminate them, the older command `dcos package uninstall <name>` can be used.
+Running `dcos package list` or looking at the **Services** tab in the DC/OS UI will show both of them up and running! To terminate them, the command `dcos package uninstall <name>` can be used.
 
 # Future Plans
 
