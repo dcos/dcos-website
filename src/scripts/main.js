@@ -146,7 +146,7 @@ if(wallopEl){
 /****************
   Clickable headers
 ****************/
-$('#docs-content h2, #docs-content h3, #docs-content h4, #docs-content h5, #docs-content h6').each(function( index ) {
+$('#docs-content h2, #docs-content h3, #docs-content h4, #docs-content h5, #docs-content h6, .docs-layout__docs-content h2, .docs-layout__docs-content h3, .docs-layout__docs-content h4, .docs-layout__docs-content h5, .docs-layout__docs-content h6').each(function( index ) {
   var hashURL = $(this).attr('id')
   $(this).wrapInner('<a href="#' + hashURL + '" class="show-anchor"></a>')
 });
