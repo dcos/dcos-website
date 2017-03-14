@@ -10,7 +10,7 @@
       this.typing           = false;
 
       // start it off
-      setTimeout(this.run.bind(this), 400)
+      setTimeout(this.run.bind(this), 200)
     }
 
     run() {
