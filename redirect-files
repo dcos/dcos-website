@@ -90,7 +90,8 @@
 /docs/1.9/usage/managing-services/application-basics/index.html /docs/1.9/usage/managing-services/creating-services/
 /docs/1.9/usage/managing-services/monitoring.html /docs/1.9/usage/managing-services/monitor-services/
 /docs/1.9/usage/marathon.html /docs/1.9/usage/managing-services/
-/docs/1.9/usage/marathon/rest-api.html /docs/1.9/usage/managing-services/rest-api/
+/docs/1.9/usage/marathon/rest-api.html /docs/1.9/usage/managing-services/marathon-api/
+/docs/1.9/usage/managing-services/rest-api.html /docs/1.9/usage/managing-services/marathon-api/
 /docs/1.9/administration/metrics/index.html /docs/1.9/administration/monitoring/metrics/
 /docs/1.9/administration/metrics/quickstart.html /docs/1.9/administration/monitoring/metrics/quickstart/
 /docs/1.9/administration/metrics/metrics-api.html /docs/1.9/administration/monitoring/metrics/metrics-api/
