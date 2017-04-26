@@ -164,7 +164,7 @@ const serveTask = () => {
         }
       })
 
-      watch(['./src/*.jade', './src/**/*.jade', './src/*.md', './src/events.json', './src/scripts/*.js'],
+      watch(['./src/*.jade', './src/**/*.jade', './src/*.md', './src/events.json', './src/packages.json', './src/scripts/*.js'],
         batch(function (events, done) { gulp.start('build-site-templates', done) }))
       watch(paths.blog.src,
         batch(function (events, done) { gulp.start('build-blog-templates', done) }))
@@ -401,7 +401,11 @@ gulp.task('build-site-templates', () => {
           tables: true
         }))
         .use(jade({
-          locals: { cssTimestamp, events: addDateProps(filterPastEvents(JSON.parse(fs.readFileSync('./src/events.json', 'utf8')))) },
+          locals: {
+            cssTimestamp,
+            events: addDateProps(filterPastEvents(JSON.parse(fs.readFileSync('./src/events.json', 'utf8')))),
+            recentpackages: JSON.parse(fs.readFileSync('./src/recent-packages.json', 'utf8'))
+          },
           pretty: true
         }))
         .use(define({

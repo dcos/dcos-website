@@ -1,0 +1,12 @@
+[
+  { "title": "Package A",
+    "image": "/assets/images/packages/package-a.png",
+    "description": "Description Package A",
+    "url": "#",
+    "blogpost": "#" },
+  { "title": "Package B",
+    "image": "/assets/images/packages/package-a.png",
+    "description": "Description Package B",
+    "url": "#",
+    "blogpost": "" }
+]
