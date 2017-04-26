@@ -1,0 +1,25 @@
+
+.packages-container {
+
+  .card {
+    overflow: hidden;
+  }
+  
+  .events-carousel .card .card-copy {
+    align-items: inherit;
+    justify-content: inherit;
+  }
+
+  .cta--button {
+    display: block;
+    width: 100%;
+  }
+
+  .card-header {
+    background-color: #fff;
+    background-size: auto;
+    background-repeat: no-repeat;
+    min-height: 160px;
+  }
+
+}
