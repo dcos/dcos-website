@@ -1,7 +1,6 @@
 .Wallop-item.has-bg {
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: calc(50% - 10px) calc(50% + 65px);
+  background-position: center center;
 }
 
 button.Wallop-buttonPrevious, button.Wallop-buttonNext {
@@ -37,17 +36,4 @@ button.Wallop-buttonNext {
     background-image: inherit !important;
     min-height: inherit !important;
   }
-}
-
-.Wallop {
-  min-height: 532px;
-  margin-top: -78px;
-}
-
-.Wallop-item {
-  min-height: calc(547px + 78px);
-}
-
-.Wallop-item > div {
-  margin-top: 78px;
 }
