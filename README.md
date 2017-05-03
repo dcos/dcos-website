@@ -92,6 +92,7 @@ Once changes are accepted and merged to the develop branch, CI will push the upd
 
 - Using Node
     1. [Install Node](https://docs.npmjs.com/getting-started/installing-node)
+    1. Install the required version of NPM: `npm i -g npm@3.10.8`
     1. Install dependencies:
 
         ```
@@ -207,7 +208,7 @@ $ ci/promote.sh
 
 Continuous integration will handle deploying updates (`ci/deploy.sh`), updating redirects (`ci/update-redirects.sh`), and updating the S3 website config (`ci/update-website-conifg.sh`).
 
-**Tip:** If you receive this error `Found unstaged changes - Exiting`, run the submodule update command: 
+**Tip:** If you receive this error `Found unstaged changes - Exiting`, run the submodule update command:
 
 ```
 $ git submodule update --init --recursive
