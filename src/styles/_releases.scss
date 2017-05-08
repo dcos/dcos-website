@@ -78,3 +78,103 @@ table.releases {
     display: block;
 	}
 }
+
+.release-item {
+  position: relative;
+  padding: 5rem 1rem;
+
+  &:after {
+    content: ' ';
+    position: absolute;
+    left: 2.625rem;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: $light-gray;
+
+      @include break($mobile-large-landscape) {
+        left: 8.875rem;
+      }
+
+      @include break($tablet-landscape) {
+        left: 10.875rem;
+      }
+  }
+
+  &:before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $heliotrope;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin: 7.375rem 0 0 2rem;
+    z-index: 500;
+
+      @include break($mobile-large-landscape) {
+        margin-left: 8.275rem;
+      }
+
+      @include break($tablet-landscape) {
+        margin-left: 10.275rem;
+      }
+  }
+
+  &--date {
+    position: relative;
+    display: none;
+    padding: 2.5rem 0 0 0;
+    width: 15%;
+
+    p {
+      text-transform: uppercase;
+      font-size: 0.825rem;
+    }
+
+    @include break($mobile-large-landscape) {
+      display: inline-block;
+    }
+  }
+
+  &--content {
+    position: relative;
+    margin-left: 4rem;
+
+      @include break($mobile-large-landscape) {
+        margin-left: 6rem;
+      }
+  }
+
+  span {
+    border-radius: 2px;
+    background-color: $heliotrope20;
+    color: $heliotrope;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  h3 {
+    font-weight: normal;
+  }
+
+  ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+
+  li {
+    padding-bottom: 0.25rem;
+    line-height: 1.75rem;
+  }
+
+  a {
+    margin-right: 1rem;
+
+      &.btn-secondary {
+        border: 1px solid $heliotrope;
+      }
+  }
+
+}

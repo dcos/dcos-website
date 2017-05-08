@@ -1,0 +1,28 @@
+[
+  {
+    "stable": true,
+    "title": "DC/OS 1.9.0",
+    "date": "2017-03-28",
+    "description": "DC/OS 1.9 includes many new capabilities for Operators, and expands the collection of Data and Developer Services with a focus on:",
+    "features": [
+      "Tools for Production Operations - Monitoring and troubleshooting for distributed apps.",
+      "Broader Workload Support - From traditional apps to machine learning.",
+      "New data and developer services."
+    ],
+    "downloadlink": "https://downloads.dcos.io/dcos/stable/commit/0ce03387884523f02624d3fb56c7fbe2e06e181b/dcos_generate_config.sh?_ga=2.55368226.881512224.1494249282-63484244.1493025797",
+    "docslink": "/docs/1.9/"
+  },
+  {
+    "stable": false,
+    "title": "DC/OS 1.9.0 RC4",
+    "date": "2017-03-24",
+    "description": "DC/OS 1.9 RC4 includes many new capabilities for Operators, and expands the collection of Data and Developer Services with a focus on:",
+    "features": [
+      "Tools for Production Operations - Monitoring and troubleshooting for distributed apps.",
+      "Broader Workload Support - From traditional apps to machine learning.",
+      "New data and developer services."
+    ],
+    "downloadlink": "https://downloads.dcos.io/dcos/EarlyAccess/commit/10b4b02efc86e0e6d7f19d3734c766f5580d04d4/dcos_generate_config.sh?_ga=2.104405315.2137911681.1494249278-63484244.1493025797",
+    "docslink": "/docs/1.9/"
+  }
+]

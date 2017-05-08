@@ -51,28 +51,29 @@ block content
                   li: a(href='https://downloads.dcos.io/dcos/testing/master/dcos_generate_config.sh') Direct Download
 
 
-  .outer-container.bg-white.clearfix.pb5.px2
+  .outer-container.bg-white.clearfix.pb2.px2
     .row
       .max-width-4.mx-auto
-        h2.heading-margin-bottom.center.mx-auto.mt0 Release Versions
+        h2.heading-margin-bottom.center.mx-auto.mt3 Release Versions
 
-        .container
-          .container__content(style="padding-top: 0;")
-            .container__content--release-notes.docs-layout__docs-content
-              a(href='/releases/1.9.0-rc4/', target='_blank') 1.9.0 - Mar 28, 2017
-              a(href='/releases/1.9.0-rc4/', target='_blank') 1.9.0-rc4 - Mar 24, 2017
-              a(href='/releases/1.9.0-rc3/', target='_blank') 1.9.0-rc3 - Mar 20, 2017
-              a(href='/releases/1.9.0-rc2/', target='_blank') 1.9.0-rc2 - Mar 2, 2017
-              a(href='/releases/1.9.0-rc1/', target='_blank') 1.9.0-rc1 - Feb 22, 2017
-              a(href='/releases/1.8.8/#1-8-8', target='_blank') 1.8.8 - Feb 10, 2017
-              a(href='/releases/1.8.7/#1-8-7', target='_blank') 1.8.7 - Nov 14, 2016
-              a(href='/releases/1.8.6/#1-8-6', target='_blank') 1.8.6 - October 19, 2016
-              a(href='/releases/1.8.5/#1-8-5', target='_blank') 1.8.5 - October 13, 2016
-              a(href='/releases/1.8.4/#1-8-4', target='_blank') 1.8.4 - September 15, 2016
-              a(href='/releases/1.8.3/#1-8-3', target='_blank') 1.8.3 - September 6, 2016
-              a(href='/releases/1.8.2/#1-8-2', target='_blank') 1.8.2 - August 25, 2016
-              a(href='/releases/1.8.1/#1-8-1', target='_blank') 1.8.1 - August 2016
-
+  each release in locals.releases
+    .release(class=release.stable ? 'bg-gray' : '')
+      div
+      .release-item.max-width-4.mx-auto.flex
+        .release-item--date
+          p.m0 #{ release.month } #{ release.day }, #{ release.year }
+        .release-item--content
+          if(release.stable)
+            span Stable
+          h3(class=release.stable ? '' : 'mt3') #{ release.title }
+          p #{ release.description }
+          if(release.features.length > 0)
+            ul
+              each feature in release.features
+                li #{ feature }
+          a(href!=release.downloadlink target='_blank').btn.btn-primary.inline-block Download #{ release.title }
+          a(href!=release.docslink target='_blank').btn.btn-secondary.inline-block Read documentation
+              
   .container.container--dark-background
     .container__content
       h2 Install on any virtual or physical machines.
