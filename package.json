@@ -6,12 +6,12 @@
   "scripts": {
     "test": "NODE_ENV=production gulp test",
     "start": "NODE_ENV=production gulp serve",
-    "build": "NODE_ENV=production gulp build",
+    "build": "NODE_ENV=production npm run clean && gulp build",
     "clean": "rm -r ./build",
     "eslint": "eslint",
     "dev": "NODE_ENV=production gulp serve",
-    "dev:site": "NODE_ENV=production gulp serve-site",
-    "dev:docs": "NODE_ENV=production gulp serve-docs"
+    "dev:site": "NODE_ENV=production npm run clean && gulp serve-site",
+    "dev:docs": "NODE_ENV=production npm run clean && gulp serve-docs"
   },
   "repository": {
     "type": "git",

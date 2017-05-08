@@ -2,11 +2,10 @@
 /brand /brand/
 /brand/index.html https://brand.ai/mesosphere/dc-os-brand-guidelines
 /docs /docs/latest/
+/docs/ /docs/latest/
 /docs/1.7/administration/dcosarchitecture/security/index.html /docs/1.7/overview/
 /docs/1.7/administration/installing/custom/automated-installer/system-requirements/index.html /docs/1.7/administration/installing/custom/system-requirements/
-/docs/1.7/administration/installing/custom/cli/index.html /docs/1.7/administration/installing/custom/cli/
 /docs/1.7/administration/installing/custom/gui/index.html /docs/1.7/administration/installing/custom/gui/
-/docs/1.7/administration/installing/index.html /docs/1.7/administration/installing/
 /docs/1.7/administration/opt-out/index.html /docs/1.7/administration/opt-out/
 /docs/1.7/administration/security-and-authentication/index.html /docs/1.7/overview/security/
 /docs/1.7/administration/service-discovery/index.html /docs/1.7/overview/service-discovery/
@@ -24,7 +23,6 @@
 /docs/1.7/usage/services/uninstall/index.html /docs/1.7/usage/managing-services/uninstall/
 /docs/1.7/usage/tutorials/marathon/index.html /docs/1.7/usage/tutorials/marathon/
 /docs/1.7/usage/tutorials/marathon/inline-update/index.html /docs/1.7/usage/tutorials/marathon/
-/docs/1.7/usage/tutorials/marathon/marathon101/index.html /docs/1.7/usage/tutorials/marathon/marathon101/
 /docs/1.7/usage/tutorials/marathon/stateful-services/index.html /docs/1.7/usage/tutorials/marathon/stateful-services/
 /docs/1.7/usage/tutorials/ruby-on-rails/index.html /docs/1.7/usage/tutorials/
 /docs/1.8/administration/haproxy-adminrouter/index.html /docs/1.8/administration/tls-ssl/haproxy-adminrouter/
@@ -60,7 +58,6 @@
 /docs/1.8/usage/tutorials/inline-update/index.html /docs/1.8/usage/managing-services/update-user-service/
 /docs/1.8/usage/tutorials/marathon/index.html /docs/1.7/usage/tutorials/marathon/
 /docs/1.8/usage/tutorials/marathon/inline-update/index.html /docs/1.7/usage/tutorials/marathon/
-/docs/1.8/usage/tutorials/marathon/marathon101/index.html /docs/1.7/usage/tutorials/marathon/marathon101/
 /docs/1.8/usage/tutorials/marathon/stateful-services/index.html /docs/1.7/usage/tutorials/marathon/stateful-services/
 /docs/1.8/usage/tutorials/public-app/index.html /docs/1.8/usage/managing-services/expose-service/
 /docs/1.8/usage/tutorials/registry/index.html https://github.com/dcos/examples/tree/master/1.8/registry
@@ -270,12 +267,8 @@
 /docs/1.9/usage/jobs/examples/index.html /docs/1.9/deploying-jobs/examples/
 /docs/1.9/usage/jobs/getting-started/index.html /docs/1.9/deploying-jobs/quickstart/
 /docs/1.9/usage/jobs/index.html /docs/1.9/deploying-jobs/
-/docs/1.9/usage/managing-services/application-basics/deploy-docker-app/index.html /docs/1.9/deploying-services/application-basics/deploy-docker-app/
 /docs/1.9/usage/managing-services/application-basics/deploy-docker-app/index.html /docs/1.9/deploying-services/creating-services/deploy-docker-app/
-/docs/1.9/usage/managing-services/application-basics/deploy-docker-app/index.html /docs/1.9/usage/managing-services/creating-services/deploy-docker-app/
-/docs/1.9/usage/managing-services/application-basics/index.html /docs/1.9/deploying-services/application-basics/
 /docs/1.9/usage/managing-services/application-basics/index.html /docs/1.9/deploying-services/creating-services/
-/docs/1.9/usage/managing-services/application-basics/index.html /docs/1.9/usage/managing-services/creating-services/
 /docs/1.9/usage/managing-services/config-universe-service/index.html /docs/1.9/deploying-services/application-basics/config-universe-service/
 /docs/1.9/usage/managing-services/config-universe-service/index.html /docs/1.9/deploying-services/config-universe-service/
 /docs/1.9/usage/managing-services/config/index.html /docs/1.9/usage/managing-services/config-universe-service/
@@ -294,10 +287,11 @@
 /docs/1.9/usage/managing-services/task-handling/index.html /docs/1.9/deploying-services/task-handling/
 /docs/1.9/usage/managing-services/uninstall/index.html /docs/1.9/deploying-services/uninstall/
 /docs/1.9/usage/managing-services/update-user-service/index.html /docs/1.9/deploying-services/update-user-service/
-/docs/1.9/usage/marathon/application-basics/index.html /docs/1.9/usage/managing-services/creating-services/
+/docs/1.9/usage/marathon/application-basics/index.html /docs/1.9/deploying-services/creating-services/
 /docs/1.9/usage/marathon/index.html /docs/1.9/usage/managing-services/
 /docs/1.9/usage/marathon/ports/index.html /docs/1.9/usage/managing-services/ports/service-ports/
 /docs/1.9/usage/marathon/rest-api/index.html /docs/1.9/usage/managing-services/rest-api/
+/docs/1.9/usage/nginx.json /docs/1.9/deploying-services/creating-services/nginx.json
 /docs/1.9/usage/pods/examples/index.html /docs/1.9/deploying-services/pods/examples/
 /docs/1.9/usage/pods/index.html /docs/1.9/deploying-services/pods/
 /docs/1.9/usage/pods/pods-cli/index.html /docs/1.9/usage/pods/using-pods/

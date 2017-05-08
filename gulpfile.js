@@ -401,7 +401,7 @@ gulp.task('build-site-templates', () => {
           tables: true
         }))
         .use(jade({
-          locals: { cssTimestamp, events: addDateProps(filterPastEvents(JSON.parse(fs.readFileSync('./src/events.json', 'utf8')))) },
+          locals: { cssTimestamp, events: addDateProps(sortEventsAscending(JSON.parse(fs.readFileSync('./src/events.json', 'utf8')))) },
           pretty: true
         }))
         .use(define({
@@ -611,9 +611,15 @@ function addTimestampToMarkdownFiles (files, metalsmith, callback) {
   callback()
 }
 
-const filterPastEvents = eventsArr => {
-  const today = moment()
-  return eventsArr.filter(event => moment(event.date).isAfter(today))
+const sortEventsAscending = eventsArr => {
+  return eventsArr.sort((eventA, eventB) => {
+    const a = moment(eventA.date).unix()
+    const b = moment(eventB.date).unix()
+
+    if(a > b) return -1
+    if(a < b) return 1
+    return 0
+  })
 }
 
 const addDateProps = eventsArr => {

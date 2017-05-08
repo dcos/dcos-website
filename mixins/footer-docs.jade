@@ -11,9 +11,9 @@ mixin footer()
         li.footer-item
           a(href='/privacy/') Privacy&nbsp;Policy
         li.footer-item
-          a(href='/releases/') Releases
-        li.footer-item
           a(href='/brand/') Press&nbsp;Kit
+        li.footer-item
+          a(href='mailto:community-team@dcos.io') Contact Us
 
       ul.footer-secondary
         li.footer-item
@@ -21,12 +21,16 @@ mixin footer()
             img.footer-item__icon.twitter-icon(src='/assets/images/icons/twitter-dark.svg')
             span Twitter
         li.footer-item
-          a(href='http://chat.mesosphere.com')
+          a(href='http://chat.dcos.io/')
             img.footer-item__icon(src='/assets/images/icons/slack-dark.svg')
             span Slack
         li.footer-item
           a(href='https://github.com/dcos')
             img.footer-item__icon(src='/assets/images/icons/github-dark.svg')
             span GitHub
+        li.footer-item
+          a(href='https://jira.mesosphere.com')
+            img.footer-item__icon(src='/assets/images/icons/jira-dark.svg')
+            span Jira
 
   +libraries

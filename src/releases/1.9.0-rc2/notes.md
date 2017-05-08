@@ -18,8 +18,8 @@ DC/OS 1.9 includes many new capabilities for Operators, and expands the collecti
 
 ## <a name="container-orchestration"></a>Container Orchestration
 
-- Pods - Multiple co-located containers per instance, scheduled on the same host. For more information, see the [documentation](/docs/1.9/managing-services/pods/).
-- GPU - Leverage GPUs to run novel algorithms. For more information, see the [documentation](/docs/1.9/managing-services/gpu/).
+- Pods - Multiple co-located containers per instance, scheduled on the same host. For more information, see the [documentation](/docs/1.9/deploying-services/pods/).
+- GPU - Leverage GPUs to run novel algorithms. For more information, see the [documentation](/docs/1.9/deploying-services/gpu/).
 - Significant scalability improvements.
 
 ## <a name="monitoring-and-operations"></a>DC/OS Monitoring and Operations
@@ -94,7 +94,7 @@ For more information, see the [documentation](/docs/1.9/metrics/).
 
 Improved upgrade tooling and experience for on-premise installations. Upgrades now use internal DC/OS APIs to ensure nodes can be upgraded with minimal disruption to running DC/OS services on a node. The upgrade procedure has also been simplified to improve user experience.
 
-For more information, see the [documentation](/docs/1.9/upgrading/).
+For more information, see the [documentation](/docs/1.9/installing/upgrading/).
 
 # <a name="known-issues"></a>Known Issues and Limitations
 

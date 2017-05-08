@@ -18,8 +18,8 @@ DC/OS 1.9 includes many new capabilities for Operators, and expands the collecti
 
 ## <a name="container-orchestration"></a>Container Orchestration
 
-- Pods - Multiple co-located containers per instance, scheduled on the same host. For more information, see the [documentation](/docs/1.9/managing-services/pods/).
-- GPU - Leverage GPUs to run novel algorithms. For more information, see the [documentation](/docs/1.9/managing-services/gpu/).
+- Pods - Multiple co-located containers per instance, scheduled on the same host. For more information, see the [documentation](/docs/1.9/deploying-services/pods/).
+- GPU - Leverage GPUs to run novel algorithms. For more information, see the [documentation](/docs/1.9/deploying-services/gpu/).
 - Significant scalability improvements.
 
 ## <a name="monitoring-and-operations"></a>DC/OS Monitoring and Operations
@@ -94,7 +94,7 @@ For more information, see the [documentation](/docs/1.9/metrics/).
 
 Improved upgrade tooling and experience for on-premise installations. Upgrades now use internal DC/OS APIs to ensure nodes can be upgraded with minimal disruption to running DC/OS services on a node. The upgrade procedure has also been simplified to improve user experience.
 
-For more information, see the [documentation](/docs/1.9/upgrading/).
+For more information, see the [documentation](/docs/1.9/installing/upgrading/).
 
 # <a name="known-issues"></a>Known Issues and Limitations
 
@@ -102,7 +102,7 @@ For more information, see the [documentation](/docs/1.9/upgrading/).
 - DCOS-14005 - Marathon-LB does not support pods.
 - DCOS-14021 - [Task logging to journald](/docs/1.9/monitoring/logging/) disabled by default, so task logs will continue to be written to their sandboxes, and logrotated out. The `- DCOS task log` command will work as it did before.
 - DCOS-14047 - Marathon is killed during upgrades.
-- DCOS-14433 - The [Universal container runtime](/docs/1.9/managing-services/containerizers/) does not support Azure cloud with Ubuntu.
+- DCOS-14433 - The [Universal container runtime](/docs/1.9/deploying-services/containerizers/) does not support Azure cloud with Ubuntu.
 - DCOS-OSS-743 - If you are using Docker 1.13 on CentOS 7.3, the custom CLI installation method fails while installing prerequisites (`--install-prereqs`).
 - MARATHON-1713 - Volumes do not persist.
 - Marathon-7133 - Marathon application history is lost after Marathon restart.

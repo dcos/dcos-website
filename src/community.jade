@@ -18,211 +18,163 @@ block head
 
 block content
 
-  .container.container--dark-background
-    +header
+  .container.container--dark-background.pb4.px2.sm-pb0(style='display: block;')
+    .mx-auto.max-width-4
+      +header(style='padding: 0;')
 
-    .container__content.community-hero
-      h1 Join the DC/OS Community
-      p.hero-subtitle Connect with our community of users and browse the latest DC/OS news.
+    .mx-auto.max-width-4
+      .container__content.community-hero
+        h1.mb0 Join the Community
+        p.subtitle.mb0 DC/OS is 100% open source, and based on Apache Mesos and Marathon. Whether you need help, want to contribute, or are just looking for the latest news, you can find out how to connect with your fellow community members (and related communities) here.
 
-      hr.hero-divider
+  .outer-container.bg-gray.clearfix.py4.px2
+    .row
+      .max-width-4.mx-auto
 
-      ul.container__content--hero-list
-        li.hero-list__item
-          img.hero-list__item__image(src="/assets/images/icons/community/github.svg")
-          .hero-list__item__copy
-            h5.hero-list__item__copy__title GitHub
-            p.hero-list__item__copy__paragraph Are you interested in helping us make DC/OS even better? Let’s work together! Check out our source code on GitHub.
-            a(href='https://github.com/dcos').cta.cta--text View repositories &rarr;
 
-        li.hero-list__item
-          img.hero-list__item__image(src="/assets/images/icons/community/slack.svg")
-          .hero-list__item__copy
-            h5.hero-list__item__copy__title Slack
-            p.hero-list__item__copy__paragraph Have any questions? Our Slack channel is the best place to get help. Just send us a request to automatically receive your invitation.
-            a(href='http://chat.dcos.io').cta.cta--text Join chat &rarr;
+        .mxn2.flex.flex-wrap.flex-auto.mxn2
+          .sm-col-4.col-12.lg-mb0.flex.sm-justify-center.left-align
+              div.px2.mb2
+                h5.hero-list__item__copy__title.pb1 Get Help
+                ul
+                  li.pb2
+                    a.opacity-1.text-black(href='https://groups.google.com/a/dcos.io/d/forum/users')
+                      img.width-24.align-middle.inline-block.mr2(src="/assets/images/icons/community/envelope.svg")
+                      | Mailing list
+                  li.pb2
+                    a.opacity-1.text-black(href='http://chat.dcos.io/')
+                      img.width-24.align-middle.inline-block.mr2(src="/assets/images/icons/community/slack.svg")
+                      | Slack
+                  li
+                    a.opacity-1.text-black(href='http://stackoverflow.com/questions/tagged/dcos')
+                      img.width-24.align-middle.inline-block.mr2(src="/assets/images/icons/community/stackoverflow.svg")
+                      | StackOverflow
 
-        li.hero-list__item
-          img.hero-list__item__image(src="/assets/images/icons/community/envelope.svg")
-          .hero-list__item__copy
-            h5.hero-list__item__copy__title Mailing List
-            p.hero-list__item__copy__paragraph Want to stay in the loop and connect with other community members? Our public mailing list has all the latest updates. Join the discussion.
-            a(href='https://groups.google.com/a/dcos.io/d/forum/users').cta.cta--text Join users@dcos.io &rarr;
+            .sm-col-4.col-12.lg-mb0.flex.sm-justify-center.left-align
+              div.px2.mb2
+                h5.hero-list__item__copy__title.pb1 Get Involved
+                ul
+                  li.pb2
+                    a.opacity-1.text-black(href='https://jira.mesosphere.com/')
+                      img.width-24.align-middle.inline-block.mr2(src="/assets/images/icons/community/jira.svg")
+                      | Report a Bug
+                  li.pb2
+                    a.opacity-1.text-black(href='https://github.com/dcos')
+                      img.width-24.align-middle.inline-block.mr2(src="/assets/images/icons/community/github.svg")
+                      | GitHub
+                  li.pb2
+                    a.opacity-1.text-black(href='https://github.com/dcos/community/blob/master/README.md#dcos-community')
+                      img.width-24.align-middle.inline-block.mr2(src="/assets/images/icons/community/communities.svg")
+                      | Working groups
+                  li
+                    a.opacity-1.text-black(href='http://dcos.io/contribute')
+                      img.width-24.align-middle.inline-block.mr2(src="/assets/images/icons/community/contribute.svg")
+                      | Contribute
 
-  .container.container--grey-background.community-container
-    .container__content
-      if locals.events.length === 0
-        h2 No Upcoming Events
-      else
-        h2 Upcoming Events
+            .sm-col-4.col-12.flex.sm-justify-center.left-align
+              div.px2.mb3
+                h5.hero-list__item__copy__title.pb1 Get Updates
+                ul
+                  li.pb2
+                    a.opacity-1.text-black(href='https://twitter.com/dcos')
+                      img.width-24.align-middle.inline-block.mr2(src="/assets/images/icons/community/twitter.svg")
+                      | Twitter
+                  li.pb2
+                    a.opacity-1.text-black(href='https://www.youtube.com/channel/UChHh-HuKJdbffdXwkTAroJg')
+                      img.width-24.align-middle.inline-block.mr2(src="/assets/images/icons/community/youtube.svg")
+                      | YouTube
+                  li.pb2
+                    a.opacity-1.text-black(href='https://www.meetup.com/DC-OS-Online-Meetup/')
+                      img.width-24.align-middle.inline-block.mr2(src="/assets/images/icons/community/meetup.svg")
+                      | Meetup
+                  li
+                    a.opacity-1.text-black(href='https://calendar.google.com/calendar/embed?src=mesosphere.io_1iu6qkkrmnghb61ntfrp5fc46o%40group.calendar.google.com&ctz=America/Los_Angeles')
+                      img.width-24.align-middle.inline-block.mr2(src="/assets/images/icons/community/calendar.svg")
+                      | Calendar
 
-  .container.events-container
-    .container__content
+
+  .container.events-container.py2.px2
+    .row
+    .max-width-4.mx-auto
+      .mxn2.flex.flex-auto.flex-wrap
+        .lg-col-8.col-12.xs-col-12.px2.mx-auto.pb2.center
+          h2 Find us at an event
+      div.toggle.center.max-width-4.mx-auto.mb3
+        a(href='#upcoming' data-events='upcoming' class='pr1 inline-block text-black h3') Upcoming
+        a(href='#recent' data-events='recent' class='pl1 inline-block h3') Recent
+
       .events-carousel
+        
         if (locals.events.length)
           .events-carousel-btn.events-carousel-btn--next
             img(src='/assets/images/icons/chevron-dark-right.svg')
 
           .events-carousel-btn.events-carousel-btn--prev
             img(src='/assets/images/icons/chevron-dark-left.svg')
+        
+            
+        .card-container.px2.upcoming-events
 
-        .card-container
-          each event in locals.events
-            a(href!=event.url target='_blank').card
-              .card-header(style='background-image: url(#{event.image})')
-                .card-content
-                  .card-header__date
-                    p #{event.day}
-                    p #{event.month.toUpperCase()}
-              .card-content.card-copy
-                h3.card-title  #{event.title}
-                .cta.cta--text More info &rarr;
+          each event in locals.events.reverse()
+            if (new Date(event.date)).getTime() > Date.now()
+              a(href!=event.url target='_blank').card
+                .card-header(style='background-image: url(#{event.image})')
+                  .card-content
+                    .card-header__date
+                      p #{event.day}
+                      p #{event.month.toUpperCase()}
+                .card-content.card-copy
+                  h3.card-title  #{event.title}
+                  .cta.cta--text More info &rarr;
 
-    .container__content.event-cta
-      a(href="mailto:events@dcos.io").cta.cta--text Want to host your own DC/OS event? &rarr;
+        .card-container.px2.recent-events.hide
+        
+          each event in locals.events.reverse()
+            if (new Date(event.date)).getTime() < Date.now()
+              a(href!=event.url target='_blank').card
+                .card-header(style='background-image: url(#{event.image})')
+                  .card-content
+                    .card-header__date
+                      p #{event.day}
+                      p #{event.month.toUpperCase()}
+                .card-content.card-copy
+                  h3.card-title  #{event.title}
+                  .cta.cta--text More info &rarr;
 
-  .container.community-logo-container.container--gray-background
-    .container__content
-      h2 Launch Partners
-      p This community was launched on April 19 by a dedicated and diverse group of innovators.
-      a.cta.cta--button.button--secondary(href='#', data-overlay-toggle='video-overlay') Watch Partner Video
 
-      .partner-grid
-        a.partner-grid__logo(href='http://www.10thmagnitude.com/' target='_blank')
-          +image('/assets/images/logos/partners/10th-magnitude.png')
-        a.partner-grid__logo(href='https://www.accenture.com/us-en/accenture-technology-labs-index' target='_blank')
-          +image('/assets/images/logos/partners/accenture.png')
-        a.partner-grid__logo(href='http://www.alluxio.com' target='_blank')
-          +image('/assets/images/logos/partners/alluxio.png')
-        a.partner-grid__logo(href='http://www.arangodb.com/' target='_blank')
-          +image('/assets/images/logos/partners/arangodb.png')
-        a.partner-grid__logo(href='http://www.autodesk.com/' target='_blank')
-          +image('/assets/images/logos/partners/autodesk.png')
-        a.partner-grid__logo(href='https://www.avinetworks.com/solutions/container-services-fabric-for-microservices-apps/' target='_blank')
-          +image('/assets/images/logos/partners/avi-networks.png')
-        a.partner-grid__logo(href='http://www.bigindustries.be/' target='_blank')
-          +image('/assets/images/logos/partners/big-industries.png')
-        a.partner-grid__logo(href='http://www.bigswitch.com' target='_blank')
-          +image('/assets/images/logos/partners/big-switch.png')
-        a.partner-grid__logo(href='https://buoyant.io' target='_blank')
-          +image('/assets/images/logos/partners/buoyant.png')
-        a.partner-grid__logo(href='http://www.cakesolutions.net' target='_blank')
-          +image('/assets/images/logos/partners/cake-solutions.png')
-        a.partner-grid__logo(href='http://www.projectcalico.org/' target='_blank')
-          +image('/assets/images/logos/partners/calico.png')
-        a.partner-grid__logo(href='http://www.canonical.com' target='_blank')
-          +image('/assets/images/logos/partners/canonical.png')
-        a.partner-grid__logo(href='https://www.capgemini.com/' target='_blank')
-          +image('/assets/images/logos/partners/capgemini.png')
-        a.partner-grid__logo(href='http://www.cervoo.com' target='_blank')
-          +image('/assets/images/logos/partners/cervoo.png')
-        a.partner-grid__logo(href='http://www.chef.io/' target='_blank')
-          +image('/assets/images/logos/partners/chef.png')
-        a.partner-grid__logo(href='http://eng.chinaunicom.com/' target='_blank')
-          +image('/assets/images/logos/partners/china-unicom.png')
-        a.partner-grid__logo(href='http://www.cisco.com' target='_blank')
-          +image('/assets/images/logos/partners/cisco.png')
-        a.partner-grid__logo(href='https://www.citrix.com/products/netscaler-application-delivery-controller/overview.html' target='_blank')
-          +image('/assets/images/logos/partners/citrix.png')
-        a.partner-grid__logo(href='https://cockroachlabs.com' target='_blank')
-          +image('/assets/images/logos/partners/cockroach-labs.png')
-        a.partner-grid__logo(href='http://www.confluent.io/' target='_blank')
-          +image('/assets/images/logos/partners/confluent.png')
-        a.partner-grid__logo(href='http://container-solutions.com/' target='_blank')
-          +image('/assets/images/logos/partners/container-solutions.png')
-        a.partner-grid__logo(href='http://www.dataart.com/' target='_blank')
-          +image('/assets/images/logos/partners/data-art.png')
-        a.partner-grid__logo(href='http://www.datadog.com/' target='_blank')
-          +image('/assets/images/logos/partners/data-dog.png')
-        a.partner-grid__logo(href='http://kensu.io/' target='_blank')
-          +image('/assets/images/logos/partners/kensu.png')
-        a.partner-grid__logo(href='http://www.datera.io' target='_blank')
-          +image('/assets/images/logos/partners/datera.png')
-        a.partner-grid__logo(href='https://diamanti.com/' target='_blank')
-          +image('/assets/images/logos/partners/diamanti.png')
-        a.partner-grid__logo(href='http://www.dynatrace.com/en/ruxit/' target='_blank')
-          +image('/assets/images/logos/partners/dynatrace.png')
-        a.partner-grid__logo(href='http://www.elementanalytics.com/' target='_blank')
-          +image('/assets/images/logos/partners/element-analytics.png')
-        a.partner-grid__logo(href='http://www.elodina.net/' target='_blank')
-          +image('/assets/images/logos/partners/elodina.png')
-        a.partner-grid__logo(href='http://www.emc.com' target='_blank')
-          +image('/assets/images/logos/partners/emc.png')
-        a.partner-grid__logo(href='http://www.equinix.com/' target='_blank')
-          +image('/assets/images/logos/partners/equinix.png')
-        a.partner-grid__logo(href='http://www.h3c.com/en/' target='_blank')
-          +image('/assets/images/logos/partners/h3c.png')
-        a.partner-grid__logo(href='https://www.hpe.com/us/en/home.html' target='_blank')
-          +image('/assets/images/logos/partners/hpe.png')
-        a.partner-grid__logo(href='http://www.iguaz.io/' target='_blank')
-          +image('/assets/images/logos/partners/iguazio.png')
-        a.partner-grid__logo(href='http://www.infosiftr.com/' target='_blank')
-          +image('/assets/images/logos/partners/infosiftr.png')
-        a.partner-grid__logo(href='http://www.ishisystems.com/' target='_blank')
-          +image('/assets/images/logos/partners/ishi-systems.png')
-        a.partner-grid__logo(href='http://www.joyent.com' target='_blank')
-          +image('/assets/images/logos/partners/joyent.png')
-        a.partner-grid__logo(href='http://www.kovarus.com' target='_blank')
-          +image('/assets/images/logos/partners/kovarus.png')
-        a.partner-grid__logo(href='http://www.lightbend.com' target='_blank')
-          +image('/assets/images/logos/partners/lightbend.png')
-        a.partner-grid__logo(href='http://www.linkernetworks.com/' target='_blank')
-          +image('/assets/images/logos/partners/linker-networks.png')
-        a.partner-grid__logo(href='https://www.mapr.com/' target='_blank')
-          +image('/assets/images/logos/partners/mapr.png')
-        a.partner-grid__logo(href='http://www.memsql.com/' target='_blank')
-          +image('/assets/images/logos/partners/memsql.png')
-        a.partner-grid__logo(href='https://mesosphere.com/' target='_blank')
-          +image('/assets/images/logos/partners/mesosphere.png')
-        a.partner-grid__logo(href='https://www.microsoft.com/en-us/' target='_blank')
-          +image('/assets/images/logos/partners/microsoft.png')
-        a.partner-grid__logo(href='https://www.miracl.com/' target='_blank')
-          +image('/assets/images/logos/partners/miracl.png')
-        a.partner-grid__logo(href='http://www.netapp.com/' target='_blank')
-          +image('/assets/images/logos/partners/netapp.png')
-        a.partner-grid__logo(href='http://www.nginx.com/' target='_blank')
-          +image('/assets/images/logos/partners/nginx.png')
-        a.partner-grid__logo(href='http://www.offscale.io/' target='_blank')
-          +image('/assets/images/logos/partners/offscale.png')
-        a.partner-grid__logo(href='https://opencredo.com/' target='_blank')
-          +image('/assets/images/logos/partners/opencredo.png')
-        a.partner-grid__logo(href='https://www.packet.net/' target='_blank')
-          +image('/assets/images/logos/partners/packet.png')
-        a.partner-grid__logo(href='https://puppet.com/' target='_blank')
-          +image('/assets/images/logos/partners/puppet.png')
-        a.partner-grid__logo(href='http://www.qct.io/' target='_blank')
-          +image('/assets/images/logos/partners/qct.png')
-        a.partner-grid__logo(href='http://www.quobyte.com/' target='_blank')
-          +image('/assets/images/logos/partners/quobyte.png')
-        a.partner-grid__logo(href='http://www.redapt.com/' target='_blank')
-          +image('/assets/images/logos/partners/redapt.png')
-        a.partner-grid__logo(href='https://artik.cloud/' target='_blank')
-          +image('/assets/images/logos/partners/samsung.png')
-        a.partner-grid__logo(href='http://www.solidfire.com/' target='_blank')
-          +image('/assets/images/logos/partners/solidfire.png')
-        a.partner-grid__logo(href='http://www.sumologic.com/' target='_blank')
-          +image('/assets/images/logos/partners/sumologic.png')
-        a.partner-grid__logo(href='http://www.sysdig.com/' target='_blank')
-          +image('/assets/images/logos/partners/sysdig.png')
-        a.partner-grid__logo(href='http://www.vamp.io/' target='_blank')
-          +image('/assets/images/logos/partners/vamp.png')
-        a.partner-grid__logo(href='http://www.vapor.io/' target='_blank')
-          +image('/assets/images/logos/partners/vapor.png')
-        a.partner-grid__logo(href='http://www.verizon.com/' target='_blank')
-          +image('/assets/images/logos/partners/verizon.png')
-        a.partner-grid__logo(href='http://weave.works/' target='_blank')
-          +image('/assets/images/logos/partners/weave-works.png')
-        a.partner-grid__logo(href='http://www.xentaurs.com/' target='_blank')
-          +image('/assets/images/logos/partners/xentaurs.png')
-        a.partner-grid__logo(href='http://www.yelp.com/' target='_blank')
-          +image('/assets/images/logos/partners/yelp.png')
+  //- Featured communities
+  .outer-container.bg-gray.clearfix.py4.px2#featured-communities
+    .row
+      .max-width-4.mx-auto
+        h2.center.max-width-4.pb2.mx-auto Related Communities
 
-  .overlay(data-overlay='video-overlay')
-    .overlay__close-cta
-      a(href='#', data-overlay-toggle='video-overlay')
-        img(src='/assets/images/icons/cancel.svg')
-    .overlay__video
-      iframe(src="https://www.youtube-nocookie.com/embed/PzM1dJceJh4?rel=0&enablejsapi=1&amp;showinfo=0;" frameborder="0" allowfullscreen)
+        .mxn2.flex.flex-auto.flex-wrap
+          .md-col-6.col-12.px2
+            h4.pb2.mb0
+              img.width-24.align-middle.mr2(src='/assets/images/logos/mesos.svg')
+              | Apache Mesos
+            p.m0 Apache Mesos acts as the kernel for the datacenter operating system, abstracting machine resources (CPU, GPU, memory, storage, etc.), and offering them to the services that run on DC/OS.
+            p #[a(href='http://mesos.apache.org/') Learn about Mesos]
+          .md-col-6.col-12.px2
+            h4.pb2.mb0
+              img.width-24.align-middle.mr2(src='/assets/images/logos/marathon.svg')
+              | Marathon
+            p.m0 Marathon is the Mesos framework that orchestrates containers in DC/OS. It matches resource offers with container requirements, and schedules containers on Mesos nodes.
+            p #[a(href='https://mesosphere.github.io/marathon/') Learn about Marathon]
+
+
+  //- Contribute to DC/OS
+  .outer-container.bg-white.clearfix.py4.px2
+    .row
+      .max-width-4.mx-auto
+        .mxn2.flex.flex-auto.flex-wrap
+          .lg-col-8.col-12.xs-col-12.px2.mx-auto.pb2.center
+            h2 Contribute to DC/OS
+            p DC/OS is fully open source, and we appreciate contributions! Proposing documentation changes, supporting fellow users, participating in working groups, running local meetups, improving our examples and demos, adding packages to the universe, and of course coding are all ways to contribute.
+
+            p #[a(href='https://dcos.io/contribute/') Learn how to contribute to DC/OS]
+
+
 
   .container
       +footer
