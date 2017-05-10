@@ -51,7 +51,7 @@ block content
             h4 Cloud
             p.hero-list__item__copy__paragraph.small.pb3 
               | The easiest option. Automatically configure your infrastructure and install DC/OS with a few clicks or commands. 
-              a(href='https://dcos.io/docs/latest/installing/cloud/' style='color: #9351E5') Read the docs
+            a(href='https://dcos.io/docs/latest/installing/cloud/' style='color: #9351E5') Documentation
             .flex.flex-end.mt-auto(style='width: 100%')
               div.dropdown.z-500(style='text-align: left; left: 0; width: 100%; position: relative;')
                 a.btn.btn-primary.mb0.block.center.no-arrow.text-white.bg-heliotrope Install in the cloud
@@ -65,43 +65,44 @@ block content
             h4 On-premises
             p.hero-list__item__copy__paragraph.small.pb3 
               | The most nuanced option. Control everything about your installation. The other install methods are automated versions of this process. 
-              a(href='https://dcos.io/docs/latest/installing/custom/' style='color: #9351E5') Read the docs
+            a(href='https://dcos.io/docs/latest/installing/custom/' style='color: #9351E5') Documentation
             .flex.flex-end.mt-auto(style='width: 100%')
               a(href='https://downloads.dcos.io/dcos/stable/commit/0ce03387884523f02624d3fb56c7fbe2e06e181b/dcos_generate_config.sh', style='width: 100%;').btn.btn-primary.center.m0 Install on premises
               
   //- DC/OS enables Get Started
-  .outer-container.bg-gray.clearfix.py4.px2
-    .row
-      .max-width-4.mx-auto
-        .mxn2.flex.flex-auto.flex-wrap.center
-          .lg-col-8.col-12.xs-col-12.px2.mx-auto.pb2.center
-            h2 DC/OS 101 tutorial
-            p If you already have DC/OS installed on your cluster and aren't sure what to do next, try walking through the 101 tutorial, which is designed to give you hands-on experience with the essential pieces of DC/OS right away. Follow the simple recipes, or read and try the "deep dives" to learn how DC/OS works behind the scenes.
-
-        .flex.flex-auto.flex-wrap.lg-col-8.col-12.xs-col-12.mx-auto.pb2
-          h4(style='max-width: inherit;') The DC/OS 101 tutorial covers the following topics:
-          .lg-col-6.col-6.xs-col-12.xs-center.px2.pb3
-            ul.inherit-ul.left-align
-              li Installing services
-              li Deploying apps (containerized and non-containerized)
-              li Connecting multiple applications
-              li Service discovery
-
-          .lg-col-6.col-6.xs-col-12.xs-center.px2.pb3
-            ul.inherit-ul.left-align
-              li Load-balancing (within the cluster and externally)
-              li Making applications accessible from outside the cluster
-              li Investigating/debugging common problems
-
-          .col-12.px2.pt2.center
-            a(href='https://dcos.io/docs/1.8/usage/tutorials/dcos-101/', style='width: 100%;').btn.btn-primary Start the 101 Tutorial
+  
+  //- .outer-container.bg-gray.clearfix.py4.px2
+  //-   .row
+  //-     .max-width-4.mx-auto
+  //-       .mxn2.flex.flex-auto.flex-wrap.center
+  //-         .lg-col-8.col-12.xs-col-12.px2.mx-auto.pb2.center
+  //-           h2 DC/OS 101 tutorial
+  //-           p If you already have DC/OS installed on your cluster and aren't sure what to do next, try walking through the 101 tutorial, which is designed to give you hands-on experience with the essential pieces of DC/OS right away. Follow the simple recipes, or read and try the "deep dives" to learn how DC/OS works behind the scenes.
+  //- 
+  //-       .flex.flex-auto.flex-wrap.lg-col-8.col-12.xs-col-12.mx-auto.pb2
+  //-         h4(style='max-width: inherit;') The DC/OS 101 tutorial covers the following topics:
+  //-         .lg-col-6.col-6.xs-col-12.xs-center.px2.pb3
+  //-           ul.inherit-ul.left-align
+  //-             li Installing services
+  //-             li Deploying apps (containerized and non-containerized)
+  //-             li Connecting multiple applications
+  //-             li Service discovery
+  //- 
+  //-         .lg-col-6.col-6.xs-col-12.xs-center.px2.pb3
+  //-           ul.inherit-ul.left-align
+  //-             li Load-balancing (within the cluster and externally)
+  //-             li Making applications accessible from outside the cluster
+  //-             li Investigating/debugging common problems
+  //- 
+  //-         .col-12.px2.pt2.center
+  //-           a(href='https://dcos.io/docs/1.8/usage/tutorials/dcos-101/', style='width: 100%;').btn.btn-primary Start the 101 Tutorial
 
 
 
 
 
   //- Section 2
-  .outer-container.bg-white.clearfix.py4.px2
+  .outer-container.bg-white.clearfix.pt2.pb4.px2
     .row
       .max-width-4.mx-auto
         .mxn2.flex.flex-auto.flex-wrap
