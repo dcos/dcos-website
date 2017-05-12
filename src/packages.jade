@@ -10,22 +10,28 @@ block content
 
     .container__content
       h1 Packages
-      p.hero-subtitle DC/OS comes pre-configured with a catalog (called the Universe) of over 100 easy-install services, most of which are community contributed!
+      p.hero-subtitle DC/OS comes pre-configured with a catalog (called the Universe) of over 100 services, specially packaged to easily install on DC/OS. Most packages are community contributed!
 
 
   .outer-container.bg-white.clearfix.py5.px2
     .row
       .flex.flex-auto.flex-wrap
-        .lg-col-6.col-6.xs-col-12.px2.mx-auto.pb2
+        .lg-col-4.col-4.xs-col-12.px2.mx-auto.pb2
           h2 Browse
           p 
-            | The DC/OS package browser is a community-built index of the services in the Universe. Wondering if your favorite database, streaming processing engine, or monitoring platform is there? Have a look! 
+            | The DC/OS package browser is a community-built index of the packaged services in the Universe. Wondering if your favorite database, streaming processing engine, or monitoring platform is there? Have a look!
             a(href='https://universe.serv.sh/#/' class='block my0 cta cta--text case-study-link')  Browse Universe Packages →
-            
-        .lg-col-6.col-6.xs-col-12.px2.mx-auto.pb2
+        
+        .lg-col-4.col-4.xs-col-12.px2.mx-auto.pb2
+          h2 Learn
+          p 
+            | Each universe package comes with instructions on how to configure and install it on DC/OS. Most can be installed with a few clicks or commands. To learn how to install your favorite package, please visit the examples repository.
+            a(href='https://github.com/dcos/examples' class='block my0 cta cta--text case-study-link') Lean to install your favorite package →
+                    
+        .lg-col-4.col-4.xs-col-12.px2.mx-auto.pb2
           h2 Build
           p 
-            | A DC/OS package is a bundle of metadata that describes how to configure, install, and uninstall a DC/OS service. You can package your favorite service and add it either to a private repository or to the Universe!
+            | A DC/OS package is a bundle of metadata that describes how to configure, install, and uninstall a service on DC/OS. You can package your favorite service and add it either to a private repository or to the public Universe catalog!
             a(href='https://github.com/mesosphere/universe#publish-a-package-1' class='block my0 cta cta--text case-study-link') Build a Universe Package →
     
   //- Recently added packages
@@ -47,6 +53,7 @@ block content
           .card-container
             each package in locals.recentpackages
               div.card.bg-white
+                .card-status #{package.status}
                 .card-header(style='background-image: url(#{package.image})')
                 .card-content.card-copy.center
                   h3.card-title #{package.title}
@@ -55,9 +62,10 @@ block content
                   if(package.blogpost)
                     a(href='#{package.blogpost}').cta.cta--text Read blogpost
                     
-      .container
-        .container__content
-          a(href='#').cta.cta--button See all universe packages
+    .container
+      .container__content
+        h3.center Is your favorite data service packaged for DC/OS?
+        a(href='http://universe.dcos.io/#/').cta.cta--button Browse all packages
     
   .container
     +footer

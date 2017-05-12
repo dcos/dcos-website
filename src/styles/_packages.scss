@@ -2,9 +2,10 @@
 .packages-container {
 
   .card {
+    position: relative;
     overflow: hidden;
   }
-  
+
   .events-carousel .card .card-copy {
     align-items: inherit;
     justify-content: inherit;
@@ -20,6 +21,18 @@
     background-size: auto;
     background-repeat: no-repeat;
     min-height: 160px;
+  }
+
+  .card-status {
+    position: absolute;
+    width: 7.5rem;
+    text-align: center;
+    top: 1rem; left: -2rem;
+    background-color: $heliotrope;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    transform-origin: center;
+    transform: rotate(-45deg);
   }
 
 }
