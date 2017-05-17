@@ -6,7 +6,9 @@ block content
     +header
     .container__content
       h1 DC/OS Releases
-
+      p 
+        | Find and download any release of DC/OS, which is 100% open source. For DC/OS Enterprise releases, please contact 
+        a(href='https://mesosphere.com/pricing/') Mesosphere sales.
   .outer-container.bg-white.clearfix.py5.px2
     .row
       .max-width-4.mx-auto
@@ -50,30 +52,37 @@ block content
                   li: a(href='https://downloads.dcos.io/dcos/testing/master/azure.html', target='_blank') Azure
                   li: a(href='https://downloads.dcos.io/dcos/testing/master/dcos_generate_config.sh') Direct Download
 
-
-  .outer-container.bg-white.clearfix.pb2.px2
-    .row
-      .max-width-4.mx-auto
-        h2.heading-margin-bottom.center.mx-auto.mt3 Release Versions
-
   each release in locals.releases
-    .release(class=release.stable ? 'bg-gray' : '')
+    .release(class=release.stable ? 'stable' : '')
       div
       .release-item.max-width-4.mx-auto.flex
         .release-item--date
-          p.m0 #{ release.month } #{ release.day }, #{ release.year }
         .release-item--content
+          p.release-date.m0 #{ release.month } #{ release.day }, #{ release.year }
+          h3(class=release.stable ? '' : 'mt3') #{ release.title }
           if(release.stable)
             span Stable
-          h3(class=release.stable ? '' : 'mt3') #{ release.title }
-          p #{ release.description }
-          if(release.features.length > 0)
+          if(release.description)
+            p.my1.mb2 #{ release.description }
+          if(release.features)
             ul
               each feature in release.features
                 li #{ feature }
-          a(href!=release.downloadlink target='_blank').btn.btn-primary.inline-block Download #{ release.title }
-          a(href!=release.docslink target='_blank').btn.btn-secondary.inline-block Read documentation
-              
+          if(release.stable)
+            a(href!=release.downloadlink target='_blank').btn.btn-primary.inline-block Download
+            
+          if(release.stable)
+            a(href!=release.docslink target='_blank').btn.btn-secondary.inline-block Release notes
+          else
+            a(href!=release.docslink target='_blank').cta.cta--text.inline-block Release notes →
+            
+            
+  .outer-container.bg-white.clearfix.py5.px2
+    .row.flex.flex-column
+      .sm-col.sm-col-12.md-col-8.mx-auto.center
+        h2.heading-margin-bottom.center.mx-auto Older Versions
+        p.center DC/OS Community Edition describes versions 1.6 and earlier, which were free and available from Mesosphere, Inc. but not open source. When Mesosphere open sourced DC/OS on April 19th, 2016, they stopped distributing Community Edition, and versions 1.6 and earlier are no longer available.
+                  
   .container.container--dark-background
     .container__content
       h2 Install on any virtual or physical machines.
