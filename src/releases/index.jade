@@ -9,15 +9,12 @@ block content
       p 
         | Find and download any release of DC/OS, which is 100% open source. For DC/OS Enterprise releases, please contact 
         a(href='https://mesosphere.com/pricing/') Mesosphere sales.
-  .outer-container.bg-white.clearfix.py5.px2
+  .outer-container.bg-gray.clearfix.pt4.pb3.px2
     .row
       .max-width-4.mx-auto
-
-        h2.heading-margin-bottom.center.mx-auto Release Channels
-
         .cards.flex.flex-auto.flex-wrap
 
-          .stable-releases.card.card-content.stable.col-4.relative(style="padding-bottom: 3.75rem;")
+          .stable-releases.card.card-content.stable.col-4.relative.bg-white(style="padding-bottom: 3.75rem;")
             h3.mb0 Stable
             p.release-version.pb1 DC/OS 1.9
             p.hero-list__item__copy__paragraph.release-copy Latest stable release. Ready for production use.
@@ -32,13 +29,13 @@ block content
                   li: a(href='https://downloads.dcos.io/dcos/stable/azure.html', target='_blank') Azure
                   li: a(href='https://downloads.dcos.io/dcos/stable/commit/0ce03387884523f02624d3fb56c7fbe2e06e181b/dcos_generate_config.sh') Direct Download
 
-          .card.card-content.stable.col-4.relative(style="justify-content: inherit; padding-bottom: 3.75rem;")
+          .card.card-content.stable.col-4.relative.bg-white(style="justify-content: inherit; padding-bottom: 3.75rem;")
             h3.mb0 Early Access
             p.release-version.pb1 DC/OS 1.10.0-rc1
             p.hero-list__item__copy__paragraph.release-copy Coming soon!<!-- Upcoming release. Ready for development and testing. -->
             a.cta.cta--text.release-notes.pb2(href='/releases/1.9.0-rc4/') <!-- Release Notes -->
 
-          .master-releases.card.card-content.stable.col-4.relative(style="justify-content: inherit; padding-bottom: 3.75rem;")
+          .master-releases.card.card-content.stable.col-4.relative.bg-white(style="justify-content: inherit; padding-bottom: 3.75rem;")
             h3.mb0 Master
             p.release-version.pb1 DC/OS master
             p.hero-list__item__copy__paragraph.release-copy.pb2 Bleeding edge automated release. Only tested with automated tests.
