@@ -164,7 +164,7 @@ const serveTask = () => {
         }
       })
 
-      watch(['./src/*.jade', './src/**/*.jade', './src/*.md', './src/events.json', './src/recent-packages.json', './src/scripts/*.js'],
+      watch(['./src/*.jade', './src/**/*.jade', './src/*.md', './src/events.json', './src/recent-packages.json', './src/scripts/*.js', './src/demos.json'],
         batch(function (events, done) { gulp.start('build-site-templates', done) }))
       watch(paths.blog.src,
         batch(function (events, done) { gulp.start('build-blog-templates', done) }))
@@ -615,9 +615,15 @@ function addTimestampToMarkdownFiles (files, metalsmith, callback) {
   callback()
 }
 
-const filterPastEvents = eventsArr => {
-  const today = moment()
-  return eventsArr.filter(event => moment(event.date).isAfter(today))
+const sortEventsAscending = eventsArr => {
+  return eventsArr.sort((eventA, eventB) => {
+    const a = moment(eventA.date).unix()
+    const b = moment(eventB.date).unix()
+
+    if(a > b) return -1
+    if(a < b) return 1
+    return 0
+  })
 }
 
 const addDateProps = eventsArr => {

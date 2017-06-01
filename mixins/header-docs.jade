@@ -21,6 +21,9 @@ mixin header()
           a(href='/install/') Install
 
         li.menu-item
+          a(href='/releases/') Releases
+
+        li.menu-item
           a(href='/docs/latest/') Docs
 
         li.menu-item
@@ -32,14 +35,13 @@ mixin header()
         li.menu-item
           a(href='https://github.com/dcos/dcos', target='_blank') GitHub
 
-        li.menu-item
-          a(href='/get-started/') Get Started
-
     ul.menu
       li.menu-item
         a(href='/why-dcos/') Why&nbsp;DC/OS
       li.menu-item
         a(href='/install/') Install
+      li.menu-item
+        a(href='/releases/') Releases
       li.menu-item
         if (locals.filename.includes('docs'))
           a(href='/docs/latest/').active Docs
@@ -55,5 +57,3 @@ mixin header()
       li.menu-item
         .menu-item__github-button
           a.github-button(href='https://github.com/dcos/dcos', data-count-href='/dcos/dcos/stargazers', data-count-api='/repos/dcos/dcos#stargazers_count', data-count-aria-label='# stargazers on GitHub', aria-label='Star dcos/dcos on GitHub') Star
-      li.menu-item
-        a(href='/get-started/').cta.cta--button.button--secondary Get&nbsp;Started

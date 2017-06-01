@@ -6,7 +6,7 @@ block head
   meta(property='og:type', content='article')
   meta(property='og:title', content='Install | DC/OS')
   meta(property='og:image', content='https://dcos.io/assets/images/social-img.png')
-  meta(property='og:description', content='Find detailed installation guides for Vagrant, AWS, Windows Azure, packet, Google Compute Engine, CentOS, CoreOS using the CLI, GUI or the advanced custom installer.')
+  meta(property='og:description', content='Install the latest version of DC/OS locally, on-premises, or in the cloud, and find resources for beginners.')
   meta(property='og:url', content='https://dcos.io/')
   meta(property='og:site_name', content='DC/OS')
   meta(name='twitter:card', content='summary')
@@ -14,82 +14,118 @@ block head
   meta(name='twitter:title', content='Install | DC/OS')
   meta(name='twitter:card', content='summary_large_image')
   meta(name='twitter:image', content='https://dcos.io/assets/images/social-img.png')
-  meta(name='twitter:description', content='Find detailed installation guides for Vagrant, AWS, Windows Azure, packet, Google Compute Engine, CentOS, CoreOS using the CLI, GUI or the advanced custom installer.')
+  meta(name='twitter:description', content='Install the latest version of DC/OS locally, on-premises, or in the cloud, and find resources for beginners.')
 
 block content
 
-  .container.container--dark-background
-    +header
+  .container.container--dark-background.pb1.px2.sm-pb0(style='display: block;')
+    .mx-auto.max-width-4
+      +header(style='padding: 0;')
 
-    .container__content.community-hero
-      h1 Install DC/OS
+    .mx-auto.max-width-4
+      .container__content.community-hero
+        h1.mb0 Install
 
-  .container
-    .container__content.install-columns
-      ul.container__content--hero-list
-        li.hero-list__item
-          img.hero-list__item__image(src="/assets/images/icons/local.svg")
-          .hero-list__item__copy
-            h3.install-bullets-title Local
-            p Vagrant-based installer that creates a cluster of virtual machines on a local machine.
-            h4.install-bullets-title Requirements
-            p.small A machine with at least 16GB of RAM.
-            h6 Install on:
-          a(href='/docs/latest/administration/installing/local/').card
-            .card-content
-              +image('/assets/images/logos/install-platforms/vagrant.png')
 
-        li.hero-list__item
-          img.hero-list__item__image(src="/assets/images/icons/cloud.svg")
-          .hero-list__item__copy
-            h3.install-bullets-title Cloud
-            p Configurable cloud provisioning templates for AWS, Azure, Packet and Google Compute Engine.
-            h4.install-bullets-title Requirements
-            p.small An active cloud subscription with your favorite provider.
-            h6 Install on:
-          a(href='/docs/latest/administration/installing/cloud/aws/').card
-            .card-content
-              +image('/assets/images/logos/install-platforms/aws.png')
-          a(href='/docs/latest/administration/installing/cloud/azure/').card
-            .card-content
-              +image('/assets/images/logos/install-platforms/azure.png')
-          a(href='/docs/latest/administration/installing/cloud/packet/').card
-            .card-content
-              +image('/assets/images/logos/install-platforms/packet.png')
-          a(href='/docs/latest/administration/installing/cloud/gce/').card
-            .card-content
-              +image('/assets/images/logos/install-platforms/gce.png')
 
-        li.hero-list__item
-          img.hero-list__item__image(src="/assets/images/icons/custom-cloud.svg")
-          .hero-list__item__copy
-            h3.install-bullets-title Custom Cloud
-            p Custom installers for existing setups in either AWS or any cloud.
-            h4.install-bullets-title Requirements
-            p.small An active cloud subscription; an existing cluster with at least 4 nodes.
-            h6 Install on:
-          a(href='/docs/latest/administration/installing/custom/').card
-            .card-content
-              +image('/assets/images/logos/install-platforms/aws.png')
+  //- Challenges / Solutions
+  .outer-container.clearfix.py4.px2#install
+    .row
+      .max-width-4.mx-auto
+        .mxn2.flex.flex-auto.flex-wrap.items-center
+          .lg-col-8.col-12.xs-col-12.px2.mx-auto
+            h2.pb2.sm-center.mx-auto Choose a provider and install DC/OS
+            p.sm-center.mx-auto.pb4 Installation involves configuring your infrastructure and installing DC/OS bits on top, so the infrastructure provider you choose determines your installation method.
 
-          a(href='/docs/latest/administration/installing/custom/').card.card--custom-instal
-            .card-content
-              h5.custom-install OTHER PLATFORMS
+        .mxn2.flex.flex-auto.flex-wrap.flex-start
 
-        li.hero-list__item
-          img.hero-list__item__image(src="/assets/images/icons/on-premesis.svg")
-          .hero-list__item__copy
-            h3.install-bullets-title On-Premises
-            p GUI, command line and advanced installers for on-premises setups.
-            h4.install-bullets-title Requirements
-            p.small At least 4 nodes, each 4GB/2 CPUs.
-            h6 Install on:
-          a(href='/docs/latest/administration/installing/custom/').card
-            .card-content
-              +image('/assets/images/logos/install-platforms/centos.png')
-          a(href='/docs/latest/administration/installing/custom/advanced/').card
-            .card-content
-              +image('/assets/images/logos/install-platforms/coreos.png')
+          a.lg-col-4.col-6.xs-col-12.xs-center.px3.py3.center.card.bg-gray.relative(href="https://dcos.io/docs/latest/administration/installing/local/" style="justify-content: inherit;")
+            img.hero-list__item__image(src="/assets/images/icons/local.svg")
+            h4 Development
+            p.hero-list__item__copy__paragraph.small(style='min-height: 7rem;') The cheapest option, with limited functionality. Run DC/OS on a Vagrant cluster on your local machine.
+            .flex.flex-end.mt-auto(style='width: 100%')
+              span(href='https://dcos.io/docs/latest/administration/installing/local/', style='width: 100%;').btn.btn-primary.center Install locally
 
+          div.lg-col-4.col-6.xs-col-12.xs-center.px3.py3.center.card.bg-gray.relative(style="justify-content: inherit; padding-bottom: 2.45rem")
+            img.hero-list__item__image(src="/assets/images/icons/cloud.svg")
+            h4 Cloud
+            p.hero-list__item__copy__paragraph.small(style='min-height: 7rem;')
+              | The easiest option. Automatically configure your infrastructure and install DC/OS with a few clicks or commands.
+            a(href='https://dcos.io/docs/latest/installing/cloud/' style='color: #9351E5') Documentation
+            .flex.flex-end.mt-auto(style='width: 100%')
+              div.dropdown.z-500(style='text-align: left; left: 0; width: 100%; position: relative;')
+                a.btn.btn-primary.mb0.block.center.no-arrow.text-white.bg-heliotrope Install in the cloud
+                  img.ml1.align-middle(src='/assets/images/icons/arrow-down-docs-unselected-white.svg' style='margin-top: -2px;')
+                ul
+                  li: a(href='https://downloads.dcos.io/dcos/stable/aws.html', target='_blank') Amazon Web Services
+                  li: a(href='https://downloads.dcos.io/dcos/stable/azure.html', target='_blank') Azure
+
+          div.lg-col-4.col-6.xs-col-12.xs-center.px3.py3.center.card.bg-gray.relative(style="justify-content: inherit; padding-bottom: 2.45rem")
+            img.hero-list__item__image(src="/assets/images/icons/on-premesis.svg")
+            h4 On-premises
+            p.hero-list__item__copy__paragraph.small(style='min-height: 7rem;')
+              | The most nuanced option. Control everything about your installation. The other install methods are automated versions of this process.
+            a(href='https://dcos.io/docs/latest/installing/custom/' style='color: #9351E5') Documentation
+            .flex.flex-end.mt-auto(style='width: 100%')
+              a(href='https://downloads.dcos.io/dcos/stable/commit/0ce03387884523f02624d3fb56c7fbe2e06e181b/dcos_generate_config.sh', style='width: 100%;').btn.btn-primary.center.m0 Install on premises
+
+  //- DC/OS enables Get Started
+
+  .outer-container.bg-gray.clearfix.py4.px2
+    .row
+      .max-width-4.mx-auto
+        .mxn2.flex.flex-auto.flex-wrap.center
+          .lg-col-8.col-12.xs-col-12.px2.mx-auto.pb2.center
+            h2 DC/OS 101 tutorial
+            p If you already have DC/OS installed on your cluster and aren't sure what to do next, try walking through the 101 tutorial, which is designed to give you hands-on experience with the essential pieces of DC/OS right away. Follow the simple recipes, or read and try the "deep dives" to learn how DC/OS works behind the scenes.
+
+        .flex.flex-auto.flex-wrap.lg-col-8.col-12.xs-col-12.mx-auto.pb2
+          h4(style='max-width: inherit;') The DC/OS 101 tutorial covers the following topics:
+          .lg-col-6.col-6.xs-col-12.xs-center.px2.pb3
+            ul.inherit-ul.left-align
+              li Installing services
+              li Deploying apps (containerized and non-containerized)
+              li Connecting multiple applications
+              li Service discovery
+
+          .lg-col-6.col-6.xs-col-12.xs-center.px2.pb3
+            ul.inherit-ul.left-align
+              li Load-balancing (within the cluster and externally)
+              li Making applications accessible from outside the cluster
+              li Investigating/debugging common problems
+
+          .col-12.px2.pt2.center
+            a(href='/docs/1.9/tutorials/dcos-101/', style='width: 100%;').btn.btn-primary Start the 101 Tutorial
+
+
+
+
+
+  //- Section 2
+  .outer-container.bg-white.clearfix.pt2.pb4.px2
+    .row
+      .max-width-4.mx-auto
+        .mxn2.flex.flex-auto.flex-wrap
+          h2.pb4.center.mx-auto Additional resources for beginners
+
+      .max-width-4.mx-auto.pb4
+        .mxn2.flex.flex-auto.flex-wrap
+          a.card.col-4.left-align.px3.py3(style='display: block' href='/docs/1.9/overview/')
+            h4 Documentation
+            p.mb2.mt0 Read the documentation's overview of DC/OS for a conceptual description of DC/OS's inner workings.
+            span(style='color: #9351E5') Read the docs
+
+          a.card.col-4.left-align.px3.py3(style='display: block' href='/community')
+            h4 Community
+            p.mb2.mt0 Get help via mailing list, Slack, or Stack Overflow by joining the DC/OS community.
+            span(style='color: #9351E5') Join the community
+
+          a.card.col-4.left-align.px3.py3(style='display: block' href='/docs/latest/tutorials/')
+             h4 Tutorials
+             p.mb2.mt0 Tutorials are hands-on walkthroughs of DC/OS with explanations.
+             span(style='color: #9351E5') Try a tutorial
+
+
+  //- Footer
   .container
     +footer

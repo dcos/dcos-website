@@ -16,6 +16,7 @@ require('./typer2.js')
 require('./html-include.js')
 require('swagger-ui-browserify')
 require('./ngindox.js')
+require('./demos')
 
 import Wallop from 'wallop';
 import Hammer from 'hammerjs';
@@ -76,6 +77,7 @@ $('.dropdown').click(function(event){
     $('.dropdown').removeClass('is-active')
   });
 
+  $('.dropdown.is-active').removeClass('is-active')
   $(this).toggleClass('is-active')
 
   event.stopPropagation()
@@ -115,13 +117,16 @@ if(wallopEl){
   // Add auto-play functionality
   var autoPlayMs = 6000;
   var nextTimeout;
+  var navItems = document.querySelectorAll('.hero-nav--item');
   var loadNext = function() {
     var nextIndex = (slider.currentItemIndex + 1) % slider.allItemsArray.length;
     slider.goTo(nextIndex);
   }
   nextTimeout = new Timer(function() { loadNext(); }, autoPlayMs);
-  slider.on('change', function() {
+  slider.on('change', function(e) {
     nextTimeout.resume();
+    document.querySelector('.hero-nav--item.active').classList.remove('active');
+    navItems[e.detail.currentItemIndex].classList.add('active');
   });
 
   slider.on('mouseenter', function(){
@@ -144,6 +149,15 @@ if(wallopEl){
   }).on('swiperight', function() {
     slider.previous();
   });
+
+  for (var i = 0; i < navItems.length; i++) {
+    navItems[i].addEventListener('click', function(e){
+      e.preventDefault();
+      slider.goTo(e.target.dataset.target);
+      nextTimeout.resume();
+    });
+
+  }
 }
 
 /****************
@@ -189,7 +203,7 @@ $('#submit-feedback').attr('href', `https://jira.dcos.io/secure/CreateIssueDetai
 const currentUrlPath = window.location.pathname
 var pathArray = currentUrlPath.split('/')
 
-$('button.dropdown a.option').click(function(event){
+$('.dropdown a.option').click(function(event){
   event.preventDefault()
   pathArray[2] = $(this).attr('data-version')
   var newUrlPath = window.location.origin + pathArray.join('/')

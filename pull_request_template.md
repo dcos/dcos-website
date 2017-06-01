@@ -2,7 +2,7 @@
 <!-- Link to JIRA issue -->
 
 ## Urgency
-- [ ] Blocker <!-- Ping @emanic, @sascala or @joel-hamill for review -->
+- [ ] Blocker <!-- Ping @sascala or @joel-hamill for review -->
 - [ ] High
 - [ ] Medium
 

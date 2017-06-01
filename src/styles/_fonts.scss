@@ -15,11 +15,11 @@ a {
   -webkit-transform: translate3d(0, 0, 0);
 }
 
-h1, h2, h3, h4, h5, h6, p, a, img, figure, blockquote, cite, ul, ol, pre, code {
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h4, .h5, .h6, p, a, img, figure, blockquote, cite, ul, ol, pre, code {
 	margin: 1rem 0;
 }
 
-h1, h2, h3 {
+h1, h2, h3, .h1, .h2, .h3 {
 	font-family: $clio-light;
 }
 
@@ -28,14 +28,14 @@ h1, h2, h3, p, blockquote {
 }
 
 // Vertical rythm: Major Third
-h1 {
+h1, .h1 {
 	font-size: 2.4rem;
 	font-weight: 300;
 	line-height: 1.2;
 	letter-spacing: -0.03rem;
 }
 
-h2 {
+h2, .h2 {
 	margin-bottom: 0;
 	font-size: 2rem;
 	font-weight: 300;
@@ -47,20 +47,20 @@ h2 {
 	margin-bottom: 2rem;
 }
 
-h3 {
+h3, .h3 {
 	font-size: 1.5rem;
 	letter-spacing: 0.05rem;
 	line-height: 1.5;
 }
 
-h4 {
+h4, .h4 {
 	font-size: 1.25rem;
 	font-family: $clio-medium;
 	font-weight: 500;
 	letter-spacing: 0.03rem;
 }
 
-h5 {
+h5, .h5 {
 	font-size: 1.125rem;
 	font-family: $clio-medium;
 	font-weight: 500;
@@ -68,7 +68,7 @@ h5 {
 	line-height: 1.5;
 }
 
-h6 {
+h6, .h6 {
 	font-size: 0.9rem;
 	font-family: $clio-medium;
 	font-weight: 400;

@@ -2,6 +2,7 @@
 /brand /brand/
 /brand/index.html https://brand.ai/mesosphere/dc-os-brand-guidelines
 /docs /docs/latest/
+/docs/ /docs/latest/
 /docs/1.7/administration/dcosarchitecture/security/index.html /docs/1.7/overview/
 /docs/1.7/administration/installing/custom/automated-installer/system-requirements/index.html /docs/1.7/administration/installing/custom/system-requirements/
 /docs/1.7/administration/installing/custom/gui/index.html /docs/1.7/administration/installing/custom/gui/
@@ -20,7 +21,6 @@
 /docs/1.7/usage/services/repo/index.html /docs/1.7/usage/repo/
 /docs/1.7/usage/services/uninstall/#framework-cleaner /docs/1.7/usage/managing-services/uninstall/#framework-cleaner
 /docs/1.7/usage/services/uninstall/index.html /docs/1.7/usage/managing-services/uninstall/
-/docs/1.7/usage/tutorials/marathon/index.html /docs/1.7/usage/tutorials/marathon/
 /docs/1.7/usage/tutorials/marathon/inline-update/index.html /docs/1.7/usage/tutorials/marathon/
 /docs/1.7/usage/tutorials/marathon/stateful-services/index.html /docs/1.7/usage/tutorials/marathon/stateful-services/
 /docs/1.7/usage/tutorials/ruby-on-rails/index.html /docs/1.7/usage/tutorials/
@@ -55,7 +55,7 @@
 /docs/1.8/usage/service-discovery/virtual-ip-addresses/index.html /docs/1.8/usage/service-discovery/load-balancing-vips/virtual-ip-addresses/
 /docs/1.8/usage/tutorials/docker-app/index.html /docs/1.8/usage/managing-services/creating-services/deploy-docker-app/
 /docs/1.8/usage/tutorials/inline-update/index.html /docs/1.8/usage/managing-services/update-user-service/
-/docs/1.8/usage/tutorials/marathon/index.html /docs/1.7/usage/tutorials/marathon/
+/docs/1.8/usage/tutorials/marathon/index.html /docs/1.8/usage/tutorials/dcos-101/
 /docs/1.8/usage/tutorials/marathon/inline-update/index.html /docs/1.7/usage/tutorials/marathon/
 /docs/1.8/usage/tutorials/marathon/stateful-services/index.html /docs/1.7/usage/tutorials/marathon/stateful-services/
 /docs/1.8/usage/tutorials/public-app/index.html /docs/1.8/usage/managing-services/expose-service/
@@ -154,7 +154,9 @@
 /docs/1.9/administration/virtual-networks/isolation/index.html /docs/1.9/networking/virtual-networks/isolation/
 /docs/1.9/debugging/cli-debugging/task-exec/quickstart/index.html /docs/1.9/monitoring/debugging/cli-debugging/task-exec/
 /docs/1.9/development/index.html /docs/1.9/developing-services/
+/docs/1.9/monitoring/debugging/cli-debugging/task-exec/index.html /docs/1.9/monitoring/debugging/task-exec/
 /docs/1.9/overview/components/index.html /docs/1.9/overview/architecture/components/
+/docs/1.9/overview/roadmap/index.html /docs/1.9/
 /docs/1.9/usage/cli/command-reference/dcos-auth/dcos-auth-list-providers/index.html /docs/1.9/cli/command-reference/dcos-auth/dcos-auth-list-providers/
 /docs/1.9/usage/cli/command-reference/dcos-auth/dcos-auth-login/index.html /docs/1.9/cli/command-reference/dcos-auth/dcos-auth-login/
 /docs/1.9/usage/cli/command-reference/dcos-auth/dcos-auth-logout/index.html /docs/1.9/cli/command-reference/dcos-auth/dcos-auth-logout/
@@ -290,6 +292,7 @@
 /docs/1.9/usage/marathon/index.html /docs/1.9/usage/managing-services/
 /docs/1.9/usage/marathon/ports/index.html /docs/1.9/usage/managing-services/ports/service-ports/
 /docs/1.9/usage/marathon/rest-api/index.html /docs/1.9/usage/managing-services/rest-api/
+/docs/1.9/usage/nginx.json /docs/1.9/deploying-services/creating-services/nginx.json
 /docs/1.9/usage/pods/examples/index.html /docs/1.9/deploying-services/pods/examples/
 /docs/1.9/usage/pods/index.html /docs/1.9/deploying-services/pods/
 /docs/1.9/usage/pods/pods-cli/index.html /docs/1.9/usage/pods/using-pods/
