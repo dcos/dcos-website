@@ -23,16 +23,27 @@
     min-height: 160px;
   }
 
+  .card-content {
+    p {
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  .card-title {
+    width: 100%;
+    text-align: left;
+  }
+
   .card-status {
-    position: absolute;
-    width: 7.5rem;
-    text-align: center;
-    top: 1rem; left: -2rem;
-    background-color: $heliotrope;
-    color: #fff;
-    padding: 0.5rem 2rem;
-    transform-origin: center;
-    transform: rotate(-45deg);
+    border-radius: 2px;
+    margin-left: .5rem;
+    display: inline-block;
+    background-color: #eadef8;
+    color: $heliotrope;
+    padding: 0.11rem .5rem 0.01rem;
+    font-size: 0.8rem;
+    vertical-align: text-top;
   }
 
 }
