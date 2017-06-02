@@ -403,7 +403,7 @@ gulp.task('build-site-templates', () => {
         .use(jade({
           locals: {
             cssTimestamp,
-            events: addDateProps(filterPastEvents(JSON.parse(fs.readFileSync('./src/events.json', 'utf8')))),
+            events: addDateProps(JSON.parse(fs.readFileSync('./src/events.json', 'utf8'))),
             recentpackages: JSON.parse(fs.readFileSync('./src/recent-packages.json', 'utf8'))
           },
           pretty: true
