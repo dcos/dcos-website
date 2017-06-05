@@ -79,96 +79,47 @@ table.releases {
 	}
 }
 
-.release.stable {
-  background-color: $snow
+.releases-container .release {
+  &:nth-child(even) {
+    background-color: $snow;
+  }
+
+  &:nth-child(odd) {
+    background-color: #fff;
+  }
 }
 
 .release-item {
   position: relative;
-  padding: 2rem 1rem 1rem;
 
-  .stable & {
-    padding: 5rem 1rem;
-  }
-
-  &:after {
-    content: ' ';
-    position: absolute;
-    left: 2.625rem;
-    top: 0;
-    width: 4px;
-    height: 100%;
-    background-color: $light-gray;
-
-      @include break($mobile-large-landscape) {
-        left: 8.875rem;
-      }
-
-      @include break($tablet-landscape) {
-        left: 10.875rem;
-      }
-  }
-
-  &:before {
-    content: ' ';
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #c3c3c3;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    margin: 2rem 0 0 2.25rem;
-    z-index: 500;
-
-      .stable & {
-        background-color: $heliotrope;
-        width: 24px;
-        height: 24px;
-        margin-top: 5rem;
-        margin-left: 2rem;
-      }
-
-      @include break($mobile-large-landscape) {
-        margin-left: 8.5rem;;
-
-        .stable & {
-          margin-left: 8.275rem;
-        }
-      }
-
-      @include break($tablet-landscape) {
-        margin-left: 10.5rem;
-
-          .stable & {
-            margin-left: 10.275rem;
-          }
-      }
-  }
-
-  &--date {
-    position: relative;
-    display: none;
-    padding: 2.5rem 0 0 0;
-    width: 15%;
-
-    p {
-      text-transform: uppercase;
-      font-size: 0.825rem;
+  &--releases {
+    a {
+      color: $heliotrope;
+      font-weight: bold;
+      font-size: 1rem;
+      opacity: 1;
     }
 
-    @include break($mobile-large-landscape) {
-      display: inline-block;
+    ul {
+      list-style: none;
+    }
+
+    li {
+      margin-bottom: .5rem;
     }
   }
 
   &--content {
     position: relative;
-    margin-left: 4rem;
 
-      @include break($mobile-large-landscape) {
-        margin-left: 6rem;
-      }
+    ul {
+      list-style: disc;
+      margin-left: 20px;
+    }
+
+    li {
+      line-height: 1.75rem;
+    }
   }
 
   span {
@@ -179,31 +130,18 @@ table.releases {
     padding: 0.2rem 0.5rem;
   }
 
-  h3 {
-    display: inline-block;
-    font-weight: normal;
-    margin: 0.5rem 1rem 0 0;
-    vertical-align: sub;
+
+
+  .btn-primary {
+    position: relative;
+    z-index: 1;
+    padding-right: .8rem;
   }
 
-  ul {
-    list-style: disc;
-    margin-left: 20px;
-    margin-bottom: 1rem;
-  }
-
-  li {
-    padding-bottom: 0.25rem;
-    line-height: 1.75rem;
-  }
-
-  a {
-    margin-top: .4rem;
-    margin-right: 1rem;
-
-      &.btn-secondary {
-        border: 1px solid $heliotrope;
-      }
+  .dropdown ul {
+    list-style: none;
+    margin-left: 0;
+    max-width: 50%;
   }
 
 }
@@ -213,4 +151,29 @@ table.releases {
   text-transform: uppercase;
   font-size: 0.9rem;
   font-weight: bold;
+}
+
+.release-card {
+
+  @media #{$breakpoint-sm} {
+    > * {
+      padding-left: 20%;
+      padding-right: 20%;
+    }
+  }
+
+  .btn-primary {
+    padding-right: .8rem;
+  }
+
+  .release-version {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: .9rem;
+  }
+
+  .inner {
+    border-radius: 4px;
+    @include box-shadow(0px 0px 0px 1px rgba($black, 0.10), 0px 1px 2px 0px rgba($black, 0.05));
+  }
 }

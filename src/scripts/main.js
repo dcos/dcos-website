@@ -72,6 +72,7 @@ if (!Array.prototype.find) {
   Dropdown
 ***********************/
 $('.dropdown').click(function(event){
+  $('.dropdown.is-active').removeClass('is-active')
   $('html').on('click',function() {
     $('.dropdown').removeClass('is-active')
   });

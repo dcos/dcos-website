@@ -11,67 +11,83 @@ block content
         a(href='https://mesosphere.com/pricing/') Mesosphere sales.
   .outer-container.bg-gray.clearfix.pt4.pb3.px2
     .row
-      .max-width-4.mx-auto
-        .cards.flex.flex-auto.flex-wrap
+      .max-width-4.mx-auto.clearfix
+        .cards.col-12
+        
+          .release-card.release-stable.col.col-12.md-col-6.md-pr1.relative
+            div.bg-white.center.inner.px3.py3.mb2.md-mb0
+              h3.mb0 Latest Stable
+              p.release-version.pb1 DC/OS 1.9.0
+              p.hero-list__item__copy__paragraph.release-copy Latest stable release. Ready for production use.
+              a.cta.cta--text.release-notes.pb2(href='/releases/1.9.0') Release Notes
 
-          .stable-releases.card.card-content.stable.col-4.relative.bg-white(style="padding-bottom: 3.75rem;")
-            h3.mb0 Stable
-            p.release-version.pb1 DC/OS 1.9
-            p.hero-list__item__copy__paragraph.release-copy Latest stable release. Ready for production use.
-            a.cta.cta--text.release-notes.pb2(href='/releases/1.9.0') Release Notes
+              .col-12.flex-end.mt-auto.relative
+                div.relative.dropdown.mb2
+                  a.btn.btn-primary.mb0.block.center.no-arrow.text-white.bg-heliotrope Get Release
+                    img.ml1.align-middle(src='/assets/images/icons/arrow-down-docs-unselected-white.svg' style='margin-top: -2px;')
+                  ul.z-500.left
+                    li: a(href='https://downloads.dcos.io/dcos/stable/aws.html', target='_blank') Amazon Web Services
+                    li: a(href='https://downloads.dcos.io/dcos/stable/azure.html', target='_blank') Azure
+                    li: a(href='https://downloads.dcos.io/dcos/stable/commit/0ce03387884523f02624d3fb56c7fbe2e06e181b/dcos_generate_config.sh') Direct Download
 
-            .col-12.flex-end.mt-auto.relative
-              div.absolute.dropdown.z-500(style='text-align: left; left: 0; width: 100%;')
+          .release-card.release-rc.col.col-12.md-col-6.relative.mb2.md-pl1
+            .bg-white.center.inner.px3.py1
+              h3.mb0 Release Candidate
+              p.release-version.pb0 DC/OS 1.10.0-rc1
+              
+              div.relative.dropdown.mb1
                 a.btn.btn-primary.mb0.block.center.no-arrow.text-white.bg-heliotrope Get Release
                   img.ml1.align-middle(src='/assets/images/icons/arrow-down-docs-unselected-white.svg' style='margin-top: -2px;')
-                ul
+                ul.left.z-500
                   li: a(href='https://downloads.dcos.io/dcos/stable/aws.html', target='_blank') Amazon Web Services
                   li: a(href='https://downloads.dcos.io/dcos/stable/azure.html', target='_blank') Azure
                   li: a(href='https://downloads.dcos.io/dcos/stable/commit/0ce03387884523f02624d3fb56c7fbe2e06e181b/dcos_generate_config.sh') Direct Download
 
-          .card.card-content.stable.col-4.relative.bg-white(style="justify-content: inherit; padding-bottom: 3.75rem;")
-            h3.mb0 Early Access
-            p.release-version.pb1 DC/OS 1.10.0-rc1
-            p.hero-list__item__copy__paragraph.release-copy Coming soon!<!-- Upcoming release. Ready for development and testing. -->
-            a.cta.cta--text.release-notes.pb2(href='/releases/1.9.0-rc4/') <!-- Release Notes -->
+          .release-card.release-snapshot.col.col-12.md-col-6.relative.md-pl1
+            .bg-white.center.inner.px3.py1
+              h3.mb0 Snapshot
+              p.release-version.pb0 DC/OS 1.11.0 - shot 20170511
 
-          .master-releases.card.card-content.stable.col-4.relative.bg-white(style="justify-content: inherit; padding-bottom: 3.75rem;")
-            h3.mb0 Master
-            p.release-version.pb1 DC/OS master
-            p.hero-list__item__copy__paragraph.release-copy.pb2 Bleeding edge automated release. Only tested with automated tests.
-
-            .col-12.flex-end.mt-auto.relative
-              div.absolute.dropdown.z-500(style='text-align: left; left: 0; width: 100%;')
+              div.relative.dropdown.mb1
                 a.btn.btn-primary.mb0.block.center.no-arrow.text-white.bg-heliotrope Get Release
                   img.ml1.align-middle(src='/assets/images/icons/arrow-down-docs-unselected-white.svg' style='margin-top: -2px;')
-                ul
+                ul.left.z-500
                   li: a(href='https://downloads.dcos.io/dcos/testing/master/aws.html', target='_blank') Amazon Web Services
                   li: a(href='https://downloads.dcos.io/dcos/testing/master/azure.html', target='_blank') Azure
                   li: a(href='https://downloads.dcos.io/dcos/testing/master/dcos_generate_config.sh') Direct Download
 
-  each release in locals.releases
-    .release(class=release.stable ? 'stable' : '')
-      div
-      .release-item.max-width-4.mx-auto.flex
-        .release-item--date
-        .release-item--content
-          p.release-date.m0 #{ release.month } #{ release.day }, #{ release.year }
-          h3(class=release.stable ? '' : 'mt3') #{ release.title }
-          if(release.stable)
-            span Stable
-          if(release.description)
-            p.my1.mb2 #{ release.description }
-          if(release.features)
-            ul
-              each feature in release.features
-                li #{ feature }
-          if(release.stable)
-            a(href!=release.downloadlink target='_blank').btn.btn-primary.inline-block Download
+  .releases-container
+    each release in locals.releases
+      .release
+        .release-item.max-width-4.mx-auto.md-flex.py4.px2.md-px0
+          .release-item--content.col-12.md-col-8
+            h2.mt0.bold #{ release.title }
+            strong.block.mb2 #{ release.month } #{ release.day }, #{ release.year }
+            if(release.description)
+              p.my1.mb3 #{ release.description }
+            strong.block.mb1 Features
+            if(release.features)
+              ul.mb3
+                each feature in release.features
+                  li #{ feature }
+                  
+            a(href!=release.docslink target='_blank').mb3.small.cta.cta--text.inline-block Release notes
             
-          if(release.stable)
-            a(href!=release.docslink target='_blank').btn.btn-secondary.inline-block Release notes
-          else
-            a(href!=release.docslink target='_blank').cta.cta--text.inline-block Release notes →
+            div.relative.dropdown(style='text-align: left; left: 0; width: 100%;')
+              a.btn.btn-primary.mb0.inline-block.center.no-arrow.text-white.bg-heliotrope Get Release
+                img.ml1.align-middle(src='/assets/images/icons/arrow-down-docs-unselected-white.svg' style='margin-top: -2px;')
+              ul.z-500
+                li: a(href='#{ release.downloadlink.amazon }', target='_blank') Amazon Web Services
+                li: a(href='#{ release.downloadlink.azure }', target='_blank') Azure
+                li: a(href='#{ release.downloadlink.direct }') Direct Download
+          
+          .release-item--releases.col-12.md-col-4
+            h3.strong Releases
+            ul
+              each subrelease in release.subreleases
+                li
+                  a(href='#{ subrelease.url }').cta.cta--text #{ subrelease.name }
+            
             
             
   .outer-container.bg-white.clearfix.py5.px2
