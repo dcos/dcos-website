@@ -202,13 +202,13 @@
       "url": "https://www.meetup.com/Bay-Area-Mesos-User-Group/events/240192263/?rv=ea1&_af=event&_af_eid=240192263&https=on"
   },
 
-  { "title": "Meetup - Let's talk SMACK: Meet the SMACK Stack Experts AMA",
+  { "title": "Let's talk SMACK: Meet the SMACK Stack Experts AMA",
       "image": "/assets/images/events/San_Francisco.jpg",
       "date": "2017-06-05",
       "url": "https://www.eventbrite.com/e/lets-talk-smack-meet-the-smack-stack-experts-ama-meetup-tickets-34758244846"
   },
 
-  { "title": "Meetup - Ben Hindman, creator of Apache Mesos and DC/OS",
+  { "title": "NYC Meetup with Ben Hindman, creator of Apache Mesos and DC/OS",
       "image": "/assets/images/events/New_York.jpg",
       "date": "2017-06-06",
       "url": "https://www.eventbrite.com/e/nyc-meetup-with-ben-hindman-creator-of-apache-mesos-and-dcos-tickets-34869443444"
@@ -226,10 +226,22 @@
       "url": "https://spark-summit.org/2017/events/powering-predictive-mapping-at-scale-with-spark-kafka-and-elastic-search/"
   },
 
+  { "title": "Containers Meetup Milan - #AperiTech by Codemotion",
+      "image": "/assets/images/events/Milan.jpg",
+      "date": "2017-06-08",
+      "url": "https://www.eventbrite.it/e/containers-meetup-milan-aperitech-by-codemotion-registration-34656501529"
+  },
+
   { "title": "Meetup - How Apache Mesos - DC/OS keeps apps running",
       "image": "/assets/images/events/San_Francisco_2.jpg",
       "date": "2017-06-13",
       "url": "https://www.meetup.com/San-Francisco-Bay-Area-Big-Data-and-Scalable-Systems/events/238629620/"
+  },
+
+  { "title": "Paris Container Day",
+      "image": "/assets/images/events/Paris.jpg",
+      "date": "2017-06-13",
+      "url": "http://paris-container-day.fr/?utm_content=buffer08ba2&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer"
   },
 
   { "title": "O'Reilly Velocity Conference",
@@ -251,7 +263,7 @@
   },
 
   { "title": "Meetup - How Marathon uses Akka to orchestrate containers at scale",
-      "image": "/assets/images/events/Hamburg.jpg",
+      "image": "/assets/images/events/Hamburg_2.jpg",
       "date": "2017-06-21",
       "url": "https://www.meetup.com/Reactive-Systems-Hamburg/events/239325421/"
   },
@@ -267,11 +279,11 @@
       "date": "2017-07-15",
       "url": "http://www.cdnextcon.com/" },
 
-      { "title": "Meetup - Tobi Knaup, CTO and Co-Founder of Mesosphere",
-          "image": "/assets/images/events/Salt_Lake_City.jpg",
-          "date": "2017-07-20",
-          "url": "https://www.meetup.com/DevOpsUT/events/240003317/"
-      },
+  { "title": "Meetup - Tobi Knaup, CTO and Co-Founder of Mesosphere",
+      "image": "/assets/images/events/Salt_Lake_City.jpg",
+      "date": "2017-07-20",
+      "url": "https://www.meetup.com/DevOpsUT/events/240003317/"
+  },
 
   { "title": "FOSSCON 2017",
       "image": "/assets/images/events/Philadelphia.jpg",

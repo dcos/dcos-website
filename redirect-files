@@ -52,6 +52,7 @@
 /docs/1.8/usage/service-discovery/load-balancing-vips/overlay-networks/index.html /docs/.8/usage/service-discovery/load-balancing-vips/virtual-networks/
 /docs/1.8/usage/service-discovery/marathon-lb/quickstart/index.html /docs/1.8/usage/service-discovery/marathon-lb/marathon-lb-basic-tutorial/
 /docs/1.8/usage/service-discovery/mesos-dns/custom-domain-service-discovery/index.html /docs/1.8/usage/service-discovery/mesos-dns/expose-mesos-zone/
+/docs/1.8/networking/mesos-dns/http-interface/index.html /docs/1.8/networking/mesos-dns/mesos-dns-api/
 /docs/1.8/usage/service-discovery/virtual-ip-addresses/index.html /docs/1.8/usage/service-discovery/load-balancing-vips/virtual-ip-addresses/
 /docs/1.8/usage/tutorials/docker-app/index.html /docs/1.8/usage/managing-services/creating-services/deploy-docker-app/
 /docs/1.8/usage/tutorials/inline-update/index.html /docs/1.8/usage/managing-services/update-user-service/
@@ -99,7 +100,8 @@
 /docs/1.9/administration/installing/custom/add-a-node/index.html /docs/1.9/administering-clusters/add-a-node/
 /docs/1.9/administration/installing/custom/advanced/index.html /docs/1.9/installing/custom/advanced/
 /docs/1.9/administration/installing/custom/cli/index.html /docs/1.9/installing/custom/cli/
-/docs/1.9/administration/installing/custom/configuration-parameters/index.html /docs/1.9/installing/custom/configuration-parameters/
+/docs/1.9/administration/installing/custom/configuration-parameters/index.html /docs/1.9/installing/custom/configuration/configuration-parameters/
+/docs/1.9/installing/custom/configuration-parameters/index.html /docs/1.9/installing/custom/configuration/configuration-parameters/
 /docs/1.9/administration/installing/custom/configure-proxy/index.html /docs/1.9/installing/custom/configure-proxy/
 /docs/1.9/administration/installing/custom/convert-agent-type/index.html /docs/1.9/administering-clusters/convert-agent-type/
 /docs/1.9/administration/installing/custom/gui/index.html /docs/1.9/installing/custom/gui/
@@ -319,6 +321,7 @@
 /docs/1.9/usage/service-discovery/mesos-dns/custom-domain-service-discovery.md /docs/1.9/usage/service-discovery/mesos-dns/expose-mesos-zone/
 /docs/1.9/usage/service-discovery/mesos-dns/expose-mesos-zone/index.html /docs/1.9/networking/mesos-dns/expose-mesos-zone/
 /docs/1.9/usage/service-discovery/mesos-dns/http-interface/index.html /docs/1.9/networking/mesos-dns/http-interface/
+/docs/1.9/networking/mesos-dns/http-interface/index.html /docs/1.9/networking/mesos-dns/mesos-dns-api/
 /docs/1.9/usage/service-discovery/mesos-dns/index.html /docs/1.9/networking/mesos-dns/
 /docs/1.9/usage/service-discovery/mesos-dns/service-naming/index.html /docs/1.9/networking/mesos-dns/service-naming/
 /docs/1.9/usage/service-discovery/mesos-dns/troubleshooting/index.html /docs/1.9/networking/mesos-dns/troubleshooting/
