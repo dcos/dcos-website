@@ -2,47 +2,68 @@
   { "title": "Linux.conf.au",
     "image": "/assets/images/blog/2017-02-23_lca2017_0.jpg",
     "date": "2017-01-16",
-    "url": "/blog/2017/linux-conf-au-2017-retrospective/" },
+    "url": "/blog/2017/linux-conf-au-2017-retrospective/"
+  },
 
   { "title": "Open Networking Summit",
     "image": "/assets/images/events/Santa_Clara.jpg",
     "date": "2017-02-03",
-    "url": "http://sched.co/9kxW" },
+    "url": "http://sched.co/9kxW"
+  },
 
   { "title": "Spark Summit East",
     "image": "/assets/images/blog/2017-03-02_booth_spark_summit_east.jpg",
     "date": "2017-02-07",
-    "url": "/blog/2017/open-source-team-at-spark-summit-east-2017/" },
+    "url": "/blog/2017/open-source-team-at-spark-summit-east-2017/"
+  },
+
+  { "title": "DC/OS für Java-Entwickler. Mit Johannes Unterstein",
+      "image": "/assets/images/events/DC-OS_Java.jpg",
+      "date": "2017-02-23",
+      "url": "https://youtu.be/ju56wWZHXe0"
+  },
 
   { "title": "SCaLE",
     "image": "/assets/images/blog/2017-03-22_scale15x_paasta.jpg",
     "date": "2017-03-02",
-    "url": "/blog/2017/reflecting-on-scale-15x/" },
+    "url": "/blog/2017/reflecting-on-scale-15x/"
+  },
+
+  { "title": "Neo4j Online Meetup #3: Scale out Neo4j using DC/OS",
+      "image": "/assets/images/events/Neo4j_Meetup.jpg",
+      "date": "2017-03-16",
+      "url": "https://youtu.be/qvJ7V33NfsA"
+  },
 
   { "title": "Meetup - Presenting the Instana Package for DC/OS",
     "image": "/assets/images/events/2017-03-22_Instana_Meetup.jpg",
     "date": "2017-03-22",
-    "url": "https://www.youtube.com/watch?v=JFkOmETATYc&feature=youtu.be" },
+    "url": "https://www.youtube.com/watch?v=JFkOmETATYc&feature=youtu.be"
+  },
 
   { "title": "Javaland",
     "image": "/assets/images/events/Bruehl.jpg",
     "date": "2017-03-28",
-    "url": "https://programm.javaland.eu/2017/talk.html#talk?talkId=529298" },
+    "url": "https://programm.javaland.eu/2017/talk.html#talk?talkId=529298"
+  },
 
   { "title": "Meetup - Running Production Containers and Big Data Services Gets Even Better",
     "image": "/assets/images/events/Berlin.jpg",
     "date": "2017-03-28",
-    "url": "https://www.meetup.com/Berlin-Mesos-User-Group/events/238476925/" },
+    "url": "https://www.meetup.com/Berlin-Mesos-User-Group/events/238476925/"
+  },
 
   { "title": "CloudNativeCon + KubeCon",
     "image": "/assets/images/events/Berlin2.jpg",
     "date": "2017-03-29",
-    "url": "https://youtu.be/mijPAVUYTYI" },
+    "url": "https://youtu.be/mijPAVUYTYI"
+  },
 
   { "title": "Meetup - Ben Hindman at Denver DevOps",
     "image": "/assets/images/events/Denver.jpg",
     "date": "2017-03-29",
-    "url": "https://www.meetup.com/DenverDevOps/events/237705542/" },
+    "url": "https://www.meetup.com/DenverDevOps/events/237705542/"
+  },
 
   { "title": "Open Networking Summit",
     "image": "/assets/images/events/Santa_Clara.jpg",
@@ -71,7 +92,8 @@
 
   { "title": "DevPulseCon",
     "image": "/assets/images/events/2017-04-20-DevPulseCon_Elizabeth.jpg",
-    "date": "2017-04-20", "url": "http://devpulsecon.squarespace.com/" },
+    "date": "2017-04-20", "url": "http://devpulsecon.squarespace.com/",
+    "url": "https://dcos.io/blog/2017/devpulsecon-2017-in-mountain-view/" },
 
   { "title": "Meetup - Build, deploy and automate your applications across the clouds.",
     "image": "/assets/images/events/Oslo.jpg",
@@ -91,10 +113,10 @@
   { "title": "DevOpsDays Seattle",
     "image": "/assets/images/events/2017-04-28_DevOpsDaysSEA_Elizabeth.jpg",
     "date": "2017-04-26",
-    "url": "https://www.devopsdays.org/events/2017-seattle/welcome/" },
+    "url": "https://www.youtube.com/watch?v=WCmdPm8GNps" },
 
   { "title": "Meetup - Refactoring Legacy Java Apps with Akka Cluster and DC/OS",
-    "image": "/assets/images/events/Toronto.jpg",
+    "image": "/assets/images/events/2017-04-26_Akka.jpg",
     "date": "2017-04-26",
     "url": "https://www.meetup.com/Reactive-TO/events/238630804/" },
 
@@ -119,7 +141,7 @@
     "url": "https://www.meetup.com/Kubernetes-Mesos-User-Group/events/238937445/" },
 
   { "title": "DevOpsDays Salt Lake City",
-    "image": "/assets/images/events/Salt_Lake_City.jpg",
+    "image": "/assets/images/events/2017-05-17_SLC_DevOpsDays.jpg",
     "date": "2017-05-16",
     "url": "https://www.devopsdays.org/events/2017-salt-lake-city/welcome/" },
 
@@ -128,23 +150,175 @@
     "date": "2017-05-17",
     "url": "http://jonthebeach.com/" },
 
+  { "title": "Meetup - MesosCon Beijing warm up",
+      "image": "/assets/images/events/Beijing.jpg",
+      "date": "2017-05-19",
+      "url": "http://mp.weixin.qq.com/s/-hjaJHOtoVDrQeCITZ7LtA"
+  },
+
+  { "title": "Meetup - Best Practices for Running Containers in Production",
+      "image": "/assets/images/events/New_York.jpg",
+      "date": "05-25-2017",
+      "url": "https://portworx.com/mesosphere-portworx-trace3-meetup-5-25-17/?Role=Portworx"
+  },
+
+  { "title": "JFrog swampUP 2017",
+    "image": "/assets/images/events/2017-05-25_swampup.jpg",
+    "date": "2017-05-25",
+    "url": "https://github.com/mesosphere/presentations/tree/gh-pages/2017-05-25-swampup" },
+
   { "title": "Meetup - From zero to a highly available, production grade DC/OS",
     "image": "/assets/images/events/Warsaw.jpg",
     "date": "2017-05-29",
     "url": "https://www.meetup.com/Kubernetes-Mesos-User-Group/events/238642628/" },
 
+  { "title": "Meetup - Mesos User Group Tokyo",
+      "image": "/assets/images/events/Tokyo3.jpg",
+      "date": "05-30-2017",
+      "url": "https://mesos.connpass.com/event/57331/"
+  },
+
   { "title": "Open Source Summit - Doing DropBox the Cloud Native Way",
     "image": "/assets/images/events/Tokyo.jpg",
     "date": "2017-05-31",
-    "url": "http://sched.co/AMS0" },
+    "url": "http://sched.co/AMS0"
+  },
 
   { "title": "Open Source Summit - Container Networking for Mesos Services",
     "image": "/assets/images/events/Tokyo2.jpg",
     "date": "2017-05-31",
-    "url": "http://sched.co/AOmR" },
+    "url": "http://sched.co/AOmR"
+  },
+
+  { "title": "Meetup - Mesos DC/OS en Argentina",
+      "image": "/assets/images/events/Buenos_Aires.jpg",
+      "date": "2017-05-31",
+      "url": "https://www.meetup.com/mesos-dcos-argentina/events/239335651/?_locale=es-ES"
+  },
+
+  { "title": "Meetup - Ben Hindman: How Fast Data and Microservices Change the Datacenter",
+      "image": "/assets/images/events/San_Jose.jpg",
+      "date": "2017-05-31",
+      "url": "https://www.meetup.com/Bay-Area-Mesos-User-Group/events/240192263/?rv=ea1&_af=event&_af_eid=240192263&https=on"
+  },
+
+  { "title": "Let's talk SMACK: Meet the SMACK Stack Experts AMA",
+      "image": "/assets/images/events/San_Francisco.jpg",
+      "date": "2017-06-05",
+      "url": "https://www.eventbrite.com/e/lets-talk-smack-meet-the-smack-stack-experts-ama-meetup-tickets-34758244846"
+  },
+
+  { "title": "NYC Meetup with Ben Hindman, creator of Apache Mesos and DC/OS",
+      "image": "/assets/images/events/New_York.jpg",
+      "date": "2017-06-06",
+      "url": "https://www.eventbrite.com/e/nyc-meetup-with-ben-hindman-creator-of-apache-mesos-and-dcos-tickets-34869443444"
+  },
+
+  { "title": "Meetup - SMACK Stack at the Philadelphia Linux Users Group",
+      "image": "/assets/images/events/2017-06-07-phillylinux.jpg",
+      "date": "2017-06-07",
+      "url": "http://www.phillylinux.org/"
+  },
+
+  { "title": "Spark Summit 2017",
+      "image": "/assets/images/events/San_Francisco_3.jpg",
+      "date": "2017-06-07",
+      "url": "https://spark-summit.org/2017/events/powering-predictive-mapping-at-scale-with-spark-kafka-and-elastic-search/"
+  },
+
+  { "title": "Containers Meetup Milan - #AperiTech by Codemotion",
+      "image": "/assets/images/events/Milan.jpg",
+      "date": "2017-06-08",
+      "url": "https://www.eventbrite.it/e/containers-meetup-milan-aperitech-by-codemotion-registration-34656501529"
+  },
 
   { "title": "Meetup - How Apache Mesos - DC/OS keeps apps running",
-      "image": "/assets/images/events/San_Francisco.jpg",
+      "image": "/assets/images/events/San_Francisco_2.jpg",
       "date": "2017-06-13",
-      "url": "https://www.meetup.com/San-Francisco-Bay-Area-Big-Data-and-Scalable-Systems/events/238629620/" }
+      "url": "https://www.meetup.com/San-Francisco-Bay-Area-Big-Data-and-Scalable-Systems/events/238629620/"
+  },
+
+  { "title": "Paris Container Day",
+      "image": "/assets/images/events/Paris.jpg",
+      "date": "2017-06-13",
+      "url": "http://paris-container-day.fr/?utm_content=buffer08ba2&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer"
+  },
+
+  { "title": "O'Reilly Velocity Conference",
+      "image": "/assets/images/events/San_Jose.jpg",
+      "date": "2017-06-19",
+      "url": "https://conferences.oreilly.com/velocity/vl-ca/public/schedule/detail/58702"
+  },
+
+  { "title": "Meetup - Azure Thüringen Meetup",
+      "image": "/assets/images/events/Weimar.jpg",
+      "date": "2017-06-19",
+      "url": "https://www.meetup.com/Azure-Thueringen-Meetup/events/239034049/"
+  },
+
+  { "title": "ContainerDays",
+      "image": "/assets/images/events/Hamburg.jpg",
+      "date": "2017-06-20",
+      "url": "https://containerdays.io/"
+  },
+
+  { "title": "Meetup - How Marathon uses Akka to orchestrate containers at scale",
+      "image": "/assets/images/events/Hamburg_2.jpg",
+      "date": "2017-06-21",
+      "url": "https://www.meetup.com/Reactive-Systems-Hamburg/events/239325421/"
+  },
+
+  { "title": "EuroPython",
+      "image": "/assets/images/events/palacongressi_di_rimini.jpg",
+      "date": "07-09-2017",
+      "url": "https://ep2017.europython.eu/en/"
+  },
+
+  { "title": "Cloud+Data Next",
+      "image": "/assets/images/events/San_Francisco.jpg",
+      "date": "2017-07-15",
+      "url": "http://www.cdnextcon.com/" },
+
+  { "title": "Meetup - Tobi Knaup, CTO and Co-Founder of Mesosphere",
+      "image": "/assets/images/events/Salt_Lake_City.jpg",
+      "date": "2017-07-20",
+      "url": "https://www.meetup.com/DevOpsUT/events/240003317/"
+  },
+
+  { "title": "FOSSCON 2017",
+      "image": "/assets/images/events/Philadelphia.jpg",
+      "date": "2017-08-26",
+      "url": "https://fosscon.us/about"
+  },
+
+  { "title": "",
+      "image": "/assets/images/events/.jpg",
+      "date": "",
+      "url": ""
+  },
+
+  { "title": "",
+      "image": "/assets/images/events/.jpg",
+      "date": "",
+      "url": ""
+  },
+
+  { "title": "",
+      "image": "/assets/images/events/.jpg",
+      "date": "",
+      "url": ""
+  },
+
+  { "title": "",
+      "image": "/assets/images/events/.jpg",
+      "date": "",
+      "url": ""
+  },
+
+  { "title": "",
+      "image": "/assets/images/events/.jpg",
+      "date": "",
+      "url": ""
+  }
+
 ]

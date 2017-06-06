@@ -44,6 +44,24 @@
   }
 }
 
+.hero-nav {
+  margin-bottom: 2.5rem;
+  
+    a {
+      display: inline-block;
+      margin: 0 5px;
+      width: 10px;
+      height: 10px;
+      border: 1px solid #fff;
+      position: relative;
+      border-radius: 50%;
+
+      &.active {
+        background-color: #fff;
+      }
+    }
+}
+
 @keyframes blink {
   from, to {
     border-right: 2px solid rgba(red($heliotrope), green($heliotrope), blue($heliotrope), 1.0);
@@ -119,12 +137,19 @@
 
 .hero-list__item__copy__title {
 	margin: 0 0 0.5rem 0;
-	font-size: 1.25rem;
+	font-size: 1.125rem;
+  font-weight: bold;
+  color: $black;
 }
 
 .hero-list__item__copy__paragraph {
 	margin: 0;
 	letter-spacing: 0.03rem;
+  color: $black;
+}
+
+#install .hero-list__item__copy__paragraph {
+  min-height: 9rem;
 }
 
 .container--dark-background {
@@ -206,6 +231,7 @@
 // }
 
 @include break($mobile-large-portrait) {
+
 	.hero-cta-container {
 		flex-direction: row;
 		flex-wrap: nowrap;
@@ -222,6 +248,7 @@
 }
 
 @include break($mobile-large-landscape) {
+
 	.container__content--hero-heading, .container__content--hero-list {
 		align-items: flex-start;
 		text-align: left;
@@ -266,6 +293,11 @@
 }
 
 @include break($tablet-portrait) {
+
+  .hero-nav {
+    font-size: 1.625rem;
+  }
+
 	.container__content--hero-list {
 		margin-bottom: 0;
 	}

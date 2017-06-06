@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="44px" viewBox="0 0 39 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>mesos</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="install-copy-5" transform="translate(-485.000000, -1026.000000)" fill-rule="nonzero" fill="#A9A6AF">
+            <g id="Group-11" transform="translate(239.000000, 1026.000000)">
+                <g id="item-2" transform="translate(246.333333, 0.000000)">
+                    <g id="mesos">
+                        <g id="Group" opacity="0.5" transform="translate(9.737500, 0.000000)">
+                            <polygon id="Shape" points="0.019 17.204386 0.019 26.795614 8.16525 21.9903509"></polygon>
+                            <polygon id="Shape" points="0.54625 27.7315789 8.702 32.5223684 8.702 22.9311404"></polygon>
+                            <polygon id="Shape" points="9.766 22.9311404 9.766 32.5223684 17.9265 27.7315789"></polygon>
+                            <polygon id="Shape" points="10.29325 21.9903509 18.449 26.795614 18.449 17.204386"></polygon>
+                            <polygon id="Shape" points="0.019 28.6578947 0.019 38.2587719 8.16525 33.4390351"></polygon>
+                            <polygon id="Shape" points="0.54625 39.1802632 8.702 43.9710526 8.702 34.3798246"></polygon>
+                            <polygon id="Shape" points="9.766 34.3798246 9.766 43.9710526 17.9265 39.1802632"></polygon>
+                            <polygon id="Shape" points="10.29325 33.4390351 18.449 38.2587719 18.449 28.6578947"></polygon>
+                            <polygon id="Shape" points="0.54625 4.82938596 8.702 9.62017544 8.702 0.0289473684"></polygon>
+                            <polygon id="Shape" points="9.766 0.0289473684 9.766 9.62017544 17.9265 4.82938596"></polygon>
+                        </g>
+                        <g id="Group" transform="translate(0.000000, 5.741228)">
+                            <polygon id="Shape" points="0 5.73640351 0 15.3276316 8.151 10.5416667"></polygon>
+                            <polygon id="Shape" points="0.52725 16.2491228 8.69725 21.054386 8.69725 11.4631579"></polygon>
+                            <polygon id="Shape" points="29.24575 11.4631579 29.24575 21.0688596 37.4585 16.2491228"></polygon>
+                            <polygon id="Shape" points="29.773 10.5416667 38 15.3276316 38 5.73640351"></polygon>
+                            <polygon id="Shape" points="0 17.1899123 0 26.7811404 8.151 21.9903509"></polygon>
+                            <polygon id="Shape" points="0.52725 27.697807 8.69725 32.5175439 8.69725 22.9166667"></polygon>
+                            <polygon id="Shape" points="29.24575 22.9166667 29.24575 32.5175439 37.4585 27.697807"></polygon>
+                            <polygon id="Shape" points="0.52725 4.81491228 8.69725 9.61535088 8.69725 0.00964912281"></polygon>
+                            <polygon id="Shape" points="9.7565 0.00964912281 9.7565 9.61535088 17.90275 4.81491228"></polygon>
+                            <polygon id="Shape" points="10.28375 10.5416667 18.4395 15.3276316 18.4395 5.73640351"></polygon>
+                            <polygon id="Shape" points="19.5035 5.73640351 19.5035 15.3276316 27.664 10.5416667"></polygon>
+                            <polygon id="Shape" points="20.03075 4.81491228 28.1865 9.61535088 28.1865 0.00964912281"></polygon>
+                            <polygon id="Shape" points="29.24575 0.00964912281 29.24575 9.61535088 37.4585 4.81491228"></polygon>
+                            <polygon id="Shape" points="29.773 21.9903509 38 26.7811404 38 17.1899123"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

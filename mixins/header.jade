@@ -26,6 +26,12 @@ mixin header(lightHeader)
           a(href='/install/') Install
 
       li.menu-item
+        if(locals.filename === 'releases.html')
+          a(href='/releases/').active Releases
+        else
+          a(href='/releases/') Releases
+
+      li.menu-item
         a(href='/docs/latest/') Docs
 
       li.menu-item
@@ -43,9 +49,6 @@ mixin header(lightHeader)
       li.menu-item
         a(href='https://github.com/dcos/dcos', target='_blank') GitHub
 
-      li.menu-item
-          a(href='/get-started/') Get Started
-
     ul.menu
       li.menu-item
         if(locals.filename === 'why-dcos.html')
@@ -58,6 +61,12 @@ mixin header(lightHeader)
           a(href='/install/').active Install
         else
           a(href='/install/') Install
+
+      li.menu-item
+        if(locals.filename === 'releases.html')
+          a(href='/releases/').active Releases
+        else
+          a(href='/releases/') Releases
 
       li.menu-item
         a(href='/docs/latest/') Docs
@@ -77,9 +86,3 @@ mixin header(lightHeader)
       li.menu-item
         .menu-item__github-button
           a.github-button(href='https://github.com/dcos/dcos', data-count-href='/dcos/dcos/stargazers', data-count-api='/repos/dcos/dcos#stargazers_count', data-count-aria-label='# stargazers on GitHub', aria-label='Star dcos/dcos on GitHub') Star
-
-      li.menu-item
-        if(locals.filename === 'get-started.html')
-          a(href='/get-started/').cta.cta--button.button--secondary.active Get&nbsp;Started
-        else
-          a(href='/get-started/').cta.cta--button.button--secondary Get&nbsp;Started

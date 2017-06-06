@@ -49,6 +49,30 @@ a.card:hover {
   &.card-copy {
     height: 210px;
   }
+
+  &.left-align {
+    text-align: left !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+  }
+}
+
+
+.card-content.has-footer {
+  padding: 0;
+  overflow: hidden;
+
+  > * {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+.card-footer {
+  display: block;
+  width: 100%;
+  padding: 1rem 0 0.5rem 0;
+  background-color: #FAFAFA;
+  @include box-shadow(0px -1px 0px 0px rgba($black, 0.10));
 }
 
 .hero-list__item {
@@ -99,6 +123,7 @@ a.card:hover {
   background-color: $dark-purple;
   background-size: cover;
   background-position: center;
+  box-shadow: 0px 1px 0px 0px rgba(64, 64, 64, 0.1);
 }
 
 .card-header__date {

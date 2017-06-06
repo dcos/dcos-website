@@ -63,151 +63,101 @@ block content
                 br
                 span in production.
 
-              a(href='/get-started').btn.btn-primary.block.sm-inline-block Get Started
+              a(href='/install').btn.btn-primary.block.sm-inline-block Get Started
               a.inline-block.sm-ml3.block.sm-inline-block.m0(href='#', data-overlay-toggle='video-overlay')
                 img.cta--video__icon.inline-block.align-middle(src='/assets/images/icons/playbutton.png')
                 p.cta--video__text.inline-block.mt0.mb2 Play Video
             .sm-col-6.col-12
               +image('/assets/images/hero-image.png')
 
-      button.Wallop-buttonPrevious.xs-hide.sm-hide
-        img(src="/assets/images/icons/chevron-white-left.svg")
-      button.Wallop-buttonNext.xs-hide.sm-hide
-        img(src="/assets/images/icons/chevron-white-right.svg")
+      .hero-nav.center
+          a(href='#', data-target='0').hero-nav--item.m0.active
+          a(href='#', data-target='1').hero-nav--item.m0
+          a(href='#', data-target='2').hero-nav--item.m0
 
 
+  //- Platform section
+  .outer-container.bg-white.clearfix.py4
+    .row.flex.flex-column
+      .sm-col.sm-col-12.md-col-8.mx-auto.center
+        h2 What is DC/OS?
+        p DC/OS (the datacenter operating system) is an open-source, distributed operating system based on the Apache Mesos distributed systems kernel. DC/OS manages multiple machines in the cloud or on-premises from a single interface; deploys containers, distributed services, and legacy applications into those machines; and provides networking, service discovery and resource management to keep the services running and communicating with each other.
+        a(href='/docs/latest/overview/').cta.cta--button.button--secondary(style="display: inline-block;") Learn More
 
   //- Features
-  .outer-container.bg-gray.clearfix.py5.px2
+  .outer-container.clearfix.py3.px2
     .row
       .max-width-4.mx-auto
         .mxn2.flex.flex-wrap.flex-auto
-          .lg-col-3.col-6.left-align.px2.mb4.md-mb4.lg-mb0
-            img.hero-list__item__image(src="/assets/images/icons/containersbigdata.svg")
-            h5.hero-list__item__copy__title Containers &amp; Big Data
-            p.hero-list__item__copy__paragraph.small Easily deploy and run stateful or stateless distributed workloads including Docker containers, Big Data, and traditional apps.
 
           .lg-col-3.col-6.left-align.px2.mb4.md-mb4.lg-mb0
             img.hero-list__item__image(src="/assets/images/icons/open-source-dark.svg")
             h5.hero-list__item__copy__title 100% Open Source
-            p.hero-list__item__copy__paragraph.small Run DC/OS in production without any scale or performance limitations, on any on-premises or cloud platform.
+            p.hero-list__item__copy__paragraph.small DC/OS is completely open source and supported by a vibrant (and friendly) community! Get connected with your fellow members.
+            p.
+            a(href='/community/') Join the community
+
+          .lg-col-3.col-6.left-align.px2.mb4.md-mb4.lg-mb0
+            // a(href='http://mesos.apache.org/').block.m0
+            img.hero-list__item__image(src="/assets/images/icons/mesos.svg")
+            h5.hero-list__item__copy__title Built with Apache Mesos
+            p.hero-list__item__copy__paragraph.small Mesos' two-level scheduling increases your resource utilization, and DC/OS lowers the barrier of entry to Mesos cluster administration.
+            p.
+            a(href='http://mesos.apache.org/') Learn about Mesos
+
 
           .lg-col-3.col-6.left-align.px2
-            img.hero-list__item__image(src="/assets/images/icons/productionproven.svg")
-            h5.hero-list__item__copy__title Production Proven
-            p.hero-list__item__copy__paragraph.small Built on Apache Mesos with the experience of Mesosphere, Yelp, Twitter, Airbnb, and many of today’s most innovative companies.
+            // a(href='http://universe.dcos.io/#/').block.m0
+            img.hero-list__item__image(src="/assets/images/icons/packages.svg")
+            h5.hero-list__item__copy__title Service Catalog Included
+            p.hero-list__item__copy__paragraph.small Installing distributed data services, databases, CI/CD tools, and monitoring on DC/OS takes just a few clicks or commands.
+            p.
+            a(href='http://universe.dcos.io/#/') Find a service
 
           .lg-col-3.col-6.left-align.px2
-            img.hero-list__item__image(src="/assets/images/icons/serviceecosystem.svg")
-            h5.hero-list__item__copy__title Datacenter Apps
-            p.hero-list__item__copy__paragraph.small Build apps quickly using a rich ecosystem of datacenter-scale application services.
+            // a(href='https://mesosphere.com/about/').block.m0
+            img.hero-list__item__image(src="/assets/images/icons/containersbigdata.svg")
+            h5.hero-list__item__copy__title Containers & Fast Data
+            p.hero-list__item__copy__paragraph.small Easily deploy and run stateful or stateless distributed workloads including Docker containers, big data pipeline tools, and traditional apps.
+            p.
+            a(href='/fast-data/') Read about fast data
 
 
-
-  //- Platform section
-  .outer-container.bg-white.clearfix(style="padding: 5rem 2rem;")
+  .outer-container.bg-white.clearfix.py3.px2
     .row.flex.flex-column
-      .sm-col.sm-col-12.md-col-8.mx-auto.center
-        h2 The Definitive Platform for Modern Apps - Production Experience Built-in.
-        p Modern apps include containers of microservices and stateful big-data services.  DC/OS is the world’s first and only fully open source platform enabling enterprises to easily build and run modern apps in production.  Built on Apache Mesos, DC/OS abstracts your datacenter into a single computer, pooling distributed workloads and simplifying rollout and operations.
-        a(href='/why-dcos').cta.cta--button.button--secondary(style="display: inline-block;") Learn More
-
+      .sm-col.sm-col-12.md-col-8.mx-auto.center.mt2
+        h2 Your Application on Any Infrastructure
     .max-width-4.mx-auto
       .stack-diagram(style='margin-left: 0; margin-right: 0;').mxn2
         .stack-diagram__top
           .stack-diagram__top-info
-            h3 Services &amp; Applications
-            p Easily deploy and run datacenter-wide app services such as Docker, Cassandra, and Spark pooled on a single platform
+            h3 Containerized Workloads
+            p Deploy jobs, services, and containerized apps, and let DC/OS handle the rest.
             .stack-diagram__arrow
               .stack-diagram__dot
         .stack-diagram__middle
           .stack-diagram__middle-info
-            h3 DC/OS Powered by Apache Mesos
-            p Runtime, tools and best practices built-in to simplify operations and deliver a production self-healing infrastructure
+            h3 Distributed Operating System
+            p DC/OS provides scheduling, resource allocation, service discovery, workload co-location, automatic recovery from failure, load balancing, and software defined networking, as well as unified APIs for metric and log collection.
             .stack-diagram__arrow
               .stack-diagram__dot
         .stack-diagram__bottom
           .stack-diagram__bottom-info
-            h3 Run Anywhere
-            p Bare-metal, virtual, cloud or hybrid - DC/OS runs on it all - only requirement is a modern Linux distro; Windows support coming soon
+            h3 Infrastructure Portability
+            p Develop locally on DC/OS and deploy to production on DC/OS in the cloud or on-premises. Support for multiple cloud providers prevents infrastructure lock-in.
             .stack-diagram__arrow
               .stack-diagram__dot
 
+
+              //- Platform section
+  .outer-container.bg-white.clearfix.pb4
     .row.flex.flex-column
-      .stack-diagram-mobile.center.mb0
-        .stack-diagram-mobile__container
-          +image('/assets/images/illustrations/top.png')
-          h5.hero-list__item__copy__title Services &amp; Applications
-          p Easily deploy and run datacenter-wide app services such as Docker, Cassandra, and Spark pooled on a single platform
+      .sm-col.sm-col-12.md-col-8.mx-auto.center
 
-        .stack-diagram-mobile__container
-          +image('/assets/images/illustrations/middle.png')
-          h5.hero-list__item__copy__title DC/OS Powered by Apache Mesos
-          p Runtime, tools and best practices built-in to simplify operations and deliver a production self-healing infrastructure
-
-        .stack-diagram-mobile__container
-          +image('/assets/images/illustrations/bottom.png')
-          h5.hero-list__item__copy__title Run Anywhere
-          p Bare-metal, virtual, cloud or hybrid - DC/OS runs on it all - only requirement is a modern Linux distro; Windows support coming soon
-
-
-
-  //- More features
-  .outer-container.bg-white.clearfix(style="padding: 0 2rem 3rem 2rem;")
-    .row
-      .max-width-4.mx-auto
-        .mxn2.flex.flex-wrap.flex-auto
-          .lg-col-4.col-6.xs-col-12.xs-center.px2.pb3
-            img.hero-list__item__image.larger-icon(src="/assets/images/icons/buildamazingapps.svg")
-            h5.hero-list__item__copy__title Build Amazing Apps
-            p.hero-list__item__copy__paragraph Combine the power of microservices, containers and Big Data to quickly build and ship modern state of the art applications.
-            a(href='/why-dcos').cta.cta--text Learn More &rarr;
-
-          .lg-col-4.col-6.xs-col-12.xs-center.px2.pb3
-            img.hero-list__item__image.larger-icon(src="/assets/images/icons/operatewithconfidence.svg")
-            h5.hero-list__item__copy__title Operate with Confidence
-            p.hero-list__item__copy__paragraph Use a production-proven platform to confidently operate, monitor and troubleshoot your datacenter with efficiency, ease, and flexibility.
-            a(href='/why-dcos').cta.cta--text Learn More &rarr;
-
-          .lg-col-4.col-6.xs-col-12.xs-center.px2.pb3
-            img.hero-list__item__image.larger-icon(src="/assets/images/icons/outpacethecompetition.svg")
-            h5.hero-list__item__copy__title Outpace the Competition
-            p.hero-list__item__copy__paragraph Quickly roll out new services using the ever growing DC/OS ecosystem, and attract the best talent working on the latest modern app technology.
-            a(href='/why-dcos').cta.cta--text Learn More &rarr;
-
-
-
-  //- Case studies
-  include ../includes/case-studies
-
-
-
-  //- Testimonials
-  .container.partner-quote-container
-    .container__content
-      .partner-quote-block-container
-        .partner-quote-block.active
-          blockquote.partner-quote-block__quote "The world needed a better architecture for all modern apps, not just containers. The open source community has come together around DC/OS to deliver an amazing ecosystem of products and datacenter services."
-          cite.partner-quote-block__cite Florian Leibert, CEO & Co-Founder, Mesosphere
-        .partner-quote-block.hidden
-          blockquote.partner-quote-block__quote "Microsoft selected DC/OS for the Azure Container Service so our customers can easily build, deploy and manage modern applications on our enterprise-ready Azure cloud platform, as well as in private and hybrid cloud environments."
-          cite.partner-quote-block__cite Mark Russinovich, Azure Chief Technology Officer, Microsoft
-        .partner-quote-block.hidden
-          blockquote.partner-quote-block__quote "DC/OS is specifically designed for organizations seeking highly scalable, agile application development with continuous improvement and robust, reliable deployment."
-          cite.partner-quote-block__cite Edy Liongosari, Managing Director, Accenture Labs
-
-      ul.partner-quote-logo-list
-        li.partner-quote-logo-list__partner-quote-logo.active
-          a(data-activate-quote='0')
-            img(src="/assets/images/logos/mesosphere.svg")
-        li.partner-quote-logo-list__partner-quote-logo
-          a(data-activate-quote='1')
-            img(src="/assets/images/logos/microsoft.svg")
-        li.partner-quote-logo-list__partner-quote-logo
-          a(data-activate-quote='2')
-            img(src="/assets/images/logos/accenture.svg")
-
-
+        img(src='/assets/images/icons/mesosphere.svg' style='width: 72px; height: 72px;')
+        h2 Backed by Mesosphere
+        p
+          | DC/OS is created and maintained by Mesosphere, Inc., which offers an enterprise version of DC/OS that includes advanced features for security, compliance, multitenancy, networking and storage, and is backed by 24x7, SLA-governed support. For more information about Mesosphere DC/OS Enterprise, please visit #[a(href="https://mesosphere.com/") mesosphere.com]
 
   .overlay(data-overlay='video-overlay')
     .overlay__close-cta
@@ -218,7 +168,7 @@ block content
 
   .container.container--dark-background
     .container__content
-       h2 You'll be running DC/OS in less than 10 minutes.
-       a(href='/get-started').cta.cta--button Get Started
+       h2 Choose a provider and install DC/OS
+       a(href='/install').cta.cta--button Install DC/OS
 
     +footer

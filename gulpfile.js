@@ -164,7 +164,7 @@ const serveTask = () => {
         }
       })
 
-      watch(['./src/*.jade', './src/**/*.jade', './src/*.md', './src/events.json', './src/scripts/*.js'],
+      watch(['./src/*.jade', './src/**/*.jade', './src/*.md', './src/events.json', './src/scripts/*.js', './src/demos.json'],
         batch(function (events, done) { gulp.start('build-site-templates', done) }))
       watch(paths.blog.src,
         batch(function (events, done) { gulp.start('build-blog-templates', done) }))

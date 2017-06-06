@@ -1,0 +1,86 @@
+[
+  {
+    "featured": true,
+    "image": "/assets/images/demos/tweeter.png",
+    "name": "Tweeter data visualization",
+    "use_cases": ["Streaming Data", "Full stack"],
+    "dcos_version": ["1.8", "1.9"],
+    "language": ["Ruby on Rails", "Java"],
+    "description": "Install and deploy a containerized Ruby on Rails app named Tweeter. Then, use Zeppelin to perform real-time analytics on the data created by the Tweeter app.",
+    "packages": ["Apache Cassandra", "Apache Kafka", "Marathon-LB", "Zeppelin"],
+    "youtube_id": "6ZeBukvKmFI",
+    "callouts": {
+      "GitHub": "https://github.com/dcos/demos/tree/master/1.9/tweeter",
+    }
+  },
+  {
+    "featured": false,
+    "image": "/assets/images/demos/github-stream.jpg",
+    "name": "Github Streaming Data",
+    "use_cases": ["Fast Data"],
+    "dcos_version": ["1.8"],
+    "language": ["Python"],
+    "description": "In this demo you'll learn how to set up the time series database KairosDB along with the popular NoSQL database Cassandra on DC/OS. We will use the GitHub API as a stream datasource and build a dashboard using Grafana.",
+    "packages": ["GitHub API", "Apache Cassandra", "KairosDB", "Grafana"],
+    "youtube_id": "",
+    "callouts": {
+      "GitHub": "https://github.com/mesosphere/cassandra-kairosdb-tutorial",
+    }
+  },
+  {
+    "featured": false,
+    "image": "/assets/images/demos/FinTrans.jpg",
+    "name": "Finacial Transactions",
+    "use_cases": ["Fast Data"],
+    "dcos_version": ["1.8", "1.9"],
+    "language": ["Go"],
+    "description": "This demo is all about processing, visualizing and understanding high-volume financial transactions. There are several challenges that we tackle here: 1. the frequency of transactions, 2. the volume of transactions, 3. scaling out the processing.",
+    "packages": ["Apache Kafka", "InfluxDB", "Grafana"],
+    "youtube_id": "",
+    "callouts": {
+      "GitHub": "https://github.com/dcos/demos/tree/master/1.9/fintrans",
+    }
+  },
+  {
+    "featured": false,
+    "image": "/assets/images/demos/SensorAnalytics.jpg",
+    "name": "Sensor Analytics",
+    "use_cases": ["Fast Data"],
+    "dcos_version": ["1.8", "1.9"],
+    "language": ["Go"],
+    "description": "Ingest real-time traffic data from the Open Data Aarhus, join it with a static dataset containing metadata about the sensors and finally shows the rendering of the tracked vehicles on a map.",
+    "packages": ["Apache Kafka", "InfluxDB", "Grafana"],
+    "youtube_id": "",
+    "callouts": {
+      "GitHub": "https://github.com/dcos/demos/tree/master/1.9/sensoranalytics",
+    }
+  },
+  {
+    "featured": false,
+    "image": "/assets/images/demos/applogs.JPG",
+    "name": "Application Logs",
+    "use_cases": ["Fast Data", "Logging"],
+    "dcos_version": ["1.8", "1.9"],
+    "language": ["Go"],
+    "description": "In this demo we have a look into interactively analyzing application logs. As a source for the application logs we're using WordPress, a popular blogging engine.The demo shows how to ingest the application logs into Minio, an object store akin to Amazon S3 and demonstrates how to query those logs with SQL, using Apache Drill, a distributed schema-free query engine.",
+    "packages": ["Minio", "WordPress", "Apache Drill"],
+    "youtube_id": "",
+    "callouts": {
+      "GitHub": "https://github.com/dcos/demos/tree/master/1.9/applogs",
+    }
+  },
+  {
+    "featured": false,
+    "image": "/assets/images/demos/Bus.jpg",
+    "name": "Bus Tracking SMACK Stack",
+    "use_cases": ["Fast Data", "Full Stack", "SMACK"],
+    "dcos_version": ["1.8", "1.9"],
+    "language": ["Java"],
+    "description": "Receive live data from the Los Angeles METRO API. The data is streamed to Apache Kafka and consumed by Apache Spark and an Akka application. This demo shows you how to run the SMACK stack on DC/OS with a stream of data.",
+    "packages": ["Apache Kafka", "Apache Cassandra", "Apache Spark", "Akka"],
+    "youtube_id": "",
+    "callouts": {
+      "GitHub": "https://github.com/dcos/demos/tree/master/1.9/IoT-FloatingBusData",
+    }
+  }
+]
