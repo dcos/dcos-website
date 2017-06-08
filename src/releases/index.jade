@@ -20,22 +20,18 @@ block content
               p.release-version.pb1 DC/OS 1.9.0
               p.hero-list__item__copy__paragraph.release-copy Latest stable release. Ready for production use.
               a.cta.cta--text.release-notes.pb2(href='/releases/1.9.0') Release Notes
-
-              .col-12.flex-end.mt-auto.relative
-                div.relative.dropdown.mb2
-                  a.btn.btn-primary.mb0.block.center.no-arrow.text-white.bg-heliotrope Get Release
-                    img.ml1.align-middle(src='/assets/images/icons/arrow-down-docs-unselected-white.svg' style='margin-top: -2px;')
-                  ul.z-500.left
-                    li: a(href='https://downloads.dcos.io/dcos/stable/aws.html', target='_blank') Amazon Web Services
-                    li: a(href='https://downloads.dcos.io/dcos/stable/azure.html', target='_blank') Azure
-                    li: a(href='https://downloads.dcos.io/dcos/stable/commit/0ce03387884523f02624d3fb56c7fbe2e06e181b/dcos_generate_config.sh') Direct Download
+              
+              div.release-buttons
+                a.cta.cta--button.inline-block(href='https://downloads.dcos.io/dcos/stable/aws.html', target='_blank') Amazon
+                a.cta.cta--button.inline-block(href='https://downloads.dcos.io/dcos/stable/azure.html', target='_blank') Azure
+                a.cta.cta--button.inline-block(href='https://downloads.dcos.io/dcos/stable/commit/0ce03387884523f02624d3fb56c7fbe2e06e181b/dcos_generate_config.sh') Download
 
           .release-card.release-rc.col.col-12.md-col-6.relative.mb2.md-pl1
             .bg-white.center.inner.px3.py1
               h3.mb0 Release Candidate
               p.release-version.pb0 DC/OS 1.10.0-rc1
               
-              div.relative.dropdown.mb1
+              div.relative.dropdown.mb1.inline-block
                 a.btn.btn-primary.mb0.block.center.no-arrow.text-white.bg-heliotrope Get Release
                   img.ml1.align-middle(src='/assets/images/icons/arrow-down-docs-unselected-white.svg' style='margin-top: -2px;')
                 ul.left.z-500
@@ -49,7 +45,7 @@ block content
               h3.mb0 Snapshot
               p.release-version.pb0 DC/OS 1.11.0 - shot 20170511
 
-              div.relative.dropdown.mb1
+              div.relative.dropdown.mb1.inline-block
                 a.btn.btn-primary.mb0.block.center.no-arrow.text-white.bg-heliotrope Get Release
                   img.ml1.align-middle(src='/assets/images/icons/arrow-down-docs-unselected-white.svg' style='margin-top: -2px;')
                 ul.left.z-500

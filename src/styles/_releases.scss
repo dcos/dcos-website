@@ -157,9 +157,22 @@ table.releases {
 
   @media #{$breakpoint-sm} {
     > * {
-      padding-left: 20%;
-      padding-right: 20%;
+      padding-left: 10%;
+      padding-right: 10%;
     }
+  }
+
+  .release-buttons {
+
+      @include break($tablet-portrait) {
+        display: flex;
+        justify-content: center;
+        margin: 0 5px;
+      }
+
+      a {
+        margin: 10px 5px;
+      }
   }
 
   .btn-primary {
