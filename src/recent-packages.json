@@ -1,13 +1,67 @@
 [
-  { "title": "Package A",
-    "image": "/assets/images/packages/package-a.png",
-    "description": "Description Package A",
-    "url": "#",
+  { "title": "arangodb3",
+    "image": "https://raw.githubusercontent.com/arangodb/arangodb3-dcos/master/icons/arangodb_medium.png",
+    "description": "A distributed free and open-source database with a flexible data model for documents, graphs, and key-values.",
+    "url": "http://universe.dcos.io/#/package/arangodb3/version/latest",
     "blogpost": "#",
-    "status": "selected" },
-  { "title": "Package B",
-    "image": "/assets/images/packages/package-a.png",
-    "description": "Description Package B",
-    "url": "#",
-    "status": "beta" }
+    "status": "preview"
+  },
+
+  { "title": "cadvisor",
+    "image": "https://s3.amazonaws.com/downloads.mesosphere.io/universe/assets/icon-service-cadvisor-medium.png",
+    "description": "cAdvisor (Container Advisor) provides container users an understanding of the resource usage and performance characteristics of their running containers.",
+    "url": "http://universe.dcos.io/#/package/cadvisor/version/latest",
+    "status": "preview"
+  },
+
+  { "title": "linkerd",
+    "image": "https://linkerd.io/images/dcos/linkerd-logo-medium.png",
+    "description": "A dynamic linker for microservices.",
+    "url": "http://universe.dcos.io/#/package/linkerd/version/latest",
+    "status": "preview"
+  },
+
+  { "title": "beta-confluent-kafka",
+    "image": "https://downloads.mesosphere.com/universe/assets/icon-service-kafka-medium.png",
+    "description": "Apache Kafka by Confluent",
+    "url": "http://universe.dcos.io/#/package/beta-confluent-kafka/version/latest",
+    "status": "beta"
+  },
+
+  { "title": "confluent-schema-registry",
+      "image": "https://s3-us-west-2.amazonaws.com/confluent-mesos-devel/ConfIcon_medium.png",
+      "description": "Confluent Schema Registry service",
+      "url": "http://universe.dcos.io/#/package/confluent-schema-registry/version/latest",
+      "status": "preview"
+    },
+
+    { "title": "Package B",
+      "image": "/assets/images/packages/package-a.png",
+      "description": "Description Package B",
+      "url": "#",
+      "status": "beta"
+    },
+
+    { "title": "Package B",
+      "image": "/assets/images/packages/package-a.png",
+      "description": "Description Package B",
+      "url": "#",
+      "status": "beta"
+    },
+
+    { "title": "Package B",
+      "image": "/assets/images/packages/package-a.png",
+      "description": "Description Package B",
+      "url": "#",
+      "status": "beta"
+    },
+
+    { "title": "Package B",
+      "image": "/assets/images/packages/package-a.png",
+      "description": "Description Package B",
+      "url": "#",
+      "status": "beta"
+    }
+
+
 ]
