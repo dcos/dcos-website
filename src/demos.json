@@ -10,7 +10,7 @@
     "packages": ["Apache Cassandra", "Apache Kafka", "Marathon-LB", "Zeppelin"],
     "youtube_id": "6ZeBukvKmFI",
     "callouts": {
-      "GitHub": "https://github.com/dcos/demos/tree/master/1.9/tweeter",
+      "GitHub": "https://github.com/dcos/demos/tree/master/tweeter",
     }
   },
   {
@@ -38,7 +38,7 @@
     "packages": ["Apache Kafka", "InfluxDB", "Grafana"],
     "youtube_id": "",
     "callouts": {
-      "GitHub": "https://github.com/dcos/demos/tree/master/1.9/fintrans",
+      "GitHub": "https://github.com/dcos/demos/tree/master/fintrans",
     }
   },
   {
@@ -52,7 +52,7 @@
     "packages": ["Apache Kafka", "InfluxDB", "Grafana"],
     "youtube_id": "",
     "callouts": {
-      "GitHub": "https://github.com/dcos/demos/tree/master/1.9/sensoranalytics",
+      "GitHub": "https://github.com/dcos/demos/tree/master/sensoranalytics",
     }
   },
   {
@@ -66,7 +66,7 @@
     "packages": ["Minio", "WordPress", "Apache Drill"],
     "youtube_id": "",
     "callouts": {
-      "GitHub": "https://github.com/dcos/demos/tree/master/1.9/applogs",
+      "GitHub": "https://github.com/dcos/demos/tree/master/applogs",
     }
   },
   {
@@ -75,12 +75,12 @@
     "name": "Bus Tracking SMACK Stack",
     "use_cases": ["Fast Data", "Full Stack", "SMACK"],
     "dcos_version": ["1.8", "1.9"],
-    "language": ["Java"],
+    "language": ["Scala", "Javascript"],
     "description": "Receive live data from the Los Angeles METRO API. The data is streamed to Apache Kafka and consumed by Apache Spark and an Akka application. This demo shows you how to run the SMACK stack on DC/OS with a stream of data.",
     "packages": ["Apache Kafka", "Apache Cassandra", "Apache Spark", "Akka"],
     "youtube_id": "",
     "callouts": {
-      "GitHub": "https://github.com/dcos/demos/tree/master/1.9/IoT-FloatingBusData",
+      "GitHub": "https://github.com/dcos/demos/tree/master/fastdata-iot",
     }
   }
 ]
