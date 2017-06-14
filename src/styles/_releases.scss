@@ -153,6 +153,27 @@ table.releases {
   font-weight: bold;
 }
 
+.release-card,
+.release-item {
+  .download-buttons {
+
+    a {
+      position: relative;
+      font-weight: bold;
+    }
+
+    a:nth-child(2),
+    a:nth-child(3) {
+      &:before {
+        content: '•';
+        position: absolute;
+        left: -10px;
+        color: $dark-gray;
+      }
+    }
+  }
+}
+
 .release-card {
 
   @media #{$breakpoint-sm} {
