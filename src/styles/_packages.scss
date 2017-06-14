@@ -7,6 +7,7 @@
   }
 
   .events-carousel .card .card-copy {
+    display: block;
     align-items: inherit;
     justify-content: inherit;
   }
@@ -27,21 +28,27 @@
     p {
       width: 100%;
       text-align: left;
+      height: 55px;
     }
   }
 
   .card-title {
     width: 100%;
     text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .card-status {
+    position: absolute;
+    top: 0; right: 0;
     border-radius: 2px;
-    margin-left: .5rem;
+    margin: .5rem;
     display: inline-block;
     background-color: #eadef8;
     color: $heliotrope;
-    padding: 0.11rem .5rem 0.01rem;
+    padding: 0.4rem .5rem;
     font-size: 0.8rem;
     vertical-align: text-top;
   }

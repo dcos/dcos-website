@@ -33,35 +33,6 @@
       "description": "Confluent Schema Registry service",
       "url": "http://universe.dcos.io/#/package/confluent-schema-registry/version/latest",
       "status": "preview"
-    },
-
-    { "title": "Package B",
-      "image": "/assets/images/packages/package-a.png",
-      "description": "Description Package B",
-      "url": "#",
-      "status": "beta"
-    },
-
-    { "title": "Package B",
-      "image": "/assets/images/packages/package-a.png",
-      "description": "Description Package B",
-      "url": "#",
-      "status": "beta"
-    },
-
-    { "title": "Package B",
-      "image": "/assets/images/packages/package-a.png",
-      "description": "Description Package B",
-      "url": "#",
-      "status": "beta"
-    },
-
-    { "title": "Package B",
-      "image": "/assets/images/packages/package-a.png",
-      "description": "Description Package B",
-      "url": "#",
-      "status": "beta"
     }
-
 
 ]
