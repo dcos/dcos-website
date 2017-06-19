@@ -176,6 +176,13 @@ table.releases {
 
 .release-card {
 
+	.inner {
+
+		@media #{$breakpoint-sm} {
+	   min-height: 159px;
+	  }
+	}
+
   @media #{$breakpoint-sm} {
     > * {
       padding-left: 10%;
