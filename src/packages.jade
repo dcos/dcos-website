@@ -12,20 +12,20 @@ block content
       h1 Packages
       p.hero-subtitle DC/OS comes pre-configured with a catalog (called the Universe) of over 100 services, specially packaged to easily install on DC/OS. Most packages are community contributed!
 
-                        
+
   .outer-container.bg-white.clearfix.py5.px2
     .row
       .flex.flex-auto.flex-wrap
         .lg-col-4.col-4.xs-col-12.px2.mx-auto.pb2
           h2 Browse
           p The DC/OS package browser is a community-built index of the packaged services in the Universe. Wondering if your favorite database, streaming processing engine, or monitoring platform is there? Have a look!
-          a(href='https://universe.serv.sh/#/' class='block my0 cta cta--text case-study-link')  Browse Universe Packages →
-        
+          a(href='http://universe.dcos.io/#/packages' class='block my0 cta cta--text case-study-link')  Browse Universe Packages →
+
         .lg-col-4.col-4.xs-col-12.px2.mx-auto.pb2
           h2 Learn
           p Each universe package comes with instructions on how to configure and install it on DC/OS. Most can be installed with a few clicks or commands. To learn how to install your favorite package, please visit the examples repository.
           a(href='https://github.com/dcos/examples' class='block my0 cta cta--text case-study-link') Lean to install your favorite package →
-                    
+
         .lg-col-4.col-4.xs-col-12.px2.mx-auto.pb2
           h2 Build
           p A DC/OS package is a bundle of metadata that describes how to configure, install, and uninstall a service on DC/OS. You can package your favorite service and add it either to a private repository or to the public Universe catalog!
@@ -36,26 +36,26 @@ block content
     .container.community-container
       .container__content
         h2 Recently Added
-        
+
     .container.events-container.packages-container
       .container__content
         .events-carousel
           if (locals.recentpackages.length)
             .events-carousel-btn.events-carousel-btn--next
               img(src='/assets/images/icons/chevron-dark-right.svg')
-          
+
             .events-carousel-btn.events-carousel-btn--prev
               img(src='/assets/images/icons/chevron-dark-left.svg')
-          
+
           .card-container
             each package in locals.recentpackages
               div.card.bg-white
                 span.card-status #{package.status}
                 .card-header(style='background-image: url(#{package.image})')
                 .card-content.card-copy
-                  h3.card-title 
+                  h3.card-title
                     | #{package.title}
-                  
+
                   - var desc = package.description
                   - var descString = desc.length > 60 ? desc.substr(0,60) : desc;
                   - descString = desc.length > 60 ? descString + ' ...' : descString;
@@ -63,12 +63,12 @@ block content
                   a(href='#{package.url}').cta.cta--button.mt2.mb0 View package
                   if(package.blogpost)
                     a(href='#{package.blogpost}').cta.cta--text Read blogpost
-                            
-  .outer-container.bg-white.clearfix.py2.px2              
+
+  .outer-container.bg-white.clearfix.py2.px2
     .container
       .container__content
         h2.center Is your favorite data service packaged for DC/OS?
-        a(href='http://universe.dcos.io/#/').cta.cta--button Browse all packages
-    
+        a(href='http://universe.dcos.io/#/packages').cta.cta--button Browse all packages
+
   .container
     +footer
