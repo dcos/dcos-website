@@ -2,7 +2,7 @@
   {
     "title": "DC/OS 1.9",
     "date": "2017-03-28",
-    "description": "DC/OS 1.9 includes many new capabilities for Operators, and expands the collection of Data and Developer Services",
+    "description": "DC/OS 1.9 includes many new capabilities for operators, and expands the collection of data and developer services.",
     "features": [
       "Updated and improved GUI",
       "Container Orchestration: GPUs, Pods",
@@ -13,21 +13,21 @@
       "Apache Mesos 1.2"
     ],
     "downloadlink": {
-      "amazon": "https://downloads.dcos.io/dcos/stable/aws.html?_ga=2.182275879.1868731877.1496657682-778091885.1495196220",
-      "azure": "https://downloads.dcos.io/dcos/stable/azure.html?_ga=2.10897460.1868731877.1496657682-778091885.1495196220",
-      "direct": "https://downloads.dcos.io/dcos/stable/commit/0ce03387884523f02624d3fb56c7fbe2e06e181b/dcos_generate_config.sh?_ga=2.10897460.1868731877.1496657682-778091885.1495196220"
+      "amazon": "https://downloads.dcos.io/dcos/stable/aws.html",
+      "azure": "https://downloads.dcos.io/dcos/stable/azure.html",
+      "direct": "https://downloads.dcos.io/dcos/stable/commit/0ce03387884523f02624d3fb56c7fbe2e06e181b/dcos_generate_config.sh"
     },
     "subreleases": [
-      { "name": "1.9.0", "url": "https://dcos.io/releases/1.9.0/"},
-      { "name": "1.9.0-rc4", "url": "https://dcos.io/releases/1.9.0-rc4/"},
-      { "name": "1.9.0-rc3", "url": "https://dcos.io/releases/1.9.0-rc3/"}
+      { "name": "1.9.0", "url": "/releases/1.9.0/"},
+      { "name": "1.9.0-rc4", "url": "/releases/1.9.0-rc4/"},
+      { "name": "1.9.0-rc3", "url": "/releases/1.9.0-rc3/"}
     ],
     "docslink": "/docs/1.9/"
   },
   {
     "title": "DC/OS 1.8",
     "date": "2017-02-10",
-    "description": "DC/OS 1.8 includes container and jobs scheduling available directly through the UI",
+    "description": "DC/OS 1.8 includes container and jobs scheduling available directly through the UI.",
     "features": [
       "Jobs",
       "Networking improvements",
@@ -38,20 +38,20 @@
       "Apache Mesos 1.0.3"
     ],
     "downloadlink": {
-      "amazon": "https://downloads.dcos.io/dcos/stable/aws.html?_ga=2.182275879.1868731877.1496657682-778091885.1495196220",
-      "azure": "https://downloads.dcos.io/dcos/stable/azure.html?_ga=2.10897460.1868731877.1496657682-778091885.1495196220",
-      "direct": "https://downloads.dcos.io/dcos/stable/commit/0ce03387884523f02624d3fb56c7fbe2e06e181b/dcos_generate_config.sh?_ga=2.10897460.1868731877.1496657682-778091885.1495196220"
+      "amazon": "https://downloads.dcos.io/dcos/stable/aws.html",
+      "azure": "https://downloads.dcos.io/dcos/stable/azure.html",
+      "direct": "https://downloads.dcos.io/dcos/stable/commit/0ce03387884523f02624d3fb56c7fbe2e06e181b/dcos_generate_config.sh"
     },
     "subreleases": [
-      { "name": "1.8.8", "url": "https://dcos.io/releases/1.8.8/#1-8-8"},
-      { "name": "1.8.7", "url": "https://dcos.io/releases/1.8.7/#1-8-7"},
-      { "name": "1.8.6", "url": "https://dcos.io/releases/1.8.6/#1-8-6"},
-      { "name": "1.8.5", "url": "https://dcos.io/releases/1.8.5/#1-8-5"},
-      { "name": "1.8.4", "url": "https://dcos.io/releases/1.8.4/#1-8-4"},
-      { "name": "1.8.3", "url": "https://dcos.io/releases/1.8.3/#1-8-3"},
-      { "name": "1.8.2", "url": "https://dcos.io/releases/1.8.2/#1-8-2"},
-      { "name": "1.8.1", "url": "https://dcos.io/releases/1.8.1/#1-8-1"},
-      { "name": "1.8.0", "url": "https://dcos.io/releases/1.8.0/"}
+      { "name": "1.8.8", "url": "/releases/1.8.8/#1-8-8"},
+      { "name": "1.8.7", "url": "/releases/1.8.7/#1-8-7"},
+      { "name": "1.8.6", "url": "/releases/1.8.6/#1-8-6"},
+      { "name": "1.8.5", "url": "/releases/1.8.5/#1-8-5"},
+      { "name": "1.8.4", "url": "/releases/1.8.4/#1-8-4"},
+      { "name": "1.8.3", "url": "/releases/1.8.3/#1-8-3"},
+      { "name": "1.8.2", "url": "/releases/1.8.2/#1-8-2"},
+      { "name": "1.8.1", "url": "/releases/1.8.1/#1-8-1"},
+      { "name": "1.8.0", "url": "/releases/1.8.0/"}
 
     ],
     "docslink": "/docs/1.8/"
@@ -59,7 +59,7 @@
   {
     "title": "DC/OS 1.7",
     "date": "2016-04-19",
-    "description": "DC/OS 1.7 is the first open source DC/OS release, and includes improvemnets to installation and networking",
+    "description": "DC/OS 1.7 is the first open source DC/OS release, and includes improvemnets to installation and networking.",
     "features": [
       "Improved installation",
       "Networking: VIPs and DNS",
@@ -68,10 +68,10 @@
       "Mesos 0.28"
     ],
     "downloadlink": {
-      "direct": "https://downloads.dcos.io/dcos/EarlyAccess/commit/14509fe1e7899f439527fb39867194c7a425c771/dcos_generate_config.sh?_ga=2.98287833.754563919.1496680306-1790439002.1478539864"
+      "direct": "https://downloads.dcos.io/dcos/EarlyAccess/commit/14509fe1e7899f439527fb39867194c7a425c771/dcos_generate_config.sh"
     },
     "subreleases": [
-      { "name": "1.7-open", "url": "https://dcos.io/releases/1.7-open/"}
+      { "name": "1.7-open", "url": "/releases/1.7-open/"}
 
     ],
     "docslink": "/docs/1.7/"
