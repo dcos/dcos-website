@@ -6,74 +6,90 @@ block content
     +header
     .container__content
       h1 DC/OS Releases
-
-  .outer-container.bg-white.clearfix.py5.px2
+      p
+        | Find and download any release of DC/OS, which is 100% open source. For DC/OS Enterprise releases, please contact
+        a(href='https://mesosphere.com/pricing/') Mesosphere sales.
+  .outer-container.bg-gray.clearfix.pt4.pb3.px2
     .row
-      .max-width-4.mx-auto
+      .max-width-4.mx-auto.clearfix
+        .cards.col-12
 
-        h2.heading-margin-bottom.center.mx-auto Release Channels
+          .release-card.release-stable.col.col-12.md-col-6.md-pr1.relative
+            div.bg-white.center.inner.px3.pt3.pb3.mb2.md-mb0
+              h3.mb0 Latest Stable
+              p.release-version.pb1 DC/OS 1.9.0
+              p.hero-list__item__copy__paragraph.release-copy Latest stable release. Ready for production use.
+              a.cta.cta--text.release-notes.pb1(href='/releases/1.9.0') Release Notes
 
-        .cards.flex.flex-auto.flex-wrap
+              div.release-buttons
+                a.cta.cta--button.inline-block(href='https://downloads.dcos.io/dcos/stable/aws.html', target='_blank') Amazon
+                a.cta.cta--button.inline-block(href='https://downloads.dcos.io/dcos/stable/azure.html', target='_blank') Azure
+                a.cta.cta--button.inline-block(href='https://downloads.dcos.io/dcos/stable/commit/0ce03387884523f02624d3fb56c7fbe2e06e181b/dcos_generate_config.sh') Download
 
-          .stable-releases.card.card-content.stable.col-4.relative(style="padding-bottom: 3.75rem;")
-            h3.mb0 Stable
-            p.release-version.pb1 DC/OS 1.9
-            p.hero-list__item__copy__paragraph.release-copy Latest stable release. Ready for production use.
-            a.cta.cta--text.release-notes.pb2(href='/releases/1.9.0') Release Notes
+          .release-card.release-rc.col.col-12.md-col-6.relative.mb2.md-pl1
+            .bg-white.center.inner.px3.py1
+              h3.mb0 Release Candidate
+              p.release-version.pb0 Coming Soon
+              //-
+                a.block.release-notes.mb2(href='/releases/1.10.0') Release Notes
+                div.download-buttons.mb2
+                  a.mx1(href='https://downloads.dcos.io/dcos/stable/aws.html', target='_blank') Amazon
+                  a.mx1(href='https://downloads.dcos.io/dcos/stable/azure.html', target='_blank') Azure
+                  a.mx1(href='https://downloads.dcos.io/dcos/stable/commit/0ce03387884523f02624d3fb56c7fbe2e06e181b/dcos_generate_config.sh') Download
 
-            .col-12.flex-end.mt-auto.relative
-              div.absolute.dropdown.z-500(style='text-align: left; left: 0; width: 100%;')
-                a.btn.btn-primary.mb0.block.center.no-arrow.text-white.bg-heliotrope Get Release
-                  img.ml1.align-middle(src='/assets/images/icons/arrow-down-docs-unselected-white.svg' style='margin-top: -2px;')
-                ul
-                  li: a(href='https://downloads.dcos.io/dcos/stable/aws.html', target='_blank') Amazon Web Services
-                  li: a(href='https://downloads.dcos.io/dcos/stable/azure.html', target='_blank') Azure
-                  li: a(href='https://downloads.dcos.io/dcos/stable/commit/0ce03387884523f02624d3fb56c7fbe2e06e181b/dcos_generate_config.sh') Direct Download
+          .release-card.release-snapshot.col.col-12.md-col-6.relative.md-pl1
+            .bg-white.center.inner.px3.py1
+              h3.mb0 Snapshot
+              p.release-version.pb0 DC/OS 1.10.0 - snapshot
 
-          .card.card-content.stable.col-4.relative(style="justify-content: inherit; padding-bottom: 3.75rem;")
-            h3.mb0 Early Access
-            p.release-version.pb1 DC/OS 1.10.0-rc1
-            p.hero-list__item__copy__paragraph.release-copy Coming soon!<!-- Upcoming release. Ready for development and testing. -->
-            a.cta.cta--text.release-notes.pb2(href='/releases/1.9.0-rc4/') <!-- Release Notes -->
-
-          .master-releases.card.card-content.stable.col-4.relative(style="justify-content: inherit; padding-bottom: 3.75rem;")
-            h3.mb0 Master
-            p.release-version.pb1 DC/OS master
-            p.hero-list__item__copy__paragraph.release-copy.pb2 Bleeding edge automated release. Only tested with automated tests.
-
-            .col-12.flex-end.mt-auto.relative
-              div.absolute.dropdown.z-500(style='text-align: left; left: 0; width: 100%;')
-                a.btn.btn-primary.mb0.block.center.no-arrow.text-white.bg-heliotrope Get Release
-                  img.ml1.align-middle(src='/assets/images/icons/arrow-down-docs-unselected-white.svg' style='margin-top: -2px;')
-                ul
-                  li: a(href='https://downloads.dcos.io/dcos/testing/master/aws.html', target='_blank') Amazon Web Services
-                  li: a(href='https://downloads.dcos.io/dcos/testing/master/azure.html', target='_blank') Azure
-                  li: a(href='https://downloads.dcos.io/dcos/testing/master/dcos_generate_config.sh') Direct Download
+              div.download-buttons.mb2
+                a.mx1(href='https://downloads.dcos.io/dcos/testing/master/aws.html', target='_blank') Amazon
+                a.mx1(href='https://downloads.dcos.io/dcos/testing/master/azure.html', target='_blank') Azure
+                a.mx1(href='https://downloads.dcos.io/dcos/testing/master/dcos_generate_config.sh') Download
 
 
-  .outer-container.bg-white.clearfix.pb5.px2
-    .row
-      .max-width-4.mx-auto
-        h2.heading-margin-bottom.center.mx-auto.mt0 Release Versions
+  .releases-container
+    each release in locals.releases
+      .release
+        .release-item.max-width-4.mx-auto.md-flex.py4.px2.md-px0
+          .release-item--content.col-12.md-col-8.md-pr3
+            h2.mt0.bold #{ release.title }
+            strong.block.mb2 #{ release.month } #{ release.day }, #{ release.year }
+            if(release.description)
+              p.my1.mb3 #{ release.description }
+            strong.block.mb1 Features
+            if(release.features)
+              ul.mb3
+                each feature in release.features
+                  li #{ feature }
 
-        .container
-          .container__content(style="padding-top: 0;")
-            .container__content--release-notes.docs-layout__docs-content
-              a(href='/releases/1.9.0/', target='_blank') 1.9.0 - Mar 28, 2017
-              a(href='/releases/1.9.0-rc4/', target='_blank') 1.9.0-rc4 - Mar 24, 2017
-              a(href='/releases/1.9.0-rc3/', target='_blank') 1.9.0-rc3 - Mar 20, 2017
-              a(href='/releases/1.9.0-rc2/', target='_blank') 1.9.0-rc2 - Mar 2, 2017
-              a(href='/releases/1.9.0-rc1/', target='_blank') 1.9.0-rc1 - Feb 22, 2017
-              a(href='/releases/1.8.8/#1-8-8', target='_blank') 1.8.8 - Feb 10, 2017
-              a(href='/releases/1.8.7/#1-8-7', target='_blank') 1.8.7 - Nov 14, 2016
-              a(href='/releases/1.8.6/#1-8-6', target='_blank') 1.8.6 - October 19, 2016
-              a(href='/releases/1.8.5/#1-8-5', target='_blank') 1.8.5 - October 13, 2016
-              a(href='/releases/1.8.4/#1-8-4', target='_blank') 1.8.4 - September 15, 2016
-              a(href='/releases/1.8.3/#1-8-3', target='_blank') 1.8.3 - September 6, 2016
-              a(href='/releases/1.8.2/#1-8-2', target='_blank') 1.8.2 - August 25, 2016
-              a(href='/releases/1.8.1/#1-8-1', target='_blank') 1.8.1 - August 2016
+            h3 Get the latest relese of #{ release.title }
+            a(href!=release.subreleases[0].url target='_blank').mb2.small.cta.cta--text.inline-block #{ release.subreleases[0].name } Release Notes
+            if(release.downloadlink)
+              div.download-buttons
+                if(release.downloadlink.amazon)
+                  a.mr2(href='#{ release.downloadlink.amazon }', target='_blank') Amazon
+                if(release.downloadlink.azure)
+                  a.mr2(href='#{ release.downloadlink.azure }', target='_blank') Azure
+                if(release.downloadlink.direct)
+                  a.mr2(href='#{ release.downloadlink.direct }') Download
 
-  .container.container--dark-background
+          .release-item--releases.col-12.md-col-4
+            h3.strong Releases
+            ul
+              each subrelease in release.subreleases
+                li
+                  a(href='#{ subrelease.url }').cta.cta--text #{ subrelease.name }
+
+
+
+    .outer-container.clearfix.py5.px2.release
+      .row.flex.flex-column
+        .sm-col.sm-col-12.md-col-8.mx-auto.center
+          h2.heading-margin-bottom.center.mx-auto Older Versions
+          p.center DC/OS Community Edition describes versions 1.6 and earlier, which were free and available from Mesosphere, Inc. but not open source. When Mesosphere open sourced DC/OS on April 19th, 2016, they stopped distributing Community Edition, and versions 1.6 and earlier are no longer available.
+
+  .container
     .container__content
       h2 Install on any virtual or physical machines.
       a(href='/install').cta.cta--button Install

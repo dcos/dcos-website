@@ -164,7 +164,7 @@ const serveTask = () => {
         }
       })
 
-      watch(['./src/*.jade', './src/**/*.jade', './src/*.md', './src/events.json', './src/scripts/*.js', './src/demos.json'],
+      watch(['./src/*.jade', './src/**/*.jade', './src/*.md', './src/events.json', './src/scripts/*.js', './src/demos.json', './src/releases.json'],
         batch(function (events, done) { gulp.start('build-site-templates', done) }))
       watch(paths.blog.src,
         batch(function (events, done) { gulp.start('build-blog-templates', done) }))
@@ -401,7 +401,11 @@ gulp.task('build-site-templates', () => {
           tables: true
         }))
         .use(jade({
-          locals: { cssTimestamp, events: addDateProps(sortEventsAscending(JSON.parse(fs.readFileSync('./src/events.json', 'utf8')))) },
+          locals: {
+            cssTimestamp,
+            events: addDateProps(sortEventsAscending(JSON.parse(fs.readFileSync('./src/events.json', 'utf8')))),
+            releases: addDateProps(sortEventsAscending(JSON.parse(fs.readFileSync('./src/releases.json', 'utf8'))))
+          },
           pretty: true
         }))
         .use(define({
@@ -627,7 +631,8 @@ const addDateProps = eventsArr => {
     const date = moment(event.date)
     return Object.assign({}, event, {
       day: date.format('D'),
-      month: date.format('MMM')
+      month: date.format('MMM'),
+      year: date.format('YYYY')
     })
   })
 }

@@ -78,3 +78,143 @@ table.releases {
     display: block;
 	}
 }
+
+.releases-container .release {
+  &:nth-child(even) {
+    background-color: $snow;
+  }
+
+  &:nth-child(odd) {
+    background-color: #fff;
+  }
+}
+
+.release-item {
+  position: relative;
+
+  &--releases {
+    a {
+      color: $heliotrope;
+      font-weight: bold;
+      font-size: 1rem;
+      opacity: 1;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      margin-bottom: .5rem;
+    }
+  }
+
+  &--content {
+    position: relative;
+
+    ul {
+      list-style: disc;
+      margin-left: 20px;
+    }
+
+    li {
+      line-height: 1.75rem;
+    }
+  }
+
+  span {
+    border-radius: 2px;
+    background-color: #c2c2c2;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+
+
+  .btn-primary {
+    position: relative;
+    z-index: 1;
+    padding-right: .8rem;
+  }
+
+  .dropdown ul {
+    list-style: none;
+    margin-left: 0;
+    max-width: 50%;
+  }
+
+}
+
+.release-date {
+  color: $heliotrope;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.release-card,
+.release-item {
+  .download-buttons {
+
+    a {
+      position: relative;
+      font-weight: bold;
+    }
+
+    a:nth-child(2),
+    a:nth-child(3) {
+      &:before {
+        content: '•';
+        position: absolute;
+        left: -10px;
+        color: $dark-gray;
+      }
+    }
+  }
+}
+
+.release-card {
+
+	.inner {
+
+		@media #{$breakpoint-sm} {
+	   min-height: 159px;
+	  }
+	}
+
+  @media #{$breakpoint-sm} {
+    > * {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  }
+
+  .release-buttons {
+
+      @include break($tablet-portrait) {
+        display: flex;
+        justify-content: center;
+        margin: 0 5px;
+      }
+
+      a {
+        margin: 10px 5px;
+      }
+  }
+
+  .btn-primary {
+    padding-right: .8rem;
+  }
+
+  .release-version {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: .9rem;
+  }
+
+  .inner {
+    border-radius: 4px;
+    @include box-shadow(0px 0px 0px 1px rgba($black, 0.10), 0px 1px 2px 0px rgba($black, 0.05));
+  }
+}
