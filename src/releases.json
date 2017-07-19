@@ -4,13 +4,13 @@
     "date": "2017-03-28",
     "description": "DC/OS 1.9 includes many new capabilities for operators, and expands the collection of data and developer services.",
     "features": [
-      "Updated and improved GUI",
-      "Container Orchestration: GPUs, Pods",
-      "Operations: Logging, Metrics, and Debugging improvements",
-      "Networking: CNI support, performance improvements",
-      "Upgrades tooling",
-      "Marathon 1.4",
-      "Apache Mesos 1.2"
+      "Updated and improved GUI.",
+      "Container Orchestration: GPUs, Pods.",
+      "Operations: Logging, Metrics, and Debugging improvements.",
+      "Networking: CNI support, performance improvements.",
+      "Upgrades tooling.",
+      "Marathon 1.4.",
+      "Apache Mesos 1.2."
     ],
     "downloadlink": {
       "amazon": "https://downloads.dcos.io/dcos/stable/aws.html",
@@ -18,6 +18,7 @@
       "direct": "https://downloads.dcos.io/dcos/stable/commit/0ce03387884523f02624d3fb56c7fbe2e06e181b/dcos_generate_config.sh"
     },
     "subreleases": [
+      { "name": "1.9.1", "url": "/releases/1.9.1/"},
       { "name": "1.9.0", "url": "/releases/1.9.0/"},
       { "name": "1.9.0-rc4", "url": "/releases/1.9.0-rc4/"},
       { "name": "1.9.0-rc3", "url": "/releases/1.9.0-rc3/"}
@@ -29,13 +30,13 @@
     "date": "2017-02-10",
     "description": "DC/OS 1.8 includes container and jobs scheduling available directly through the UI.",
     "features": [
-      "Jobs",
-      "Networking improvements",
-      "Binary CLIs",
-      "Offline Universe (package management service)",
-      "Non-root user config for data services",
-      "Marathon 1.3.9 (native in the DC/OS UI)",
-      "Apache Mesos 1.0.3"
+      "Jobs.",
+      "Networking improvements.",
+      "Binary CLIs.",
+      "Offline Universe (package management service).",
+      "Non-root user config for data services.",
+      "Marathon 1.3.9 (native in the DC/OS UI).",
+      "Apache Mesos 1.0.3."
     ],
     "downloadlink": {
       "amazon": "https://downloads.dcos.io/dcos/stable/aws.html",
@@ -59,13 +60,13 @@
   {
     "title": "DC/OS 1.7",
     "date": "2016-04-19",
-    "description": "DC/OS 1.7 is the first open source DC/OS release, and includes improvemnets to installation and networking.",
+    "description": "DC/OS 1.7 is the first open source DC/OS release, and includes improvements to installation and networking.",
     "features": [
-      "Improved installation",
-      "Networking: VIPs and DNS",
-      "Storage services",
-      "Marathon 1.0.0",
-      "Mesos 0.28"
+      "Improved installation.",
+      "Networking: VIPs and DNS.",
+      "Storage services.",
+      "Marathon 1.0.0.",
+      "Mesos 0.28."
     ],
     "downloadlink": {
       "direct": "https://downloads.dcos.io/dcos/EarlyAccess/commit/14509fe1e7899f439527fb39867194c7a425c771/dcos_generate_config.sh"
