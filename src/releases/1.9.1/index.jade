@@ -1,0 +1,25 @@
+extends ../../../layouts/base-whitefooter.jade
+
+
+block head
+  title DC/OS 1.9.1
+
+block content
+
+  .container.container--dark-background
+    +header
+
+    .container__content
+      h1 DC/OS 1.9.1
+      p.hero-subtitle
+        a(href='https://downloads.dcos.io/dcos/stable/1.9.1/dcos_generate_config.sh').cta.cta--button Download
+        a(href='/docs/1.9/').cta.cta--text View Documentation &rarr;
+
+  .container
+    .container__content
+      .container__content--release-notes.docs-layout__docs-content
+        include:markdown notes.md
+
+
+  .container
+      +footer
