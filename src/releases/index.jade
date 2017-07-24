@@ -7,8 +7,8 @@ block content
     .container__content
       h1 DC/OS Releases
       p
-        | Find and download any release of DC/OS, which is 100% open source. For DC/OS Enterprise releases, please contact
-        a(href='https://mesosphere.com/pricing/') Mesosphere sales.
+        | Find and download any release of DC/OS, which is 100% open source. For DC/OS Enterprise releases, please contact #[a(href="https://mesosphere.com/pricing/") Mesosphere sales].
+        
   .outer-container.bg-gray.clearfix.pt4.pb3.px2
     .row
       .max-width-4.mx-auto.clearfix
@@ -64,7 +64,6 @@ block content
                   li #{ feature }
 
             h3 Get the latest relese of #{ release.title }
-            a(href!=release.subreleases[0].url target='_blank').mb2.small.cta.cta--text.inline-block #{ release.subreleases[0].name } Release Notes
             if(release.downloadlink)
               div.download-buttons
                 if(release.downloadlink.amazon)
@@ -73,6 +72,7 @@ block content
                   a.mr2(href='#{ release.downloadlink.azure }', target='_blank') Azure
                 if(release.downloadlink.direct)
                   a.mr2(href='#{ release.downloadlink.direct }') Download
+            a(href!=release.subreleases[0].url target='_blank').mb2.small.cta.cta--text.inline-block #{ release.subreleases[0].name } Release Notes
 
           .release-item--releases.col-12.md-col-4
             h3.strong Releases
