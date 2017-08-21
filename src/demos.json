@@ -68,5 +68,19 @@
     "callouts": {
     "GitHub": "https://github.com/dcos/demos/tree/master/applogs",
     }
+  },
+  {
+    "featured": false,
+    "image": "/assets/images/demos/Bus.jpg",
+    "name": "Bus Tracking SMACK Stack",
+    "use_cases": ["IoT", "Fast Data", "Full Stack", "SMACK"],
+    "dcos_version": ["1.8", "1.9"],
+    "language": ["Scala", "Javascript"],
+    "description": "Receive live data from the Los Angeles METRO API. The data is streamed to Apache Kafka and consumed by Apache Spark and an Akka application. This demo shows you how to run the SMACK stack on DC/OS with a stream of data.",
+    "packages": ["Apache Kafka", "Apache Cassandra", "Apache Spark", "Akka"],
+    "youtube_id": "VNHIjjpfdZc",
+    "callouts": {
+      "GitHub": "https://github.com/dcos/demos/tree/master/fastdata-iot",
+    }
   }
 ]
