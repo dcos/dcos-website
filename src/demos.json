@@ -36,7 +36,7 @@
     "language": ["Go, Java"],
     "description": "During this demo we use Apache Flink and Apache Kafka to detect fraud in streams of financials transaction.",
     "packages": ["Apache Flink", "Apache Kafka"],
-    "youtube_id": "",
+    "youtube_id": "bwPXNlVHTeI",
     "callouts": {
       "GitHub": "https://github.com/dcos/demos/tree/master/flink",
     }
