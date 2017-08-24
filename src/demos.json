@@ -1,5 +1,19 @@
 [
   {
+    "featured": true,
+    "image": "/assets/images/demos/tweeter.png",
+    "name": "Tweeter data visualization",
+    "use_cases": ["Streaming Data", "Full stack"],
+    "dcos_version": ["1.8", "1.9"],
+    "language": ["Ruby on Rails", "Java"],
+    "description": "Install and deploy a containerized Ruby on Rails app named Tweeter. Then, use Zeppelin to perform real-time analytics on the data created by the Tweeter app.",
+    "packages": ["Apache Cassandra", "Apache Kafka", "Marathon-LB", "Zeppelin"],
+    "youtube_id": "6ZeBukvKmFI",
+    "callouts": {
+      "GitHub": "https://github.com/dcos/demos/tree/master/tweeter",
+    }
+  },
+  {
     "featured": false,
     "image": "/assets/images/demos/github-stream.jpg",
     "name": "Github Streaming Data",
@@ -28,7 +42,7 @@
     }
   },
   {
-    "featured": true,
+    "featured": false,
     "image": "/assets/images/demos/FinTrans.jpg",
     "name": "Financial Transactions",
     "use_cases": ["Fast Data"],
