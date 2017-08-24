@@ -5,13 +5,10 @@
 /docs/ /docs/latest/
 /docs/1.7/administration/dcosarchitecture/security/index.html /docs/1.7/overview/
 /docs/1.7/administration/installing/custom/automated-installer/system-requirements/index.html /docs/1.7/administration/installing/custom/system-requirements/
-/docs/1.7/administration/installing/custom/gui/index.html /docs/1.7/administration/installing/custom/gui/
-/docs/1.7/administration/opt-out/index.html /docs/1.7/administration/opt-out/
 /docs/1.7/administration/security-and-authentication/index.html /docs/1.7/overview/security/
 /docs/1.7/administration/service-discovery/index.html /docs/1.7/overview/service-discovery/
 /docs/1.7/advanced-installer/create-a-script-for-ip-address-discovery/index.html /docs/1.7/administration/installing/custom/advanced/
 /docs/1.7/getting-started/overview/index.html /docs/1.7/usage/
-/docs/1.7/usage/cli/install/index.html /docs/1.7/usage/cli/install/
 /docs/1.7/usage/jobs/getting-started/index.html /docs/1.8/usage/jobs/getting-started/
 /docs/1.7/usage/service-discovery/load-balancing-vips/virtual-ip-addresses/index.html /docs/1.7/usage/service-discovery/virtual-ip-addresses/
 /docs/1.7/usage/services/config/index.html /docs/1.7/usage/managing-services/config/
@@ -22,7 +19,6 @@
 /docs/1.7/usage/services/uninstall/#framework-cleaner /docs/1.7/usage/managing-services/uninstall/#framework-cleaner
 /docs/1.7/usage/services/uninstall/index.html /docs/1.7/usage/managing-services/uninstall/
 /docs/1.7/usage/tutorials/marathon/inline-update/index.html /docs/1.7/usage/tutorials/marathon/
-/docs/1.7/usage/tutorials/marathon/stateful-services/index.html /docs/1.7/usage/tutorials/marathon/stateful-services/
 /docs/1.7/usage/tutorials/ruby-on-rails/index.html /docs/1.7/usage/tutorials/
 /docs/1.8/administration/haproxy-adminrouter/index.html /docs/1.8/administration/tls-ssl/haproxy-adminrouter/
 /docs/1.8/administration/id-and-access-mgt/auth-api/index.html /docs/1.8/administration/id-and-access-mgt/iam-api/
