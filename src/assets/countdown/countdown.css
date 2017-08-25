@@ -58,8 +58,8 @@ a:hover { color: rgb(172, 11, 95); }
 ----------------------------------------- */
 
 .navigation .logo {
-    height: 39px;
-    width: 6rem;
+    height: 25px;
+    width: 16rem;
     -webkit-align-self: flex-start;
     -ms-flex-item-align: start;
     align-self: flex-start;
