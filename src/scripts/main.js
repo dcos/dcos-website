@@ -1,5 +1,6 @@
 require('es6-promise').polyfill()
 require('./blog.js')
+require('./event.js')
 require('./case-study-carousel.js')
 require('./docs.js')
 require('./events-carousel.js')
