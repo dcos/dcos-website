@@ -1,0 +1,14 @@
+---
+title: A test event
+date: 2017-03-28
+speaker: Judith Malnick, Mesosphere
+speakerurl: https://twitter.com/JudithPatudith
+eventimage: chicago.jpg
+eventlocation: Chicago, USA
+eventname: Fast Data Meetup
+category: Fast Data
+description: We are excited to announce that DC/OS 1.9.0 is Generally Available today! Learn all about the new features and give it a try!
+layout: event.jade
+collection: events
+lunr: true
+---
