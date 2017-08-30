@@ -107,20 +107,9 @@ For more information, see the [documentation](/docs/1.9/installing/upgrading/).
 
 - DCOS_OSS-691 - DNS becomes briefly unavailable during DC/OS version upgrades.
 - DCOS-14005 - Marathon-LB does not support pods.
-- DCOS-14021 - [Task logging to journald](/docs/1.9/monitoring/logging/) disabled by default, so task logs will continue to be written to their sandboxes, and logrotated out. The `- DCOS task log` command will work as it did before.
-- DCOS-14433 - The [Universal container runtime](/docs/1.9/deploying-services/containerizers/) does not support Azure cloud with Ubuntu.
-- DCOS-16737 - You cannot [generate and publish AWS Advanced Templates](/docs/1.9/installing/cloud/aws/advanced/#create-your-templates) to AWS GovCloud regions. When running the command `dcos_generate_config.sh --aws-cloudformation` with GovCloud credentials you will see an error similar to this:
-
-  ```
-  ./dcos_generate_config.ee.sh --aws-cloudformation
-  ====> EXECUTING AWS CLOUD FORMATION TEMPLATE GENERATION
-  Generating configuration files...
-  Starting new HTTPS connection (1): s3.amazonaws.com
-  aws_template_storage_region_name: Unable to determine region location of s3 bucket testbucket: An error occurred (InvalidAccessKeyId) when calling the GetBucketLocation operation: The AWS Access Key Id you provided does not exist in our records.
-  ```
-
+- DCOS-14021 - [Task logging to journald](/1.9/monitoring/logging/) disabled by default, so task logs will continue to be written to their sandboxes, and logrotated out. The `- DCOS task log` command will work as it did before.
 - Marathon-7133 - Marathon application history is lost after Marathon restart.
-- CORE-1191 -  The Mesos master's event queue can get backlogged with the default settings, causing performance problems.  These can be mitigated by setting the following configuration parameter in your `config.yaml` file at install time. See the [Configuration Reference](/1.9/installing/custom/configuration/configuration-parameters/) for more information.
+- CORE-1191 -  The Mesos master's event queue can get backlogged with the default settings, causing performance problems. These can be mitigated by setting the following configuration parameter in your `config.yaml` file at install time. See the [Configuration Reference](/1.9/installing/custom/configuration/configuration-parameters/) for more information.
 
   ```yaml
   mesos_max_completed_tasks_per_framework: 20
@@ -164,11 +153,18 @@ For more information, see the [documentation](/docs/1.9/installing/upgrading/).
 <a name="1-9-3"></a>
 # Issues Fixed Since 1.9.2
 
-- DCOS_OSS-1486 - Metrics agent crashes when the mesos containers endpoint is missing fields.
-- DCOS_OSS-1451 - Stale datapoints can occur in container metrics.
-- DCOS_OSS-1234	- VIP docs mention no longer existing endpoint.
+- DCOS-15771 - mesos-dns doesn't return all SRV records of running tasks.
+- DCOS-16151 - Marathon Endpoints are not responding.
+- DCOS-16743 - libprocess in infinity schedulers performs a hostname reverse lookup instead of using /opt/mesosphere/bin/detect_ip.
+- DCOS-17271 - dcos-epmd failing after host reboot.
+- DCOS-17286 - Backport DCOS-16358 to 1.9.3.
 - DCOS-17294 - Unable to curl (resolve) applications using Mesos DNS names.
-- DCOS-16358 - Make the Mesos master authenticator and authorizer contact the IAM through Admin Router.
-- DCOS-16310 - Bouncer: all handling threads are blocked in `recv()` as part of gunicorn's HTTP msg parser.
-- DCOS-16171 - Service `dcos-bouncer` hanged for hours, causing `dcos-mesos-master` bootstrap timeout.
-- DCOS-12863 - Universe doesn't show all packages in the UI.
+- DCOS-18162 - `dcos task exec` does not pass on the last exit code.
+- DCOS_OSS-1234 - VIP docs mention no longer existing endpoint.
+- DCOS_OSS-1301 - Exhibitor doesn't log multiline messages to journald.
+- DCOS_OSS-1433 - Bug in /etc/systemd/system/dcos-docker-gc.service script (1.9).
+- DCOS_OSS-1451 - Stale datapoints can occur in container metrics.
+- DCOS_OSS-1466 - Marathon returns persistent 503's.
+- DCOS_OSS-1470 - Exhibitor: use PatternLayoutEscaped logger layout for structured journal logger.
+- DCOS_OSS-1486 - Metrics agent crashes when the mesos containers endpoint is missing fields.
+- DCOS_OSS-1561 - Revert DCOS_OSS-1472 from 1.9.3.
