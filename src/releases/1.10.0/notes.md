@@ -58,7 +58,6 @@ The GUI sidebar tabs have been updated to offer a more intuitive experience.
 
 ## Updated DC/OS Data Services
 
-- Rolling Configuration Update and Upgrades support via CLI.
 - Ability to deploy Data Services into Folders to enable multi team deployments.
 - Ability to deploy to CNI-Based Virtual Networks.
 
