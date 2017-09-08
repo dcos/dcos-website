@@ -25,7 +25,7 @@
       { "name": "1.9.0", "url": "/releases/1.9.0/"},
       { "name": "1.9.0-rc4", "url": "/releases/1.9.0-rc4/"},
       { "name": "1.9.0-rc3", "url": "/releases/1.9.0-rc3/"}
-    ],release-version.pb1
+    ],
     "docslink": "/docs/1.9/"
   },
   {
