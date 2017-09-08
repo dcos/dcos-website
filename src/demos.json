@@ -15,20 +15,6 @@
   },
   {
     "featured": false,
-    "image": "/assets/images/demos/github-stream.jpg",
-    "name": "Github Streaming Data",
-    "use_cases": ["Fast Data"],
-    "dcos_version": ["1.8"],
-    "language": ["Python"],
-    "description": "In this demo you'll learn how to set up the time series database KairosDB along with the popular NoSQL database Cassandra on DC/OS. We will use the GitHub API as a stream datasource and build a dashboard using Grafana.",
-    "packages": ["GitHub API", "Apache Cassandra", "KairosDB", "Grafana"],
-    "youtube_id": "",
-    "callouts": {
-      "GitHub": "https://github.com/mesosphere/cassandra-kairosdb-tutorial",
-    }
-  },
-  {
-    "featured": false,
     "image": "/assets/images/demos/fraud-detect.jpg",
     "name": "Fraud Detection with Apache Flink",
     "use_cases": ["Fast Data"],
