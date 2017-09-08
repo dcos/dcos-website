@@ -93,7 +93,6 @@ The following updated data services packages are compatible with DC/OS 1.10.
 - Upgrade: During upgrade to DC/OS 1.10, there is a brief moment when the DNS resolution does not work. If a health check runs at that moment, it will fail and services will be reported as unhealthy.
 - CORE-1125 - Docker image pull config is re-used.
 - DCOS-16547 - Task state does not update after the agent running it was removed from the cluster.
-- INFINITY-1809 - [Data Svc] DC/OS Service Update / Config Update / Maintenance.
 - MARATHON-7736 - Marathon Client does NOT work with Marathon 1.5
 
 # <a name="fixed-issues"></a>Major Issues Fixed Since 1.10.0 Release Candidate 1
@@ -103,4 +102,3 @@ The following updated data services packages are compatible with DC/OS 1.10.
 - DCOS-13988 - Filter/Search Design Update.
 - DCOS-16029 - Addition of new pullConfig properties break validation.
 - DCOS-10863 - Launch containers on `DockerContainerizer` if network mode is "NONE".
-- INFINITY-1143 - Update / Uninstall. DSE does not support rolling upgrade.
