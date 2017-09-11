@@ -70,13 +70,13 @@ The following updated data services packages are compatible with DC/OS 1.10.
 
 - Cassandra. [Documentation](https://docs.mesosphere.com/service-docs/cassandra/).[Release Notes](https://docs.mesosphere.com/service-docs/cassandra/v2.0.0-3.0.14/release-notes/).
 
-- Elastic. [Documentation](https://docs.mesosphere.com/service-docs/elastic/). [Release Notes](service-docs/elastic/v2.0.0-5.5.1/release-notes/).
+- Elastic. [Documentation](https://docs.mesosphere.com/service-docs/elastic/). [Release Notes](https://docs.mesosphere.com/service-docs/elastic/v2.0.0-5.5.1/release-notes/).
 
 - HDFS. [Documentation](https://docs.mesosphere.com/service-docs/hdfs/). [Release Notes](https://docs.mesosphere.com/service-docs/hdfs/v2.0.0-2.6.0-cdh5.11.0/release-notes/).
 
 - Kafka. [Documentation](https://docs.mesosphere.com/service-docs/kafka/). [Release Notes](https://docs.mesosphere.com/service-docs/kafka/v2.0.0-0.11.0/release-notes/).
 
-- Apache Spark. [Documentation](https://docs.mesosphere.com/service-docs/spark/). [Release Notes]((https://github.com/mesosphere/spark-build/releases/tag/1.1.1-2.2.0).
+- Apache Spark. [Documentation](https://docs.mesosphere.com/service-docs/spark/). [Release Notes](https://github.com/mesosphere/spark-build/releases/tag/1.1.1-2.2.0).
 
 <a name="breaking-changes"></a>
 # Breaking Changes
