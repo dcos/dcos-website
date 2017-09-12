@@ -150,6 +150,15 @@
   transition: background 1s;
 }
 
+.navigation .logo-docs {
+  height: 34px;
+  width: 16rem;
+  align-self: flex-start;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: background 1s;
+}
+
 .navigation .logo.dark {
   background: url('/assets/images/dcos-logo-black.svg');
   background-size: contain;
