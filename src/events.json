@@ -353,9 +353,15 @@
   },
 
   { "title": "Building Open Source Project Infrastructures (Open Source Summit)",
-      "image": "/assets/images/events/Los_Angeles.jpg",
+      "image": "/assets/images/events/2017-09-11_OSSNA_2017.jpg",
       "date": "2017-09-11",
-      "url": "http://sched.co/BCtF"
+      "url": "https://docs.google.com/presentation/d/1hKmmHVqtkp87Y2DtbYk5fKZyt4bo86HwgNcpaoBAZis/edit?usp=sharing"
+  },
+
+  { "title": "Advanced Continuous Delivery Strategies (Open Source Summit)",
+      "image": "/assets/images/events/2017-09-12_OSSNA_2017.jpg",
+      "date": "2017-09-12",
+      "url": "https://docs.google.com/presentation/d/18tJ_8Dw_H5QJctVFd41ep6aWuGRwgOJB9RsEsybyryE/edit?usp=sharing"
   },
 
   { "title": "Apache Flink meets Apache Mesos and DC/OS (Flink Forward)",
@@ -364,26 +370,20 @@
       "url": "http://bit.ly/2vLnAaN"
   },
 
-  { "title": "Advanced Continuous Delivery Strategies (Open Source Summit)",
-      "image": "/assets/images/events/Los_Angeles_2.jpg",
-      "date": "2017-09-12",
-      "url": "http://sched.co/BDpb"
-  },
-
   { "title": "SMACK stack and beyond (Open Source Summit)",
       "image": "/assets/images/events/Los_Angeles_3.jpg",
       "date": "2017-09-13",
-      "url": "http://sched.co/BDqG"
+      "url": "https://schd.ws/hosted_files/ossna2017/f9/OSS%20Summit.pdf"
   },
 
   { "title": "Nightmares of a Container Orchestration System (Open Source Summit)",
-      "image": "/assets/images/events/Los_Angeles_4.jpg",
+      "image": "/assets/images/events/2017-09-13_OSSNA_2017.jpg",
       "date": "2017-09-13",
-      "url": "http://sched.co/BDpP"
+      "url": "https://schd.ws/hosted_files/ossna2017/c5/OSS-Nightmares.pdf"
   },
 
   { "title": "MesosCon North America",
-      "image": "/assets/images/events/Los_Angeles.jpg",
+      "image": "/assets/images/events/2017-09-14_MesosConNA.jpg",
       "date": "2017-09-13",
       "url": "http://events.linuxfoundation.org/events/mesoscon-north-america"
   },
