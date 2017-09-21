@@ -1,4 +1,4 @@
-# DC/OS website
+# DC/OS website 
 
 | Environment | URL | Build Status |
 |-------------|-----|--------------|
