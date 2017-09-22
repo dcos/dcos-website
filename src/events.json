@@ -400,10 +400,16 @@
       "url": "https://www.meetup.com/San-Francisco-Bay-Area-Big-Data-and-Scalable-Systems/events/238629855/"
   },
 
+  { "title": "No One Puts Java in a Container (Sysdig CCWFS)",
+      "image": "/assets/images/events/San_Francisco_2.jpg",
+      "date": "2017-09-26",
+      "url": "http://www.sysdigccwfs.com/"
+  },
+
   { "title": "Day 2 Operations with Containers: Myth vs Reality (Sysdig CCWFS)",
       "image": "/assets/images/events/San_Francisco.jpg",
-      "date": "2017-09-27",
-      "url": "http://bit.ly/2vLrznQ"
+      "date": "2017-09-26",
+      "url": "http://www.sysdigccwfs.com/"
   },
 
   { "title": "All about Container 2.0 (code.talks)",
