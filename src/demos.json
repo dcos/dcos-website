@@ -15,6 +15,20 @@
   },
   {
     "featured": false,
+    "image": "/assets/images/demos/SpringBoot.jpg",
+    "name": "Spring Boot with Maven",
+    "use_cases": ["Java Apps"],
+    "dcos_version": ["1.10"],
+    "language": ["Java"],
+    "description": "Install an artifact store, and deploy a Spring Boot Java application using the dcos-maven plugin.",
+    "packages": ["Java", "Spring Boot", "Nexus"],
+    "youtube_id": "",
+    "callouts": {
+      "GitHub": "https://github.com/dcos/demos/tree/master/springboot/",
+    }
+  },
+  {
+    "featured": false,
     "image": "/assets/images/demos/fraud-detect.jpg",
     "name": "Fraud Detection with Apache Flink",
     "use_cases": ["Fast Data"],
