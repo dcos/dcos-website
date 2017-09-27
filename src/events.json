@@ -433,7 +433,7 @@
   { "title": "SMACK Stack 2.0",
       "image": "/assets/images/events/Copenhagen.jpg",
       "date": "2017-10-18",
-      "url": "https://dockerconeurope.smarteventscloud.com/connect/search.ww#loadSearch-searchPhrase=smack&searchType=session&tc=0&sortBy=titleSort&p="
+      "url": "https://dockerconeurope.smarteventscloud.com/connect/sessionDetail.ww?SESSION_ID=140455"
   },
 
   { "title": "No one Puts the JVM in a Container (Open Source Summit EU)",
@@ -457,7 +457,7 @@
   { "title": "The Open Sourcing of Infrastructure (CubaConf)",
       "image": "/assets/images/events/Havana.jpg",
       "date": "2017-11-09",
-      "url": "http://www.cubaconf.org/submissions.html"
+      "url": "http://www.cubaconf.org/"
   },
 
   { "title": "Microservices mit Apache Mesos und DC/OS betreiben (W-jax)",
