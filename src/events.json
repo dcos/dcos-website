@@ -424,16 +424,58 @@
       "url": "http://bit.ly/2h3lgqz"
   },
 
+  { "title": "Containers, Persistent Data, Fast Data, Big Data (JavaOne)",
+      "image": "/assets/images/events/San_Francisco.jpg",
+      "date": "2017-10-05",
+      "url": "https://events.rainfocus.com/catalog/oracle/oow17/catalogjavaone17?search=container:%20check!%20But%20what%20about%20persistent&showEnrolled=false"
+  },
+
+  { "title": "SMACK Stack 2.0",
+      "image": "/assets/images/events/Copenhagen.jpg",
+      "date": "2017-10-18",
+      "url": "https://dockerconeurope.smarteventscloud.com/connect/search.ww#loadSearch-searchPhrase=smack&searchType=session&tc=0&sortBy=titleSort&p="
+  },
+
+  { "title": "No one Puts the JVM in a Container (Open Source Summit EU)",
+      "image": "/assets/images/events/Prague.jpg",
+      "date": "2017-10-23",
+      "url": "http://sched.co/BxIl"
+  },
+
   { "title": "SMACK Stack and Beyond (Spark Summit)",
       "image": "/assets/images/events/Dublin.jpg",
       "date": "2017-10-26",
       "url": "http://bit.ly/2vM1aXe"
   },
 
+  { "title": "Mesos Meetup Tokyo #3",
+      "image": "/assets/images/events/Tokyo.jpg",
+      "date": "2017-11-01",
+      "url": "https://mesos.connpass.com/event/67877/"
+  },
+
+  { "title": "The Open Sourcing of Infrastructure (CubaConf)",
+      "image": "/assets/images/events/Havana.jpg",
+      "date": "2017-11-09",
+      "url": "http://www.cubaconf.org/submissions.html"
+  },
+
   { "title": "Microservices mit Apache Mesos und DC/OS betreiben (W-jax)",
       "image": "/assets/images/events/Munich_2.jpg",
       "date": "2017-11-09",
       "url": "http://bit.ly/2v6v7lk"
+  },
+
+  { "title": "No one puts Java in the Container",
+      "image": "/assets/images/events/Milan.jpg",
+      "date": "2017-11-10",
+      "url": "https://milan2017.codemotionworld.com/talk-detail/?detail=6489"
+  },
+
+  { "title": "DC/OS: Where Fast-Data and Microservices Meet (QCon)",
+      "image": "/assets/images/events/San_Francisco.jpg",
+      "date": "2017-11-16",
+      "url": "https://qconsf.com/sf2017/workshop/dcos-where-fast-data-and-microservices-meet"
   },
 
   { "title": "Nightmares of a Container Orchestration System (DevOpsCon München)",
