@@ -401,15 +401,15 @@
   },
 
   { "title": "No One Puts Java in a Container (Sysdig CCWFS)",
-      "image": "/assets/images/events/San_Francisco_2.jpg",
+      "image": "/assets/images/events/2017-09-26_sysdig_ccwfs.jpg",
       "date": "2017-09-26",
-      "url": "http://www.sysdigccwfs.com/"
+      "url": "https://docs.google.com/presentation/d/1nrQcrOPQyV353Ri2dv56X8P3pMVt_lp8UmbNFKyr64U/edit?usp=sharing"
   },
 
   { "title": "Day 2 Operations with Containers: Myth vs Reality (Sysdig CCWFS)",
-      "image": "/assets/images/events/San_Francisco.jpg",
-      "date": "2017-09-26",
-      "url": "http://www.sysdigccwfs.com/"
+      "image": "/assets/images/events/2017-09-27_sysdig_ccwfs.jpg",
+      "date": "2017-09-27",
+      "url": "https://docs.google.com/presentation/d/1_rsYoYUh_7DI0qumYtjwBtMpRShL8NBlIUkRn0O02c4/edit?usp=sharing"
   },
 
   { "title": "All about Container 2.0 (code.talks)",
