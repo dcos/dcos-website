@@ -1,0 +1,94 @@
+extends base-docs.jade
+
+block head
+  title Events | The Definitive Platform for Modern Apps | DC/OS
+  meta(property='og:locale', content='en_US')
+  meta(property='og:type', content='article')
+  meta(property='og:title', content='The Definitive Platform for Modern Apps | DC/OS')
+  meta(property='og:image', content='https://dcos.io/assets/images/social-img.png')
+  meta(property='og:description', content='Based on the production proven Apache Mesos, combining years of  experience, and best practices of building and running modern applications in production.')
+  meta(property='og:url', content='https://dcos.io/')
+  meta(property='og:site_name', content='DC/OS')
+  meta(name='twitter:card', content='summary')
+  meta(name='twitter:site', content='@dcos')
+  meta(name='twitter:title', content='The Definitive Platform for Modern Apps | DC/OS')
+  meta(name='twitter:card', content='summary_large_image')
+  meta(name='twitter:image', content='https://dcos.io/assets/images/social-img.png')
+  meta(name='twitter:description', content='Based on the production proven Apache Mesos, combining years of  experience, and best practices of building and running modern applications in production.')
+
+block content
+  -
+    var latestEvent = events[0]
+    var otherEvents = events.slice(1, 7)
+    var categories = events.reduce(function (acc, prev) {
+      if (acc.indexOf(prev.category[0]) > -1) return acc
+      return acc.concat(prev.category)
+    }, [])
+
+    var capitalize = function (string) {
+      return string.charAt(0).toUpperCase() + string.slice(1)
+    }
+
+  .container
+    +header
+
+  .container
+    .container__content.event#events-container
+
+      .event-ui
+        form.event__search-container
+          input(type="search").event__search
+
+        .rss-button-container
+          a(href='/rss.xml').cta.cta--button.rss-button
+            span.rss-icon
+
+        select(name="Categories").event__categories Categories
+          option(disabled, selected, value="") Select category
+          option(value="all") All
+          each category in categories
+            option(value="#{category}") #{capitalize(category)}
+
+      .filter-bar.search-results(style="display: none")
+        p.result-text
+        a.cta.show-all-events View all events
+
+      .not-found(style="display: none")
+        h2 Sorry
+        p No results were found
+
+        button.cta.cta--button.button--secondary.show-all-events View All Events
+
+      if latestEvent
+        .latest-event(style=(latestEvent.eventimage ? "background-image: linear-gradient(to top right, rgba(12,6,24, 0.6), rgba(42,20,87, 0.6)), url(/assets/images/events/#{latestEvent.eventimage})" : false))
+          a.latest-event__category(href='/events?category=#{latestEvent.category}')!= latestEvent.category
+          a(href="/#{latestEvent.path}")
+            h2.latest-event__title!= latestEvent.eventname
+            p.latest-event__content!= latestEvent.description
+            .latest-event__readmore.cta.cta--text Event resources &rarr;
+
+      .events
+        each event in otherEvents
+          .event(style=(event.eventimage ? "background-image: linear-gradient(to top right, rgba(12,6,24, 0.6), rgba(42,20,87, 0.6)), url(/assets/images/events/#{event.eventimage})" : false))
+            .event__meta
+              a.event__category(href='/events?category=#{event.category}')!= event.category
+              .event__date!= event.formattedDate
+            a(href="/#{event.path}")
+              h2.event__title!= event.title.length > 52 ? event.title.slice(0, 52).trim() + '...' : event.title
+              .event__readmore.cta.cta--text Event resources &rarr;
+
+      if events.length > 7
+        .load-more.cta.cta--button.button--secondary
+          .loading-indicator.sk-three-bounce
+            .sk-child.sk-bounce1
+            .sk-child.sk-bounce2
+            .sk-child.sk-bounce3
+          span.content Load More
+
+  .container
+    +footer
+
+  script.
+    window.jQuery(document).ready(function () {
+      window._event.init(document.getElementById('events-container'), { offset: 7 })
+    })

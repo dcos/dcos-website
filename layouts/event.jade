@@ -1,0 +1,74 @@
+extends base-whitefooter.jade
+ 
+block head
+  title #{title} | The Definitive Platform for Modern Apps | DC/OS
+  meta(property='og:locale', content='en_US')
+  meta(property='og:type', content='article')
+  meta(property='og:title', content='#{title} | DC/OS')
+  meta(property='og:image', content='https://dcos.io/assets/images/social-img.png')
+  meta(property='og:description', content='#{description}')
+  meta(property='og:url', content='https://dcos.io/')
+  meta(property='og:site_name', content='DC/OS')
+  meta(name='twitter:card', content='summary')
+  meta(name='twitter:site', content='@dcos')
+  meta(name='twitter:title', content='#{title}')
+  meta(name='twitter:card', content='summary_large_image')
+  meta(name='twitter:image', content='https://dcos.io/assets/images/social-img.png')
+  meta(name='twitter:description', content='#{description}')
+  link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/github-gist.min.css')
+  script(src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js')
+  script(src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/languages/javascript.min.js')
+
+block content
+
+  if locals.eventimage
+  - var eventImage = locals.eventimage;
+
+  .container.container--event-header(style=(eventImage ? "background-image: linear-gradient(to top right, rgba(12,6,24, 0.6), rgba(42,20,87, 0.6)), url(/assets/images/events/#{eventImage})" : false))
+    +header
+
+    .container__content
+
+      h2!= title
+      if locals.eventname 
+        h3!= locals.eventname
+
+  .container
+    .container__content.event-article-wrapper
+
+      .event-meta
+
+        if locals.speakerurl
+          a.event-meta__speaker(href=speakerurl, target='_blank')!= speaker
+        else
+          .event-meta__speaker!= speaker
+
+        .event-meta__date= moment(date).format("MMM Do, YYYY")
+
+
+        if locals.eventlocation
+          .event-meta__eventlocation!= eventlocation
+
+        .event-divider
+
+      article.post-content.event-article!= contents
+
+      .event__article-footer
+        a(href="http://twitter.com/share?text=#{encodeURIComponent(title)}&url=#{rootUrl}/#{path}", target="_blank").blog__social-share
+          img(src='/assets/images/icons/twitter-icon.svg')
+          p Tweet
+
+        a(href="https://www.facebook.com/sharer/sharer.php?u=#{rootUrl}/#{path}", target="_blank").blog__social-share
+          img(src='/assets/images/icons/facebook-icon.svg')
+          p Share
+
+        a(href="https://plus.google.com/share?url=#{rootUrl}/#{path}", target="_blank").blog__social-share
+          img(src='/assets/images/icons/googleplus-icon.svg')
+          p Share
+
+        a(href="http://news.ycombinator.com/submit", target="_blank").blog__social-share
+          img(src='/assets/images/icons/hackernews-icon.svg')
+          p Vote
+
+  .container
+    +footer
