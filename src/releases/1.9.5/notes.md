@@ -115,7 +115,7 @@ For more information, see the [documentation](/docs/1.9/installing/upgrading/).
   mesos_max_completed_tasks_per_framework: 20
   ```
 
-# <a name="fixed-issues"></a>Issues Fixed Since 1.8
+# <a name="fixed-issues"></a>Issues Fixed in 1.9
 
 - CORE-735 - Large node count leads to failed overlay config and failed replog recovery.
 - DCOS-9149 - Missing Timeout for Spartan fetching DNS Exhibitor data.
@@ -131,7 +131,7 @@ For more information, see the [documentation](/docs/1.9/installing/upgrading/).
 - DCOS-14228 - Disabled schedules keep firing in jobs.
 
 <a name="1-9-2"></a>
-# Issues Fixed Since 1.9.1
+# Issues Fixed in 1.9.2
 
 - Critical fix: Enables editing Marathon app in the UI. Encompasses the following:
   - DCOS_OSS-1350 - Nodes Page error on checkbox.
@@ -151,7 +151,7 @@ For more information, see the [documentation](/docs/1.9/installing/upgrading/).
 - DCOS-14880 - GUI bug: container type must be defined.
 
 <a name="1-9-3"></a>
-# Issues Fixed Since 1.9.2
+# Issues Fixed in 1.9.3
 
 - DCOS-15771 - mesos-dns doesn't return all SRV records of running tasks.
 - DCOS-16151 - Marathon Endpoints are not responding.
@@ -170,7 +170,16 @@ For more information, see the [documentation](/docs/1.9/installing/upgrading/).
 - DCOS_OSS-1561 - Revert DCOS_OSS-1472 from 1.9.3.
 
 <a name="1-9-4"></a>
-# Issues Fixed Since 1.9.3
+# Issues Fixed in 1.9.4
 
 - MESOS-7926 - Abnormal termination of default executor can cause MesosContainerizer::destroy to fail.
 - MESOS-7934 - OOM due to LibeventSSLSocket send incorrectly returning 0 after shutdown.
+
+<a name="1-9-5"></a>
+# Issues Fixed in 1.9.5
+
+- CORE-1292 - Remove the systemd prereq requirement of `leader.mesos` for Mesos agent.
+- DOCS-2077 - DC/OS 1.9 Custom Installation documentation: clarified where the `opt/mesosphere` directory must be.
+- DCOS-18830 - Dashboard CPU allocation not rounding correctly.
+- DCOS_OSS-1574 - Navstar updated due to crashes on Core OS 1465+.
+- MARATHON-7576 - Change default `UnreachableStrategy` to `0,0`.

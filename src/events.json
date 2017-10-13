@@ -442,6 +442,24 @@
       "url": "http://sched.co/BxIl"
   },
 
+  { "title": "The Open Sourcing of Infrastructure (All Things Open)",
+      "image": "/assets/images/events/2017-10-23_all_things_open.jpg",
+      "date": "2017-10-23",
+      "url": "https://allthingsopen.org/talk/the-open-sourcing-of-infrastructure/"
+  },
+
+  { "title": "Health Checking in the Distributed Containerized World (All Things Open)",
+      "image": "/assets/images/events/Raleigh.jpg",
+      "date": "2017-10-23",
+      "url": "https://allthingsopen.org/talk/health-checking-a-not-so-trivial-task-in-the-distributed-containerized-world/"
+  },
+
+  { "title": "MesosCon Europe",
+      "image": "/assets/images/events/Prague_2.jpg",
+      "date": "2017-10-25",
+      "url": "http://events.linuxfoundation.org/events/mesoscon-europe"
+  },
+
   { "title": "SMACK Stack and Beyond (Spark Summit)",
       "image": "/assets/images/events/Dublin.jpg",
       "date": "2017-10-26",
@@ -452,6 +470,18 @@
       "image": "/assets/images/events/Tokyo.jpg",
       "date": "2017-11-01",
       "url": "https://mesos.connpass.com/event/67877/"
+  },
+
+  { "title": "MesosCon Recap Berlin (Meetup)",
+      "image": "/assets/images/events/Berlin.jpg",
+      "date": "2017-11-01",
+      "url": "https://www.meetup.com/Berlin-Mesos-User-Group/events/244085372/"
+  },
+
+  { "title": "MesosCon Recap Hamburg (Meetup)",
+      "image": "/assets/images/events/Hamburg.jpg",
+      "date": "2017-11-02",
+      "url": "https://www.meetup.com/Hamburg-Mesos-User-Group/events/244085454/"
   },
 
   { "title": "The Open Sourcing of Infrastructure (CubaConf)",

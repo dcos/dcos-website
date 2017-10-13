@@ -46,6 +46,9 @@ const currentDevVersion = '1.11'
 const cssTimestamp = new Date().getTime()
 const paths = {
   build: './build',
+  events: {
+    src: 'src/events/*.md'
+  },
   blog: {
     src: 'src/blog/*.md'
   },
@@ -168,6 +171,8 @@ const serveTask = () => {
         batch(function (events, done) { gulp.start('build-site-templates', done) }))
       watch(paths.blog.src,
         batch(function (events, done) { gulp.start('build-blog-templates', done) }))
+      watch(paths.events.src,
+        batch(function (events, done) { gulp.start('build-event-templates', done) }))
       watch(paths.styles.src,
         batch(function (events, done) { gulp.start('styles', done) }))
       watch(paths.js.src,
@@ -176,7 +181,7 @@ const serveTask = () => {
         batch(function (events, done) { gulp.start('copy', done) }))
       watch(['./layouts/**/*.*', './mixins/**/*.*', './includes/**/*.*'],
         batch(function (events, done) {
-          gulp.start(['build-site-templates', 'build-blog-templates'], done)
+          gulp.start(['build-site-templates', 'build-event-templates', 'build-blog-templates'], done)
         }))
 
       docsVersions.forEach(function (version) {
@@ -194,7 +199,7 @@ const serveTask = () => {
 const sharedDocsSiteTasks = ['copy', 'browserify', 'styles', 'nginx-config', 's3-config']
 
 gulp.task('build', ['build-site', 'build-docs'])
-gulp.task('build-site', ['build-site-templates', 'build-blog-templates', ...sharedDocsSiteTasks])
+gulp.task('build-site', ['build-site-templates', 'build-event-templates', 'build-blog-templates', ...sharedDocsSiteTasks])
 gulp.task('build-docs', [...docsVersions.map(getDocsBuildTask), ...docsVersions.map(getDocsCopyTask), ...sharedDocsSiteTasks, 'swagger-yaml', 'docs-raw-html'])
 
 gulp.task('serve', ['build'], serveTask)
@@ -375,6 +380,92 @@ gulp.task('build-blog-templates', () => {
           rootUrl: CONFIG.root_url
         }))
         .use(feed({ collection: 'posts' }))
+        .use(layouts({
+          pattern: '**/*.html',
+          engine: 'jade',
+          directory: path.join('layouts')
+        }))
+        .use(reloadInMetalsmithPipeline)
+  )
+    .pipe(gulp.dest(paths.build))
+})
+
+gulp.task('build-event-templates', () => {
+  return gulp.src(paths.events.src)
+    .pipe($.frontMatter().on('data', file => {
+      Object.assign(file, file.frontMatter)
+      delete file.frontMatter
+    }))
+    .pipe(
+      gulpsmith()
+        .metadata({
+          site: {
+            url: CONFIG.root_url,
+            title: 'DC/OS Events',
+            image_url: './assets/images/rss-logo.png'
+          }
+        })
+        .use(addTimestampToMarkdownFiles)
+        .use(markdown({
+          smartypants: true,
+          gfm: true,
+          tables: true
+        }))
+        .use(jade({
+          locals: { cssTimestamp },
+          pretty: true
+        }))
+        .use(permalinks({
+          pattern: ':title',
+          date: 'YYYY',
+          linksets: [{
+            match: { collection: 'events' },
+            pattern: 'events/:date/:title'
+          }]
+        }))
+        .use(collections({
+          events: {
+            pattern: '*.md',
+            sortBy: 'date',
+            reverse: true
+          }
+        }))
+        .use(addPropertiesToCollectionItems('events', eventpost => {
+          return Object.assign(eventpost, {
+            formattedDate: moment(eventpost.date).format('MMMM DD')
+          })
+        }))
+        .use(writemetadata({
+          collections: {
+            events: {
+              output: {
+                path: 'events/events.json',
+                asObject: true
+              },
+              ignorekeys: ['contents', 'next', 'previous', 'stats', 'mode', 'lunr']
+            }
+          }
+        }))
+        .use(tags({
+          handle: 'category',
+          path: 'events/category/:tag.html',
+          layout: '../layouts/event-category.jade',
+          sortBy: 'date',
+          reverse: true
+        }))
+        .use(mlunr({
+          indexPath: 'events/search-index.json',
+          fields: {
+            contents: 2,
+            title: 10,
+            category: 5
+          }
+        }))
+        .use(define({
+          moment,
+          rootUrl: CONFIG.root_url
+        }))
+        .use(feed({ collection: 'events' }))
         .use(layouts({
           pattern: '**/*.html',
           engine: 'jade',
