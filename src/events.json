@@ -319,115 +319,115 @@
   { "title": "Mesos, Marathon, SMACK and Beyond (Meetup)",
       "image": "/assets/images/events/Hamburg.jpg",
       "date": "2017-08-01",
-      "url": "http://bit.ly/2h1vW8R"
+      "url": "/events/2017/mesos-vamp-marathon-flink-smack-and-beyond/"
   },
 
   { "title": "The SMACK Stack! (Meetup)",
       "image": "/assets/images/events/Melbourne.jpg",
       "date": "2017-08-10",
-      "url": "http://bit.ly/2ha9HxC"
-  },
-
-  { "title": "Introduction to DC/OS (Philadelphia LUG West)",
-      "image": "/assets/images/events/2017-08-21_plug_intro_dcos.jpg",
-      "date": "2017-08-21",
-      "url": "https://docs.google.com/presentation/d/1ZPziBDHIOwqBwVirw7AAa0tA5ulJuppvVPhIwrLGGsY/edit?usp=sharing"
+      "url": "/events/2017/introducing-the-smack-stack/"
   },
 
   { "title": "From SMACK to SMAACK Running Alluxio on DC/OS (Meetup)",
       "image": "/assets/images/events/San_Francisco.jpg",
       "date": "2017-08-17",
-      "url": "http://bit.ly/2h1hXQt"
+      "url": "/events/2017/fast-scalable-data-processing-with-alluxio-mesos-and-minio/"
+  },
+
+  { "title": "Introduction to DC/OS (Philadelphia LUG West)",
+      "image": "/assets/images/events/2017-08-21_plug_intro_dcos.jpg",
+      "date": "2017-08-21",
+      "url": "/events/2017/introduction-to-dc-os/"
   },
 
   { "title": "The Open Sourcing Of Infrastructure (FOSSCON 2017)",
       "image": "/assets/images/events/2017-08-26_fosscon_2017.jpg",
       "date": "2017-08-26",
-      "url": "https://docs.google.com/presentation/d/1aAj4YRlxDvBB7-hYWj4ZBQEfpOODT_88OVB5ZOJkzmI/edit?usp=sharing"
+      "url": "/events/2017/the-open-sourcing-of-infrastructure/"
   },
 
   { "title": "The SMACK Stack (Meetup)",
       "image": "/assets/images/events/2017-08-30_dublin_smack_stack.jpg",
       "date": "2017-08-30",
-      "url": "https://docs.google.com/presentation/d/1Z2P8KoVRaD3oUiPFR9myyORiR5WGtj4qPHMhktbzjyQ/edit?usp=sharing"
+      "url": "/events/2017/the-smack-stack/"
   },
 
   { "title": "Building Open Source Project Infrastructures (Open Source Summit)",
       "image": "/assets/images/events/2017-09-11_OSSNA_2017.jpg",
       "date": "2017-09-11",
-      "url": "https://docs.google.com/presentation/d/1hKmmHVqtkp87Y2DtbYk5fKZyt4bo86HwgNcpaoBAZis/edit?usp=sharing"
+      "url": "/events/2017/building-open-source-project-infrastructures/"
   },
 
   { "title": "Advanced Continuous Delivery Strategies (Open Source Summit)",
       "image": "/assets/images/events/2017-09-12_OSSNA_2017.jpg",
       "date": "2017-09-12",
-      "url": "https://docs.google.com/presentation/d/18tJ_8Dw_H5QJctVFd41ep6aWuGRwgOJB9RsEsybyryE/edit?usp=sharing"
+      "url": "/events/2017/advanced-continuous-delivery-strategies-for-containerized-applications-using-dc-os/"
   },
 
   { "title": "Apache Flink meets Apache Mesos and DC/OS (Flink Forward)",
       "image": "/assets/images/events/Berlin.jpg",
       "date": "2017-09-13",
-      "url": "http://bit.ly/2vLnAaN"
+      "url": "/events/2017/apache-flink-meets-apache-mesos-and-dc-os/"
   },
 
   { "title": "SMACK stack and beyond (Open Source Summit)",
       "image": "/assets/images/events/Los_Angeles_3.jpg",
       "date": "2017-09-13",
-      "url": "https://schd.ws/hosted_files/ossna2017/f9/OSS%20Summit.pdf"
+      "url": "/events/2017/smack-stack-and-beyond/"
   },
 
   { "title": "Nightmares of a Container Orchestration System (Open Source Summit)",
       "image": "/assets/images/events/2017-09-13_OSSNA_2017.jpg",
       "date": "2017-09-13",
-      "url": "https://schd.ws/hosted_files/ossna2017/c5/OSS-Nightmares.pdf"
+      "url": "/events/2017/nightmares-of-a-container-orchestration-system/"
   },
 
   { "title": "MesosCon North America",
       "image": "/assets/images/events/2017-09-14_MesosConNA.jpg",
       "date": "2017-09-13",
-      "url": "http://events.linuxfoundation.org/events/mesoscon-north-america"
+      "url": "/events/2017/mesoscon-north-america/"
   },
 
   { "title": "DC/OS for Java Devs (JavaZone)",
       "image": "/assets/images/events/Oslo.jpg",
       "date": "2017-09-13",
-      "url": "http://bit.ly/2eM7UxX"
+      "url": "/events/2017/dc-os-for-java-devs/"
   },
 
   { "title": "Laying down the SMACK on your datapipelines (Meetup)",
       "image": "/assets/images/events/San_Francisco_3.jpg",
       "date": "2017-09-14",
-      "url": "https://www.meetup.com/San-Francisco-Bay-Area-Big-Data-and-Scalable-Systems/events/238629855/"
+      "url": "/events/2017/spark-mesos-akka-cassandra-kafka-laying-down-the-smack-on-your-datapipelines/"
   },
 
   { "title": "No One Puts Java in a Container (Sysdig CCWFS)",
       "image": "/assets/images/events/2017-09-26_sysdig_ccwfs.jpg",
       "date": "2017-09-26",
-      "url": "https://docs.google.com/presentation/d/1nrQcrOPQyV353Ri2dv56X8P3pMVt_lp8UmbNFKyr64U/edit?usp=sharing"
+      "url": "/events/2017/no-one-puts-java-in-a-container/"
   },
 
   { "title": "Day 2 Operations with Containers: Myth vs Reality (Sysdig CCWFS)",
       "image": "/assets/images/events/2017-09-27_sysdig_ccwfs.jpg",
       "date": "2017-09-27",
-      "url": "https://docs.google.com/presentation/d/1_rsYoYUh_7DI0qumYtjwBtMpRShL8NBlIUkRn0O02c4/edit?usp=sharing"
+      "url": "/events/2017/day-2-operations-with-containers-myth-vs-reality/"
   },
 
   { "title": "All about Container 2.0 (code.talks)",
       "image": "/assets/images/events/Berlin.jpg",
       "date": "2017-09-29",
-      "url": "http://bit.ly/2eMnqdf"
+      "url": "/events/2017/container-check-aber-wohin-mit-persistent-data-big-data-oder-fast-data-alles-ber-container-2-0/"
   },
 
   { "title": "Mesos and the Architecture of the New Datacenter (Topconf)",
       "image": "/assets/images/events/Duesseldorf.jpg",
       "date": "2017-10-05",
-      "url": "http://bit.ly/2h3lgqz"
+      "url": "/events/2017/mesos-and-the-architecture-of-the-new-datacenter/"
   },
 
   { "title": "Containers, Persistent Data, Fast Data, Big Data (JavaOne)",
       "image": "/assets/images/events/San_Francisco.jpg",
       "date": "2017-10-05",
-      "url": "https://events.rainfocus.com/catalog/oracle/oow17/catalogjavaone17?search=container:%20check!%20But%20what%20about%20persistent&showEnrolled=false"
+      "url": "/events/2017/container-check-but-what-about-persistent-data-big-data-and-fast-data/"
   },
 
   { "title": "SMACK Stack 2.0",
