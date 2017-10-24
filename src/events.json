@@ -466,19 +466,37 @@
       "url": "http://bit.ly/2vM1aXe"
   },
 
+  { "title": "Monitoring Microservices + Kong (Meetup)",
+      "image": "/assets/images/events/San_Francisco.jpg",
+      "date": "2017-10-30",
+      "url": "https://www.eventbrite.com/e/1-deploying-kong-w-mesosphere-dcos-2-monitoring-microservices-on-dcos-tickets-38435265915"
+  },
+
+  { "title": "Apache Mesos + DC/OS 101 (Meetup)",
+      "image": "/assets/images/events/Leeds.jpg",
+      "date": "2017-10-31",
+      "url": "https://www.meetup.com/LeedsDevops/events/244258569/"
+  },
+
   { "title": "Mesos Meetup Tokyo #3",
       "image": "/assets/images/events/Tokyo.jpg",
       "date": "2017-11-01",
       "url": "https://mesos.connpass.com/event/67877/"
   },
 
-  { "title": "MesosCon Recap Berlin (Meetup)",
+  { "title": "Apache Flink, Vamp, and MesosCon Recap (Meetup)",
       "image": "/assets/images/events/Berlin.jpg",
       "date": "2017-11-01",
       "url": "https://www.meetup.com/Berlin-Mesos-User-Group/events/244085372/"
   },
 
-  { "title": "MesosCon Recap Hamburg (Meetup)",
+  { "title": "Jolt: Distributed, fault-tolerant tests at scale on Mesos (Meetup)",
+      "image": "/assets/images/events/San_Francisco_3.jpg",
+      "date": "2017-11-01",
+      "url": "https://www.eventbrite.com/e/jolt-distributed-fault-tolerant-test-running-at-scale-using-mesos-tickets-39204754476"
+  },
+
+  { "title": "MesosCon Recap + Jobs & Marathon + Security (Meetup)",
       "image": "/assets/images/events/Hamburg.jpg",
       "date": "2017-11-02",
       "url": "https://www.meetup.com/Hamburg-Mesos-User-Group/events/244085454/"
