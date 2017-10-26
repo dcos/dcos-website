@@ -443,15 +443,15 @@
   },
 
   { "title": "The Open Sourcing of Infrastructure (All Things Open)",
-      "image": "/assets/images/events/2017-10-23_all_things_open.jpg",
+      "image": "/assets/images/events/2017-10-23_ato_2017_1.jpg",
       "date": "2017-10-23",
-      "url": "https://allthingsopen.org/talk/the-open-sourcing-of-infrastructure/"
+      "url": "/events/2017/the-open-sourcing-of-infrastructure/"
   },
 
   { "title": "Health Checking in the Distributed Containerized World (All Things Open)",
-      "image": "/assets/images/events/Raleigh.jpg",
+      "image": "/assets/images/events/2017-10-23_ato_2017_2.jpg",
       "date": "2017-10-23",
-      "url": "https://allthingsopen.org/talk/health-checking-a-not-so-trivial-task-in-the-distributed-containerized-world/"
+      "url": "/events/2017/health-checking-a-not-so-trivial-task-in-the-distributed-containerized-world/"
   },
 
   { "title": "MesosCon Europe",
