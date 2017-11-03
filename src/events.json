@@ -485,9 +485,9 @@
   },
 
   { "title": "Apache Flink, Vamp, and MesosCon Recap (Meetup)",
-      "image": "/assets/images/events/Berlin.jpg",
+      "image": "/assets/images/events/2017-11-01_berlin.jpg",
       "date": "2017-11-01",
-      "url": "https://www.meetup.com/Berlin-Mesos-User-Group/events/244085372/"
+      "url": "/events/2017/mesoscon-recap-with-flink-tensorflow-and-vamp"
   },
 
   { "title": "Jolt: Distributed, fault-tolerant tests at scale on Mesos (Meetup)",
@@ -497,9 +497,9 @@
   },
 
   { "title": "MesosCon Recap + Jobs & Marathon + Security (Meetup)",
-      "image": "/assets/images/events/Hamburg.jpg",
+      "image": "/assets/images/events/2017-11-02_hamburg_meetup.jpg",
       "date": "2017-11-02",
-      "url": "https://www.meetup.com/Hamburg-Mesos-User-Group/events/244085454/"
+      "url": "/events/2017/mesoscon-recap-with-marathon-and-mesos-security/"
   },
 
   { "title": "The Open Sourcing of Infrastructure (CubaConf)",
