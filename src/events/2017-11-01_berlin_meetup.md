@@ -32,6 +32,10 @@ Event link: <a href="https://www.meetup.com/Berlin-Mesos-User-Group/events/24408
 
 <iframe src="https://docs.google.com/presentation/d/1ScapddW4T4Sa4KZ-eiTlK6wtbPi2v5c1HwqqPgsKPh4/embed?start=false&loop=false&delayms=3000" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/NlCGjgABhP1kvy" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/tSKsmaOqCqdrch" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
 <iframe src="https://docs.google.com/presentation/d/1_Yy-sLh30yNQlFdIeFhkaMwriKoAYNsteaWTB9fOY1s/embed?start=false&loop=false&delayms=3000" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ## Photos
