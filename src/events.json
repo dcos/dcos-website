@@ -532,6 +532,18 @@
       "url": "https://devopsconference.de/container-technologies/nightmares-of-a-container-orchestration-system/"
   },
 
+  { "title": "Kosteneffiziente Bereitstellung von Microservices mit DC/OS (Meetup)",
+      "image": "/assets/images/events/Nuernberg.jpg",
+      "date": "2017-12-07",
+      "url": "https://www.meetup.com/Docker-Nuremberg/events/244307940/?eventId=244307940&rv=ea1&chapter_analytics_code=UA-48368587-1&fromEmail=244307940&rv=ea1"
+  },
+
+  { "title": "The Open Sourcing of Infrastructure (Linux Conf AU)",
+      "image": "/assets/images/events/Sydney.jpg",
+      "date": "2018-01-24",
+      "url": "https://rego.linux.conf.au/schedule/presentation/59/"
+  },
+
   { "title": "",
       "image": "/assets/images/events/.jpg",
       "date": "",
