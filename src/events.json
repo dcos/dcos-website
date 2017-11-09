@@ -520,6 +520,12 @@
       "url": "https://milan2017.codemotionworld.com/talk-detail/?detail=6489"
   },
 
+  { "title": "Two Sigma Open Source Meetup",
+      "image": "/assets/images/events/New_York.jpg",
+      "date": "2017-11-13",
+      "url": "https://www.meetup.com/Two-Sigma-Open-Source-Meetup/events/244936714"
+  },
+
   { "title": "DC/OS: Where Fast-Data and Microservices Meet (QCon)",
       "image": "/assets/images/events/San_Francisco.jpg",
       "date": "2017-11-16",
@@ -530,6 +536,12 @@
       "image": "/assets/images/events/Munich.jpg",
       "date": "2017-11-20",
       "url": "https://devopsconference.de/container-technologies/nightmares-of-a-container-orchestration-system/"
+  },
+
+  { "title": "Mesos and DC/OS Intro (Meetup)",
+      "image": "/assets/images/events/Prague_2.jpg",
+      "date": "2017-11-28",
+      "url": "https://www.meetup.com/Prague-Containers-Meetup/events/244571013/?a=socialmedia"
   },
 
   { "title": "Kosteneffiziente Bereitstellung von Microservices mit DC/OS (Meetup)",
