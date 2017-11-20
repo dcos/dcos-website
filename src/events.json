@@ -550,6 +550,12 @@
       "url": "https://www.meetup.com/Docker-Nuremberg/events/244307940/?eventId=244307940&rv=ea1&chapter_analytics_code=UA-48368587-1&fromEmail=244307940&rv=ea1"
   },
 
+  { "title": "SMACK stack 101 (USENIX Middleware)",
+      "image": "/assets/images/events/Los_Vegas.jpg",
+      "date": "2017-12-11",
+      "url": "http://2017.middleware-conference.org/tutorials.html"
+  },
+
   { "title": "Day 2 Operations with Containers: Myth vs. Reality (Linux Conf AU)",
       "image": "/assets/images/events/Sydney_2.jpg",
       "date": "2018-01-23",
