@@ -475,7 +475,7 @@
   { "title": "Apache Mesos + DC/OS 101 (Meetup)",
       "image": "/assets/images/events/Leeds.jpg",
       "date": "2017-10-31",
-      "url": "https://www.meetup.com/LeedsDevops/events/244258569/"
+      "url": "/events/2017/mesos-and-dc-os/"
   },
 
   { "title": "Mesos Meetup Tokyo #3",
