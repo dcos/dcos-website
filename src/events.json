@@ -539,9 +539,9 @@
   },
 
   { "title": "Mesos and DC/OS Intro (Meetup)",
-      "image": "/assets/images/events/Prague_2.jpg",
+      "image": "/assets/images/events/prague_containers.jpg",
       "date": "2017-11-28",
-      "url": "https://www.meetup.com/Prague-Containers-Meetup/events/244571013/?a=socialmedia"
+      "url": "/events/2017/mesos-and-dc-os-in-prague/"
   },
 
   { "title": "Kosteneffiziente Bereitstellung von Microservices mit DC/OS (Meetup)",
