@@ -433,7 +433,7 @@
   { "title": "SMACK Stack 2.0",
       "image": "/assets/images/events/Copenhagen.jpg",
       "date": "2017-10-18",
-      "url": "https://dockerconeurope.smarteventscloud.com/connect/sessionDetail.ww?SESSION_ID=140455"
+      "url": "/events/2017/smack-stack-2-0"
   },
 
   { "title": "No one Puts the JVM in a Container (Open Source Summit EU)",
