@@ -562,6 +562,12 @@
       "url": "http://2017.middleware-conference.org/tutorials.html"
   },
 
+  { "title": "Mesosphere DC/OS Free Hands-on Workshop",
+      "image": "/assets/images/events/Boston.jpg",
+      "date": "2017-12-15",
+      "url": "https://www.eventbrite.com/e/mesosphere-dcos-free-hands-on-workshop-tickets-39980821714"
+  },
+
   { "title": "Day 2 Operations with Containers: Myth vs. Reality (Linux Conf AU)",
       "image": "/assets/images/events/Sydney_2.jpg",
       "date": "2018-01-23",
