@@ -547,7 +547,7 @@
   { "title": "Kubernetes One-Click Deployment: Hands-on Workshop",
       "image": "/assets/images/events/Austin.jpg",
       "date": "2017-12-05",
-      "url": "https://www.eventbrite.com/e/kubernetes-one-click-deployment-hands-on-workshop-tickets-39939836125"
+      "url": "/events/2017/kubernetes-one-click-deployment-hands-on-workshop/"
   },
 
   { "title": "Kosteneffiziente Bereitstellung von Microservices mit DC/OS (Meetup)",
