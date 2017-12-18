@@ -385,7 +385,7 @@
   { "title": "MesosCon North America",
       "image": "/assets/images/events/2017-09-14_MesosConNA.jpg",
       "date": "2017-09-13",
-      "url": "/events/2017/mesoscon-north-america/"
+      "url": "http://events17.linuxfoundation.org/events/archive/2017/mesoscon-north-america/"
   },
 
   { "title": "DC/OS for Java Devs (JavaZone)",
@@ -398,6 +398,12 @@
       "image": "/assets/images/events/San_Francisco_3.jpg",
       "date": "2017-09-14",
       "url": "/events/2017/spark-mesos-akka-cassandra-kafka-laying-down-the-smack-on-your-datapipelines/"
+  },
+
+  { "title": "Microservices mit Apache Mesos and DC/OS (BED)",
+      "image": "/assets/images/events/Berlin.jpg",
+      "date": "2017-09-21",
+      "url": "/events/2017/microservices-erfolgreich-betreiben-mit-apache-mesos-und-dc-os/"
   },
 
   { "title": "No One Puts Java in a Container (Sysdig CCWFS)",
@@ -457,7 +463,7 @@
   { "title": "MesosCon Europe",
       "image": "/assets/images/events/Prague_2.jpg",
       "date": "2017-10-25",
-      "url": "http://events.linuxfoundation.org/events/mesoscon-europe"
+      "url": "http://events17.linuxfoundation.org/events/archive/2017/mesoscon-europe/"
   },
 
   { "title": "SMACK Stack and Beyond (Spark Summit)",
@@ -469,7 +475,7 @@
   { "title": "Monitoring Microservices + Kong (Meetup)",
       "image": "/assets/images/events/San_Francisco.jpg",
       "date": "2017-10-30",
-      "url": "https://www.eventbrite.com/e/1-deploying-kong-w-mesosphere-dcos-2-monitoring-microservices-on-dcos-tickets-38435265915"
+      "url": "/events/2017/monitoring-microservices-kong/"
   },
 
   { "title": "Apache Mesos + DC/OS 101 (Meetup)",
@@ -493,7 +499,7 @@
   { "title": "Jolt: Distributed, fault-tolerant tests at scale on Mesos (Meetup)",
       "image": "/assets/images/events/San_Francisco_3.jpg",
       "date": "2017-11-01",
-      "url": "https://www.eventbrite.com/e/jolt-distributed-fault-tolerant-test-running-at-scale-using-mesos-tickets-39204754476"
+      "url": "/events/2017/jolt-distributed-fault-tolerant-tests-at-scale-on-mesos/"
   },
 
   { "title": "MesosCon Recap + Jobs & Marathon + Security (Meetup)",
@@ -511,13 +517,19 @@
   { "title": "Microservices mit Apache Mesos und DC/OS betreiben (W-jax)",
       "image": "/assets/images/events/Munich_2.jpg",
       "date": "2017-11-09",
-      "url": "http://bit.ly/2v6v7lk"
+      "url": "/events/2017/microservices-mit-apache-mesos-und-dc-os-betreiben/"
+  },
+
+  { "title": "DC/OS: Where Fast-Data and Microservices Meet (QCon)",
+      "image": "/assets/images/events/San_Francisco.jpg",
+      "date": "2017-11-09",
+      "url": "/events/2017/dc-os-where-fast-data-and-microservices-meet/"
   },
 
   { "title": "No one puts Java in the Container",
       "image": "/assets/images/events/Milan.jpg",
       "date": "2017-11-10",
-      "url": "https://milan2017.codemotionworld.com/talk-detail/?detail=6489"
+      "url": "/events/2017/no-one-puts-java-in-the-container/"
   },
 
   { "title": "Two Sigma Open Source Meetup",
@@ -526,16 +538,10 @@
       "url": "https://www.meetup.com/Two-Sigma-Open-Source-Meetup/events/244936714"
   },
 
-  { "title": "DC/OS: Where Fast-Data and Microservices Meet (QCon)",
-      "image": "/assets/images/events/San_Francisco.jpg",
-      "date": "2017-11-16",
-      "url": "https://qconsf.com/sf2017/workshop/dcos-where-fast-data-and-microservices-meet"
-  },
-
   { "title": "Nightmares of a Container Orchestration System (DevOpsCon München)",
       "image": "/assets/images/events/Munich.jpg",
-      "date": "2017-11-20",
-      "url": "https://devopsconference.de/container-technologies/nightmares-of-a-container-orchestration-system/"
+      "date": "2017-11-22",
+      "url": "/events/2017/nightmares-of-a-container-orchestration-system/"
   },
 
   { "title": "Mesos and DC/OS Intro (Meetup)",
@@ -553,13 +559,13 @@
   { "title": "Kosteneffiziente Bereitstellung von Microservices mit DC/OS (Meetup)",
       "image": "/assets/images/events/Nuernberg.jpg",
       "date": "2017-12-07",
-      "url": "https://www.meetup.com/Docker-Nuremberg/events/244307940/?eventId=244307940&rv=ea1&chapter_analytics_code=UA-48368587-1&fromEmail=244307940&rv=ea1"
+      "url": "/events/2017/kosteneffiziente-bereitstellung-von-microservices-mit-dc-os/"
   },
 
   { "title": "SMACK stack 101 (USENIX Middleware)",
-      "image": "/assets/images/events/Los_Vegas.jpg",
-      "date": "2017-12-11",
-      "url": "http://2017.middleware-conference.org/tutorials.html"
+      "image": "/assets/images/events/Las_Vegas.jpg",
+      "date": "2017-12-12",
+      "url": "/events/2017/smack-stack-101-building-fast-data-stacks/"
   },
 
   { "title": "Day 2 Operations with Containers: Myth vs. Reality (Linux Conf AU)",
