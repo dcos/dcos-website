@@ -14,8 +14,8 @@
     ],
     "downloadlink": {
       "amazon": "https://downloads.dcos.io/dcos/stable/1.10.2/aws.html",
-      "azure": "https://downloads.dcos.io/dcos/stable/1.10.2/azshure.html",
-      "direct": "https://downloads.dcos.io/dcos/stable/1.10.2/dcos_generate_config."
+      "azure": "https://downloads.dcos.io/dcos/stable/1.10.2/azure.html",
+      "direct": "https://downloads.dcos.io/dcos/stable/1.10.2/dcos_generate_config.sh"
     },
     "subreleases": [
       { "name": "1.10.2", "url": "/releases/1.10.2/"},
