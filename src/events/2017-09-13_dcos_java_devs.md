@@ -4,7 +4,7 @@ date: 2017-09-13
 speaker: Johannes Unterstein, Mesosphere
 speakerurl: https://twitter.com/unterstein
 eventimage: Oslo.jpg
-eventlocation: Oslo, Poland
+eventlocation: Oslo, Norway
 eventname: JavaZone
 category: Java
 description: 

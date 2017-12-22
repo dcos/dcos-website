@@ -529,6 +529,11 @@ gulp.task('s3-config', (done) => {
           "Redirect": { "HostName": "dcos.io", "ReplaceKeyPrefixWith": to }
         })
       }
+      // redirect all docs paths to new site @ docs.mesosphere.com/
+      routingRules.push({
+        "Condition": { "KeyPrefixEquals": "docs/" },
+        "Redirect": { "HostName": "docs.mesosphere.com", "ReplaceKeyPrefixWith": "" }
+      })
       return {
         "IndexDocument": {
            "Suffix": "index.html"
