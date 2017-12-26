@@ -5,11 +5,11 @@
     "description": "Get hands on experience with the basics of DC/OS right away.",
     "dcos_version": ["1.8","1.9","1.10"],
     "difficulty": "Beginner",
-    "tutorial" : "/docs/latest/tutorials/dcos-101/",
+    "tutorial" : "https://docs.mesosphere.com/1.10/tutorials/dcos-101/",
     "callouts": {
-      "1.8": "/docs/1.8/usage/tutorials/dcos-101/",
-      "1.9": "/docs/1.9/tutorials/dcos-101/",
-      "1.10": "/docs/1.10/tutorials/dcos-101/"
+      "1.8": "https://docs.mesosphere.com/1.8/usage/tutorials/dcos-101/",
+      "1.9": "https://docs.mesosphere.com/1.9/tutorials/dcos-101/",
+      "1.10": "https://docs.mesosphere.com/1.10/tutorials/dcos-101/"
     }
   },
   {
@@ -18,11 +18,11 @@
     "description": "Create and deploy simple services using the DC/OS GUI and CLI.",
     "dcos_version": ["1.8","1.9","1.10"],
     "difficulty": "Beginner",
-    "tutorial" : "/docs/latest/tutorials/create-service/",
+    "tutorial" : "https://docs.mesosphere.com/latest/tutorials/create-service/",
     "callouts": {
-      "1.8": "/docs/1.8/usage/tutorials/create-service/",
-      "1.9": "/docs/1.9/tutorials/create-service/",
-      "1.10": "/docs/1.10/tutorials/create-service/"
+      "1.8": "https://docs.mesosphere.com/1.8/usage/tutorials/create-service/",
+      "1.9": "https://docs.mesosphere.com/1.9/tutorials/create-service/",
+      "1.10": "https://docs.mesosphere.com/1.10/tutorials/create-service/"
     }
   },
   {
@@ -31,24 +31,25 @@
     "description": "Track and report cluster resources uses by different app components.",
     "dcos_version": ["1.7","1.8","1.9","1.10"],
     "difficulty": "Intermediate",
-    "tutorial" : "/docs/latest/tutorials/task-labels/",
+    "tutorial" : "https://docs.mesosphere.com/latest/tutorials/task-labels/",
     "callouts": {
-      "1.7": "/docs/1.7/usage/tutorials/task-labels/",
-      "1.8": "/docs/1.8/usage/tutorials/task-labels/",
-      "1.9": "/docs/1.9/tutorials/task-labels/",
-      "1.10": "/docs/1.10/tutorials/task-labels/"
+      "1.7": "https://docs.mesosphere.com/1.7/usage/tutorials/task-labels/",
+      "1.8": "https://docs.mesosphere.com/1.8/usage/tutorials/task-labels/",
+      "1.9": "https://docs.mesosphere.com/1.9/tutorials/task-labels/",
+      "1.10": "https://docs.mesosphere.com/1.10/tutorials/task-labels/"
     }
   },
   {
     "featured": false,
     "title": "Building an IoT Pipeline",
     "description": "Deploy a containerized Ruby on Rails app, and analyze the data it produces.",
-    "dcos_version": ["1.8","1.9"],
+    "dcos_version": ["1.8","1.9","1.10"],
     "difficulty": "Intermediate",
-    "tutorial" : "/docs/1.9/tutorials/iot_pipeline/",
+    "tutorial" : "https://docs.mesosphere.com/latest/tutorials/iot_pipeline/",
     "callouts": {
-      "1.8": "/docs/1.8/usage/tutorials/iot_pipeline/",
-      "1.9": "/docs/1.9/tutorials/iot_pipeline/"
+      "1.8": "https://docs.mesosphere.com/1.8/usage/tutorials/iot_pipeline/",
+      "1.9": "https://docs.mesosphere.com/1.9/tutorials/iot_pipeline/",
+      "1.10": "https://docs.mesosphere.com/1.10/tutorials/iot_pipeline/"
     }
   },
   {
@@ -57,25 +58,24 @@
     "description": "Increase or decrease computing resources based on usage.",
     "dcos_version": ["1.7","1.8","1.9","1.10"],
     "difficulty": "Advanced",
-    "tutorial" : "/docs/latest/tutorials/autoscaling/",
+    "tutorial" : "https://docs.mesosphere.com/latest/tutorials/autoscaling/",
     "callouts": {
-      "1.7": "/docs/1.7/usage/tutorials/autoscaling/",
-      "1.8": "/docs/1.8/usage/tutorials/autoscaling/",
-      "1.9": "/docs/1.9/tutorials/autoscaling/",
-      "1.10": "/docs/1.10/tutorials/autoscaling/"
+      "1.7": "https://docs.mesosphere.com/1.7/usage/tutorials/autoscaling/",
+      "1.8": "https://docs.mesosphere.com/1.8/usage/tutorials/autoscaling/",
+      "1.9": "https://docs.mesosphere.com/1.9/tutorials/autoscaling/",
+      "1.10": "https://docs.mesosphere.com/1.10/tutorials/autoscaling/"
     }
   },
   {
     "featured": false,
     "title": "Running Stateful Services",
     "description": "Create and reserve persistent volumes for tasks that require state.",
-    "dcos_version": ["1.8","1.9","1.10"],
+    "dcos_version": ["1.8","1.9"],
     "difficulty": "Advanced",
-    "tutorial" : "/docs/latest/tutorials/stateful-services/",
+    "tutorial" : "https://docs.mesosphere.com/1.9/tutorials/stateful-services/",
     "callouts": {
-      "1.8": "/docs/1.8/usage/tutorials/stateful-services/",
-      "1.9": "/docs/1.9/tutorials/stateful-services/",
-      "1.10": "/docs/1.10/tutorials/stateful-services/"
+      "1.8": "https://docs.mesosphere.com/1.8/usage/tutorials/stateful-services/",
+      "1.9": "https://docs.mesosphere.com/1.9/tutorials/stateful-services/"
     }
   }
 ]

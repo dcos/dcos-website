@@ -25,7 +25,7 @@
       { "name": "1.10.0-beta2", "url": "/releases/1.10-beta2/"},
       { "name": "1.10.0-beta1", "url": "/releases/1.10-beta1/"}
     ],
-    "docslink": "/docs/1.10/"
+    "docslink": "https://docs.mesosphere.com/1.10/"
   },
   {
     "title": "DC/OS 1.9",
@@ -56,7 +56,7 @@
       { "name": "1.9.0-rc4", "url": "/releases/1.9.0-rc4/"},
       { "name": "1.9.0-rc3", "url": "/releases/1.9.0-rc3/"}
     ],
-    "docslink": "/docs/1.9/"
+    "docslink": "https://docs.mesosphere.com/1.9/"
   },
   {
     "title": "DC/OS 1.8",
@@ -90,7 +90,7 @@
       { "name": "1.8.0", "url": "/releases/1.8.0/"}
 
     ],
-    "docslink": "/docs/1.8/"
+    "docslink": "https://docs.mesosphere.com/1.8/"
   },
   {
     "title": "DC/OS 1.7",
@@ -110,6 +110,6 @@
       { "name": "1.7-open", "url": "/releases/1.7-open/"}
 
     ],
-    "docslink": "/docs/1.7/"
+    "docslink": "https://docs.mesosphere.com/1.7/"
   }
 ]
