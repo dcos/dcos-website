@@ -19,6 +19,8 @@ The current craze of Docker has everyone sticking their processes inside a conta
 
 Event link: <a href="https://milan2017.codemotionworld.com/talk-detail/?detail=6489">CodeMotion Milan: NO ONE PUTS Java IN THE CONTAINER</a>
 
+Article based on the presentation at the event: <a href="https://jaxenter.com/nobody-puts-java-container-139373.html">JAXenter: Nobody puts Java in a container</a>
+
 # Slides
 
 <iframe src="https://drive.google.com/file/d/1gjBRI2mW7NeJzseRc2uLigYn82eS5Xwt/preview" width="640" height="480"></iframe>

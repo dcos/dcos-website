@@ -577,13 +577,25 @@
   { "title": "Day 2 Operations with Containers: Myth vs. Reality (Linux Conf AU)",
       "image": "/assets/images/events/Sydney_2.jpg",
       "date": "2018-01-23",
-      "url": "https://linux.conf.au/programme/miniconfs/sysadmin/"
+      "url": "https://sysadmin.miniconf.org/presentations18.html#ElizabethKJoseph"
   },
 
   { "title": "The Open Sourcing of Infrastructure (Linux Conf AU)",
       "image": "/assets/images/events/Sydney.jpg",
       "date": "2018-01-24",
       "url": "https://rego.linux.conf.au/schedule/presentation/59/"
+  },
+
+  { "title": "Advanced Continuous Delivery Strategies Using DC/OS (SCALE)",
+      "image": "/assets/images/events/Pasadena_2.jpg",
+      "date": "2018-03-08",
+      "url": "https://www.socallinuxexpo.org/scale/16x/presentations/advanced-continuous-delivery-strategies-containerized-applications-using"
+  },
+
+  { "title": "Container Orchestration Nightmares (SCALE)",
+      "image": "/assets/images/events/Pasadena.jpg",
+      "date": "2018-03-08",
+      "url": "https://www.socallinuxexpo.org/scale/16x/presentations/container-orchestration-nightmares"
   },
 
   { "title": "",
