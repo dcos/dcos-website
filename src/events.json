@@ -580,6 +580,18 @@
       "url": "https://www.meetup.com/Los-Angeles-Santa-Monica-Mesos-Users-Group/events/246423773/"
   },
 
+  { "title": "Introduction to Apache Mesos and DC/OS",
+      "image": "/assets/images/events/Los_Angeles.jpg",
+      "date": "2018-01-11",
+      "url": "https://www.meetup.com/UUASC26/events/245180891/"
+  },
+
+  { "title": "Mesosphere DC/OS Free Hands-on Workshop",
+      "image": "/assets/images/events/Boston.jpg",
+      "date": "2018-01-12",
+      "url": "https://www.eventbrite.com/e/mesosphere-dcos-free-hands-on-workshop-tickets-41947840119"
+  },
+
   { "title": "Day 2 Operations with Containers: Myth vs. Reality (Linux Conf AU)",
       "image": "/assets/images/events/Sydney_2.jpg",
       "date": "2018-01-23",
