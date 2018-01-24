@@ -604,12 +604,6 @@
       "url": "https://rego.linux.conf.au/schedule/presentation/59/"
   },
 
-  { "title": "Agile Sheffield / Sheffield DevOps (Meetup)",
-      "image": "/assets/images/events/Sheffield.jpg",
-      "date": "2018-01-25",
-      "url": "https://www.meetup.com/Agile-Sheffield-Meetup/events/244862268/"
-  },
-
   { "title": "Nightmares of a Container orchestration system",
       "image": "/assets/images/events/Online2.jpg",
       "date": "2018-01-30",
