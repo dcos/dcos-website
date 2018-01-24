@@ -604,31 +604,31 @@
       "url": "https://rego.linux.conf.au/schedule/presentation/59/"
   },
 
-  { "title": "Nightmares of a Container orchestration system",
+  { "title": "Nightmares of a Container orchestration system (webinar)",
       "image": "/assets/images/events/Online2.jpg",
       "date": "2018-01-30",
       "url": "https://amsterdam2018.codemotionworld.com/webinar-jorg-schad"
   },
 
-  { "title": "Deep Learning Pipelines: Beyond the Learning",
+  { "title": "Deep Learning Pipelines: Beyond the Learning (webinar)",
       "image": "/assets/images/events/Online3.jpg",
       "date": "2018-01-31",
       "url": "https://event.on24.com/wcc/r/1583315/DB073A97D530314B019C5DED25AD090F/225374?partnerref=mtkg-dcos"
   },
 
-  { "title": "Déployez facilement Kubernetes & vos containers",
+  { "title": "Déployez facilement Kubernetes & vos containers (webinar)",
       "image": "/assets/images/events/Online.jpg",
       "date": "2018-02-06",
       "url": "https://event.on24.com/wcc/r/1575249/48F74597A996DA2EE691147F34EA957B/?partnerref=community"
   },
 
-  { "title": "Operating Kubernetes at Scale (UK timezone)",
+  { "title": "Operating Kubernetes at Scale (webinar: UK timezone)",
       "image": "/assets/images/events/Online4.jpg",
       "date": "2018-02-07",
       "url": "https://event.on24.com/wcc/r/1575238/3A6D990908EDA9B21BA455BB4DA457DE/?partnerref=community"
   },
 
-  { "title": "Skalierbares Kubernetes und Containers",
+  { "title": "Skalierbares Kubernetes und Containers (webinar)",
       "image": "/assets/images/events/Online2.jpg",
       "date": "2018-02-08",
       "url": "https://event.on24.com/wcc/r/1575239/A1E8677986D96939CD2D645A51CF8B8C/?partnerref=community"
