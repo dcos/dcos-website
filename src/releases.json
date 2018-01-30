@@ -1,5 +1,23 @@
 [
   {
+    "title": "DC/OS 1.11 RCs",
+    "date": "2018-01-30",
+    "description": "DC/OS 1.11 release candidates are for testing only and should not be run in production. Please feel free to explore the release candidate, and file any issues you find in Jira. Your help looking for bugs is much appreciated!",
+    "features": [
+      "Apache Mesos 1.5.",
+      "Marathon 1.6."
+    ],
+    "downloadlink": {
+      "amazon": "https://downloads.dcos.io/dcos/EarlyAccess/1.11.0-rc1/aws.html",
+      "azure": "https://downloads.dcos.io/dcos/EarlyAccess/1.11.0-rc1/azure.html",
+      "direct": "https://downloads.dcos.io/dcos/EarlyAccess/1.11.0-rc1/dcos_generate_config.sh"
+    },
+    "subreleases": [
+      { "name": "1.11.0-rc1", "url": "https://docs.mesosphere.com/1.11/release-notes/1.11.0-rc1/"}
+    ],
+    "docslink": "https://docs.mesosphere.com/1.11/"
+  },
+  {
     "title": "DC/OS 1.10",
     "date": "2017-09-08",
     "description": "DC/OS 1.10 includes core DC/OS service improvements, CNI networking enhancements, and data service enhancements.",
