@@ -593,15 +593,15 @@
   },
 
   { "title": "Day 2 Operations with Containers: Myth vs. Reality (Linux Conf AU)",
-      "image": "/assets/images/events/Sydney_2.jpg",
+      "image": "/assets/images/events/2018-01-23_lca_2018.jpg",
       "date": "2018-01-23",
-      "url": "https://sysadmin.miniconf.org/presentations18.html#ElizabethKJoseph"
+      "url": "/events/2018/day-2-operations-with-containers-myth-vs-reality/"
   },
 
   { "title": "The Open Sourcing of Infrastructure (Linux Conf AU)",
-      "image": "/assets/images/events/Sydney.jpg",
+      "image": "/assets/images/events/2018-01-24_lca_2018.jpg",
       "date": "2018-01-24",
-      "url": "https://rego.linux.conf.au/schedule/presentation/59/"
+      "url": "/events/2018/the-open-sourcing-of-infrastructure/"
   },
 
   { "title": "Nightmares of a Container orchestration system (webinar)",
