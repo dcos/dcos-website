@@ -628,11 +628,23 @@
       "url": "https://event.on24.com/wcc/r/1575238/3A6D990908EDA9B21BA455BB4DA457DE/?partnerref=community"
   },
 
+  { "title": "Sheffield Devops: Mesos & DC/OS (Meetup)",
+       "image": "/assets/images/events/Sheffield.jpg",
+       "date": "2018-02-08",
+       "url": "http://www.sheffielddevops.org.uk/post/170162178789/sheffield-devops-february-2018-meetup"
+   },
+
   { "title": "Skalierbares Kubernetes und Containers (webinar)",
       "image": "/assets/images/events/Online2.jpg",
       "date": "2018-02-08",
       "url": "https://event.on24.com/wcc/r/1575239/A1E8677986D96939CD2D645A51CF8B8C/?partnerref=community"
   },
+
+  { "title": "Apache Mesos, big data architecture (Meetup)",
+       "image": "/assets/images/events/Bucharest.jpg",
+       "date": "2018-02-20",
+       "url": "https://www.meetup.com/Bucharest-Big-Data-Meetup/events/247081621/"
+   },
 
   { "title": "Advanced Continuous Delivery Strategies Using DC/OS (SCALE)",
       "image": "/assets/images/events/Pasadena_2.jpg",
@@ -645,6 +657,12 @@
       "date": "2018-03-08",
       "url": "https://www.socallinuxexpo.org/scale/16x/presentations/container-orchestration-nightmares"
   },
+
+  { "title": "Operating Flink on Mesos at Scale (Flink Forward)",
+       "image": "/assets/images/events/San_Francisco.jpg",
+       "date": "2018-04-09",
+       "url": "https://sf-2018.flink-forward.org/kb_sessions/operating-flink-on-mesos-at-scale/"
+   },
 
   { "title": "",
       "image": "/assets/images/events/.jpg",
