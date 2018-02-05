@@ -5,14 +5,14 @@
 | Production | <https://dcos.io> | [![Prod Build Status](https://jenkins.mesosphere.com/service/jenkins/buildStatus/icon?job=public-dcos-website-deploy-prod)](https://jenkins.mesosphere.com/service/jenkins/job/public-dcos-website-deploy-prod/) |
 | Development | <https://dev.dcos.io> | [![Dev Build Status](https://jenkins.mesosphere.com/service/jenkins/buildStatus/icon?job=public-dcos-website-deploy-dev)](https://jenkins.mesosphere.com/service/jenkins/job/public-dcos-website-deploy-dev/) |
 
-**Issue tracking is moving to the [DCOS JIRA](https://jira.dcos.io/) (Project: [SITE](https://jira.dcos.io/projects/SITE/issues)).
-Issues on GitHub will be disabled soon.**
+## Issue tracking
+Please report issues in the [DCOS JIRA instance](https://jira.dcos.io/) (Project: [DCOS_SITE](https://jira.mesosphere.com/projects/DCOS_SITE/issues/)).
+**Issues on GitHub will be disabled soon.**
 
 Table of contents:
 
 - [Contribution Workflow](#contribution-workflow)
 - [Testing your updates locally](#testing-your-updates-locally)
-- [Updating the documentation](#updating-the-documentation)
 - [Managing redirects](#managing-redirects)
 - [Promoting site to live](#promoting-site-to-live)
 - [Link checking](#link-checking)
@@ -135,65 +135,6 @@ Once changes are accepted and merged to the develop branch, CI will push the upd
         docker rm -f "${SERVER_CID}"
         ```
 
-## Updating the documentation
-
-**Prerequisite:**
-
-- You must have administrator privileges for the https://github.com/dcos/dcos-website repo.
-- The dcos-docs submodule: must be updated.
-
-    ```
-    git submodule update --init --recursive
-    ```
-
-1.  Check out the `develop` branch.
-
-    ```bash
-    $ git checkout develop
-    ```
-
-1.  Pull the latest content from the develop branch.
-
-    ```bash
-    $ git pull
-    ```
-
-1.  Create a branch off of develop for your changes. For example:
-
-    ```bash
-    $ git checkout -b bump-docs/11-3-16
-    ```
-
-1.  Run the bump-docs script:
-
-    ```bash
-    scripts/bump_docs.sh
-    ```
-
-1.  Commit and push your branch to dcos-website. For example:
-
-    ```bash
-    $ git push origin bump-docs/11-3-16
-    ```
-
-    **Tip:** `git status` will not show local changes.
-
-1.  Submit a PR to merge your branch to **develop**.
-
-    ![PR](./img/pr-1.png)
-
-    You should see something like this:
-    ![PR](./img/pr-2.png)
-
-    **Important:**
-
-    - An automated link checker is run on all merges and PRs to dcos-website. This will take about 10 minutes. You can check the results [here](https://jenkins.mesosphere.com/service/jenkins/view/DCOS%20Website/). Broken links will not block merging, but should be reviewed.
-    - When this PR is merged, the staging server is built: https://dev.dcos.io/docs/.
-
-
-1.  After the changes have been previewed and accepted on <https://dev.dcos.io/>, go on to [Promoting site to live](#promoting-site-to-live).
-
-
 ## Promoting site to live
 
 To promote the dev site to live, rebase `develop` to `master`:
@@ -207,7 +148,7 @@ $ ci/promote.sh
 
 Continuous integration will handle deploying updates (`ci/deploy.sh`), updating redirects (`ci/update-redirects.sh`), and updating the S3 website config (`ci/update-website-conifg.sh`).
 
-**Tip:** If you receive this error `Found unstaged changes - Exiting`, run the submodule update command: 
+**Tip:** If you receive this error `Found unstaged changes - Exiting`, run the submodule update command:
 
 ```
 $ git submodule update --init --recursive
