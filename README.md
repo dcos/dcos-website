@@ -142,17 +142,10 @@ To promote the dev site to live, rebase `develop` to `master`:
 ```
 $ git checkout develop
 $ git pull
-$ git submodule update --init --recursive
 $ ci/promote.sh
 ```
 
 Continuous integration will handle deploying updates (`ci/deploy.sh`), updating redirects (`ci/update-redirects.sh`), and updating the S3 website config (`ci/update-website-conifg.sh`).
-
-**Tip:** If you receive this error `Found unstaged changes - Exiting`, run the submodule update command:
-
-```
-$ git submodule update --init --recursive
-```
 
 ## Managing redirects
 
