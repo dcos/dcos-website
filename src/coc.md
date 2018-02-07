@@ -7,7 +7,7 @@ Additionally DC/OS has a code of conduct that participants are expected to adher
 
 Breaches of the code of conduct and inappropriate behavior are handled on a case by case basis, but the consequences for violating it may include limiting or removing your ability to collaborate on project resources and at events.
 
-## Contributor Covenant Code of Conduct
+## DC/OS Code of Conduct
 
 ### Our Pledge
 
