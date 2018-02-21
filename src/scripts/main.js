@@ -15,7 +15,6 @@ require('./stackdiagram.js')
 require('./typer.js')
 require('./typer2.js')
 require('./html-include.js')
-require('swagger-ui-browserify')
 require('./ngindox.js')
 require('./demos')
 require('./tutorials')
@@ -170,21 +169,6 @@ $('#docs-content h1, #docs-content h2, #docs-content h3, #docs-content h4, #docs
   var hashURL = $(this).attr('id')
   $(this).wrapInner('<a href="#' + hashURL + '" class="show-anchor"></a>')
 });
-
-/****************
-  SwaggerUI
-****************/
-$(document).ready(function() {
-  var yamlFile = $('[data-api]').data('api');
-
-  var swaggerUi = new SwaggerUi({
-    url: yamlFile,
-    dom_id: 'swagger-ui-container',
-    docExpansion: 'none'
-  });
-
-  swaggerUi.load();
-})
 
 /****************
   Add proper submit feedback link to docs

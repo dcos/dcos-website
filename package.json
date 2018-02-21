@@ -102,7 +102,6 @@
     "metalsmith-uglify": "^1.2.1",
     "mini-lightbox": "^3.0.3",
     "spinkit": "^1.2.5",
-    "swagger-ui-browserify": "^2.2.3-a",
     "wallop": "^2.4.1"
   }
 }
