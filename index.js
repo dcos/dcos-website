@@ -94,7 +94,7 @@ let nav = navigation(navConfig, navSettings);
 
 // --------- Compiling the Markdown files to HTML --------//
 let createDocs = function(version) {
-  Metalsmith(path.join(__dirname, 'dcos-docs'))
+  Metalsmith()
     .source(version)
     .use(addTimestampToMarkdownFiles)
     .use(markdown({
@@ -240,7 +240,7 @@ Metalsmith(__dirname)
             }
           ]
         },
-        files: ['./src/**/*', './dcos-docs/**/*', './layouts/**/*', './mixins/**/*', './includes/**/*']
+        files: ['./src/**/*', './layouts/**/*', './mixins/**/*', './includes/**/*']
       }, null, allDocs)
     }
   })())
