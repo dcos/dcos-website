@@ -109,27 +109,27 @@ const navConfig = {
   }
 }
 
-let createDocsJSON = function (obj) {
-  var newObj = {
-    name: obj.type,
-    path: obj.path
-  }
-
-  if (obj.file) {
-    newObj.file = {
-      post_title: obj.file.nav_title || obj.file.post_title,
-      search_blurb: obj.file.search_blurb
-    }
-  }
-  newObj.children = obj.children.map(createDocsJSON)
-
-  return newObj
-}
+// let createDocsJSON = function (obj) {
+//   var newObj = {
+//     name: obj.type,
+//     path: obj.path
+//   }
+//
+//   if (obj.file) {
+//     newObj.file = {
+//       post_title: obj.file.nav_title || obj.file.post_title,
+//       search_blurb: obj.file.search_blurb
+//     }
+//   }
+//   newObj.children = obj.children.map(createDocsJSON)
+//
+//   return newObj
+// }
 
 const navSettings = {
   navListProperty: 'navs',
-  permalinks: false,
-  formatJSONfn: createDocsJSON
+  permalinks: false
+  // formatJSONfn: createDocsJSON
 }
 
 let nav = navigation(navConfig, navSettings)
@@ -184,11 +184,11 @@ const serveTask = () => {
           gulp.start(['build-site-templates', 'build-event-templates', 'build-blog-templates'], done)
         }))
 
-      docsVersions.forEach(function (version) {
-        watch([`./dcos-docs/${version}/**/*.md`], batch(function (events, done) {
-          gulp.start(`build-docs-${version}`, done)
-        }))
-      })
+      // docsVersions.forEach(function (version) {
+      //   watch([`./dcos-docs/${version}/**/*.md`], batch(function (events, done) {
+      //     gulp.start(`build-docs-${version}`, done)
+      //   }))
+      // })
     })
 }
 
@@ -198,106 +198,106 @@ const serveTask = () => {
 
 const sharedDocsSiteTasks = ['copy', 'browserify', 'styles', 'nginx-config', 's3-config']
 
-gulp.task('build', ['build-site', 'build-docs'])
+gulp.task('build', ['build-site'])
 gulp.task('build-site', ['build-site-templates', 'build-event-templates', 'build-blog-templates', ...sharedDocsSiteTasks])
-gulp.task('build-docs', [...docsVersions.map(getDocsBuildTask), ...docsVersions.map(getDocsCopyTask), ...sharedDocsSiteTasks, 'swagger-yaml', 'docs-raw-html'])
+// gulp.task('build-docs', [...docsVersions.map(getDocsBuildTask), ...docsVersions.map(getDocsCopyTask), ...sharedDocsSiteTasks, 'swagger-yaml', 'docs-raw-html'])
 
 gulp.task('serve', ['build'], serveTask)
 gulp.task('serve-site', ['build-site'], serveTask)
-gulp.task('serve-docs', ['build-docs'], serveTask)
+// gulp.task('serve-docs', ['build-docs'], serveTask)
 
 gulp.task('test', ['serve'], () => {
   process.exit(0)
 })
 
-function getDocsBuildTask (version) {
-  const name = `build-docs-${version}`
-  const src = `./dcos-docs/${version}/**/*.md`
-  const collectionName = `docs-${version}`
+// function getDocsBuildTask (version) {
+//   const name = `build-docs-${version}`
+//   const src = `./dcos-docs/${version}/**/*.md`
+//   const collectionName = `docs-${version}`
+//
+//   gulp.task(name, () => {
+//     return gulp.src(src)
+//       .pipe($.frontMatter().on('data', file => {
+//         file.title = file.frontMatter.post_title
+//         Object.assign(file, file.frontMatter)
+//         delete file.frontMatter
+//       }))
+//       .pipe($.ignore(file => (file.published == false)))
+//       .pipe(
+//         gulpsmith()
+//           .metadata({
+//             docsVersion: version, docsVersions, currentDevVersion,
+//             site: {
+//               url: `${CONFIG.root_url}/docs/${version}/`,
+//               title: `docs-${version}`,
+//               image_url: '/assets/images/rss-logo.png'
+//             }
+//           })
+//           .use(addTimestampToMarkdownFiles)
+//           .use(collections({
+//             [collectionName]: '**/*.md'
+//           }))
+//           .use(markdown({
+//             smartypants: true,
+//             gfm: true,
+//             tables: true
+//           }))
+//           .use((files, ms, done) => {
+//             const metadata = ms.metadata()
+//             const collection = metadata.collections[collectionName]
+//             collection.forEach((file) => {
+//               const p = file.path.includes('index.md')
+//                 ? file.path.split('index.md')[0]
+//                 : file.path.split('.md')[0]
+//
+//               Object.assign(file, {
+//                 url: `${CONFIG.root_url}/docs/${version}/${p}`,
+//                 githubURL: `https://github.com/dcos/dcos-docs/tree/master/${version}/${file.path}`
+//               })
+//             })
+//             done()
+//           })
+//           .use(feed({
+//             collection: collectionName,
+//           }))
+//           .use(nav)
+//           .use(excerpts())
+//           .use(ancestry())
+//           .use(layouts({
+//             pattern: '**/*.html',
+//             engine: 'jade',
+//             directory: path.join('layouts'),
+//             default: 'docs.jade'
+//           }))
+//           .use(each(updatePaths))
+//           .use(jade({
+//             locals: { cssTimestamp, docsVersions, currentDevVersion },
+//             useMetadata: true,
+//             pretty: true
+//           }))
+//           .use(reloadInMetalsmithPipeline)
+//       )
+//       .pipe(gulp.dest(path.join(paths.build, 'docs', version)))
+//   })
+//
+//   return name
+// }
 
-  gulp.task(name, () => {
-    return gulp.src(src)
-      .pipe($.frontMatter().on('data', file => {
-        file.title = file.frontMatter.post_title
-        Object.assign(file, file.frontMatter)
-        delete file.frontMatter
-      }))
-      .pipe($.ignore(file => (file.published == false)))
-      .pipe(
-        gulpsmith()
-          .metadata({
-            docsVersion: version, docsVersions, currentDevVersion,
-            site: {
-              url: `${CONFIG.root_url}/docs/${version}/`,
-              title: `docs-${version}`,
-              image_url: '/assets/images/rss-logo.png'
-            }
-          })
-          .use(addTimestampToMarkdownFiles)
-          .use(collections({
-            [collectionName]: '**/*.md'
-          }))
-          .use(markdown({
-            smartypants: true,
-            gfm: true,
-            tables: true
-          }))
-          .use((files, ms, done) => {
-            const metadata = ms.metadata()
-            const collection = metadata.collections[collectionName]
-            collection.forEach((file) => {
-              const p = file.path.includes('index.md')
-                ? file.path.split('index.md')[0]
-                : file.path.split('.md')[0]
+// function getDocsCopyTask (version) {
+//   const name = `copy-docs-images-${version}`
+//
+//   gulp.task(name, () => {
+//     return gulp.src(`./dcos-docs/${version}/**/*.{png,gif,jpg,jpeg,json,sh}`)
+//       .pipe(gulp.dest(path.join(paths.build, 'docs', version)))
+//   })
+//
+//   return name
+// }
 
-              Object.assign(file, {
-                url: `${CONFIG.root_url}/docs/${version}/${p}`,
-                githubURL: `https://github.com/dcos/dcos-docs/tree/master/${version}/${file.path}`
-              })
-            })
-            done()
-          })
-          .use(feed({
-            collection: collectionName,
-          }))
-          .use(nav)
-          .use(excerpts())
-          .use(ancestry())
-          .use(layouts({
-            pattern: '**/*.html',
-            engine: 'jade',
-            directory: path.join('layouts'),
-            default: 'docs.jade'
-          }))
-          .use(each(updatePaths))
-          .use(jade({
-            locals: { cssTimestamp, docsVersions, currentDevVersion },
-            useMetadata: true,
-            pretty: true
-          }))
-          .use(reloadInMetalsmithPipeline)
-      )
-      .pipe(gulp.dest(path.join(paths.build, 'docs', version)))
-  })
-
-  return name
-}
-
-function getDocsCopyTask (version) {
-  const name = `copy-docs-images-${version}`
-
-  gulp.task(name, () => {
-    return gulp.src(`./dcos-docs/${version}/**/*.{png,gif,jpg,jpeg,json,sh}`)
-      .pipe(gulp.dest(path.join(paths.build, 'docs', version)))
-  })
-
-  return name
-}
-
-gulp.task('swagger-yaml', () => {
-  gulp.src(paths.yaml.src)
-    .pipe(gulp.dest(paths.yaml.dest))
-})
+// gulp.task('swagger-yaml', () => {
+//   gulp.src(paths.yaml.src)
+//     .pipe(gulp.dest(paths.yaml.dest))
+// })
 
 gulp.task('docs-raw-html', () => {
   gulp.src(paths.html.src)
@@ -683,14 +683,14 @@ function updatePaths (file, filename) {
   return filename
 }
 
-function docsRSSPaths (file, filename) {
-  if (path.basename(filename) === 'index.html') { return filename }
-
-  if (path.extname(filename) === '.html' && path.extname(filename) !== '') {
-    return filename.split('.html')[0]
-  }
-  return filename
-}
+// function docsRSSPaths (file, filename) {
+//   if (path.basename(filename) === 'index.html') { return filename }
+//
+//   if (path.extname(filename) === '.html' && path.extname(filename) !== '') {
+//     return filename.split('.html')[0]
+//   }
+//   return filename
+// }
 
 function addPropertiesToCollectionItems (collectionName, callback) {
   return function (files, metalsmith, done) {
