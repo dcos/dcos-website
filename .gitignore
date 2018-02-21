@@ -6,3 +6,4 @@ node_modules
 /reports
 /nginx.conf
 /s3-config.json
+package-lock.json

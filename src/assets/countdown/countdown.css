@@ -63,7 +63,7 @@ a:hover { color: rgb(172, 11, 95); }
     -webkit-align-self: flex-start;
     -ms-flex-item-align: start;
     align-self: flex-start;
-    background: url("/assets/images/dcos-logo-white.svg");
+    background: url("/assets/images/header-dcos-logo-inverse.svg");
     background-size: contain;
     background-repeat: no-repeat;
     transition: background 1s;
