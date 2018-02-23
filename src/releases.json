@@ -8,11 +8,12 @@
       "Marathon 1.6."
     ],
     "downloadlink": {
-      "amazon": "https://downloads.dcos.io/dcos/EarlyAccess/1.11.0-rc1/aws.html",
-      "azure": "https://downloads.dcos.io/dcos/EarlyAccess/1.11.0-rc1/azure.html",
-      "direct": "https://downloads.dcos.io/dcos/EarlyAccess/1.11.0-rc1/dcos_generate_config.sh"
+      "amazon": "https://downloads.dcos.io/dcos/EarlyAccess/1.11.0-rc4/aws.html",
+      "azure": "https://downloads.dcos.io/dcos/EarlyAccess/1.11.0-rc4/azure.html",
+      "direct": "https://downloads.dcos.io/dcos/EarlyAccess/1.11.0-rc4/dcos_generate_config.sh"
     },
     "subreleases": [
+      { "name": "1.11.0-rc4", "url": "https://docs.mesosphere.com/1.11/release-notes/1.11.0-rc4/"},
       { "name": "1.11.0-rc1", "url": "https://docs.mesosphere.com/1.11/release-notes/1.11.0-rc1/"}
     ],
     "docslink": "https://docs.mesosphere.com/1.11/"
