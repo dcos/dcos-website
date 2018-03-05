@@ -2,17 +2,25 @@
   {
     "title": "DC/OS 1.11 RC",
     "date": "2018-01-30",
-    "description": "DC/OS 1.11 release candidates are for testing only and should not be run in production. Please feel free to explore the release candidate, and file any issues you find in Jira. Your help looking for bugs is much appreciated!",
+    "description": "Mesosphere DC/OS 1.11 includes an installable Kubernetes service (GA), enhancements to operations, storage, and networking, and a GA universal container runtime.",
     "features": [
-      "Apache Mesos 1.5.",
+      "Installable Kubernetes GA (high availability, resilience, security).",
+      "Storage: Pods persistent volumes support, Container Storage Interface (CSI) beta.",
+      "User Interface: Service endpoints tab, Package editing in GUI.",
+      "Networking performance improvements.",
+      "Operations: Node decommissioning command, Prometheus formated metrics.",
+      "Universal Container Runtime GA, Image garbage collection.",
+      "Apache Mesos 1.5 with fault domain primitives.",
       "Marathon 1.6."
+
     ],
     "downloadlink": {
-      "amazon": "https://downloads.dcos.io/dcos/EarlyAccess/1.11.0-rc4/aws.html",
-      "azure": "https://downloads.dcos.io/dcos/EarlyAccess/1.11.0-rc4/azure.html",
-      "direct": "https://downloads.dcos.io/dcos/EarlyAccess/1.11.0-rc4/dcos_generate_config.sh"
+      "amazon": "https://downloads.dcos.io/dcos/EarlyAccess/1.11.0/aws.html",
+      "azure": "https://downloads.dcos.io/dcos/EarlyAccess/1.11.0/azure.html",
+      "direct": "https://downloads.dcos.io/dcos/EarlyAccess/1.11.0/dcos_generate_config.sh"
     },
     "subreleases": [
+      { "name": "1.11.0", "url": "https://docs.mesosphere.com/1.11/release-notes/1.11.0/"},
       { "name": "1.11.0-rc4", "url": "https://docs.mesosphere.com/1.11/release-notes/1.11.0-rc4/"},
       { "name": "1.11.0-rc1", "url": "https://docs.mesosphere.com/1.11/release-notes/1.11.0-rc1/"}
     ],
