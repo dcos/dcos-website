@@ -1,7 +1,7 @@
 [
   {
-    "title": "DC/OS 1.11 RC",
-    "date": "2018-01-30",
+    "title": "DC/OS 1.11",
+    "date": "2018-03-08",
     "description": "Mesosphere DC/OS 1.11 includes an installable Kubernetes service (GA), enhancements to operations, storage, and networking, and a GA universal container runtime.",
     "features": [
       "Installable Kubernetes GA (high availability, resilience, security).",
