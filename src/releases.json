@@ -6,10 +6,10 @@
     "features": [
       "Installable Kubernetes GA (high availability, resilience, security).",
       "Storage: Pods persistent volumes support, Container Storage Interface (CSI) beta.",
-      "User Interface: Service endpoints tab, Package editing in GUI.",
+      "User Interface: Service endpoints tab, package editing in GUI.",
       "Networking: performance improvements.",
       "Operations: Node decommissioning command, Prometheus formatted metrics.",
-      "Universal Container Runtime: GA, Image garbage collection.",
+      "Universal Container Runtime: GA, image garbage collection.",
       "Apache Mesos 1.5 with fault domain primitives.",
       "Marathon 1.6."
 
