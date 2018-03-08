@@ -1,6 +1,21 @@
 [
+
   {
     "featured": true,
+    "image": "/assets/images/demos/fraud-detect.jpg",
+    "name": "Fraud Detection with Apache Flink and Kubernetes",
+    "use_cases": ["Fast Data, Microservices"],
+    "dcos_version": ["1.8", "1.9", "1.10", "1.11"],
+    "language": ["Go, Java"],
+    "description": "Use Apache Flink, Apache Kafka, and Kubernetes to detect fraud in streams of financials transactions.",
+    "packages": ["Apache Flink", "Apache Kafka", "Kubernetes"],
+    "youtube_id": "aErmh1u7r2A",
+    "callouts": {
+      "GitHub": "https://github.com/dcos/demos/tree/master/flink-k8",
+    }
+  },
+  {
+    "featured": false,
     "image": "/assets/images/demos/tweeter.png",
     "name": "Tweeter data visualization",
     "use_cases": ["Streaming Data", "Full stack"],
@@ -32,9 +47,9 @@
     "image": "/assets/images/demos/fraud-detect.jpg",
     "name": "Fraud Detection with Apache Flink",
     "use_cases": ["Fast Data"],
-    "dcos_version": ["1.8", "1.9"],
+    "dcos_version": ["1.8", "1.9", "1.10", "1.11"],
     "language": ["Go, Java"],
-    "description": "During this demo we use Apache Flink and Apache Kafka to detect fraud in streams of financials transaction.",
+    "description": "During this demo we use Apache Flink and Apache Kafka to detect fraud in streams of financials transactions.",
     "packages": ["Apache Flink", "Apache Kafka"],
     "youtube_id": "bwPXNlVHTeI",
     "callouts": {
