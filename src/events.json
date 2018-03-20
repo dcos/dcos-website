@@ -667,19 +667,19 @@
   { "title": "Helm - a highway to Kubernetes (Meetup)",
       "image": "/assets/images/events/Singapore.jpg",
       "date": "2018-03-05",
-      "url": "https://www.meetup.com/Singapore-Kubernetes-User-Group/events/246800326/"
+      "url": "/events/2018/helm-a-highway-to-kubernetes"
   },
 
   { "title": "Advanced Continuous Delivery Strategies Using DC/OS (SCALE)",
       "image": "/assets/images/events/Pasadena_2.jpg",
-      "date": "2018-03-08",
-      "url": "https://www.socallinuxexpo.org/scale/16x/presentations/advanced-continuous-delivery-strategies-containerized-applications-using"
+      "date": "2018-03-09",
+      "url": "/events/2018/advanced-continuous-delivery-strategies-for-containerized-applications-using-dc-os"
   },
 
   { "title": "Container Orchestration Nightmares (SCALE)",
       "image": "/assets/images/events/Pasadena.jpg",
-      "date": "2018-03-08",
-      "url": "https://www.socallinuxexpo.org/scale/16x/presentations/container-orchestration-nightmares"
+      "date": "2018-03-11",
+      "url": "/events/2018/container-orchestration-nightmares"
   },
 
 
@@ -698,7 +698,7 @@
   { "title": "How Mesosphere DC/OS can simplifies Elastic deployment (Meetup)",
       "image": "/assets/images/events/Milan.jpg",
       "date": "2018-03-14",
-      "url": "https://www.meetup.com/Italia-Elastic-Fantastics/events/247764573/"
+      "url": "/events/2018/how-mesosphere-dc-os-can-simplify-the-deployment-of-elastic-clusters-and-other-data-services"
   },
 
   { "title": "IT OpShare 2018",
@@ -716,7 +716,7 @@
   { "title": "Meetup #1 @Novencia - DC/OS",
       "image": "/assets/images/events/Paris.jpg",
       "date": "2018-03-19",
-      "url": "https://www.meetup.com/Apache-Mesos-Paris/events/247505732/"
+      "url": "/events/2018/intro-to-mesos-and-dc-os"
   },
 
   { "title": "Serverless, AWS and Apache Mesos (Meetup)",
