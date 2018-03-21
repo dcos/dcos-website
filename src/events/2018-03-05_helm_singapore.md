@@ -23,6 +23,10 @@ Kubernetes User Group for March 2018 - at Carousell Singapore
 
 [Meetup Page](https://www.meetup.com/Singapore-Kubernetes-User-Group/events/246800326/)
 
+# Slides
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTAdSqtTbmsr5nLy82NRsT8YtYYobYd-IvSaVPUO6iqYsefkPMkeaH-xlH-ECbbWGZ9gNnvKbmKMcKe/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
 # Video
 
 ## Rimas' talk Part 1
