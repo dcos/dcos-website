@@ -198,7 +198,7 @@ const serveTask = () => {
 
 const sharedDocsSiteTasks = ['copy', 'browserify', 'styles', 'nginx-config', 's3-config']
 
-gulp.task('build', ['build-site', 'build-docs'])
+gulp.task('build', ['build-site'])
 gulp.task('build-site', ['build-site-templates', 'build-event-templates', 'build-blog-templates', ...sharedDocsSiteTasks])
 gulp.task('build-docs', [...docsVersions.map(getDocsBuildTask), ...docsVersions.map(getDocsCopyTask), ...sharedDocsSiteTasks, 'swagger-yaml', 'docs-raw-html'])
 
