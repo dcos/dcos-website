@@ -25,3 +25,7 @@ See you at 19h at Novencia for a start of presentations no later than 19:30
 # Slides
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSwC56UMPhq8CQWjH11jE-sMtVb0gar9dm1sGf8GM8ULn2-oLE1kZ8F2aS1kBHtOLcZ9iLG9oHVOpA1/embed?start=false&loop=false&delayms=3000" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+# Video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8s_795_Nfjo" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
