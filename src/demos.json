@@ -11,7 +11,7 @@
     "packages": ["Apache Flink", "Apache Kafka", "Kubernetes"],
     "youtube_id": "aErmh1u7r2A",
     "callouts": {
-      "GitHub": "https://github.com/dcos/demos/tree/master/flink-k8",
+      "GitHub": "https://github.com/dcos/demos/tree/master/flink-k8s",
     }
   },
   {
