@@ -755,6 +755,18 @@
       "url": "https://www.eventbrite.com/e/dcos-day-fundamentals-introduction-tickets-43911252739?aff=utm_source%3Deb_email%26utm_medium%3Demail%26utm_campaign%3Dnew_event_email&utm_term=eventurl_text"
   },
 
+  { "title": "CockroachDB 2.0, Tierion, & Mesosphere (Meetup)",
+      "image": "/assets/images/events/San_Francisco_3.jpg",
+      "date": "2018-04-04",
+      "url": "https://www.meetup.com/SF-CockroachDB-User-Group/events/248274109/"
+  },
+
+  { "title": "London Mesos User Group #17 (Meetup)",
+      "image": "/assets/images/events/London.jpg",
+      "date": "2018-04-04",
+      "url": "https://www.meetup.com/London-Mesos-User-Group/events/248764929/"
+  },
+
   { "title": "Operating Flink on Mesos at Scale (Flink Forward)",
        "image": "/assets/images/events/San_Francisco.jpg",
        "date": "2018-04-09",
@@ -765,6 +777,12 @@
       "image": "/assets/images/events/Rome.jpg",
       "date": "2018-04-13",
       "url": "https://rome2018.codemotionworld.com/wp-content/themes/event/detail-talk.php?detail=7653"
+  },
+
+  { "title": "From batch to pipelines - solutions for emerging patterns in data processing",
+      "image": "/assets/images/events/Manchester.jpg",
+      "date": "2018-04-25",
+      "url": "http://www.ipexpomanchester.com/Speakers-2018/Matt-Jarvis"
   },
 
   { "title": "Container Storage Interface: Present and Future (CloudNativeCon)",
@@ -783,6 +801,30 @@
       "image": "/assets/images/events/Amsterdam.jpg",
       "date": "2018-05-08",
       "url": "https://amsterdam2018.codemotionworld.com/wp-content/themes/event/detail-talk.php?detail=7259"
+  },
+
+  { "title": "From batch to pipelines - solutions for emerging patterns in data processing (DevTalks)",
+      "image": "/assets/images/events/cluj-napoca.jpg",
+      "date": "2018-05-16",
+      "url": "http://www.devtalks.ro/cluj/speakers/"
+  },
+
+  { "title": "From batch to pipelines - solutions for emerging patterns in data processing (OSDC)",
+      "image": "/assets/images/events/Berlin.jpg",
+      "date": "2018-06-12",
+      "url": "https://osdc.de/events/from-batch-to-pipelines-why-apache-mesos-and-dcos-are-a-solution-for-emerging-patterns-in-data-processing/"
+  },
+
+  { "title": "Orchestrating Container and Big Data (Apache Roadshow)",
+      "image": "/assets/images/events/Berlin2.jpg",
+      "date": "2018-06-13",
+      "url": "http://www.apachecon.com/euroadshow18/cloud-schedule.html#joerg"
+  },
+
+  { "title": "SMACK Stack on DC/OS using Cloud Infrastructure (OSCON)",
+      "image": "/assets/images/events/Portland.jpg",
+      "date": "2018-07-17",
+      "url": "https://conferences.oreilly.com/oscon/oscon-or/public/schedule/detail/67340"
   },
 
   { "title": "",
