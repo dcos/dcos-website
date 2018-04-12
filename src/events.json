@@ -779,22 +779,52 @@
       "url": "https://rome2018.codemotionworld.com/wp-content/themes/event/detail-talk.php?detail=7653"
   },
 
+  { "title": "12 Factor App Vs 12 Layer Burrito (DevOps Days Atlanta)",
+      "image": "/assets/images/events/Atlanta.jpg",
+      "date": "2018-04-17",
+      "url": "https://www.devopsdays.org/events/2018-atlanta/program/ravi-lachhman/"
+  },
+
+  { "title": "Mesosphere and Percona Server for MongoDB (Percona Live)",
+      "image": "/assets/images/events/Santa_Clara.jpg",
+      "date": "2018-04-24",
+      "url": "https://www.percona.com/live/18/sessions/mesosphere-and-percona-server-for-mongodb"
+  },
+
+  { "title": "Stateful applications on Mesosphere DC/OS (Percona Live)",
+      "image": "/assets/images/events/Santa_Clara_2.jpg",
+      "date": "2018-04-25",
+      "url": "https://www.percona.com/live/18/sessions/stateful-applications-on-mesosphere-dcos"
+  },
+
+  { "title": "Monolith to Microservices with DC/OS 1.11 (Meetup)",
+      "image": "/assets/images/events/Boston.jpg",
+      "date": "2018-04-25",
+      "url": "https://www.meetup.com/Boston-Mesos-User-Group/events/249364256/"
+  },
+
   { "title": "From batch to pipelines - solutions for emerging patterns in data processing",
       "image": "/assets/images/events/Manchester.jpg",
       "date": "2018-04-26",
       "url": "http://www.ipexpomanchester.com/Speakers-2018/Matt-Jarvis"
   },
 
-  { "title": "Container Storage Interface: Present and Future (CloudNativeCon)",
+  { "title": "Kubernetes meets SMACK: Operating Big Data Services and Kubernetes at Scale",
       "image": "/assets/images/events/Copenhagen.jpg",
-      "date": "2018-05-04",
-      "url": "https://kccnceu18.sched.com/event/Dqvo"
+      "date": "2018-05-01",
+      "url": "https://www.eventbrite.com/e/kubernetes-meets-smack-operating-big-data-services-and-kubernetes-at-scale-tickets-45011868711?aff=Community"
   },
 
   { "title": "Bring Existing Data Pipelines into the Machine Learning Age (CloudNativeCon)",
-      "image": "/assets/images/events/Copenhagen_2.jpg",
+      "image": "/assets/images/events/Copenhagen_3.jpg",
       "date": "2018-05-03",
       "url": "http://sched.co/E46y"
+  },
+
+  { "title": "Container Storage Interface: Present and Future (CloudNativeCon)",
+      "image": "/assets/images/events/Copenhagen_2.jpg",
+      "date": "2018-05-04",
+      "url": "https://kccnceu18.sched.com/event/Dqvo"
   },
 
   { "title": "Deep learning beyond the learning (Codemotion World)",
