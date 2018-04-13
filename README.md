@@ -71,11 +71,6 @@ Once changes are accepted and merged to the develop branch, CI will push the upd
 
 ## Testing your updates locally
 
-1.  Update the dcos-docs submodule:
-
-    ```
-    git submodule update --init --recursive
-    ```
 
 1.  Build a local version of the doc site. The DC/OS website can be built locally using Node or run in an Nginx Docker container.
 
