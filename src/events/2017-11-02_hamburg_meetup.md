@@ -16,13 +16,13 @@ lunr: true
 
 MesosCon, the Apache Mesos conference, happens three times a year with an event in Asia, North America and Europe. This meetup will gather speakers local to Hamburg who participated in the most recent MesosCons in North America and Europe, and give them an opportunity to share their experience and expertise with attendees, as well as shortened versions of their full conference talks.
 
-The event begins with an introduction from Mesosphere Developer Advocates Elizabeth K. Joseph and Matt Jarvis, who will provide an overview of conferences, providing key insights and takeaways. 
+The event begins with an introduction from Mesosphere Developer Advocates Elizabeth K. Joseph and Matt Jarvis, who will provide an overview of conferences, providing key insights and takeaways.
 
-Johannes Unterstein will then present on "Marathon and Jobs - Today and Tomorrow" 
+Johannes Unterstein will then present on "Marathon and Jobs - Today and Tomorrow"
 
-The event concludes with Adam Bordelon who will give his talk on "Mesos Security Exposed!" 
+The event concludes with Adam Bordelon who will give his talk on "Mesos Security Exposed!"
 
-Event link: <a href="://www.meetup.com/Hamburg-Mesos-User-Group/events/244085454/">Hamburg Mesos User Group, MesosCon Recap with Marathon and Mesos Security</a>
+Event Link: [MesosCon Recap with Marathon and Mesos Security](https://www.meetup.com/Hamburg-Mesos-User-Group/events/244085454/)
 
 # Media
 ## Slides
