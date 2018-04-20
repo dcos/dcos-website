@@ -20,3 +20,7 @@ lunr: true
 Mesosphere è stata fondata nel 2013 dai data architects di Airbnb e Twitter e dal co-creatore di Apache Mesos. DC/OS (Data Center Operating System) è un software open source, sviluppato da Mesosphere, per la gestione dei sistemi distribuiti. DC/OS sta per DataCenter Operating System ed è basato sul cluster manager open source Apache Mesos. DC/OS mette a disposizione tutte le funzioni del cluster manager attraverso un’interfaccia centrale e amplia Mesos attraverso varie componenti in un’infrastruttura più vasta, la quale facilita la gestione delle applicazioni sui sistemi distribuiti, nel cloud o negli ambienti on-premises
 
 See the Meetup page for the [full agenda](https://www.meetup.com/Italia-Elastic-Fantastics/events/247764573/)
+
+# Slides
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQovKXa_ef8LoKF4QjCBXKRTgjc7U9_FXsiAtfxXkd-nY0QoN2jGdFruL1b9hj6HFZ39m4lTYlW8Dgf/embed?start=false&loop=false&delayms=3000" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

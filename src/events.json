@@ -722,7 +722,7 @@
   { "title": "Serverless, AWS and Apache Mesos (Meetup)",
       "image": "/assets/images/events/London.jpg",
       "date": "2018-03-21",
-      "url": "https://www.meetup.com/Linuxing-In-London/events/248504576/"
+      "url": "/events/2018/from-batch-to-pipelines-with-matt-jarvis/"
   },
 
   { "title": "Container: check! But what about persistent data, big data or fast data?! (Microxchg)",
@@ -740,7 +740,7 @@
   { "title": "Mesosphere and Confluent - Kafka Meetup in Manchester",
       "image": "/assets/images/events/Manchester.jpg",
       "date": "2018-03-28",
-      "url": "https://www.meetup.com/Manchester-Kafka/events/248451554/"
+      "url": "/events/2018/from-batch-to-pipelines-why-apache-mesos-and-dc-os-are-a-solution-for-emerging-patterns-in-data-processing"
   },
 
   { "title": "Best Practices for Managing Kubernetes and Stateful Services",
@@ -803,6 +803,12 @@
       "url": "https://www.meetup.com/Boston-Mesos-User-Group/events/249364256/"
   },
 
+  { "title": "Hands-on-Workshop: Kubernetes on DC/OS",
+      "image": "/assets/images/events/Mainz.jpg",
+      "date": "2018-04-25",
+      "url": "https://www.meetup.com/Cloud-Native-Night/events/249636458"
+  },
+
   { "title": "From batch to pipelines - solutions for emerging patterns in data processing",
       "image": "/assets/images/events/Manchester.jpg",
       "date": "2018-04-26",
@@ -837,6 +843,18 @@
       "image": "/assets/images/events/cluj-napoca.jpg",
       "date": "2018-05-16",
       "url": "http://www.devtalks.ro/cluj/speakers/"
+  },
+
+  { "title": "Apache Mesos Doc-a-thon (Working Meetup)",
+      "image": "/assets/images/events/San_Francisco.jpg",
+      "date": "2018-05-24",
+      "url": "https://www.meetup.com/Bay-Area-Mesos-User-Group/events/249744827/"
+  },
+
+  { "title": "Intro to DC/OS (Meetup)",
+      "image": "/assets/images/events/Manchester.jpg",
+      "date": "2018-05-24",
+      "url": "https://www.meetup.com/Docker-Manchester/events/249599593/"
   },
 
   { "title": "From batch to pipelines - solutions for emerging patterns in data processing (OSDC)",
