@@ -90,7 +90,7 @@ For more information, see the [documentation](/docs/1.9/metrics/).
 
 ### Expanded OS Support
 
-- If you install DC/OS 1.9 using the [GUI](/1.9/installing/custom/gui/) or [CLI](/1.9/installing/custom/cli/) installation methods, your system will be automatically upgraded to [the latest version of CentOS](https://access.redhat.com/documentation/en/red-hat-enterprise-linux/).
+- If you install DC/OS 1.9 using the [GUI](/docs/1.9/installing/oss/custom/gui/) or [CLI](/docs/1.9/installing/oss/custom/cli/) installation methods, your system will be automatically upgraded to [the latest version of CentOS](https://access.redhat.com/documentation/en/red-hat-enterprise-linux/).
 - CoreOS [1235.12.0](https://coreos.com/releases/#1235.12.0).
 
 ### Expanded Docker Engine Support
@@ -145,7 +145,7 @@ For more information, see the [documentation](/docs/1.9/installing/upgrading/).
 - DCOS_OSS-796 - Navstar unhealthy in 1000 node cluster.
 - DCOS_OSS-804 - Log messages do not contain the originating module or function name.
 - DCOS_OSS-812 - Minuteman crashes for non-TCP protocol.
-- DCOS_OSS-876 - Unable to designate whether GPUs (or any other type of resource) should be considered a "scarce" resource in their cluster or not. For more information, see the [`gpus_are_scarce` parameter for config.yaml](/docs/1.9/installing/custom/configuration/configuration-parameters/#gpus_are_scarce).
+- DCOS_OSS-876 - Unable to designate whether GPUs (or any other type of resource) should be considered a "scarce" resource in their cluster or not. For more information, see the [`gpus_are_scarce` parameter for config.yaml](/docs/1.9/installing/oss/custom/configuration/configuration-parameters/#gpus_are_scarce).
 - DCOS_OSS-947 - When upgrading from 1.8 to 1.9, `/etc/profile.d/dcos.sh` symlink is not updated.
 - DCOS_OSS-1064 - Unable to configure Exhibitor to use HTTP basic auth.
 - DCOS_OSS-1102 - `dcos-signal` sends the packaging version of installed package rather than packaging version.
