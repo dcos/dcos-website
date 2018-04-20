@@ -815,6 +815,7 @@
       "url": "http://www.ipexpomanchester.com/Speakers-2018/Matt-Jarvis"
   },
 
+
   { "title": "Kubernetes meets SMACK: Operating Big Data Services and Kubernetes at Scale",
       "image": "/assets/images/events/Copenhagen.jpg",
       "date": "2018-05-01",
@@ -844,6 +845,7 @@
       "date": "2018-05-16",
       "url": "http://www.devtalks.ro/cluj/speakers/"
   },
+
 
   { "title": "Apache Mesos Doc-a-thon (Working Meetup)",
       "image": "/assets/images/events/San_Francisco.jpg",
