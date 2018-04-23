@@ -90,7 +90,7 @@ For more information, see the [documentation](/docs/1.9/metrics/).
 
 ### Expanded OS Support
 
-- If you install DC/OS 1.9 using the [GUI](/1.9/installing/custom/gui/) or [CLI](/1.9/installing/custom/cli/) installation methods, your system will be automatically upgraded to [the latest version of CentOS](https://access.redhat.com/documentation/en/red-hat-enterprise-linux/).
+- If you install DC/OS 1.9 using the [GUI](/docs/1.9/installing/oss/custom/gui/) or [CLI](/docs/1.9/installing/oss/custom/cli/) installation methods, your system will be automatically upgraded to [the latest version of CentOS](https://access.redhat.com/documentation/en/red-hat-enterprise-linux/).
 - CoreOS [1235.12.0](https://coreos.com/releases/#1235.12.0).
 
 ### Expanded Docker Engine Support
@@ -120,7 +120,7 @@ For more information, see the [documentation](/docs/1.9/installing/upgrading/).
   ```
 
 - Marathon-7133 - Marathon application history is lost after Marathon restart.
-- CORE-1191 -  The Mesos master's event queue can get backlogged with the default settings, causing performance problems.  These can be mitigated by setting the following configuration parameter in your `config.yaml` file at install time. See the [Configuration Reference](/1.9/installing/custom/configuration/configuration-parameters/) for more information.
+- CORE-1191 -  The Mesos master's event queue can get backlogged with the default settings, causing performance problems.  These can be mitigated by setting the following configuration parameter in your `config.yaml` file at install time. See the [Configuration Reference](/docs/1.9/installing/oss/custom/configuration/configuration-parameters/) for more information.
 
   ```yaml
   mesos_max_completed_tasks_per_framework: 20

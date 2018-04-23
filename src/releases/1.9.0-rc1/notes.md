@@ -98,7 +98,7 @@ For more information, see the [documentation](/docs/1.9/installing/upgrading/).
 # <a name="known-issues"></a>Known Issues and Limitations
 
 - Marathon-LB does not support pods.
-- If you install DC/OS 1.9 by using the [GUI](/docs/1.9/installing/custom/gui/) or [CLI](/docs/1.9/installing/custom/cli/) install methods, your system will be automatically upgraded to CentOS 7.3.
+- If you install DC/OS 1.9 by using the [GUI](/docs/1.9/installing/oss/custom/gui/) or [CLI](/docs/1.9/installing/oss/custom/cli/) install methods, your system will be automatically upgraded to CentOS 7.3.
 - The next 1.9 release candidate will use CentOS 7.3 as the default version.
 - The next 1.9 release candidate will use Docker 1.13 as the default version.
 - The next 1.9 release candidate will have the [logging features](/docs/1.9/monitoring/logging/) disabled by default.
