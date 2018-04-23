@@ -720,7 +720,7 @@
   },
 
   { "title": "Serverless, AWS and Apache Mesos (Meetup)",
-      "image": "/assets/images/events/London.jpg",
+      "image": "/assets/images/events/2018-03-21_Linuxing_London_preso.jpg",
       "date": "2018-03-21",
       "url": "/events/2018/from-batch-to-pipelines-with-matt-jarvis/"
   },
@@ -738,7 +738,7 @@
   },
 
   { "title": "Mesosphere and Confluent - Kafka Meetup in Manchester",
-      "image": "/assets/images/events/Manchester.jpg",
+      "image": "/assets/images/events/2018-03-28_Manchester_Kafka_Preso.jpg",
       "date": "2018-03-28",
       "url": "/events/2018/from-batch-to-pipelines-why-apache-mesos-and-dc-os-are-a-solution-for-emerging-patterns-in-data-processing"
   },
