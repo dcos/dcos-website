@@ -28,14 +28,14 @@ block content
 
 
 
-  //- Challenges / Solutions
+  //- Install methods
   .outer-container.clearfix.py4.px2#install
     .row
       .max-width-4.mx-auto
         .mxn2.flex.flex-auto.flex-wrap.items-center
           .lg-col-8.col-12.xs-col-12.px2.mx-auto
             h2.pb2.sm-center.mx-auto Choose a provider and install DC/OS
-            p.sm-center.mx-auto.pb4 Installation involves configuring your infrastructure and installing DC/OS bits on top, so the infrastructure provider you choose determines your installation method.
+            p.sm-center.mx-auto.pb4 Installation involves configuring your infrastructure and installing DC/OS bits on top. Some install methods will configure your infrastructure for you, which results in limited functionality or control. Use the advanced install for production clusters.
 
         .mxn2.flex.flex-auto.flex-wrap.flex-start
 
@@ -43,19 +43,19 @@ block content
             img.hero-list__item__image(src="/assets/images/icons/local.svg")
             h4 Development
             p.hero-list__item__copy__paragraph.small(style='min-height: 7rem;')
-              |The cheapest option, with limited functionality. Run DC/OS on a Vagrant cluster on your local machine.
+              |Try DC/OS by installing a dcos-vagrant cluster on your local machine. Room for workloads is limited by CPU and memory. (limited functionality)
             .flex.flex-end.mt-auto(style='width: 100%')
-            a(href='https://github.com/dcos/dcos-vagrant', style='width: 100%;').btn.btn-primary.center.m0 Install locally
+            a(href='https://github.com/dcos/dcos-vagrant', style='width: 100%;').btn.btn-primary.center.m0 Local installation
 
           div.lg-col-4.col-6.xs-col-12.xs-center.px3.py3.center.card.bg-gray.relative(style="justify-content: inherit; padding-bottom: 2.45rem")
             img.hero-list__item__image(src="/assets/images/icons/cloud.svg")
-            h4 Cloud
+            h4 Proof of Concept
             p.hero-list__item__copy__paragraph.small(style='min-height: 7rem;')
-              | The easiest option, with limited functionality. Automatically configure your infrastructure and install DC/OS with a few clicks or commands.
+              | Deploy DC/OS using public cloud templates, for fast demos and POCs. Install DC/OS with a few clicks or commands. (limited functionality)
             a(href='https://docs.mesosphere.com/latest/installing/oss/cloud/' style='color: #7D58FF') Documentation
             .flex.flex-end.mt-auto(style='width: 100%')
               div.dropdown.z-500(style='text-align: left; left: 0; width: 100%; position: relative;')
-                a.btn.btn-primary.mb0.block.center.no-arrow.text-white.bg-heliotrope Install in the cloud
+                a.btn.btn-primary.mb0.block.center.no-arrow.text-white.bg-heliotrope Cloud templates
                   img.ml1.align-middle(src='/assets/images/icons/arrow-down-docs-unselected-white.svg' style='margin-top: -2px;')
                 ul
                   li: a(href='https://downloads.dcos.io/dcos/stable/aws.html', target='_blank') Amazon Web Services
@@ -64,20 +64,14 @@ block content
 
           div.lg-col-4.col-6.xs-col-12.xs-center.px3.py3.center.card.bg-gray.relative(style="justify-content: inherit; padding-bottom: 2.45rem")
             img.hero-list__item__image(src="/assets/images/icons/on-premesis.svg")
-            h4 On-premises
+            h4 Production
             p.hero-list__item__copy__paragraph.small(style='min-height: 7rem;')
-              | The most flexible option. Control everything about your installation. The other install methods are automated versions of this process.
-            a(href='https://docs.mesosphere.com/latest/installing/oss/custom/' style='color: #7D58FF') Documentation
+              | Follow the advanced installation instructions to create production ready DC/OS clusters on any infrastructure. (full functionality)
+            a(href='https://docs.mesosphere.com/latest/installing/oss/custom/advanced/' style='color: #7D58FF') Documentation
             .flex.flex-end.mt-auto(style='width: 100%')
-              a(href='https://downloads.dcos.io/dcos/stable/dcos_generate_config.sh', style='width: 100%;').btn.btn-primary.center.m0 Install on premises
+              a(href='https://downloads.dcos.io/dcos/stable/dcos_generate_config.sh', style='width: 100%;').btn.btn-primary.center.m0 Download DC/OS
 
-
-          .lg-col-8.col-12.xs-col-12.px2.mx-auto.center(style='padding-top: 2rem;')
-            h3 Try Kubernetes on DC/OS Today
-          .col-12.px2.pt2.center
-            a(href='https://github.com/mesosphere/dcos-kubernetes-quickstart', style='width: 100%;').btn.btn-primary Learn More
-
-  //- DC/OS enables Get Started
+  //- 101 Tutorial
 
   .outer-container.bg-gray.clearfix.py4.px2
     .row
@@ -105,12 +99,21 @@ block content
           .col-12.px2.pt2.center
             a(href='https://docs.mesosphere.com/latest/tutorials/dcos-101/', style='width: 100%;').btn.btn-primary Start the 101 Tutorial
 
-
-
-
-
-  //- Section 2
+  //- Kubernetes
   .outer-container.bg-white.clearfix.pt2.pb4.px2
+    .row
+      .max-width-4.mx-auto
+        .mxn2.flex.flex-auto.flex-wrap
+          .lg-col-8.col-12.xs-col-12.px2.mx-auto.center(style='padding-top: 2rem;')
+            h2 Kubernetes on DC/OS
+            p DC/OS automates the steps to install and maintain a highly available Kubernetes cluster, and allows you to run it alongside other workloads. Once you have a DC/OS cluster up and running, try spinning up a Kubernetes cluster.
+          .col-12.px2.pt2.center
+            a(href='https://github.com/mesosphere/dcos-kubernetes-quickstart', style='width: 100%;').btn.btn-primary Quick Start Guide
+
+
+
+  //- Additional resources
+  .outer-container.bg-gray.clearfix.pt2.pb4.px2
     .row
       .max-width-4.mx-auto
         .mxn2.flex.flex-auto.flex-wrap
@@ -118,17 +121,17 @@ block content
 
       .max-width-4.mx-auto.pb4
         .mxn2.flex.flex-auto.flex-wrap
-          a.card.col-4.left-align.px3.py3(style='display: block' href='https://docs.mesosphere.com/latest/overview/')
+          a.card.col-4.left-align.px3.py3.bg-white(style='display: block' href='https://docs.mesosphere.com/latest/overview/')
             h4 Documentation
             p.mb2.mt0 Read the documentation's overview of DC/OS for a conceptual description of DC/OS's inner workings.
             span(style='color: #7D58FF') Read the docs
 
-          a.card.col-4.left-align.px3.py3(style='display: block' href='/community')
+          a.card.col-4.left-align.px3.py3.bg-white(style='display: block' href='/community')
             h4 Community
             p.mb2.mt0 Get help via mailing list, Slack, or Stack Overflow by joining the DC/OS community.
             span(style='color: #7D58FF') Join the community
 
-          a.card.col-4.left-align.px3.py3(style='display: block' href='https://docs.mesosphere.com/latest/tutorials/')
+          a.card.col-4.left-align.px3.py3.bg-white(style='display: block' href='https://docs.mesosphere.com/latest/tutorials/')
              h4 Tutorials
              p.mb2.mt0 Tutorials are hands-on walkthroughs of DC/OS with explanations.
              span(style='color: #7D58FF') Try a tutorial
