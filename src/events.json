@@ -686,7 +686,7 @@
   { "title": "Running Kubernetes on DC/OS (Meetup)",
       "image": "/assets/images/events/Montreal.jpg",
       "date": "2018-03-13",
-      "url": "https://www.meetup.com/Kubernetes-Montreal/events/248313060/"
+      "url": "/events/2018/running-kubernetes-on-dc-os"
   },
 
   { "title": "Container: check! Aber wohin mit Big Data oder Fast Data?! (JavaLand)",
@@ -769,8 +769,8 @@
 
   { "title": "Operating Flink on Mesos at Scale (Flink Forward)",
        "image": "/assets/images/events/San_Francisco.jpg",
-       "date": "2018-04-09",
-       "url": "https://sf-2018.flink-forward.org/kb_sessions/operating-flink-on-mesos-at-scale/"
+       "date": "2018-04-10",
+       "url": "/events/2018/operating-flink-on-mesos-at-scale/"
    },
 
   { "title": "Deep learning beyond the learning (Codemotion World)",
@@ -782,7 +782,7 @@
   { "title": "12 Factor App Vs 12 Layer Burrito (DevOps Days Atlanta)",
       "image": "/assets/images/events/Atlanta.jpg",
       "date": "2018-04-17",
-      "url": "https://www.devopsdays.org/events/2018-atlanta/program/ravi-lachhman/"
+      "url": "/events/2018/12-factor-app-vs-12-layer-burrito/"
   },
 
   { "title": "Mesosphere and Percona Server for MongoDB (Percona Live)",
