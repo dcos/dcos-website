@@ -3,7 +3,7 @@ title: Microservices und Containermanagement mit Mesosphere DC/OS
 date: 2018-04-26
 speaker: Ralf Ernst
 speakerurl: https://twitter.com/ralfernst
-eventimage: Nuremberg.jpg
+eventimage: Nuernberg.jpg
 eventlocation: Nuremberg, Germany
 eventname: JUG Nuremberg
 category: Containers
