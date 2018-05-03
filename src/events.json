@@ -592,6 +592,12 @@
       "url": "https://www.eventbrite.com/e/mesosphere-dcos-free-hands-on-workshop-tickets-41947840119"
   },
 
+  { "title": "Hands-on Workshop - Kubernetes on DC/OS",
+      "image": "/assets/images/events/Munich.jpg",
+      "date": "2018-01-22",
+      "url": "/events/2018/hands-on-workshop-kubernetes-on-dc-os/"
+  },
+
   { "title": "Day 2 Operations with Containers: Myth vs. Reality (Linux Conf AU)",
       "image": "/assets/images/events/2018-01-23_lca_2018.jpg",
       "date": "2018-01-23",
@@ -711,6 +717,12 @@
       "image": "/assets/images/events/Boston_2.jpg",
       "date": "2018-03-17",
       "url": "https://www.eventbrite.com/e/mesosphere-dcos-kickstart-training-tickets-43111418413?aff=Kelly"
+  },
+
+  { "title": "March Meetup - Running Kubernetes in Mesosphere DC/OS",
+      "image": "/assets/images/events/Philadelphia.jpg",
+      "date": "2018-03-19",
+      "url": "/events/2018/march-meetup-running-kubernetes-in-mesosphere-dc-os/"
   },
 
   { "title": "Meetup #1 @Novencia - DC/OS",
