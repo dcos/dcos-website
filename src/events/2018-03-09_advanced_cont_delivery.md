@@ -24,3 +24,7 @@ In this presentation, Elizabeth will introduce DC/OS, an open source distributed
 # Slides
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTzX9U0bUtC2i-RCPVRuOnhwgTt04SUc-Z3OObQ6P6sYxawGnDvK-3GIUuB4F0Q5QV9iVan2BwNntOP/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+# Video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Zm6NrxrPpkg" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
