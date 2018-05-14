@@ -852,6 +852,12 @@
       "url": "https://amsterdam2018.codemotionworld.com/wp-content/themes/event/detail-talk.php?detail=7259"
   },
 
+  { "title": "Doing CI/CD with Containers (Meetup)",
+      "image": "/assets/images/events/Philadelphia.jpg",
+      "date": "2018-05-15",
+      "url": "https://events.docker.com/events/details/docker-philadelphia-presents-doing-cicd-with-containers"
+  },
+
   { "title": "From batch to pipelines - solutions for emerging patterns in data processing (DevTalks)",
       "image": "/assets/images/events/cluj-napoca.jpg",
       "date": "2018-05-16",
