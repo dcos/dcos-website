@@ -864,6 +864,11 @@
       "url": "http://www.devtalks.ro/cluj/speakers/"
   },
 
+  { "title": "Keynote: CI/CD of Microservices with Containers",
+      "image": "/assets/images/events/Vancouver.jpg",
+      "date": "2018-05-22",
+      "url": "http://2018.opendevconf.com/schedule/"
+  },
 
   { "title": "Apache Mesos Doc-a-thon (Working Meetup)",
       "image": "/assets/images/events/San_Francisco.jpg",
@@ -887,6 +892,12 @@
       "image": "/assets/images/events/Berlin2.jpg",
       "date": "2018-06-13",
       "url": "http://www.apachecon.com/euroadshow18/cloud-schedule.html#joerg"
+  },
+
+  { "title": "Introduction to DC/OS (Meetup)",
+      "image": "/assets/images/events/San_Francisco_2.jpg",
+      "date": "2018-06-19",
+      "url": "https://www.balug.org/#2018-06"
   },
 
   { "title": "SMACK Stack on DC/OS using Cloud Infrastructure (OSCON)",
