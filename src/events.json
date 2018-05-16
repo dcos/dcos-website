@@ -853,9 +853,9 @@
   },
 
   { "title": "Doing CI/CD with Containers (Meetup)",
-      "image": "/assets/images/events/Philadelphia.jpg",
+      "image": "/assets/images/events/2018-05-15_Philadelphia_CICD.jpg",
       "date": "2018-05-15",
-      "url": "https://events.docker.com/events/details/docker-philadelphia-presents-doing-cicd-with-containers"
+      "url": "/events/2018/doing-ci-cd-with-containers/"
   },
 
   { "title": "From batch to pipelines - solutions for emerging patterns in data processing (DevTalks)",
