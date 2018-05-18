@@ -882,6 +882,12 @@
       "url": "https://www.meetup.com/Docker-Manchester/events/249599593/"
   },
 
+  { "title": "Big-Data-IoT-Plattform auf Basis von DC/OS (building IoT)",
+      "image": "/assets/images/events/Cologne.jpg",
+      "date": "2018-06-05",
+      "url": "https://www.buildingiot.de/veranstaltung-6593-architektur-und-aufbau-einer-big-data-iot-plattform-auf-basis-von-dc-os.html?id=6593"
+  },
+
   { "title": "From batch to pipelines - solutions for emerging patterns in data processing (OSDC)",
       "image": "/assets/images/events/Berlin.jpg",
       "date": "2018-06-12",
