@@ -865,9 +865,9 @@
   },
 
   { "title": "Keynote: CI/CD of Microservices with Containers",
-      "image": "/assets/images/events/Vancouver.jpg",
+      "image": "/assets/images/events/2018-05-22_OpenDevConf.jpg",
       "date": "2018-05-22",
-      "url": "http://2018.opendevconf.com/schedule/"
+      "url": "/events/2018/ci-cd-of-microservices-with-containers/"
   },
 
   { "title": "Apache Mesos Doc-a-thon (Working Meetup)",
