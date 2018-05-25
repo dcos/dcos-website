@@ -2,13 +2,13 @@ Effective date: April 19, 2016
 
 We at Mesosphere know you care about how your personal information is used and shared, and we take your privacy seriously.  Please read the following to learn more about our Privacy Policy.  **By using or accessing the Website in any manner, you acknowledge that you accept the practices and policies outlined in this Privacy Policy, and you hereby consent that we will collect, use, and share your information in the following ways.**
 
-Remember that your use of this Website is at all times subject to the [Terms of Use](/tos/), which incorporates this Privacy Policy.  Any terms we use in this Policy without defining them have the definitions given to them in the [Terms of Use](/tos/).
+Remember that your use of this Website is at all times subject to the [Terms of Use](https://mesosphere.com/terms/), which incorporates this Privacy Policy.  Any terms we use in this Policy without defining them have the definitions given to them in the [Terms of Use](https://mesosphere.com/terms/).
 
 ## What does this Privacy Policy cover?
 
 This Privacy Policy covers our treatment of personally identifiable information ("Personal Information") that we gather when you are accessing or using our Website, but not to the practices of companies we don’t own or control, or people that we don’t manage.  We gather various types of Personal Information from our users, as explained in more detail below, and we use this Personal Information internally in connection with our Website and DC/OS, including to personalize, provide, and improve our services, to allow you to set up a user account and profile, to contact you and allow other users to contact you, to fulfill your requests for certain products and services, and to analyze how you use the Website. In certain cases, we may also share some Personal Information with third parties, but only as described below.
 
-As noted in the [Terms of Use](/tos/), we do not knowingly collect or solicit personal information from anyone under the age of 13. If you are under 13, please do not attempt to register for the Website or send any personal information about yourself to us. If we learn that we have collected personal information from a child under age 13, we will delete that information as quickly as possible. If you believe that a child under 13 may have provided us personal information, please contact us at contact@dcos.io.
+As noted in the [Terms of Use](https://mesosphere.com/terms/), we do not knowingly collect or solicit personal information from anyone under the age of 13. If you are under 13, please do not attempt to register for the Website or send any personal information about yourself to us. If we learn that we have collected personal information from a child under age 13, we will delete that information as quickly as possible. If you believe that a child under 13 may have provided us personal information, please contact us at contact@dcos.io.
 
 ## Will this Privacy Policy ever change?
 
