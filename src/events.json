@@ -882,10 +882,34 @@
       "url": "https://www.meetup.com/Docker-Manchester/events/249599593/"
   },
 
+  { "title": "Apache Mesos Paris (Meetup)",
+      "image": "/assets/images/events/Paris.jpg",
+      "date": "2018-05-31",
+      "url": "https://www.meetup.com/Apache-Mesos-Paris/events/250787174/"
+  },
+
   { "title": "Big-Data-IoT-Plattform auf Basis von DC/OS (building IoT)",
       "image": "/assets/images/events/Cologne.jpg",
       "date": "2018-06-05",
       "url": "https://www.buildingiot.de/veranstaltung-6593-architektur-und-aufbau-einer-big-data-iot-plattform-auf-basis-von-dc-os.html?id=6593"
+  },
+
+  { "title": "Debian to DC/OS: factors that shape open source communities (DevXCon)",
+      "image": "/assets/images/events/San_Francisco_3.jpg",
+      "date": "2018-06-05",
+      "url": "https://2018.devxcon.com/judith-malnick/"
+  },
+
+  { "title": "A new way to try DC/OS locally: DC/OS E2E (Online Meetup)",
+      "image": "/assets/images/events/Online.jpg",
+      "date": "2018-06-07",
+      "url": "https://www.meetup.com/DC-OS-Online-Meetup/events/250991333/"
+  },
+
+  { "title": "All you need to build and run a modern application (LX Scala)",
+      "image": "/assets/images/events/Lisbon.jpg",
+      "date": "2018-06-08",
+      "url": "https://www.lxscala.com/schedule/#session-10"
   },
 
   { "title": "From batch to pipelines - solutions for emerging patterns in data processing (OSDC)",
@@ -894,16 +918,40 @@
       "url": "https://osdc.de/events/from-batch-to-pipelines-why-apache-mesos-and-dcos-are-a-solution-for-emerging-patterns-in-data-processing/"
   },
 
+  { "title": "Automating DevOps in the age of container orchestration",
+      "image": "/assets/images/events/San_Jose.jpg",
+      "date": "2018-06-12",
+      "url": "https://www.eventbrite.com/e/automating-devops-in-the-age-of-container-orchestration-registration-45698842468"
+  },
+
   { "title": "Orchestrating Container and Big Data (Apache Roadshow)",
       "image": "/assets/images/events/Berlin2.jpg",
       "date": "2018-06-13",
       "url": "http://www.apachecon.com/euroadshow18/cloud-schedule.html#joerg"
   },
 
+  { "title": "Hybrid Cloud As-A-Service (Meetup)",
+      "image": "/assets/images/events/San_Francisco.jpg",
+      "date": "2018-06-14",
+      "url": "https://www.eventbrite.com/e/hybrid-cloud-kubernetes-spark-hdfs-data-science-as-a-service-tickets-46197733665"
+  },
+
   { "title": "Introduction to DC/OS (Meetup)",
       "image": "/assets/images/events/San_Francisco_2.jpg",
       "date": "2018-06-19",
       "url": "https://www.balug.org/#2018-06"
+  },
+
+  { "title": "TechBeats #2 hosted by Applause (Meetup)",
+      "image": "/assets/images/events/Warsaw.jpg",
+      "date": "2018-06-20",
+      "url": "https://www.meetup.com/TechBeats-hosted-by-Applause/events/250581962/"
+  },
+
+  { "title": "Into the Mesosphere!!! (Meetup)",
+      "image": "/assets/images/events/Newcastle_upon_Tyne.jpg",
+      "date": "2018-06-21",
+      "url": "https://www.meetup.com/DevOpsNorthEast/events/gjhrvlyxjbcc/"
   },
 
   { "title": "SMACK Stack on DC/OS using Cloud Infrastructure (OSCON)",
