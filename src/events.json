@@ -948,6 +948,12 @@
       "url": "https://www.meetup.com/TechBeats-hosted-by-Applause/events/250581962/"
   },
 
+  { "title": "Serverless with Project Fn & ML for your Data Pipeline (Meetup)",
+      "image": "/assets/images/events/Seattle.jpg",
+      "date": "2018-06-20",
+      "url": "https://www.meetup.com/Seattle-Kubernetes-Meetup/events/251242002/"
+  },
+
   { "title": "Into the Mesosphere!!! (Meetup)",
       "image": "/assets/images/events/Newcastle_upon_Tyne.jpg",
       "date": "2018-06-21",
