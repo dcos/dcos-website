@@ -52,10 +52,10 @@ const paths = {
   blog: {
     src: 'src/blog/*.md'
   },
-  styles: {
-    src: './src/styles/**/*.scss',
-    dest: './build/styles'
-  },
+//  styles: {
+//    src: './src/styles/**/*.scss',
+//    dest: './build/styles'
+//  },
   js: {
     src: './src/scripts/**/*.js',
     dest: './build/scripts'
@@ -173,8 +173,8 @@ const serveTask = () => {
         batch(function (events, done) { gulp.start('build-blog-templates', done) }))
       watch(paths.events.src,
         batch(function (events, done) { gulp.start('build-event-templates', done) }))
-      watch(paths.styles.src,
-        batch(function (events, done) { gulp.start('styles', done) }))
+//      watch(paths.styles.src,
+//        batch(function (events, done) { gulp.start('styles', done) }))
       watch(paths.js.src,
         batch(function (events, done) { gulp.start('browserify', done) }))
       watch(paths.assets.src,
@@ -196,7 +196,7 @@ const serveTask = () => {
 // Gulp tasks
 //
 
-const sharedDocsSiteTasks = ['copy', 'browserify', 'styles', 'nginx-config', 's3-config']
+const sharedDocsSiteTasks = ['copy', 'browserify', 'nginx-config', 's3-config']
 
 gulp.task('build', ['build-site'])
 gulp.task('build-site', ['build-site-templates', 'build-event-templates', 'build-blog-templates', ...sharedDocsSiteTasks])
