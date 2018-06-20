@@ -931,15 +931,15 @@
   },
 
   { "title": "Hybrid Cloud As-A-Service (Meetup)",
-      "image": "/assets/images/events/San_Francisco.jpg",
+      "image": "/assets/images/events/2018-06-14_SF_hybrid_cloud.jpg",
       "date": "2018-06-14",
-      "url": "https://www.eventbrite.com/e/hybrid-cloud-kubernetes-spark-hdfs-data-science-as-a-service-tickets-46197733665"
+      "url": "/events/2018/hybrid-cloud-as-a-service/"
   },
 
   { "title": "Introduction to DC/OS (Meetup)",
       "image": "/assets/images/events/San_Francisco_2.jpg",
       "date": "2018-06-19",
-      "url": "https://www.balug.org/#2018-06"
+      "url": "/events/2018/introduction-to-dc-os/"
   },
 
   { "title": "TechBeats #2 hosted by Applause (Meetup)",
