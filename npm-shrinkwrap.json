@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "gulp-sass": {
+      "version": "3.1.0",
+      "from": "gulp-sass@^3.0.0",
+      "dependencies": {
+        "node-sass": {
+          "version": "4.5.3",
+          "from": "node-sass@^4.2.0"
+        }
+      }
+    }
+  }
+}
