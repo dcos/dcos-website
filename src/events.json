@@ -469,7 +469,7 @@
   { "title": "SMACK Stack and Beyond (Spark Summit)",
       "image": "/assets/images/events/Dublin.jpg",
       "date": "2017-10-26",
-      "url": "http://bit.ly/2vM1aXe"
+      "url": "https://databricks.com/session/smack-stack-and-beyond-building-fast-data-pipelines"
   },
 
   { "title": "Monitoring Microservices + Kong (Meetup)",
@@ -909,7 +909,7 @@
   { "title": "All you need to build and run a modern application (LX Scala)",
       "image": "/assets/images/events/Lisbon.jpg",
       "date": "2018-06-08",
-      "url": "https://www.lxscala.com/schedule/#session-10"
+      "url": "http://www.lxscala.com/schedule/#session-10"
   },
 
   { "title": "From batch to pipelines - solutions for emerging patterns in data processing (OSDC)",
