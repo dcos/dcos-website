@@ -966,10 +966,34 @@
       "url": "https://conferences.oreilly.com/oscon/oscon-or/public/schedule/detail/67340"
   },
 
-  { "title": "",
-      "image": "/assets/images/events/.jpg",
-      "date": "",
-      "url": ""
+  { "title": "Towards Data Science Engineering Principles",
+      "image": "/assets/images/events/Los_Angeles.jpg",
+      "date": "2018-08-11",
+      "url": "https://www.bigdatadayla.com/#speakers"
+  },
+
+  { "title": "Continuous Delivery With Containers",
+      "image": "/assets/images/events/Philadelphia.jpg",
+      "date": "2018-08-25",
+      "url": "https://fosscon.us/node/12716"
+  },
+
+  { "title": "Debian to DC/OS: factors that shape open source communities",
+      "image": "/assets/images/events/Vancouver.jpg",
+      "date": "2018-08-29",
+      "url": "https://ossna18.sched.com/event/FANd?iframe=no"
+  },
+
+  { "title": "Batch to Pipelines",
+      "image": "/assets/images/events/Stockholm.jpg",
+      "date": "2018-09-20",
+      "url": "http://www.ipexponordic.com/2018-Speakers/Matt-Jarvis"
+  },
+
+  { "title": "Batch to pipelines: Mesos & DC/OS deploy cloud native apps",
+      "image": "/assets/images/events/London.jpg",
+      "date": "2018-09-26",
+      "url": "https://skillsmatter.com/conferences/10160-cloudnative-london-2018#program"
   },
 
   { "title": "",
