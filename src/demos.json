@@ -44,6 +44,20 @@
   },
   {
     "featured": false,
+    "image": "/assets/images/demos/cd.jpg",
+    "name": "Continuous Delivery with GitLab and Jenkins",
+    "use_cases": ["Continuous Integration", "Continuous Delivery"],
+    "dcos_version": ["1.11"],
+    "language": ["bash"],
+    "description": "Set up a CI/CD pipeline, with advanced options using Jenkins to run atuomated tests on new container images added to GitLab.",
+    "packages": ["Jenkins", "GitLab"],
+    "youtube_id": "PshxWDlnSuU",
+    "callouts": {
+      "GitHub": "https://github.com/dcos/demos/tree/master/cicd/",
+    }
+  },
+  {
+    "featured": false,
     "image": "/assets/images/demos/fraud-detect.jpg",
     "name": "Fraud Detection with Apache Flink",
     "use_cases": ["Fast Data"],
