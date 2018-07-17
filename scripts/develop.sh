@@ -5,7 +5,7 @@ if [ ! -d tmp/node_modules ]; then
 fi
 
 if ! docker images | grep docs-runner; then
-  docker build -f dcos-docs/Dockerfile -t docs-runner .
+  docker build -f build-artifacts/Dockerfile -t docs-runner .
 fi
 
 docker run -it -p 3000:3000 -p 3001:3001 -v $PWD:/website \
