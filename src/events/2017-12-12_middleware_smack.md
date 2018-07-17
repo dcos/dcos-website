@@ -26,7 +26,7 @@ What to expect:
 * Upgrades
 * Debugging
 
-Event link: <a href="http://2017.middleware-conference.org/tutorials.html">Usenix Middleware Conference: </a>
+Event link: <a href="http://www.middleware-conference.org/archives/middleware2017.html">Usenix Middleware Conference: </a>
 
 # Slides
 
