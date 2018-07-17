@@ -1,3 +1,0 @@
-[submodule "dcos-docs"]
-	path = dcos-docs
-	url = https://github.com/dcos/dcos-docs.git
