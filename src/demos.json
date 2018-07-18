@@ -58,6 +58,20 @@
   },
   {
     "featured": false,
+    "image": "/assets/images/demos/nlp.png",
+    "name": "Natural Language Processing with Apache Spark",
+    "use_cases": ["Fast Data"],
+    "dcos_version": ["1.10"],
+    "language": ["Python"],
+    "description": "In this demo we will use Apache Spark and Apache Kafka to setup a natural language processing pipeline",
+    "packages": ["Apache Kafka", "Apache Spark"],
+    "youtube_id": "",
+    "callouts": {
+      "GitHub": "https://github.com/dcos/demos/tree/master/nlp",
+    }
+  },
+  {
+    "featured": false,
     "image": "/assets/images/demos/FinTrans.jpg",
     "name": "Financial Transactions",
     "use_cases": ["Fast Data"],
