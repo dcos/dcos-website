@@ -800,13 +800,13 @@
   { "title": "Mesosphere and Percona Server for MongoDB (Percona Live)",
       "image": "/assets/images/events/Santa_Clara.jpg",
       "date": "2018-04-24",
-      "url": "https://www.percona.com/live/18/sessions/mesosphere-and-percona-server-for-mongodb"
+      "url": "/events/2018/mesosphere-and-percona-server-for-mongodb/"
   },
 
   { "title": "Stateful applications on Mesosphere DC/OS (Percona Live)",
       "image": "/assets/images/events/Santa_Clara_2.jpg",
-      "date": "2018-04-25",
-      "url": "https://www.percona.com/live/18/sessions/stateful-applications-on-mesosphere-dcos"
+      "date": "2018-04-26",
+      "url": "/events/2018/stateful-services-on-dc-os"
   },
 
   { "title": "Monolith to Microservices with DC/OS 1.11 (Meetup)",
@@ -824,9 +824,8 @@
   { "title": "From batch to pipelines - solutions for emerging patterns in data processing",
       "image": "/assets/images/events/Manchester.jpg",
       "date": "2018-04-26",
-      "url": "http://www.ipexpomanchester.com/Speakers-2018/Matt-Jarvis"
+      "url": "/events/2018/ip-expo-apache-mesos-and-dc-os-for-deploying-cloud-native-applications/"
   },
-
 
   { "title": "Kubernetes meets SMACK: Operating Big Data Services and Kubernetes at Scale",
       "image": "/assets/images/events/Copenhagen.jpg",
@@ -861,7 +860,7 @@
   { "title": "From batch to pipelines - solutions for emerging patterns in data processing (DevTalks)",
       "image": "/assets/images/events/cluj-napoca.jpg",
       "date": "2018-05-16",
-      "url": "http://www.devtalks.ro/cluj/speakers/"
+      "url": "/events/2018/from-batch-to-pipelines-apache-mesos-and-dc-os-for-deploying-cloud-native-applications"
   },
 
   { "title": "Keynote: CI/CD of Microservices with Containers",
@@ -879,7 +878,7 @@
   { "title": "Intro to DC/OS (Meetup)",
       "image": "/assets/images/events/Manchester.jpg",
       "date": "2018-05-24",
-      "url": "https://www.meetup.com/Docker-Manchester/events/249599593/"
+      "url": "/events/2018/docker-manchester-introduction-to-dc-os/"
   },
 
   { "title": "Apache Mesos Paris (Meetup)",
@@ -897,7 +896,7 @@
   { "title": "Debian to DC/OS: factors that shape open source communities (DevXCon)",
       "image": "/assets/images/events/San_Francisco_3.jpg",
       "date": "2018-06-05",
-      "url": "https://2018.devxcon.com/judith-malnick/"
+      "url": "/events/2018/debian-to-dc-os/"
   },
 
   { "title": "A new way to try DC/OS locally: DC/OS E2E (Online Meetup)",
@@ -915,7 +914,7 @@
   { "title": "From batch to pipelines - solutions for emerging patterns in data processing (OSDC)",
       "image": "/assets/images/events/Berlin.jpg",
       "date": "2018-06-12",
-      "url": "https://osdc.de/events/from-batch-to-pipelines-why-apache-mesos-and-dcos-are-a-solution-for-emerging-patterns-in-data-processing/"
+      "url": "/events/2018/osdc-introduction-to-dc-os/"
   },
 
   { "title": "Automating DevOps in the age of container orchestration",
@@ -957,7 +956,13 @@
   { "title": "Into the Mesosphere!!! (Meetup)",
       "image": "/assets/images/events/Newcastle_upon_Tyne.jpg",
       "date": "2018-06-21",
-      "url": "https://www.meetup.com/DevOpsNorthEast/events/gjhrvlyxjbcc/"
+      "url": "/events/2018/devops-northeast-into-the-mesosphere/"
+  },
+
+  { "title": "Introduction to DC/OS (Meetup)",
+      "image": "/assets/images/events/Edinburgh.jpg",
+      "date": "2018-07-05",
+      "url": "/events/2018/edinburgh-devops-introduction-to-dc-os"
   },
 
   { "title": "SMACK Stack on DC/OS using Cloud Infrastructure (OSCON)",
