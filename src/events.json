@@ -960,6 +960,12 @@
       "url": "https://www.meetup.com/DevOpsNorthEast/events/gjhrvlyxjbcc/"
   },
 
+  { "title": "Introduction to DC/OS (Meetup)",
+      "image": "/assets/images/events/Edinburgh.jpg",
+      "date": "2018-07-05",
+      "url": "https://www.meetup.com/Edinburgh-DevOps-Meetup/events/248991957/"
+  },
+
   { "title": "SMACK Stack on DC/OS using Cloud Infrastructure (OSCON)",
       "image": "/assets/images/events/Portland.jpg",
       "date": "2018-07-17",
@@ -984,16 +990,28 @@
       "url": "https://ossna18.sched.com/event/FANd?iframe=no"
   },
 
-  { "title": "Batch to Pipelines",
+  { "title": "Batch to Pipelines (IP Expo Nordics)",
       "image": "/assets/images/events/Stockholm.jpg",
       "date": "2018-09-20",
       "url": "http://www.ipexponordic.com/2018-Speakers/Matt-Jarvis"
   },
 
-  { "title": "Batch to pipelines: Mesos & DC/OS deploy cloud native apps",
+  { "title": "Batch to pipelines (Cloud Native London)",
       "image": "/assets/images/events/London.jpg",
       "date": "2018-09-26",
       "url": "https://skillsmatter.com/conferences/10160-cloudnative-london-2018#program"
+  },
+
+  { "title": "Batch to pipelines (IP Expo Europe)",
+      "image": "/assets/images/events/London2.jpg",
+      "date": "2018-10-03",
+      "url": "https://www.ipexpoeurope.com/2018-Speakers/Matt-Jarvis"
+  },
+
+  { "title": "Challenges to the open source model today (All Things Open)",
+      "image": "/assets/images/events/Raleigh.jpg",
+      "date": "2018-10-21",
+      "url": "https://allthingsopen.org/speakers/elizabeth-k-joseph/"
   },
 
   { "title": "",
