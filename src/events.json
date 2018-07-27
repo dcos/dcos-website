@@ -965,12 +965,6 @@
       "url": "/events/2018/edinburgh-devops-introduction-to-dc-os"
   },
 
-  { "title": "Introduction to DC/OS (Meetup)",
-      "image": "/assets/images/events/Edinburgh.jpg",
-      "date": "2018-07-05",
-      "url": "https://www.meetup.com/Edinburgh-DevOps-Meetup/events/248991957/"
-  },
-
   { "title": "SMACK Stack on DC/OS using Cloud Infrastructure (OSCON)",
       "image": "/assets/images/events/Portland.jpg",
       "date": "2018-07-17",
