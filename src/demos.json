@@ -72,6 +72,20 @@
   },
   {
     "featured": false,
+    "image": "/assets/images/demos/mqtt.jpg",
+    "name": "Highly Scalable IOT architecture using MongoDB",
+    "use_cases": ["IOT"],
+    "dcos_version": ["1.11"],
+    "language": ["Python"],
+    "description": "In this demo we will use Mosquitto and Percona MongoDB to build a highly scalable IOT platform",
+    "packages": ["Marathon", "Percona MongoDB"],
+    "youtube_id": "",
+    "callouts": {
+      "GitHub": "https://github.com/dcos/demos/tree/master/mqtt-iot",
+    }
+  },
+  {
+    "featured": false,
     "image": "/assets/images/demos/nlp.png",
     "name": "Natural Language Processing with Apache Spark",
     "use_cases": ["Fast Data"],
