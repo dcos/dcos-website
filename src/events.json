@@ -977,7 +977,19 @@
       "url": "https://www.bigdatadayla.com/#speakers"
   },
 
-  { "title": "Continuous Delivery With Containers",
+  { "title": "Building End-to-End Data Science Platforms (Meetup)",
+      "image": "/assets/images/events/New_York.jpg",
+      "date": "2018-08-21",
+      "url": "https://www.meetup.com/Advanced-Spark-and-TensorFlow-Meetup-New-York/events/253849280/"
+  },
+
+  { "title": "Deep learning Beyond the Learning (JupyterCon)",
+      "image": "/assets/images/events/New_York_2.jpg",
+      "date": "2018-08-22",
+      "url": "https://conferences.oreilly.com/jupyter/jup-ny/public/schedule/detail/68225"
+  },
+
+  { "title": "Continuous Delivery With Containers (FOSSCON)",
       "image": "/assets/images/events/Philadelphia.jpg",
       "date": "2018-08-25",
       "url": "https://fosscon.us/node/12716"
