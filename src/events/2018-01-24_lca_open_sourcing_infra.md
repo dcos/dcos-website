@@ -25,7 +25,7 @@ Today, following a rush to cloud, companies are now looking for open source tool
 
 Join me in look back through the history of why we chose to go with open source, and what it can teach us today as we evaluate building our applications against cloud platforms, APIs and more. I'll explore what questions should be asked before selecting a platform, some of the open source options available, and share examples of what organizations have gained by being very open about how they've built their infrastructure.
 
-Event link: <a href="https://rego.linux.conf.au/schedule/presentation/59/">Linux.conf.au 2018 Schedule: The Open Sourcing of Infrastructure</a>
+Event link: <a href="https://2018.linux.conf.au/">Linux.conf.au 2018</a>
 
 # Media
 

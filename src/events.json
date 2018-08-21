@@ -1019,10 +1019,34 @@
       "url": "https://www.ipexpoeurope.com/2018-Speakers/Matt-Jarvis"
   },
 
+  { "title": "Keynote: Open Source CI/CD (Ohio LinuxFest)",
+      "image": "/assets/images/events/Columbus.jpg",
+      "date": "2018-10-12",
+      "url": "https://ohiolinux.org/elizabeth-krumbach-joseph-to-keynote-olf2018/"
+  },
+
+  { "title": "Continuous Delivery With Containers & DC/OS (All Things Open)",
+      "image": "/assets/images/events/Raleigh_2.jpg",
+      "date": "2018-10-22",
+      "url": "https://allthingsopen.org/talk/continuous-delivery-with-containers-and-dc-os/"
+  },
+
   { "title": "Challenges to the open source model today (All Things Open)",
       "image": "/assets/images/events/Raleigh.jpg",
-      "date": "2018-10-21",
-      "url": "https://allthingsopen.org/speakers/elizabeth-k-joseph/"
+      "date": "2018-10-22",
+      "url": "https://allthingsopen.org/talk/challenges-to-the-open-source-model-today/"
+  },
+
+  { "title": "MesosCon 2018",
+      "image": "/assets/images/events/New_York_2.jpg",
+      "date": "2018-11-05",
+      "url": "http://mesoscon2018.org"
+  },
+
+  { "title": "Keynote: Open Source at 20 years (SeaGL)",
+      "image": "/assets/images/events/Seattle.jpg",
+      "date": "2018-11-09",
+      "url": "http://seagl.org/news/2018/05/02/2018_keynoter-elizabeth_krumbach_joseph.html"
   },
 
   { "title": "",

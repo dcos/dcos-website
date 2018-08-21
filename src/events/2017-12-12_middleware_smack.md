@@ -26,8 +26,6 @@ What to expect:
 * Upgrades
 * Debugging
 
-Event link: <a href="http://www.middleware-conference.org/archives/middleware2017.html">Usenix Middleware Conference: </a>
-
 # Slides
 
 <iframe src="https://docs.google.com/presentation/d/1PS3J5mmGfYApAuEgKQP4L2hNuXGbUHf2HxCNMuiYepc/embed?start=false&loop=false&delayms=3000" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
