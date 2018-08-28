@@ -990,14 +990,14 @@
   },
 
   { "title": "Continuous Delivery With Containers (FOSSCON)",
-      "image": "/assets/images/events/Philadelphia.jpg",
+      "image": "/assets/images/events/2018-08-25_FOSSCON_CICD.jpg",
       "date": "2018-08-25",
-      "url": "https://fosscon.us/node/12716"
+      "url": "/events/2018/continuous-delivery-with-containers/"
   },
 
-  { "title": "Debian to DC/OS: factors that shape open source communities",
+  { "title": "Debian to DC/OS: factors that shape open source communities (OSS NA)",
       "image": "/assets/images/events/Vancouver.jpg",
-      "date": "2018-08-29",
+      "date": "2018-08-31",
       "url": "https://ossna18.sched.com/event/FANd?iframe=no"
   },
 
@@ -1047,6 +1047,12 @@
       "image": "/assets/images/events/Seattle.jpg",
       "date": "2018-11-09",
       "url": "http://seagl.org/news/2018/05/02/2018_keynoter-elizabeth_krumbach_joseph.html"
+  },
+
+  { "title": "Deep Learning Pipelines Anywhere Using Kubeflow (KubeCon China)",
+      "image": "/assets/images/events/Shanghai.jpg",
+      "date": "2018-11-15",
+      "url": "https://kccncchina2018english.sched.com/event/FuJt?iframe=no"
   },
 
   { "title": "",
