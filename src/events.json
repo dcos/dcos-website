@@ -1001,10 +1001,22 @@
       "url": "https://ossna18.sched.com/event/FANd?iframe=no"
   },
 
+  { "title": "5th DC/OS and Mesos Meetup",
+      "image": "/assets/images/events/Hangzhou.jpg",
+      "date": "2018-09-15",
+      "url": "http://www.huodongxing.com/event/7451680445500"
+  },
+
   { "title": "Batch to Pipelines (IP Expo Nordics)",
       "image": "/assets/images/events/Stockholm.jpg",
       "date": "2018-09-20",
       "url": "http://www.ipexponordic.com/2018-Speakers/Matt-Jarvis"
+  },
+
+  { "title": "The Quest for Data Science Principles (Bay Area MLFlow Meetup)",
+      "image": "/assets/images/events/San_Francisco.jpg",
+      "date": "2018-09-20",
+      "url": "https://www.meetup.com/Bay-Area-MLflow/events/254124344/"
   },
 
   { "title": "Batch to pipelines (Cloud Native London)",
@@ -1025,6 +1037,18 @@
       "url": "https://ohiolinux.org/elizabeth-krumbach-joseph-to-keynote-olf2018/"
   },
 
+  { "title": "Workshop: Building and Operating an OSS Data Science Platform (OSS Summit)",
+      "image": "/assets/images/events/Edinburgh.jpg",
+      "date": "2018-10-21",
+      "url": "https://osseu18.sched.com/event/Fx5S/workshop-building-and-operating-an-oss-data-science-platform-jorg-schad-mesosphere"
+  },
+  
+  { "title": "Keynote: Kubeflow++ - Building and Operating an OSS Data Science Platform (OSS Summit)",
+      "image": "/assets/images/events/Edinburgh.jpg",
+      "date": "2018-10-22",
+      "url": "https://osseu18.sched.com/event/FxWs/kubeflow-building-and-operating-a-oss-data-science-platform-jorg-schad-mesosphere"
+  },
+
   { "title": "Continuous Delivery With Containers & DC/OS (All Things Open)",
       "image": "/assets/images/events/Raleigh_2.jpg",
       "date": "2018-10-22",
@@ -1038,7 +1062,7 @@
   },
 
   { "title": "MesosCon 2018",
-      "image": "/assets/images/events/New_York_2.jpg",
+      "image": "/assets/images/events/San_Francisco.jpg",
       "date": "2018-11-05",
       "url": "http://mesoscon2018.org"
   },
@@ -1049,10 +1073,22 @@
       "url": "http://seagl.org/news/2018/05/02/2018_keynoter-elizabeth_krumbach_joseph.html"
   },
 
+  { "title": "Rust and Skaffold for Iterative Development on Kubernetes (KubeCon China)",
+      "image": "/assets/images/events/Shanghai.jpg",
+      "date": "2018-11-14",
+      "url": "https://kccncchina2018english.sched.com/event/FuLo?iframe=no"
+  },
+
   { "title": "Deep Learning Pipelines Anywhere Using Kubeflow (KubeCon China)",
       "image": "/assets/images/events/Shanghai.jpg",
       "date": "2018-11-15",
       "url": "https://kccncchina2018english.sched.com/event/FuJt?iframe=no"
+  },
+
+  { "title": "Batch to pipelines (ITNext Summit)",
+      "image": "/assets/images/events/Amsterdam.jpg",
+      "date": "2018-11-14",
+      "url": "https://www.itnextsummit.com/speakers/matt-jarvis/"
   },
 
   { "title": "",
