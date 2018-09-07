@@ -23,8 +23,6 @@ Well over a decade ago the LAMP stack broke us free from proprietary infrastruct
 
 Today, following a rush to cloud, companies are now looking for open source tooling to build cloud-like environments in their own new data centers. Technologies like OpenStack and DC/OS, powered by Apache Mesos, are allowing them to replicate much of the functionality that was previously only available with proprietary, hosted solutions. Taking this one step further, several open source projects and organizations have begun full-scale open sourcing of their infrastructures, allowing other organizations to directly benefit from their Continuous Integration tooling and more. Complete infrastructures have now become open source projects unto themselves, and operations engineers becoming more experienced open source contributors, alongside their developer colleagues.
 
-Event link: <a href="https://allthingsopen.org/talk/the-open-sourcing-of-infrastructure/">Operations: The Open Sourcing Of Infrastructure</a>
-
 # Slides
 
 <iframe src="https://docs.google.com/presentation/d/1BsM7i8vG0oAtm7LeXmwmC0fJt2ceTxnQU57HYBCvbBE/embed?start=false&loop=false&delayms=3000" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

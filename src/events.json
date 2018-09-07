@@ -998,7 +998,7 @@
   { "title": "Debian to DC/OS: factors that shape open source communities (OSS NA)",
       "image": "/assets/images/events/Vancouver.jpg",
       "date": "2018-08-31",
-      "url": "https://ossna18.sched.com/event/FANd?iframe=no"
+      "url": "/events/2018/debian-to-dc-os-factors-that-shape-open-source-communities/"
   },
 
   { "title": "5th DC/OS and Mesos Meetup",
