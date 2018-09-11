@@ -23,5 +23,3 @@ What people usually understand by "health checks" is a simple sequence: performi
 * How to keep the overhead imposed by health checks manageable and reasonable?
 
 During the discussion of challenges and trade-offs, Alex will provide an overview of how the modern distributed systems (such as AWS, Apache Mesos, and Kubernetes) tackle the problem of health checking, have a look at alternative solutions and discuss trade-offs. To summarize, Alex will share some practical recommendations based on the experience revamping Apache Mesos’ health checking.
-
-Event link: <a href="https://allthingsopen.org/talk/health-checking-a-not-so-trivial-task-in-the-distributed-containerized-world/">Cloud: Health Checking: A not-so-trivial task in the distributed containerized world</a>
