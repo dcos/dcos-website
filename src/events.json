@@ -1000,6 +1000,18 @@
       "date": "2018-08-31",
       "url": "/events/2018/debian-to-dc-os-factors-that-shape-open-source-communities/"
   },
+  
+  { "title": "Building secure ML pipelines (Big Data Madrid)",
+      "image": "/assets/images/events/Madrid.jpg",
+      "date": "2018-09-18",
+      "url": "https://www.meetup.com/Big-Data-Madrid/events/254003728/"
+  },
+  
+  { "title": "Building secure ML pipelines (Data Analytics Amsterdam)",
+      "image": "/assets/images/events/Amsterdam.jpg",
+      "date": "2018-09-19",
+      "url": "https://www.meetup.com/Data-Analytics-Amsterdam-Meetup/events/253974134/"
+  },
 
   { "title": "5th DC/OS and Mesos Meetup",
       "image": "/assets/images/events/Hangzhou.jpg",
@@ -1023,6 +1035,18 @@
       "image": "/assets/images/events/London.jpg",
       "date": "2018-09-26",
       "url": "https://skillsmatter.com/conferences/10160-cloudnative-london-2018#program"
+  },
+
+  { "title": "Intro to DC/OS (Dutch Mesos Users Group Rotterdam)",
+      "image": "/assets/images/events/Rotterdam.jpg",
+      "date": "2018-09-26",
+      "url": "https://www.meetup.com/Dutch-Mesos-User-Group/events/253207468/"
+  },
+  
+  { "title": "Intro to DC/OS (Dutch Mesos Users Group Amsterdam)",
+      "image": "/assets/images/events/Amsterdam.jpg",
+      "date": "2018-09-27",
+      "url": "https://www.meetup.com/Dutch-Mesos-User-Group/events/254376826/"
   },
 
   { "title": "Batch to pipelines (IP Expo Europe)",
