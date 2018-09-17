@@ -41,7 +41,7 @@
   },
   {
     "featured": false,
-    "title": "Building an IoT Pipeline",
+    "title": "Deploying a Load-Balanced Data Pipeline",
     "description": "Deploy a containerized Ruby on Rails app, and analyze the data it produces.",
     "dcos_version": ["1.8","1.9","1.10"],
     "difficulty": "Intermediate",
