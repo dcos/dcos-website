@@ -1049,6 +1049,12 @@
       "url": "https://www.meetup.com/Dutch-Mesos-User-Group/events/254376826/"
   },
 
+  { "title": "Building & Operating an Open Source Data Science Platform (ML Summit Berlin)",
+      "image": "/assets/images/events/Berlin.jpg",
+      "date": "2018-10-01",
+      "url": "https://ml-summit.de/machine-learning-basics-and-tools/building-and-operating-an-open-source-data-science-platform/"
+  },
+
   { "title": "Batch to pipelines (IP Expo Europe)",
       "image": "/assets/images/events/London2.jpg",
       "date": "2018-10-03",
