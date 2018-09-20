@@ -3,6 +3,9 @@
     "title": "DC/OS 1.12 Beta1",
     "date": "2018-09-20",
     "description": "DC/OS 1.12 beta releases are for testing only and should not be run in production. Please feel free to explore the beta release, and file any issues you find in Jira. Your help looking for bugs is much appreciated!",
+    "features": [
+      "Details coming soon."
+    ],
     "downloadlink": {
       "amazon": "https://downloads.dcos.io/dcos/EarlyAccess/",
       "azure": "https://downloads.dcos.io/dcos/EarlyAccess/azure.html",
