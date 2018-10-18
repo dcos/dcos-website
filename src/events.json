@@ -1090,6 +1090,12 @@
       "date": "2018-10-22",
       "url": "https://allthingsopen.org/talk/challenges-to-the-open-source-model-today/"
   },
+  
+  { "title": "2018 Korea Mesosphere DC/OS",
+      "image": "/assets/images/events/Seoul.jpg",
+      "date": "2018-10-26",
+      "url": "http://www.dcos.or.kr/conference-2018.html"
+  },
 
   { "title": "MesosCon 2018",
       "image": "/assets/images/events/San_Francisco.jpg",
@@ -1101,6 +1107,12 @@
       "image": "/assets/images/events/Seattle.jpg",
       "date": "2018-11-09",
       "url": "http://seagl.org/news/2018/05/02/2018_keynoter-elizabeth_krumbach_joseph.html"
+  },
+  
+  { "title": "All you need to build secure ML pipelines (Big Data Spain)",
+      "image": "/assets/images/events/Madrid.jpg",
+      "date": "2018-11-14",
+      "url": "https://www.bigdataspain.org/2018/talk/all-you-need-to-build-and-run-a-modern-application"
   },
 
   { "title": "Rust and Skaffold for Iterative Development on Kubernetes (KubeCon China)",
@@ -1120,6 +1132,13 @@
       "date": "2018-11-14",
       "url": "https://www.itnextsummit.com/speakers/matt-jarvis/"
   },
+  
+  { "title": "A Basic Kubernetes Debugging Kit (KubeCon NA 2018)",
+      "image": "/assets/images/events/Seattle.jpg",
+      "date": "2018-12-11",
+      "url": "https://kccna18.sched.com/event/GrYA"
+  },
+
 
   { "title": "",
       "image": "/assets/images/events/.jpg",
