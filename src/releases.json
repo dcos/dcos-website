@@ -1,17 +1,27 @@
 [
   {
-    "title": "DC/OS 1.12 Beta1",
-    "date": "2018-09-20",
-    "description": "DC/OS 1.12 beta releases are for testing only and should not be run in production. Please feel free to explore the beta release, and file any issues you find in Jira. Your help looking for bugs is much appreciated!",
+    "title": "DC/OS 1.12",
+    "date": "2018-10-25",
+    "description": "Mesosphere DC/OS 1.12 includes the Mesosphere Kubernetes Engine (MKE), beta release of the Mesosphere Jupyter Service (MJS), a new metrics pipeline, and SELinux support",
     "features": [
-      "Details coming soon."
+      "High density Multi-Kubernetes with Mesosphere Kubernetes Engine (MKE)",
+      "Secure, Cloud-Native Jupyter Notebooks with Mesosphere Jupyter Service (MJS) BETA",
+      "Easy, simplified installation & upgrade of DC/OS with the new Universal Installer",
+      "Supported installation & operation of SELinux on DC/OS clusters",
+      "Expanded upgrade paths within supported minor and major versions of DC/OS",
+      "Flexible, configurable metrics pipeline with multiple output formats",
+      "Apache Mesos 1.7 with significant performance improvements",
+      "Marathon 1.7 with Improved Preferential GPU Scheduling",
+      "Enabled env-var secrets to attach to Job",
+      "UI/UX Enhancements with over 100+ bug fixes"
     ],
     "downloadlink": {
-      "amazon": "https://downloads.dcos.io/dcos/EarlyAccess/",
-      "azure": "https://downloads.dcos.io/dcos/EarlyAccess/azure.html",
-      "direct": "https://downloads.dcos.io/dcos/EarlyAccess/dcos_generate_config.sh"
+      "amazon": "https://downloads.dcos.io/dcos/stable/1.12.0/aws.html",
+      "azure": "https://downloads.dcos.io/dcos/stable/1.12.0/azure.html",
+      "direct": "https://downloads.dcos.io/dcos/stable/1.12.0/dcos_generate_config.sh"
     },
     "subreleases": [
+      { "name": "1.12.0", "url": "https://docs.mesosphere.com/1.12/release-notes/1.12/"},
       { "name": "1.12.0-beta1", "url": "https://docs.mesosphere.com/1.12/release-notes/1.12.0-beta1/"}
     ]
   },
