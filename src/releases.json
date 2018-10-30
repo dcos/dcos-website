@@ -23,7 +23,8 @@
     "subreleases": [
       { "name": "1.12.0", "url": "https://docs.mesosphere.com/1.12/release-notes/1.12/"},
       { "name": "1.12.0-beta1", "url": "https://docs.mesosphere.com/1.12/release-notes/1.12.0-beta1/"}
-    ]
+    ],
+    "docslink": "https://docs.mesosphere.com/1.12/"
   },
   {
     "title": "DC/OS 1.11",
