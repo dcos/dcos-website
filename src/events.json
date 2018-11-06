@@ -1082,13 +1082,13 @@
   { "title": "Continuous Delivery With Containers & DC/OS (All Things Open)",
       "image": "/assets/images/events/Raleigh_2.jpg",
       "date": "2018-10-22",
-      "url": "https://allthingsopen.org/talk/continuous-delivery-with-containers-and-dc-os/"
+      "url": "https://www.youtube.com/watch?v=uDTVJKhjK2Y"
   },
 
   { "title": "Challenges to the open source model today (All Things Open)",
       "image": "/assets/images/events/Raleigh.jpg",
       "date": "2018-10-22",
-      "url": "https://allthingsopen.org/talk/challenges-to-the-open-source-model-today/"
+      "url": "https://www.slideshare.net/AllThingsOpen/challenges-to-the-open-source-model-today"
   },
   
   { "title": "2018 Korea Mesosphere DC/OS",
