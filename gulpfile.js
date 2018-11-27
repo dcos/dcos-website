@@ -40,8 +40,8 @@ const excerpts = require('metalsmith-excerpts')
 // general build settings
 //
 
-const docsVersions = ['1.7', '1.8', '1.9', '1.10', '1.11']
-const currentDevVersion = '1.11'
+const docsVersions = ['1.7', '1.8', '1.9', '1.10', '1.11', '1.12']
+const currentDevVersion = '1.13'
 
 const cssTimestamp = new Date().getTime()
 const paths = {

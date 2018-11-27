@@ -2,7 +2,6 @@
 title: Mesosphere DC/OS Free Hands-on Workshop
 date: 2017-12-15
 speaker: Kelly Bailey, Mesosphere
-speakerurl: https://twitter.com/Klb42Kelly
 eventimage: Boston.jpg
 eventlocation: Boston MA, USA
 eventname: Instructor-led Training
