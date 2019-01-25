@@ -42,11 +42,12 @@
 
     ],
     "downloadlink": {
-      "amazon": "https://downloads.dcos.io/dcos/stable/1.11.8/aws.html",
-      "azure": "https://downloads.dcos.io/dcos/stable/1.11.8/azure.html",
-      "direct": "https://downloads.dcos.io/dcos/stable/1.11.8/dcos_generate_config.sh"
+      "amazon": "https://downloads.dcos.io/dcos/stable/1.11.9/aws.html",
+      "azure": "https://downloads.dcos.io/dcos/stable/1.11.9/azure.html",
+      "direct": "https://downloads.dcos.io/dcos/stable/1.11.9/dcos_generate_config.sh"
     },
     "subreleases": [
+      { "name": "1.11.8", "url": "https://docs.mesosphere.com/1.11/release-notes/1.11.9/"},
       { "name": "1.11.8", "url": "https://docs.mesosphere.com/1.11/release-notes/1.11.8/"},
       { "name": "1.11.7", "url": "https://docs.mesosphere.com/1.11/release-notes/1.11.7/"},
       { "name": "1.11.6", "url": "https://docs.mesosphere.com/1.11/release-notes/1.11.6/"},
