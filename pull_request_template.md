@@ -2,7 +2,7 @@
 <!-- Link to JIRA issue -->
 
 ## Urgency
-- [ ] Blocker <!-- Tag @pleia2 & @mattj-io for review -->
+- [ ] Blocker <!-- Tag @yankcrime & @mattj-io for review -->
 - [ ] High
 - [ ] Medium
 
