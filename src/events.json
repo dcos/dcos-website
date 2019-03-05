@@ -1022,7 +1022,7 @@
   { "title": "Batch to Pipelines (IP Expo Nordics)",
       "image": "/assets/images/events/Stockholm.jpg",
       "date": "2018-09-20",
-      "url": "http://www.ipexponordic.com/2018-Speakers/Matt-Jarvis"
+      "url": "/events/2018/ip-expo-nordics-apache-mesos-and-dc-os-for-deploying-cloud-native-applications"
   },
 
   { "title": "The Quest for Data Science Principles (Bay Area MLFlow Meetup)",
@@ -1034,7 +1034,7 @@
   { "title": "Batch to pipelines (Cloud Native London)",
       "image": "/assets/images/events/London.jpg",
       "date": "2018-09-26",
-      "url": "https://skillsmatter.com/conferences/10160-cloudnative-london-2018#program"
+      "url": "https://skillsmatter.com/skillscasts/12109-from-batch-to-pipelines-why-apache-mesos-and-dc-os-are-a-solution-for-emerging-patterns-in-cloud-native-applications#video"
   },
 
   { "title": "Intro to DC/OS (Dutch Mesos Users Group Rotterdam)",
@@ -1058,7 +1058,7 @@
   { "title": "Batch to pipelines (IP Expo Europe)",
       "image": "/assets/images/events/London2.jpg",
       "date": "2018-10-03",
-      "url": "https://www.ipexpoeurope.com/2018-Speakers/Matt-Jarvis"
+      "url": "/events/2018/ip-expo-apache-mesos-and-dc-os-for-deploying-cloud-native-applications"
   },
 
   { "title": "Keynote: Open Source CI/CD (Ohio LinuxFest)",
