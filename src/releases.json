@@ -23,8 +23,7 @@
     "subreleases": [
       { "name": "1.12.2", "url": "https://docs.mesosphere.com/1.12/release-notes/1.12.2/"},
       { "name": "1.12.1", "url": "https://docs.mesosphere.com/1.12/release-notes/1.12.1/"},
-      { "name": "1.12.0", "url": "https://docs.mesosphere.com/1.12/release-notes/1.12/"},
-      { "name": "1.12.0-beta1", "url": "https://docs.mesosphere.com/1.12/release-notes/1.12.0-beta1/"}
+      { "name": "1.12.0", "url": "https://docs.mesosphere.com/1.12/release-notes/1.12/"}
     ]
   },
   {
