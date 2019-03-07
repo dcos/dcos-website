@@ -1130,7 +1130,7 @@
   { "title": "Batch to pipelines (ITNext Summit)",
       "image": "/assets/images/events/Amsterdam.jpg",
       "date": "2018-11-14",
-      "url": "https://www.itnextsummit.com/speakers/matt-jarvis/"
+      "url": "/events/2018/it-next-summit-from-batch-to-pipelines"
   },
   
   { "title": "A Basic Kubernetes Debugging Kit (KubeCon NA 2018)",
