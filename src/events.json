@@ -1139,6 +1139,17 @@
       "url": "https://kccna18.sched.com/event/GrYA"
   },
 
+  { "title": "Dealing with Kubesprawl - Tetris style !",
+      "image": "/assets/images/events/London.jpg",
+      "date": "2019-04-01",
+      "url": "https://openinfradays.co.uk"
+  },
+
+  { "title": "Dealing with Kubesprawl - Tetris style !",
+      "image": "/assets/images/events/Denver.jpg",
+      "date": "2019-04-29",
+      "url": "https://www.openstack.org/summit/denver-2019/summit-schedule/events/23051/dealing-with-kubesprawl-tetris-style"
+  },
 
   { "title": "",
       "image": "/assets/images/events/.jpg",
