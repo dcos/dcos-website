@@ -3,5 +3,5 @@ Authors
 
 Handle | Name | Email | Status
 -------|-----|-------|--------
-[ashenden](github.com/ashenden) | John Ashenden | john.ashenden@mesosphere.com | Current Maintainer
-[judithpatudith](https://github.com/judithpatudith) | Judith Malnick | jmalnick@mesosphere.io | Current Maintainer
+[mattj-io](github.com/mattj-io) | Matt Jarvis | mjarvis@mesosphere.com | Current Maintainer
+[yankcrime](github.com/yankcrime) | Nick Jones | njones@mesosphere.com | Current Maintainer
