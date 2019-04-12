@@ -1139,16 +1139,46 @@
       "url": "https://kccna18.sched.com/event/GrYA"
   },
 
-  { "title": "Dealing with Kubesprawl - Tetris style !",
+  { "title": "Dealing with Kubesprawl - Tetris style ! (OpenInfraDays UK)",
       "image": "/assets/images/events/London.jpg",
       "date": "2019-04-01",
       "url": "https://openinfradays.co.uk"
   },
 
-  { "title": "Dealing with Kubesprawl - Tetris style !",
+  { "title": "2019 Korea Mesosphere DC/OS Conference",
+      "image": "/assets/images/events/Seoul.jpg",
+      "date": "2019-04-15",
+      "url": "http://dcos.or.kr/conference-2019.html"
+  },
+
+  { "title": "Dealing with Kubesprawl - Tetris style ! (Open Infrastructure Summit)",
       "image": "/assets/images/events/Denver.jpg",
       "date": "2019-04-29",
       "url": "https://www.openstack.org/summit/denver-2019/summit-schedule/events/23051/dealing-with-kubesprawl-tetris-style"
+  },
+  
+  { "title": "Dealing with Kubesprawl - Tetris style ! (Cloud Native Manchester)",
+      "image": "/assets/images/events/Manchester.jpg",
+      "date": "2019-05-09",
+      "url": "https://www.meetup.com/Cloud-Native-Manchester/events/260476861/"
+  },
+
+  { "title": "Introducing Kudo, Kubernetes Operators the easy way (OSDC Berlin)",
+      "image": "/assets/images/events/Berlin.jpg",
+      "date": "2019-05-13",
+      "url": "https://osdc.de/events/introducing-kudo-kubernetes-operators-the-easy-way/"
+  },
+  
+  { "title": "Dealing with Kubesprawl - Tetris style ! (DevTalks Romania)",
+      "image": "/assets/images/events/Bucharest.jpg",
+      "date": "2019-06-06",
+      "url": "https://www.devtalks.ro/bucharest/"
+  },
+  
+  { "title": "From Batch to Pipelines (Open Source Automation Days Munich)",
+      "image": "/assets/images/events/Munich.jpg",
+      "date": "2019-10-15",
+      "url": "https://osad-munich.org/from-batch-to-pipelines-why-apache-mesos-and-dc-os-are-a-solution-for-emerging-patterns-in-cloud-native-apps/"
   },
 
   { "title": "",
