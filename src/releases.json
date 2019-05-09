@@ -1,5 +1,27 @@
 [
   {
+    "title": "DC/OS 1.13",
+    "date": "2019-05-13",
+    "description": "Mesosphere DC/OS 1.13 includes new features and capabilities to enhance the installation and deployment experience, simplify cluster administration, increase operational productivity and efficiency, and provide additional monitoring, alerting, logging, and reporting for better visibility into cluster activity.",
+    "features": [
+      "Unified service accounts and authentication architecture",
+      "Monitoring and metrics for cluster operations",
+      "Extended support for workloads that take advantage of accelerated processing provided by graphic processing units (GPU)",
+      "Improvements to the Universal installer and the upgrade process",
+      "New features and options for command-line programs",
+      "New dashboard options for monitoring cluster performance"
+    ],
+    "downloadlink": {
+      "amazon": "https://docs.mesosphere.com/1.13/installing/evaluation/aws/",
+      "azure": "https://docs.mesosphere.com/1.13/installing/evaluation/azure/",
+      "direct": "https://downloads.dcos.io/dcos/stable/1.13.0/dcos_generate_config.sh"
+    },
+    "subreleases": [
+      { "name": "1.13.0", "url": "https://docs.mesosphere.com/1.13/release-notes/1.13.0/"}
+    ],
+    "docslink": "https://docs.mesosphere.com/1.13/"
+  },
+  {
     "title": "DC/OS 1.12",
     "date": "2018-10-25",
     "description": "Mesosphere DC/OS 1.12 includes the Mesosphere Kubernetes Engine (MKE), beta release of the Mesosphere Jupyter Service (MJS), a new metrics pipeline, and SELinux support",
