@@ -162,7 +162,8 @@ table.releases {
     }
 
     a:nth-child(2),
-    a:nth-child(3) {
+    a:nth-child(3),
+    a:nth-child(4) {
       &:before {
         content: '•';
         position: absolute;
@@ -198,7 +199,7 @@ table.releases {
       }
 
       a {
-        margin: 10px 5px;
+        margin: 10px 2px;
       }
   }
 

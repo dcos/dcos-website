@@ -14,6 +14,7 @@
     "downloadlink": {
       "amazon": "https://docs.mesosphere.com/1.13/installing/evaluation/aws/",
       "azure": "https://docs.mesosphere.com/1.13/installing/evaluation/azure/",
+      "google": "https://docs.mesosphere.com/1.13/installing/evaluation/gcp/",
       "direct": "https://downloads.dcos.io/dcos/stable/1.13.0/dcos_generate_config.sh"
     },
     "subreleases": [

@@ -23,6 +23,7 @@ block content
               div.release-buttons.pb3
                 a.cta.cta--button.inline-block(href='https://docs.mesosphere.com/1.13/installing/evaluation/aws/', target='_blank') Amazon
                 a.cta.cta--button.inline-block(href='https://docs.mesosphere.com/1.13/installing/evaluation/azure/', target='_blank') Azure
+                a.cta.cta--button.inline-block(href='https://docs.mesosphere.com/1.13/installing/evaluation/gcp/', target='_blank') Google
                 a.cta.cta--button.inline-block(href='https://downloads.dcos.io/dcos/stable/dcos_generate_config.sh') Download
 
           .release-card.release-rc.col.col-12.md-col-6.relative.mb1.md-pl1
@@ -42,8 +43,9 @@ block content
               p.release-version.pb0 DC/OS 1.14-dev
 
               div.download-buttons.mb2
-                a.mx1(href='https://docs.mesosphere.com/1.12/installing/evaluation/mesosphere-supported-methods/aws/', target='_blank') Amazon
-                a.mx1(href='https://docs.mesosphere.com/1.12/installing/evaluation/mesosphere-supported-methods/azure/', target='_blank') Azure
+                a.mx1(href='https://docs.mesosphere.com/1.13/installing/evaluation/mesosphere-supported-methods/aws/', target='_blank') Amazon
+                a.mx1(href='https://docs.mesosphere.com/1.13/installing/evaluation/mesosphere-supported-methods/azure/', target='_blank') Azure
+                a.mx1(href='https://docs.mesosphere.com/1.13/installing/evaluation/mesosphere-supported-methods/gcp/', target='_blank') Google
                 a.mx1(href='https://downloads.dcos.io/dcos/testing/master/dcos_generate_config.sh') Download
 
 
@@ -69,6 +71,8 @@ block content
                   a.mr2(href='#{ release.downloadlink.amazon }', target='_blank') Amazon
                 if(release.downloadlink.azure)
                   a.mr2(href='#{ release.downloadlink.azure }', target='_blank') Azure
+                if(release.downloadlink.google)
+                  a.mr2(href='#{ release.downloadlink.google }', target='_blank') Google
                 if(release.downloadlink.direct)
                   a.mr2(href='#{ release.downloadlink.direct }') Download
             a(href!=release.subreleases[0].url target='_blank').mb2.small.cta.cta--text.inline-block #{ release.subreleases[0].name } Release Notes
