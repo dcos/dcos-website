@@ -5,13 +5,55 @@
     "image": "/assets/images/demos/fraud-detect.jpg",
     "name": "Fraud Detection with Apache Flink and Kubernetes",
     "use_cases": ["Fast Data, Microservices"],
-    "dcos_version": ["1.8", "1.9", "1.10", "1.11"],
+    "dcos_version": ["1.10", "1.11", "1.12", "1.13"],
     "language": ["Go, Java"],
     "description": "Use Apache Flink, Apache Kafka, and Kubernetes to detect fraud in streams of financials transactions.",
     "packages": ["Apache Flink", "Apache Kafka", "Kubernetes"],
     "youtube_id": "aErmh1u7r2A",
     "callouts": {
-      "GitHub": "https://github.com/dcos/demos/tree/master/flink-k8s",
+      "GitHub": "https://github.com/dcos/demos/tree/master/flink-k8s"
+    }
+  },
+  {
+    "featured": false,
+    "image": "/assets/images/demos/Bus.jpg",
+    "name": "Bus Tracking SMACK Stack",
+    "use_cases": ["IoT", "Fast Data", "Full Stack", "SMACK"],
+    "dcos_version": ["1.10", "1.11", "1.12", "1.13"],
+    "language": ["Scala", "Javascript"],
+    "description": "Receive live data from the Los Angeles METRO API. The data is streamed to Apache Kafka and consumed by Apache Spark and an Akka application. This demo shows you how to run the SMACK stack on DC/OS with a stream of data.",
+    "packages": ["Apache Kafka", "Apache Cassandra", "Apache Spark", "Akka"],
+    "youtube_id": "VNHIjjpfdZc",
+    "callouts": {
+      "GitHub": "https://github.com/dcos/demos/tree/master/fastdata-iot"
+    }
+  },
+  {
+    "featured": false,
+    "image": "/assets/images/demos/fraud-detect.jpg",
+    "name": "Fraud Detection with Apache Flink",
+    "use_cases": ["Fast Data"],
+    "dcos_version": ["1.10", "1.11", "1.12", "1.13"],
+    "language": ["Go, Java"],
+    "description": "During this demo we use Apache Flink and Apache Kafka to detect fraud in streams of financials transactions.",
+    "packages": ["Apache Flink", "Apache Kafka"],
+    "youtube_id": "bwPXNlVHTeI",
+    "callouts": {
+      "GitHub": "https://github.com/dcos/demos/tree/master/flink"
+    }
+  },
+  {
+    "featured": false,
+    "image": "/assets/images/demos/mqtt.jpg",
+    "name": "Highly Scalable IOT architecture using MongoDB",
+    "use_cases": ["IOT"],
+    "dcos_version": ["1.11", "1.12"],
+    "language": ["Python"],
+    "description": "In this demo we will use Mosquitto and Percona MongoDB to build a highly scalable IOT platform",
+    "packages": ["Marathon", "Percona MongoDB"],
+    "youtube_id": "",
+    "callouts": {
+      "GitHub": "https://github.com/dcos/demos/tree/master/mqtt-iot"
     }
   },
   {
@@ -25,7 +67,7 @@
     "packages": ["Apache Cassandra", "Apache Kafka", "Marathon-LB", "Zeppelin"],
     "youtube_id": "6ZeBukvKmFI",
     "callouts": {
-      "GitHub": "https://github.com/dcos/demos/tree/master/tweeter",
+      "GitHub": "https://github.com/dcos/demos/tree/master/tweeter"
     }
   },
   {
@@ -39,7 +81,7 @@
     "packages": ["Java", "Spring Boot", "Nexus"],
     "youtube_id": "iPmx_OJQ6PI",
     "callouts": {
-      "GitHub": "https://github.com/dcos/demos/tree/master/springboot/",
+      "GitHub": "https://github.com/dcos/demos/tree/master/springboot/"
     }
   },
   {
@@ -53,35 +95,7 @@
     "packages": ["Jenkins", "GitLab"],
     "youtube_id": "PshxWDlnSuU",
     "callouts": {
-      "GitHub": "https://github.com/dcos/demos/tree/master/cicd/",
-    }
-  },
-  {
-    "featured": false,
-    "image": "/assets/images/demos/fraud-detect.jpg",
-    "name": "Fraud Detection with Apache Flink",
-    "use_cases": ["Fast Data"],
-    "dcos_version": ["1.8", "1.9", "1.10", "1.11"],
-    "language": ["Go, Java"],
-    "description": "During this demo we use Apache Flink and Apache Kafka to detect fraud in streams of financials transactions.",
-    "packages": ["Apache Flink", "Apache Kafka"],
-    "youtube_id": "bwPXNlVHTeI",
-    "callouts": {
-      "GitHub": "https://github.com/dcos/demos/tree/master/flink",
-    }
-  },
-  {
-    "featured": false,
-    "image": "/assets/images/demos/mqtt.jpg",
-    "name": "Highly Scalable IOT architecture using MongoDB",
-    "use_cases": ["IOT"],
-    "dcos_version": ["1.11"],
-    "language": ["Python"],
-    "description": "In this demo we will use Mosquitto and Percona MongoDB to build a highly scalable IOT platform",
-    "packages": ["Marathon", "Percona MongoDB"],
-    "youtube_id": "",
-    "callouts": {
-      "GitHub": "https://github.com/dcos/demos/tree/master/mqtt-iot",
+      "GitHub": "https://github.com/dcos/demos/tree/master/cicd/"
     }
   },
   {
@@ -95,7 +109,7 @@
     "packages": ["Apache Kafka", "Apache Spark"],
     "youtube_id": "",
     "callouts": {
-      "GitHub": "https://github.com/dcos/demos/tree/master/nlp",
+      "GitHub": "https://github.com/dcos/demos/tree/master/nlp"
     }
   },
   {
@@ -109,7 +123,7 @@
     "packages": ["Apache Kafka", "InfluxDB", "Grafana"],
     "youtube_id": "",
     "callouts": {
-      "GitHub": "https://github.com/dcos/demos/tree/master/fintrans",
+      "GitHub": "https://github.com/dcos/demos/tree/master/fintrans"
     }
   },
   {
@@ -123,7 +137,7 @@
     "packages": ["Apache Kafka", "InfluxDB", "Grafana"],
     "youtube_id": "",
     "callouts": {
-      "GitHub": "https://github.com/dcos/demos/tree/master/sensoranalytics",
+      "GitHub": "https://github.com/dcos/demos/tree/master/sensoranalytics"
     }
   },
   {
@@ -137,21 +151,7 @@
     "packages": ["Minio", "WordPress", "Apache Drill"],
     "youtube_id": "",
     "callouts": {
-    "GitHub": "https://github.com/dcos/demos/tree/master/applogs",
-    }
-  },
-  {
-    "featured": false,
-    "image": "/assets/images/demos/Bus.jpg",
-    "name": "Bus Tracking SMACK Stack",
-    "use_cases": ["IoT", "Fast Data", "Full Stack", "SMACK"],
-    "dcos_version": ["1.8", "1.9"],
-    "language": ["Scala", "Javascript"],
-    "description": "Receive live data from the Los Angeles METRO API. The data is streamed to Apache Kafka and consumed by Apache Spark and an Akka application. This demo shows you how to run the SMACK stack on DC/OS with a stream of data.",
-    "packages": ["Apache Kafka", "Apache Cassandra", "Apache Spark", "Akka"],
-    "youtube_id": "VNHIjjpfdZc",
-    "callouts": {
-      "GitHub": "https://github.com/dcos/demos/tree/master/fastdata-iot",
+    "GitHub": "https://github.com/dcos/demos/tree/master/applogs"
     }
   }
 ]
