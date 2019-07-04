@@ -15,9 +15,10 @@
       "amazon": "https://docs.mesosphere.com/1.13/installing/evaluation/aws/",
       "azure": "https://docs.mesosphere.com/1.13/installing/evaluation/azure/",
       "google": "https://docs.mesosphere.com/1.13/installing/evaluation/gcp/",
-      "direct": "https://downloads.dcos.io/dcos/stable/1.13.1/dcos_generate_config.sh"
+      "direct": "https://downloads.dcos.io/dcos/stable/1.13.2/dcos_generate_config.sh"
     },
     "subreleases": [
+      { "name": "1.13.2", "url": "https://docs.mesosphere.com/1.13/release-notes/1.13.2/"},
       { "name": "1.13.1", "url": "https://docs.mesosphere.com/1.13/release-notes/1.13.1/"},
       { "name": "1.13.0", "url": "https://docs.mesosphere.com/1.13/release-notes/1.13.0/"}
     ],
