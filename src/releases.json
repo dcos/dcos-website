@@ -12,18 +12,18 @@
       "New dashboard options for monitoring cluster performance"
     ],
     "downloadlink": {
-      "amazon": "https://docs.mesosphere.com/1.13/installing/evaluation/aws/",
-      "azure": "https://docs.mesosphere.com/1.13/installing/evaluation/azure/",
-      "google": "https://docs.mesosphere.com/1.13/installing/evaluation/gcp/",
+      "amazon": "https://docs.d2iq.com/mesosphere/dcos/1.13/installing/evaluation/aws/",
+      "azure": "https://docs.d2iq.com/mesosphere/dcos/1.13/installing/evaluation/azure/",
+      "google": "https://docs.d2iq.com/mesosphere/dcos/1.13/installing/evaluation/gcp/",
       "direct": "https://downloads.dcos.io/dcos/stable/1.13.3/dcos_generate_config.sh"
     },
     "subreleases": [
-      { "name": "1.13.3", "url": "https://docs.mesosphere.com/1.13/release-notes/1.13.3/"},
-      { "name": "1.13.2", "url": "https://docs.mesosphere.com/1.13/release-notes/1.13.2/"},
-      { "name": "1.13.1", "url": "https://docs.mesosphere.com/1.13/release-notes/1.13.1/"},
-      { "name": "1.13.0", "url": "https://docs.mesosphere.com/1.13/release-notes/1.13.0/"}
+      { "name": "1.13.3", "url": "https://docs.d2iq.com/mesosphere/dcos/1.13/release-notes/1.13.3/"},
+      { "name": "1.13.2", "url": "https://docs.d2iq.com/mesosphere/dcos/1.13/release-notes/1.13.2/"},
+      { "name": "1.13.1", "url": "https://docs.d2iq.com/mesosphere/dcos/1.13/release-notes/1.13.1/"},
+      { "name": "1.13.0", "url": "https://docs.d2iq.com/mesosphere/dcos/1.13/release-notes/1.13.0/"}
     ],
-    "docslink": "https://docs.mesosphere.com/1.13/"
+    "docslink": "https://docs.d2iq.com/mesosphere/dcos/1.13/"
   },
   {
     "title": "DC/OS 1.12",
@@ -47,13 +47,13 @@
       "direct": "https://downloads.dcos.io/dcos/stable/1.12.4/dcos_generate_config.sh"
     },
     "subreleases": [
-      { "name": "1.12.4", "url": "https://docs.mesosphere.com/1.12/release-notes/1.12.4/"},
-      { "name": "1.12.3", "url": "https://docs.mesosphere.com/1.12/release-notes/1.12.3/"},
-      { "name": "1.12.2", "url": "https://docs.mesosphere.com/1.12/release-notes/1.12.2/"},
-      { "name": "1.12.1", "url": "https://docs.mesosphere.com/1.12/release-notes/1.12.1/"},
-      { "name": "1.12.0", "url": "https://docs.mesosphere.com/1.12/release-notes/1.12/"}
+      { "name": "1.12.4", "url": "https://docs.d2iq.com/mesosphere/dcos/1.12/release-notes/1.12.4/"},
+      { "name": "1.12.3", "url": "https://docs.d2iq.com/mesosphere/dcos/1.12/release-notes/1.12.3/"},
+      { "name": "1.12.2", "url": "https://docs.d2iq.com/mesosphere/dcos/1.12/release-notes/1.12.2/"},
+      { "name": "1.12.1", "url": "https://docs.d2iq.com/mesosphere/dcos/1.12/release-notes/1.12.1/"},
+      { "name": "1.12.0", "url": "https://docs.d2iq.com/mesosphere/dcos/1.12/release-notes/1.12.0/"}
     ],
-    "docslink": "https://docs.mesosphere.com/1.12/"
+    "docslink": "https://docs.d2iq.com/mesosphere/dcos/1.12/"
   },
   {
     "title": "DC/OS 1.11",
@@ -76,22 +76,22 @@
       "direct": "https://downloads.dcos.io/dcos/stable/1.11.11/dcos_generate_config.sh"
     },
     "subreleases": [
-      { "name": "1.11.11", "url": "https://docs.mesosphere.com/1.11/release-notes/1.11.11/"},
-      { "name": "1.11.10", "url": "https://docs.mesosphere.com/1.11/release-notes/1.11.10/"},
-      { "name": "1.11.9", "url": "https://docs.mesosphere.com/1.11/release-notes/1.11.9/"},
-      { "name": "1.11.8", "url": "https://docs.mesosphere.com/1.11/release-notes/1.11.8/"},
-      { "name": "1.11.7", "url": "https://docs.mesosphere.com/1.11/release-notes/1.11.7/"},
-      { "name": "1.11.6", "url": "https://docs.mesosphere.com/1.11/release-notes/1.11.6/"},
-      { "name": "1.11.5", "url": "https://docs.mesosphere.com/1.11/release-notes/1.11.5/"},
-      { "name": "1.11.4", "url": "https://docs.mesosphere.com/1.11/release-notes/1.11.4/"},
-      { "name": "1.11.3", "url": "https://docs.mesosphere.com/1.11/release-notes/1.11.3/"},
-      { "name": "1.11.2", "url": "https://docs.mesosphere.com/1.11/release-notes/1.11.2/"},
-      { "name": "1.11.1", "url": "https://docs.mesosphere.com/1.11/release-notes/1.11.1/"},
-      { "name": "1.11.0", "url": "https://docs.mesosphere.com/1.11/release-notes/1.11.0/"},
-      { "name": "1.11.0-rc4", "url": "https://docs.mesosphere.com/1.11/release-notes/1.11.0-rc4/"},
-      { "name": "1.11.0-rc1", "url": "https://docs.mesosphere.com/1.11/release-notes/1.11.0-rc1/"}
+      { "name": "1.11.11", "url": "https://docs.d2iq.com/mesosphere/dcos/1.11/release-notes/1.11.11/"},
+      { "name": "1.11.10", "url": "https://docs.d2iq.com/mesosphere/dcos/1.11/release-notes/1.11.10/"},
+      { "name": "1.11.9", "url": "https://docs.d2iq.com/mesosphere/dcos/1.11/release-notes/1.11.9/"},
+      { "name": "1.11.8", "url": "https://docs.d2iq.com/mesosphere/dcos/1.11/release-notes/1.11.8/"},
+      { "name": "1.11.7", "url": "https://docs.d2iq.com/mesosphere/dcos/1.11/release-notes/1.11.7/"},
+      { "name": "1.11.6", "url": "https://docs.d2iq.com/mesosphere/dcos/1.11/release-notes/1.11.6/"},
+      { "name": "1.11.5", "url": "https://docs.d2iq.com/mesosphere/dcos/1.11/release-notes/1.11.5/"},
+      { "name": "1.11.4", "url": "https://docs.d2iq.com/mesosphere/dcos/1.11/release-notes/1.11.4/"},
+      { "name": "1.11.3", "url": "https://docs.d2iq.com/mesosphere/dcos/1.11/release-notes/1.11.3/"},
+      { "name": "1.11.2", "url": "https://docs.d2iq.com/mesosphere/dcos/1.11/release-notes/1.11.2/"},
+      { "name": "1.11.1", "url": "https://docs.d2iq.com/mesosphere/dcos/1.11/release-notes/1.11.1/"},
+      { "name": "1.11.0", "url": "https://docs.d2iq.com/mesosphere/dcos/1.11/release-notes/1.11.0/"},
+      { "name": "1.11.0-rc4", "url": "https://docs.d2iq.com/mesosphere/dcos/1.11/release-notes/1.11.0-rc4/"},
+      { "name": "1.11.0-rc1", "url": "https://docs.d2iq.com/mesosphere/dcos/1.11/release-notes/1.11.0-rc1/"}
     ],
-    "docslink": "https://docs.mesosphere.com/1.11/"
+    "docslink": "https://docs.d2iq.com/mesosphere/dcos/1.11/"
   },
   {
     "title": "DC/OS 1.10",
@@ -112,14 +112,14 @@
       "direct": "https://downloads.dcos.io/dcos/stable/1.10.11/dcos_generate_config.sh"
     },
     "subreleases": [
-      { "name": "1.10.11", "url": "https://docs.mesosphere.com/1.10/release-notes/1.10.11/"},
-      { "name": "1.10.10", "url": "https://docs.mesosphere.com/1.10/release-notes/1.10.10/"},
-      { "name": "1.10.9", "url": "https://docs.mesosphere.com/1.10/release-notes/1.10.9/"},
-      { "name": "1.10.8", "url": "https://docs.mesosphere.com/1.10/release-notes/1.10.8/"},
-      { "name": "1.10.7", "url": "https://docs.mesosphere.com/1.10/release-notes/1.10.7/"},
-      { "name": "1.10.6", "url": "https://docs.mesosphere.com/1.10/release-notes/1.10.6/"},
-      { "name": "1.10.5", "url": "https://docs.mesosphere.com/1.10/release-notes/1.10.5/"},
-      { "name": "1.10.4", "url": "https://docs.mesosphere.com/1.10/release-notes/1.10.4/"},
+      { "name": "1.10.11", "url": "https://docs.d2iq.com/mesosphere/dcos/1.10/release-notes/1.10.11/"},
+      { "name": "1.10.10", "url": "https://docs.d2iq.com/mesosphere/dcos/1.10/release-notes/1.10.10/"},
+      { "name": "1.10.9", "url": "https://docs.d2iq.com/mesosphere/dcos/1.10/release-notes/1.10.9/"},
+      { "name": "1.10.8", "url": "https://docs.d2iq.com/mesosphere/dcos/1.10/release-notes/1.10.8/"},
+      { "name": "1.10.7", "url": "https://docs.d2iq.com/mesosphere/dcos/1.10/release-notes/1.10.7/"},
+      { "name": "1.10.6", "url": "https://docs.d2iq.com/mesosphere/dcos/1.10/release-notes/1.10.6/"},
+      { "name": "1.10.5", "url": "https://docs.d2iq.com/mesosphere/dcos/1.10/release-notes/1.10.5/"},
+      { "name": "1.10.4", "url": "https://docs.d2iq.com/mesosphere/dcos/1.10/release-notes/1.10.4/"},
       { "name": "1.10.3 (skipped)", "url": "/releases/1.10.3/"},
       { "name": "1.10.2", "url": "/releases/1.10.2/"},
       { "name": "1.10.1", "url": "/releases/1.10.1/"},
@@ -128,7 +128,7 @@
       { "name": "1.10.0-beta2", "url": "/releases/1.10-beta2/"},
       { "name": "1.10.0-beta1", "url": "/releases/1.10-beta1/"}
     ],
-    "docslink": "https://docs.mesosphere.com/1.10/"
+    "docslink": "https://docs.d2iq.com/mesosphere/dcos/1.10/"
   },
   {
     "title": "DC/OS 1.9",
@@ -149,10 +149,10 @@
       "direct": "https://downloads.dcos.io/dcos/stable/1.9.10/dcos_generate_config.sh"
     },
     "subreleases": [
-      { "name": "1.9.10", "url": "https://docs.mesosphere.com/1.9/release-notes/1.9.10/"},
-      { "name": "1.9.9", "url": "https://docs.mesosphere.com/1.9/release-notes/1.9.9/"},
-      { "name": "1.9.8", "url": "https://docs.mesosphere.com/1.9/release-notes/1.9.8/"},
-      { "name": "1.9.7", "url": "https://docs.mesosphere.com/1.9/release-notes/1.9.7/"},
+      { "name": "1.9.10", "url": "https://docs.d2iq.com/mesosphere/dcos/1.9/release-notes/1.9.10/"},
+      { "name": "1.9.9", "url": "https://docs.d2iq.com/mesosphere/dcos/1.9/release-notes/1.9.9/"},
+      { "name": "1.9.8", "url": "https://docs.d2iq.com/mesosphere/dcos/1.9/release-notes/1.9.8/"},
+      { "name": "1.9.7", "url": "https://docs.d2iq.com/mesosphere/dcos/1.9/release-notes/1.9.7/"},
       { "name": "1.9.6", "url": "/releases/1.9.6/"},
       { "name": "1.9.5", "url": "/releases/1.9.5/"},
       { "name": "1.9.4", "url": "/releases/1.9.4/"},
@@ -163,7 +163,7 @@
       { "name": "1.9.0-rc4", "url": "/releases/1.9.0-rc4/"},
       { "name": "1.9.0-rc3", "url": "/releases/1.9.0-rc3/"}
     ],
-    "docslink": "https://docs.mesosphere.com/1.9/"
+    "docslink": "https://docs.d2iq.com/1.9/"
   },
   {
     "title": "DC/OS 1.8",
@@ -197,7 +197,7 @@
       { "name": "1.8.0", "url": "/releases/1.8.0/"}
 
     ],
-    "docslink": "https://docs.mesosphere.com/1.8/"
+    "docslink": "https://docs.d2iq.com/1.8/"
   },
   {
     "title": "DC/OS 1.7",
@@ -217,6 +217,6 @@
       { "name": "1.7-open", "url": "/releases/1.7-open/"}
 
     ],
-    "docslink": "https://docs.mesosphere.com/1.7/"
+    "docslink": "https://docs.d2iq.com/1.7/"
   }
 ]
