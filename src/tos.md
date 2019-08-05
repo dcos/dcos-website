@@ -1,1 +1,1 @@
-These Terms of Use page has [moved](https://mesosphere.com/terms/).
+These Terms of Use page has [moved](https://d2iq.com/terms/).
