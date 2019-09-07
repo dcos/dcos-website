@@ -1174,12 +1174,6 @@
       "date": "2019-06-06",
       "url": "https://www.devtalks.ro/bucharest/"
   },
-  
-  { "title": "From Batch to Pipelines (Open Source Automation Days Munich)",
-      "image": "/assets/images/events/Munich.jpg",
-      "date": "2019-10-15",
-      "url": "https://osad-munich.org/from-batch-to-pipelines-why-apache-mesos-and-dc-os-are-a-solution-for-emerging-patterns-in-cloud-native-apps/"
-  },
 
   { "title": "",
       "image": "/assets/images/events/.jpg",
