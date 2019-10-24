@@ -1,5 +1,30 @@
 [
   {
+    "title": "DC/OS 2.0",
+    "date": "2019-10-25",
+    "description": "Mesosphere DC/OS 2.0 provides new features and enhancements to improve the user experience, fix reported issues, integrate changes from previous releases, and maintain compatibility and support for other packages, such as Marathon and Metronome, used in DC/OS.",
+    "features": [
+      "Improved Multi Tenancy support by adding quota management for service groups",
+      "Shared memory segment for tasks supporting configurable `/dev/shm` size and IPC namespace in UCR",
+      "New container debug endpoint, and the diagnostic bundle includes the debug endpoint tracking data for a stuck task",
+      "Adds the ability to drain agent nodes via the DC/OS CLI and UI",
+      "L4LB metrics in DC/OS Net",
+      "Post install configuration for Metronome",
+      "Marathon 1.9.100 including multi-role support and API performance enhancements",
+      "Mesos 1.9"
+    ],
+    "downloadlink": {
+      "amazon": "https://docs.d2iq.com/mesosphere/dcos/2.0/installing/evaluation/aws/",
+      "azure": "https://docs.d2iq.com/mesosphere/dcos/2.0/installing/evaluation/azure/",
+      "google": "https://docs.d2iq.com/mesosphere/dcos/2.0/installing/evaluation/gcp/",
+      "direct": "https://downloads.dcos.io/dcos/stable/2.0/dcos_generate_config.sh"
+    },
+    "subreleases": [
+      { "name": "2.0", "url": "https://docs.d2iq.com/mesosphere/dcos/2.0/release-notes/2.0.0/"}
+    ],
+    "docslink": "https://docs.d2iq.com/mesosphere/dcos/2.0/"
+  },
+  {
     "title": "DC/OS 1.13",
     "date": "2019-05-13",
     "description": "Mesosphere DC/OS 1.13 includes new features and capabilities to enhance the installation and deployment experience, simplify cluster administration, increase operational productivity and efficiency, and provide additional monitoring, alerting, logging, and reporting for better visibility into cluster activity.",
