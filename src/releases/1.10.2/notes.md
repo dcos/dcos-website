@@ -12,8 +12,8 @@
 - Support for RHEL 7.4.
 - Updated to Mesos 1.4.0 ([changelog](https://gitbox.apache.org/repos/asf?p=mesos.git;a=blob_plain;f=CHANGELOG;hb=1.4.0)).
 - Updated to Marathon 1.5.2 ([changelog](https://github.com/mesosphere/marathon/releases/tag/v1.5.2)).
-- DCOS-17947 - Updated configuration example for a cluster that uses [custom Docker credentials](/docs/1.10/installing/custom/configuration/examples/#docker-credentials).
-- DOCS-1925 - Clarified how operators can [recover from a full agent disk](/docs/1.10/administering-clusters/recovering-agent-disk-space/).
+- DCOS-17947 - Updated configuration example for a cluster that uses [custom Docker credentials](https://docs.d2iq.com/mesosphere/dcos/1.10/deploying-services/private-docker-registry/).
+- DOCS-1925 - Clarified how operators can [recover from a full agent disk](https://docs.d2iq.com/mesosphere/dcos/1.10/administering-clusters/recovering-agent-disk-space/).
 
 # Issues Fixed in DC/OS 1.10.1
 
@@ -72,7 +72,7 @@ Please try out the new features and updated data services. Provide any feedback 
 
 ## Platform
 - Node and Cluster health checks.
-  Write your own custom health checks or use the predefined checks to access and use information about your cluster, including available ports, Mesos agent status, and IP detect script validation. [View the documentation](/docs/1.10/installing/custom/node-cluster-health-check/).
+  Write your own custom health checks or use the predefined checks to access and use information about your cluster, including available ports, Mesos agent status, and IP detect script validation.
 - Enhanced upgrades with pre/post flight checks.
 - Universal Container Runtime (UCR).
   Adds port mapping support for containers running on the CNI network. Port mapping support allows UCR to have a default bridge network, similar to Docker's default bridge network. This gives UCR feature parity with Docker Engine enabling use of Mesos Runtime as the default container runtime. [View the documentation](/docs/1.10/deploying-services/containerizers/).
