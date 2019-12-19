@@ -85,7 +85,7 @@ For more information, see the [documentation](/docs/1.9/metrics/).
 - Update DC/OS internal JDK to 8u112 for security [fixes](http://www.oracle.com/technetwork/java/javase/2col/8u112-bugfixes-3124974.html).
 - Update DC/OS internal Python from 3.4 to 3.5.
 - The `dcos_generate_config.sh --aws-cloudformation` command will now determine the region of the s3 bucket automatically, preventing region mistakes.
-- Added the `dcos_add_user.py` script, which you can use to add or invites users to a DC/OS cluster from the command line. For more information, see the [documentation](/docs/1.9/security/add-user-script/). <!-- OSS only -->
+- Added the `dcos_add_user.py` script, which you can use to add or invites users to a DC/OS cluster from the command line. <!-- OSS only -->
 - Added `dcos-shell` which activates the DC/OS environment for running other DC/OS command line tools.
 
 ### Expanded OS Support
@@ -95,13 +95,11 @@ For more information, see the [documentation](/docs/1.9/metrics/).
 
 ### Expanded Docker Engine Support
 
-- Docker 1.12 and 1.13 are now [supported](/docs/1.9/installing/custom/system-requirements/). Docker 1.13 is the default version.
+- Docker 1.12 and 1.13 are now supported. Docker 1.13 is the default version.
 
 ### Upgrades
 
 Improved upgrade tooling and experience for on-premise installations. Upgrades now use internal DC/OS APIs to ensure nodes can be upgraded with minimal disruption to running DC/OS services on a node. The upgrade procedure has also been simplified to improve user experience.
-
-For more information, see the [documentation](/docs/1.9/installing/upgrading/).
 
 # <a name="known-issues"></a>Known Issues and Limitations
 
