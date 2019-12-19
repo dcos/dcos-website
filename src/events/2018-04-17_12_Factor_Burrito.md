@@ -21,10 +21,6 @@ People have heard about the 12 Factor App. How does this map to a burrito? Are a
 
 [12 Factor App Vs 12 Layer Burrito](https://www.devopsdays.org/events/2018-atlanta/program/ravi-lachhman/)
 
-# Slides
-
-<iframe src="https://drive.google.com/file/d/1Lq_KiwwyCbRiCpC23VJqPV8GHOjh0Ydt/preview" width="640" height="480"></iframe>
-
 # Video
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wt15cdQIbpA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

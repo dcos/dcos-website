@@ -2,9 +2,7 @@
 /docs/latest /docs/latest/
 /docs/support/index.html /community/
 /documentation /docs/latest/
-/media-kit https://mesosphere.com/brand
 /overview/components/index.html /docs/1.7/overview/components/
-/press https://mesosphere.com/brand/
 /support /community/
 /blog/2016/a-developer-s-guide-to-the-universe/index.html https://mesosphere.com/blog/a-developers-guide-to-the-universe/
 /blog/2016/announcing-the-dc-os-101-tutorial/index.html https://mesosphere.com/blog/announcing-the-dcos-101-tutorial/
@@ -159,7 +157,5 @@
 /assets/images/blog/2017-03-30_1-9-0_GA_image_0.png https://mesosphere.com/wp-content/uploads/2017/07/2017-03-30_1-9-0_GA_image_0.png
 /assets/images/blog/2017-03-30_1-9-0_GA_image_1.png https://mesosphere.com/wp-content/uploads/2017/07/2017-03-30_1-9-0_GA_image_1.png
 /assets/images/blog/2017-03-30_1-9-0_GA_image_2.png https://mesosphere.com//wp-content/uploads/2017/07/2017-03-30_1-9-0_GA_image_2.png
-/assets/images/blog/2017-04-17_flink_forward_intro.jpg https://mesosphere.com//wp-content/uploads/2017/07/2017-04-17_flink_forward_intro.jpg
-/assets/images/blog/2017-04-17_flink_forward_presentation.jpg https://mesosphere.com//wp-content/uploads/2017/07/2017-04-17_flink_forward_presentation.jpg
 /assets/images/blog/2017-05-16_devpulsecon_presentation.jpg https://mesosphere.com//wp-content/uploads/2017/07/2017-05-16_devpulsecon_presentation.jpg
 /assets/images/blog/2017-05-16_devpulsecon_sign.jpg https://mesosphere.com//wp-content/uploads/2017/07/2017-05-16_devpulsecon_sign.jpg
