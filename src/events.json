@@ -99,11 +99,6 @@
     "date": "2017-04-24",
     "url": "https://youtu.be/Nqrq8PyiOcc" },
 
-  { "title": "Meetup - Ben Hindman at Skills Matter",
-    "image": "/assets/images/events/2017-04-25_Ben_Skills_Mater.jpg",
-    "date": "2017-04-25",
-    "url": "https://skillsmatter.com/skillscasts/10117-taking-production-container-operations-and-data-services-automation-to-the-next-level?tc=fed445&utm_source=Skills+Matter+-+MEMBER+NEWSLETTER+List&utm_campaign=6ea8af4807-Devops_Apr_2017&utm_medium=email&utm_term=0_3b77997a7e-6ea8af4807-355582293" },
-
   { "title": "DevOpsDays Seattle",
     "image": "/assets/images/events/2017-04-28_DevOpsDaysSEA_Elizabeth.jpg",
     "date": "2017-04-26",
@@ -193,7 +188,7 @@
   { "title": "Meetup - Ben Hindman: How Fast Data and Microservices Change the Datacenter",
       "image": "/assets/images/events/San_Jose.jpg",
       "date": "2017-05-31",
-      "url": "https://my.adobeconnect.com/p4agh1fq7miq/?proto=true"
+      "url": "https://www.meetup.com/Bay-Area-Mesos-User-Group/events/240192263/"
   },
 
   { "title": "Let's talk SMACK: Meet the SMACK Stack Experts AMA",
@@ -382,10 +377,10 @@
       "url": "/events/2017/nightmares-of-a-container-orchestration-system/"
   },
 
-  { "title": "MesosCon North America",
+  { "title": "MesosCon North America 2017",
       "image": "/assets/images/events/2017-09-14_MesosConNA.jpg",
       "date": "2017-09-13",
-      "url": "http://events17.linuxfoundation.org/events/archive/2017/mesoscon-north-america/"
+      "url": "http://events17.linuxfoundation.org/events/mesoscon-north-america"
   },
 
   { "title": "DC/OS for Java Devs (JavaZone)",
@@ -424,12 +419,6 @@
       "url": "/events/2017/container-check-aber-wohin-mit-persistent-data-big-data-oder-fast-data-alles-ber-container-2-0/"
   },
 
-  { "title": "Mesos and the Architecture of the New Datacenter (Topconf)",
-      "image": "/assets/images/events/Duesseldorf.jpg",
-      "date": "2017-10-05",
-      "url": "/events/2017/mesos-and-the-architecture-of-the-new-datacenter/"
-  },
-
   { "title": "Containers, Persistent Data, Fast Data, Big Data (JavaOne)",
       "image": "/assets/images/events/San_Francisco.jpg",
       "date": "2017-10-05",
@@ -460,10 +449,10 @@
       "url": "/events/2017/health-checking-a-not-so-trivial-task-in-the-distributed-containerized-world/"
   },
 
-  { "title": "MesosCon Europe",
+  { "title": "MesosCon Europe 2017",
       "image": "/assets/images/events/Prague_2.jpg",
       "date": "2017-10-25",
-      "url": "http://events17.linuxfoundation.org/events/archive/2017/mesoscon-europe/"
+      "url": "http://events17.linuxfoundation.org/events/mesoscon-europe"
   },
 
   { "title": "SMACK Stack and Beyond (Spark Summit)",
@@ -905,12 +894,6 @@
       "url": "https://www.meetup.com/DC-OS-Online-Meetup/events/250991333/"
   },
 
-  { "title": "All you need to build and run a modern application (LX Scala)",
-      "image": "/assets/images/events/Lisbon.jpg",
-      "date": "2018-06-08",
-      "url": "http://www.lxscala.com/schedule/#session-10"
-  },
-
   { "title": "From batch to pipelines - solutions for emerging patterns in data processing (OSDC)",
       "image": "/assets/images/events/Berlin.jpg",
       "date": "2018-06-12",
@@ -939,12 +922,6 @@
       "image": "/assets/images/events/San_Francisco_2.jpg",
       "date": "2018-06-19",
       "url": "/events/2018/introduction-to-dc-os/"
-  },
-
-  { "title": "TechBeats #2 hosted by Applause (Meetup)",
-      "image": "/assets/images/events/Warsaw.jpg",
-      "date": "2018-06-20",
-      "url": "https://www.meetup.com/TechBeats-hosted-by-Applause/events/250581962/"
   },
 
   { "title": "Serverless with Project Fn & ML for your Data Pipeline (Meetup)",
@@ -1029,12 +1006,6 @@
       "image": "/assets/images/events/San_Francisco.jpg",
       "date": "2018-09-20",
       "url": "https://www.meetup.com/Bay-Area-MLflow/events/254124344/"
-  },
-
-  { "title": "Batch to pipelines (Cloud Native London)",
-      "image": "/assets/images/events/London.jpg",
-      "date": "2018-09-26",
-      "url": "https://skillsmatter.com/skillscasts/12109-from-batch-to-pipelines-why-apache-mesos-and-dc-os-are-a-solution-for-emerging-patterns-in-cloud-native-applications#video"
   },
 
   { "title": "Intro to DC/OS (Dutch Mesos Users Group Rotterdam)",

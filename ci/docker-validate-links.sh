@@ -50,8 +50,7 @@ eval "${DOCKER_INIT}"
 docker run --rm \
   --volume "$(pwd):/workdir" \
   --workdir "/workdir" \
-  mesosphere/linkchecker \
-  linkchecker \
+  linkchecker/linkchecker \
     --complete --anchors --check-extern \
     --user-agent="curl/7.24.0" \
     --output=text \
