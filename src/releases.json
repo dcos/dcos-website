@@ -43,9 +43,10 @@
       "amazon": "https://docs.d2iq.com/mesosphere/dcos/1.13/installing/evaluation/aws/",
       "azure": "https://docs.d2iq.com/mesosphere/dcos/1.13/installing/evaluation/azure/",
       "google": "https://docs.d2iq.com/mesosphere/dcos/1.13/installing/evaluation/gcp/",
-      "direct": "https://downloads.dcos.io/dcos/stable/1.13.8/dcos_generate_config.sh"
+      "direct": "https://downloads.dcos.io/dcos/stable/1.13.9/dcos_generate_config.sh"
     },
     "subreleases": [
+      { "name": "1.13.9", "url": "https://docs.d2iq.com/mesosphere/dcos/1.13/release-notes/1.13.9/"},
       { "name": "1.13.8", "url": "https://docs.d2iq.com/mesosphere/dcos/1.13/release-notes/1.13.8/"},
       { "name": "1.13.7", "url": "https://docs.d2iq.com/mesosphere/dcos/1.13/release-notes/1.13.7/"},
       { "name": "1.13.6", "url": "https://docs.d2iq.com/mesosphere/dcos/1.13/release-notes/1.13.6/"},
