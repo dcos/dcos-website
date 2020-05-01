@@ -17,7 +17,7 @@
       "amazon": "https://docs.d2iq.com/mesosphere/dcos/2.0/installing/evaluation/aws/",
       "azure": "https://docs.d2iq.com/mesosphere/dcos/2.0/installing/evaluation/azure/",
       "google": "https://docs.d2iq.com/mesosphere/dcos/2.0/installing/evaluation/gcp/",
-      "direct": "https://downloads.dcos.io/dcos/stable/2.0/dcos_generate_config.sh"
+      "direct": "https://downloads.dcos.io/dcos/stable/2.0.3/dcos_generate_config.sh"
     },
     "subreleases": [
       { "name": "2.0.3", "url": "https://docs.d2iq.com/mesosphere/dcos/2.0/release-notes/2.0.3/"},
