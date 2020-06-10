@@ -1,5 +1,29 @@
 [
   {
+    "title": "DC/OS 2.1",
+    "date": "2020-06-10",
+    "description": "Mesosphere DC/OS 2.1 provides new features and enhancements to improve the user experience, fix reported issues, integrate changes from previous releases, and maintain compatibility and support for other packages, such as Marathon and Metronome, used in DC/OS.",
+    "features": [
+      "Vertical container bursting for Marathon apps and pods",
+      "Network policies with Calico",
+      "Jobs virtual networking support",
+      "Custom certificates for Admin Router",
+      "Domain sockets for agent executor communication",
+      "Marathon 1.10.17",
+      "Mesos 1.10.0-dev"
+    ],
+    "downloadlink": {
+      "amazon": "https://docs.d2iq.com/mesosphere/dcos/2.1/installing/evaluation/aws/",
+      "azure": "https://docs.d2iq.com/mesosphere/dcos/2.1/installing/evaluation/azure/",
+      "google": "https://docs.d2iq.com/mesosphere/dcos/2.1/installing/evaluation/gcp/",
+      "direct": "https://downloads.dcos.io/dcos/stable/dcos_generate_config.sh"
+    },
+    "subreleases": [
+      { "name": "2.1.0", "url": "https://docs.d2iq.com/mesosphere/dcos/2.1/release-notes/2.1.0/"}
+    ],
+    "docslink": "https://docs.d2iq.com/mesosphere/dcos/2.1/"
+  },
+  {
     "title": "DC/OS 2.0",
     "date": "2019-10-25",
     "description": "Mesosphere DC/OS 2.0 provides new features and enhancements to improve the user experience, fix reported issues, integrate changes from previous releases, and maintain compatibility and support for other packages, such as Marathon and Metronome, used in DC/OS.",
