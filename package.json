@@ -63,7 +63,7 @@
     "gulp-util": "3.0.7",
     "gulp-watch": "4.3.9",
     "gulpsmith": "0.5.5",
-    "marked": "0.3.5",
+    "marked": "0.3.18",
     "metalsmith": "2.1.0",
     "metalsmith-ancestry": "1.2.0",
     "metalsmith-babel": "4.0.0",
