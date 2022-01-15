@@ -106,7 +106,7 @@
       "integrity": "sha1-VbtemGkVB7dFedBRNBMhfDgMVM8=",
       "dev": true,
       "requires": {
-        "acorn": "2.7.0"
+        "acorn": "^2.1.0"
       },
       "dependencies": {
         "acorn": {
@@ -2752,7 +2752,7 @@
       "integrity": "sha1-S5RdmTeQe82Y7ldRIsOBdRZUQUE=",
       "dev": true,
       "requires": {
-        "acorn": "2.7.0"
+        "acorn": "^2.1.0"
       },
       "dependencies": {
         "acorn": {
@@ -6389,9 +6389,9 @@
       "dev": true
     },
     "is-promise": {
-      "version": "2.1.0",
-      "resolved": "https://registry.npmjs.org/is-promise/-/is-promise-2.1.0.tgz",
-      "integrity": "sha1-eaKp7OfwlugPNtKy87wWwf9L8/o=",
+      "version": "2.2.2",
+      "resolved": "https://registry.npmjs.org/is-promise/-/is-promise-2.2.2.tgz",
+      "integrity": "sha512-+lP4/6lKUBfQjZ2pdxThZvLUAafmZb8OAxFb8XXtiQmS35INgr85hdOGoEs124ez1FCnZJt6jau/T+alh58QFQ==",
       "dev": true
     },
     "is-relative": {
@@ -6476,15 +6476,15 @@
       "dev": true,
       "requires": {
         "character-parser": "1.2.1",
-        "clean-css": "3.4.28",
-        "commander": "2.6.0",
-        "constantinople": "3.0.2",
+        "clean-css": "^3.1.9",
+        "commander": "~2.6.0",
+        "constantinople": "~3.0.1",
         "jstransformer": "0.0.2",
-        "mkdirp": "0.5.1",
+        "mkdirp": "~0.5.0",
         "transformers": "2.1.0",
-        "uglify-js": "2.8.29",
-        "void-elements": "2.0.1",
-        "with": "4.0.3"
+        "uglify-js": "^2.4.19",
+        "void-elements": "~2.0.1",
+        "with": "~4.0.0"
       },
       "dependencies": {
         "commander": {
@@ -6619,8 +6619,8 @@
       "integrity": "sha1-eq4pqQPRls+glz2IXT5HlH7Ndqs=",
       "dev": true,
       "requires": {
-        "is-promise": "2.1.0",
-        "promise": "6.1.0"
+        "is-promise": "^2.0.0",
+        "promise": "^6.0.1"
       }
     },
     "kind-of": {
@@ -6806,10 +6806,10 @@
       "integrity": "sha1-t7K7Q9whYEJKIczybFfkQ3cqjic=",
       "dev": true,
       "requires": {
-        "lodash._baseisequal": "3.0.7",
-        "lodash._bindcallback": "3.0.1",
-        "lodash.isarray": "3.0.4",
-        "lodash.pairs": "3.0.1"
+        "lodash._baseisequal": "^3.0.0",
+        "lodash._bindcallback": "^3.0.0",
+        "lodash.isarray": "^3.0.0",
+        "lodash.pairs": "^3.0.0"
       }
     },
     "lodash._baseclone": {
@@ -6844,7 +6844,7 @@
       "integrity": "sha1-z4cGVyyhROjZ11InyZDamC+TKvM=",
       "dev": true,
       "requires": {
-        "lodash.keys": "3.1.2"
+        "lodash.keys": "^3.0.0"
       }
     },
     "lodash._basefor": {
@@ -6859,9 +6859,9 @@
       "integrity": "sha1-2AJfdjOdKTQnZ9zIh85cuVpbUfE=",
       "dev": true,
       "requires": {
-        "lodash.isarray": "3.0.4",
-        "lodash.istypedarray": "3.0.6",
-        "lodash.keys": "3.1.2"
+        "lodash.isarray": "^3.0.0",
+        "lodash.istypedarray": "^3.0.0",
+        "lodash.keys": "^3.0.0"
       }
     },
     "lodash._basesortby": {
@@ -7011,7 +7011,7 @@
       "integrity": "sha1-u+CNV4bu6qCaFckevw3LfSvjJqk=",
       "dev": true,
       "requires": {
-        "lodash.keys": "3.1.2"
+        "lodash.keys": "^3.0.0"
       }
     },
     "lodash.restparam": {
@@ -7026,13 +7026,13 @@
       "integrity": "sha1-mEA6z3X++yQGk4MfS8DZUflHAbg=",
       "dev": true,
       "requires": {
-        "lodash._basecallback": "3.3.1",
-        "lodash._basecompareascending": "3.0.2",
-        "lodash._baseeach": "3.0.4",
-        "lodash._basesortby": "3.0.0",
-        "lodash._isiterateecall": "3.0.9",
-        "lodash.isarray": "3.0.4",
-        "lodash.keys": "3.1.2"
+        "lodash._basecallback": "^3.0.0",
+        "lodash._basecompareascending": "^3.0.0",
+        "lodash._baseeach": "^3.0.0",
+        "lodash._basesortby": "^3.0.0",
+        "lodash._isiterateecall": "^3.0.0",
+        "lodash.isarray": "^3.0.0",
+        "lodash.keys": "^3.0.0"
       }
     },
     "lodash.template": {
@@ -7135,9 +7135,10 @@
       }
     },
     "marked": {
-      "version": "0.3.5",
-      "resolved": "https://registry.npmjs.org/marked/-/marked-0.3.5.tgz",
-      "integrity": "sha1-QROhWsXXvKFYpargciRYe5+hW5Q="
+      "version": "4.0.10",
+      "resolved": "https://registry.npmjs.org/marked/-/marked-4.0.10.tgz",
+      "integrity": "sha512-+QvuFj0nGgO970fySghXGmuw+Fd0gD2x3+MqCWLIPf5oxdv1Ka6b2q+z9RP01P/IaKPMEramy+7cNy/Lw8c3hw==",
+      "dev": true
     },
     "marked-terminal": {
       "version": "3.3.0",
@@ -7422,22 +7423,24 @@
     },
     "metalsmith-browser-sync": {
       "version": "github:davidvanleeuwen/metalsmith-browser-sync#4202aa3c591726536cf66c5058f45d920b76af8d",
+      "from": "github:davidvanleeuwen/metalsmith-browser-sync",
       "dev": true,
       "requires": {
-        "browser-sync": "2.26.3",
-        "debug": "2.6.9",
-        "lodash": "3.10.1"
+        "browser-sync": "^2.6.5",
+        "debug": "^2.1.3",
+        "lodash": "^3.7.0"
       }
     },
     "metalsmith-collections": {
       "version": "git+https://github.com/spacedawwwg/metalsmith-collections.git#2c199012e8ff4b118c3a63557897659381f0c54d",
+      "from": "git+https://github.com/spacedawwwg/metalsmith-collections.git",
       "dev": true,
       "requires": {
-        "debug": "2.6.9",
-        "extend": "3.0.2",
-        "multimatch": "2.1.0",
-        "read-metadata": "1.0.0",
-        "uniq": "1.0.1"
+        "debug": "^2.6.0",
+        "extend": "^3.0.0",
+        "multimatch": "^2.1.0",
+        "read-metadata": "^1.0.0",
+        "uniq": "^1.0.1"
       },
       "dependencies": {
         "multimatch": {
@@ -7446,10 +7449,10 @@
           "integrity": "sha1-nHkGoi+0wCkZ4vX3UWG0zb1LKis=",
           "dev": true,
           "requires": {
-            "array-differ": "1.0.0",
-            "array-union": "1.0.2",
-            "arrify": "1.0.1",
-            "minimatch": "3.0.4"
+            "array-differ": "^1.0.0",
+            "array-union": "^1.0.1",
+            "arrify": "^1.0.0",
+            "minimatch": "^3.0.0"
           }
         }
       }
@@ -7537,11 +7540,12 @@
     },
     "metalsmith-jade": {
       "version": "github:davidvanleeuwen/metalsmith-jade#e49a845b5721d143ac01f5350a8579e122b73767",
+      "from": "github:davidvanleeuwen/metalsmith-jade",
       "dev": true,
       "requires": {
-        "debug-log": "1.0.1",
-        "jade": "1.11.0",
-        "xtend": "4.0.2"
+        "debug-log": "^1.0.0",
+        "jade": "^1.11.0",
+        "xtend": "^4.0.0"
       }
     },
     "metalsmith-layouts": {
@@ -7604,15 +7608,22 @@
           "resolved": "https://registry.npmjs.org/debug/-/debug-0.7.4.tgz",
           "integrity": "sha1-BuHqgILCyxTjmAbiLi9vdX+Srzk=",
           "dev": true
+        },
+        "marked": {
+          "version": "0.3.5",
+          "resolved": "https://registry.npmjs.org/marked/-/marked-0.3.5.tgz",
+          "integrity": "sha1-QROhWsXXvKFYpargciRYe5+hW5Q=",
+          "dev": true
         }
       }
     },
     "metalsmith-navigation": {
       "version": "github:davidvanleeuwen/metalsmith-navigation#722276e8e9b5c3c69fd75725124a78b0499cd443",
+      "from": "github:davidvanleeuwen/metalsmith-navigation",
       "dev": true,
       "requires": {
-        "lodash.sortby": "3.1.5",
-        "merge": "1.2.1"
+        "lodash.sortby": "^3.1.1",
+        "merge": "^1.1.3"
       }
     },
     "metalsmith-permalinks": {
@@ -8934,7 +8945,7 @@
       "integrity": "sha1-LOcp9rlLRcJoka0GAsXJDgTG7vY=",
       "dev": true,
       "requires": {
-        "asap": "1.0.0"
+        "asap": "~1.0.0"
       }
     },
     "promisify-node": {
@@ -10985,6 +10996,13 @@
         "sanitize-html": "1.20.0",
         "swagger-client": "2.2.21",
         "swagger-ui": "2.2.3"
+      },
+      "dependencies": {
+        "marked": {
+          "version": "0.3.5",
+          "resolved": "https://registry.npmjs.org/marked/-/marked-0.3.5.tgz",
+          "integrity": "sha1-QROhWsXXvKFYpargciRYe5+hW5Q="
+        }
       }
     },
     "symbol-observable": {
@@ -11309,9 +11327,9 @@
       "integrity": "sha1-XSPLNVYd2F3Gf7hIIwm0fVPM6ac=",
       "dev": true,
       "requires": {
-        "css": "1.0.8",
-        "promise": "2.0.0",
-        "uglify-js": "2.2.5"
+        "css": "~1.0.8",
+        "promise": "~2.0",
+        "uglify-js": "~2.2.5"
       },
       "dependencies": {
         "is-promise": {
@@ -11326,7 +11344,7 @@
           "integrity": "sha1-yQlBrVnkJzMokjB00s8ufLxuwNk=",
           "dev": true,
           "requires": {
-            "wordwrap": "0.0.2"
+            "wordwrap": "~0.0.2"
           }
         },
         "promise": {
@@ -11335,7 +11353,7 @@
           "integrity": "sha1-RmSKqdYFr10ucMMCS/WUNtoCuA4=",
           "dev": true,
           "requires": {
-            "is-promise": "1.0.1"
+            "is-promise": "~1"
           }
         },
         "source-map": {
@@ -11344,7 +11362,7 @@
           "integrity": "sha1-wkvBRspRfBRx9drL4lcbK3+eM0Y=",
           "dev": true,
           "requires": {
-            "amdefine": "1.0.1"
+            "amdefine": ">=0.0.4"
           }
         },
         "uglify-js": {
@@ -11353,8 +11371,8 @@
           "integrity": "sha1-puAqcNg5eSuXgEiLe4sYTAlcmcc=",
           "dev": true,
           "requires": {
-            "optimist": "0.3.7",
-            "source-map": "0.1.43"
+            "optimist": "~0.3.5",
+            "source-map": "~0.1.7"
           }
         }
       }
@@ -12046,8 +12064,8 @@
       "integrity": "sha1-7v0VTp550sjTQXtkeo8U2f7M4U4=",
       "dev": true,
       "requires": {
-        "acorn": "1.2.2",
-        "acorn-globals": "1.0.9"
+        "acorn": "^1.0.1",
+        "acorn-globals": "^1.0.3"
       },
       "dependencies": {
         "acorn": {
